@@ -1,8 +1,8 @@
 {
   "engine_version": "1.0.0",
   "generated_from": "data/kalshi/markets.jsonl",
-  "input_sha256": "64c92efc458f53c5d668d61007964b9a682d2f9364339a962d85e6df1919c0e2",
-  "fetched_at": "2026-09-24T20:06:09Z",
+  "input_sha256": "fdaf2433d3de866632d185e69d6ade42cd121686562f6ef3d983a0f09903f590",
+  "fetched_at": "2026-09-24T20:11:30Z",
   "replay": {
     "status": "matched",
     "ledger_sha256": "70e9ba027dc70239a43be72a8906ccb77857d43bdc01cb530c0f7d7aa0115b89",
@@ -3664,7 +3664,7 @@
     }
   ],
   "data_quality": {
-    "fetched_at": "2026-09-24T20:06:09Z",
+    "fetched_at": "2026-09-24T20:11:30Z",
     "exchange_status": {
       "exchange_active": true,
       "exchange_index_statuses": [
@@ -3804,7 +3804,7 @@
       "batch-010"
     ],
     "trade_rows_total": 796975,
-    "generated_at": "2026-09-24T20:08:11Z",
+    "generated_at": "2026-09-24T20:14:29Z",
     "replay": {
       "status": "matched",
       "batch": "batch-001",
@@ -3828,7 +3828,7 @@
         "data_tier": "live_kalshi",
         "markets_used": 147,
         "candle_events": 8022,
-        "runtime_seconds": 36.502,
+        "runtime_seconds": 59.683,
         "trade_rows": 260955,
         "combined_ledger_sha256": "e38ad14ee24727d5388a738b2f0805776332b83d35ff07b34c96d2e8df4e65db",
         "open_positions": 34963
@@ -3839,7 +3839,7 @@
         "data_tier": "historical_kalshi",
         "markets_used": 66,
         "candle_events": 6875,
-        "runtime_seconds": 29.808,
+        "runtime_seconds": 47.959,
         "trade_rows": 224658,
         "combined_ledger_sha256": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
         "open_positions": 0
@@ -3850,7 +3850,7 @@
         "data_tier": "historical_kalshi",
         "markets_used": 50,
         "candle_events": 4702,
-        "runtime_seconds": 24.236,
+        "runtime_seconds": 39.497,
         "trade_rows": 311362,
         "combined_ledger_sha256": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3",
         "open_positions": 0
