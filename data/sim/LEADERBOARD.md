@@ -2,25 +2,25 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-09-24T18:04:09Z
+Kalshi snapshot: 2026-09-24T20:06:09Z
 
 ## Nobel markets, forward simulation
 
-Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 134.
+Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 147.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 4 | sim-kira-null | seeded_null | 8726.2350 | 0.0000 | -1273.7650 | 121.4300 | 60 |
-| 5 | sim-gina-tight | tight_value | 8333.5740 | 0.0000 | -1666.4260 | 205.7300 | 67 |
-| 6 | sim-cleo-longshot | longshot_hold | 8044.1500 | 0.0000 | -1955.8500 | 225.8500 | 67 |
+| 4 | sim-kira-null | seeded_null | 8659.7660 | 0.0000 | -1340.2340 | 125.1400 | 63 |
+| 5 | sim-gina-tight | tight_value | 8329.5740 | 0.0000 | -1670.4260 | 205.7300 | 67 |
+| 6 | sim-cleo-longshot | longshot_hold | 8040.1500 | 0.0000 | -1959.8500 | 225.8500 | 67 |
 | 7 | sim-elena-revert | mean_revert | 7480.2900 | -2431.2800 | -88.4300 | 432.0200 | 136 |
 | 8 | sim-hiro-slice | diversified_slice | 6101.7140 | 0.0000 | -3898.2860 | 359.4600 | 96 |
-| 9 | sim-ines-volume | volume_momentum | 3492.7850 | -5458.8470 | -1048.3680 | 1451.5000 | 679 |
-| 10 | sim-dmitri-momentum | momentum | 628.3890 | -9250.4870 | -121.1240 | 2063.9500 | 1397 |
-| 11 | sim-farid-fade | contrarian | 411.6320 | -9282.4630 | -305.9050 | 2146.6200 | 1378 |
+| 9 | sim-ines-volume | volume_momentum | 3493.2850 | -5458.8470 | -1047.8680 | 1451.5000 | 679 |
+| 10 | sim-dmitri-momentum | momentum | 628.3940 | -9250.4870 | -121.1190 | 2063.9500 | 1397 |
+| 11 | sim-farid-fade | contrarian | 411.4790 | -9282.4630 | -306.0580 | 2146.6200 | 1378 |
 
 ## Settled Nobel markets, historical backtest
 
@@ -60,7 +60,7 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The 1000-strategy research program
 
-1000 simulated participants in 10 batches. 796804 ledger rows. Replay of batch-001: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+1000 simulated participants in 10 batches. 796975 ledger rows. Replay of batch-001: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
