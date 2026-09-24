@@ -3,6 +3,10 @@
 
   const NAV = [
     ["leaderboard", "Leaderboard"],
+    ["board", "Program board"],
+    ["program", "Program"],
+    ["families", "Families"],
+    ["topics", "Topics"],
     ["competitions", "Competitions"],
     ["participants", "Participants"],
     ["strategies", "Strategies"],
@@ -15,6 +19,12 @@
     ["sources", "Sources"],
     ["nobel", "Nobel record"],
     ["method", "Method"],
+  ];
+
+  const PROGRAM_UNIVERSES = [
+    ["nobel_settled", "Settled Nobel", "historical backtest"],
+    ["panel_settled", "Settled panel", "historical backtest"],
+    ["nobel_forward", "Forward Nobel", "forward mark, unsettled"],
   ];
 
   const COLORS = ["#9a3412", "#1e3a5f", "#0f6e56", "#6b542c", "#7c3aed", "#9f1239", "#3f6212", "#0e7490", "#a16207", "#44403c", "#be185d"];
@@ -30,6 +40,16 @@
     flags: null,
     equity: null,
     catalog: null,
+    pManifest: null,
+    pBoard: null,
+    pFamilies: null,
+    pPeople: null,
+    pBatches: {},
+    pMarkets: null,
+    pActivity: null,
+    pLedger: { key: "", rows: [], error: "" },
+    pb: { u: "nobel_settled", batch: "all", family: "all", page: 0, sort: "r", dir: 1, q: "" },
+    fam: { u: "nobel_settled", family: "" },
     view: "leaderboard",
     arg: "",
     q: "",
@@ -103,6 +123,121 @@
     if (state.equity) return state.equity;
     state.equity = await loadJSON("data/sim/equity.json");
     return state.equity;
+  }
+
+  async function ensureProgramManifest() {
+    if (state.pManifest) return state.pManifest;
+    try {
+      state.pManifest = await loadJSON("data/sim/program/manifest.json");
+    } catch (err) {
+      state.pManifest = { status: "missing", _error: err.message };
+    }
+    return state.pManifest;
+  }
+
+  async function ensureProgramBoard() {
+    if (state.pBoard) return state.pBoard;
+    state.pBoard = await loadJSON("data/sim/program/leaderboard.json");
+    return state.pBoard;
+  }
+
+  async function ensureProgramFamilies() {
+    if (state.pFamilies) return state.pFamilies;
+    state.pFamilies = await loadJSON("data/sim/program/families.json");
+    return state.pFamilies;
+  }
+
+  async function ensureProgramPeople() {
+    if (state.pPeople) return state.pPeople;
+    state.pPeople = await loadJSON("data/sim/program/participants.json");
+    return state.pPeople;
+  }
+
+  async function ensureBatchReport(batch) {
+    if (state.pBatches[batch]) return state.pBatches[batch];
+    state.pBatches[batch] = await loadJSON(`data/sim/program/batches/${encodeURIComponent(batch)}.json`);
+    return state.pBatches[batch];
+  }
+
+  function programMissing() {
+    return `<div class="card"><p>The 1000-strategy program bundle is not in this checkout. Run <code>python scripts/refresh.py</code> to build it from the stored Kalshi snapshot. ${sim()}</p></div>`;
+  }
+
+  async function loadProgramLedger(batch, universe, pid) {
+    const key = `${batch}|${universe}|${pid}`;
+    if (state.pLedger.key === key) return state.pLedger.rows;
+    const url = `data/sim/program/trades/${encodeURIComponent(batch)}/${encodeURIComponent(universe)}.csv.gz`;
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) throw new Error(url + " returned " + response.status);
+    let text;
+    if (window.DecompressionStream) {
+      const stream = response.body.pipeThrough(new DecompressionStream("gzip"));
+      text = await new Response(stream).text();
+    } else {
+      const buffer = await response.arrayBuffer();
+      const bytes = window.pako ? window.pako.ungzip(buffer) : null;
+      if (!bytes) throw new Error("This browser cannot decompress gzip. Download the CSV directly.");
+      text = new TextDecoder().decode(bytes);
+    }
+    const lines = text.split("\n");
+    const header = parseCsvLine(lines[0].replace(/\r$/, ""));
+    const rows = [];
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i].replace(/\r$/, "");
+      if (!line) continue;
+      const cells = parseCsvLine(line);
+      if (cells[0] !== pid) continue;
+      const row = {};
+      header.forEach((name, index) => { row[name] = cells[index] == null ? "" : cells[index]; });
+      rows.push(row);
+    }
+    state.pLedger = { key, rows, error: "" };
+    return rows;
+  }
+
+  function parseCsvLine(line) {
+    const out = [];
+    let field = "";
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (inQuotes) {
+        if (ch === '"') {
+          if (line[i + 1] === '"') { field += '"'; i++; }
+          else inQuotes = false;
+        } else field += ch;
+      } else if (ch === '"') {
+        inQuotes = true;
+      } else if (ch === ",") {
+        out.push(field);
+        field = "";
+      } else field += ch;
+    }
+    out.push(field);
+    return out;
+  }
+
+  async function ensureProgramMarkets() {
+    if (state.pMarkets) return state.pMarkets;
+    state.pMarkets = await loadJSON("data/sim/program/markets.json");
+    return state.pMarkets;
+  }
+
+  async function ensureProgramActivity() {
+    if (state.pActivity) return state.pActivity;
+    state.pActivity = await loadJSON("data/sim/program/activity.json");
+    return state.pActivity;
+  }
+
+  function fmtUnix(value) {
+    if (value == null || value === "") return "";
+    const date = new Date(Number(value) * 1000);
+    return Number.isFinite(date.getTime()) ? date.toISOString().replace("T", " ").replace(".000Z", "Z") : esc(value);
+  }
+
+  function programNote(note) {
+    const code = String(note || "");
+    return `<span class="muted small" title="Decision note code. Expanded rules are in the Topics view and data/sim/program/notes.json.">${esc(code)}</span>`;
   }
 
   function parseHash() {
@@ -237,12 +372,36 @@
     </div>`;
   }
 
-  function renderLeaderboard() {
+  async function renderLeaderboard() {
     const comps = primaryComps();
     const stats = state.summary.data_quality || {};
+    let programCard = "";
+    try {
+      const [manifest, board] = await Promise.all([
+        ensureProgramManifest(),
+        ensureProgramBoard().catch(() => null),
+      ]);
+      if (manifest && !manifest._error && manifest.status !== "missing") {
+        const replay = manifest.replay || {};
+        const topRows = board ? PROGRAM_UNIVERSES.map(([u, label]) => {
+          const rows = board.filter((row) => row.u === u).sort((a, b) => a.r - b.r).slice(0, 3);
+          return `<tr><td>${esc(label)}</td><td class="small">${rows.map((row) =>
+            `${esc(row.r)}. <a href="#participant/${esc(row.p)}">${esc(row.p)}</a> ${num(row.eq)} <span class="muted">(${esc(row.f)})</span>`
+          ).join("<br>")}</td></tr>`;
+        }).join("") : "";
+        programCard = `<div class="card">
+          <h3><a href="#board">The 1000-strategy research program</a> ${sim()}</h3>
+          <p>${esc(manifest.participants)} simulated participants in ${esc((manifest.batches || []).length)} batches, ${esc(manifest.trade_rows_total)} ledger rows, replay ${esc(replay.status || "—")}. The board is the working competition leaderboard: <a href="#board">open it</a>. Top three per universe:</p>
+          <div class="table-wrap"><table><tbody>${topRows}</tbody></table></div>
+        </div>`;
+      }
+    } catch (err) {
+      programCard = "";
+    }
     main.innerHTML = banner() + `
       <h2>Leaderboard</h2>
-      <p>Eleven simulated participants, same starting cash, same stored prices. They do not trade with each other. Rank is ending equity: cash plus a liquidation mark at the closing bid. ${sim()}</p>
+      <p>Eleven primary simulated participants, same starting cash, same stored prices. They do not trade with each other. Rank is ending equity: cash plus a liquidation mark at the closing bid. ${sim()}</p>
+      ${programCard}
       <div class="grid">
         <div class="stat"><b>${esc(stats.markets_stored || 0)}</b><span>Kalshi markets stored</span></div>
         <div class="stat"><b>${esc((stats.nobel_series || []).length)}</b><span>Nobel series found</span></div>
@@ -294,6 +453,14 @@
   async function renderParticipant() {
     const person = (state.summary.participants || []).find((p) => p.id === state.arg);
     if (!person) {
+      let programPerson = null;
+      try {
+        const people = await ensureProgramPeople();
+        programPerson = people.find((p) => p.id === state.arg || p.strategy_id === state.arg);
+      } catch (err) {
+        programPerson = null;
+      }
+      if (programPerson) return renderProgramParticipant(programPerson);
       main.innerHTML = `<p>No simulated participant ${esc(state.arg)}.</p>`;
       return;
     }
@@ -452,6 +619,13 @@
       trades = (await ensureTrades(comp.config.competition_id)).filter((row) => row.market_ticker === market.ticker);
       results = (await ensureResults()).filter((row) => row.ticker === market.ticker);
     } catch (err) { trades = []; results = []; }
+    try {
+      const programMarkets = await ensureProgramMarkets();
+      state.pMarketByTicker = {};
+      programMarkets.forEach((rollup) => {
+        (state.pMarketByTicker[rollup.ticker] = state.pMarketByTicker[rollup.ticker] || []).push(rollup);
+      });
+    } catch (err) { state.pMarketByTicker = {}; }
     const sources = (market.settlement_sources || []).map((src) => `<a href="${esc(src.url)}">${esc(src.name)}</a>`).join(", ") || "—";
     main.innerHTML = banner() + `<p><a href="#markets">All markets</a></p>
       <h2>${esc(market.subtitle || market.title)}</h2>
@@ -487,8 +661,30 @@
         <p class="small">${esc(result.result_label)}. Decision candles: ${esc(result.decision_candles)}.</p>
         ${participantResultTable(result)}
       </section>`).join("") || "<p>No competition used this market.</p>"}
+      ${programRollupTable(market.ticker)}
       <h3>Ledger rows</h3>
       ${tradeTable(trades.slice(0, 100))}`;
+  }
+
+  function programRollupTable(ticker) {
+    const rollups = (state.pMarketByTicker && state.pMarketByTicker[ticker]) || [];
+    if (!rollups.length) {
+      return `<h3>Program market-by-market results</h3><p class="note">No program participant placed a simulated order on this market, or the program markets file is not loaded. ${sim()}</p>`;
+    }
+    const blocks = rollups.map((rollup) => {
+      const families = Object.entries(rollup.families || {}).map(([family, stats]) =>
+        `<tr><td>${esc(family)}</td><td class="num">${esc(stats.n)}</td><td class="num">${num(stats.median_pnl)}</td><td class="num">${num(stats.mean_pnl)}</td><td class="num">${num(stats.min_pnl)}</td><td class="num">${num(stats.max_pnl)}</td></tr>`
+      ).join("");
+      return `<section class="card">
+        <h4>${esc(universeNote(rollup.universe))} ${sim()}</h4>
+        <p class="small">${esc(rollup.result_label)}${rollup.official_result ? ` — official result ${esc(rollup.official_result)} (Kalshi field, not simulated)` : ""}. Decision candles: ${esc(rollup.decision_candles)}. Program participants that traded here: ${esc(rollup.participants_traded)}.</p>
+        <div class="table-wrap"><table><thead><tr>
+          <th>Family</th><th class="num">Participants</th><th class="num">Median P&amp;L</th><th class="num">Mean P&amp;L</th><th class="num">Min P&amp;L</th><th class="num">Max P&amp;L</th>
+        </tr></thead><tbody>${families || `<tr><td colspan="6">No family traded this market.</td></tr>`}</tbody></table></div>
+        <p class="small"><a href="${esc(rollup.source_url)}">Kalshi API record</a> · <a href="data/sim/program/markets.json">program markets.json</a></p>
+      </section>`;
+    }).join("");
+    return `<h3>Program market-by-market results</h3>${blocks}`;
   }
 
   function participantResultTable(result) {
@@ -559,13 +755,30 @@
     });
     const ids = Object.keys(series);
     const legend = ids.map((pid, i) => `<span><i class="swatch" style="background:${COLORS[i % COLORS.length]}"></i>${esc(pid)}</span>`).join("");
+    let programBlock = "";
+    try {
+      const activity = await ensureProgramActivity();
+      const blocks = PROGRAM_UNIVERSES.map(([universe, label]) => {
+        const days = (activity[universe] || []).slice(-30);
+        if (!days.length) return "";
+        const peak = Math.max(...days.map((row) => Number(row.ledger_rows)));
+        return `<h4>${esc(label)} <span class="muted small">${sim()} last ${esc(days.length)} active days</span></h4>
+          <div class="table-wrap"><table><thead><tr><th>Day (UTC)</th><th class="num">Ledger rows, 1000 participants</th><th></th></tr></thead><tbody>
+          ${days.map((row) => `<tr><td>${esc(row.day)}</td><td class="num">${esc(row.ledger_rows)}</td><td><span class="bar" style="width:${Math.max(1, Math.round(120 * Number(row.ledger_rows) / peak))}px"></span></td></tr>`).join("")}
+          </tbody></table></div>`;
+      }).join("");
+      programBlock = `<h3>Program activity over time</h3>
+        <p class="small">Ledger rows per day for the full 1,000-participant program, from the same stored candles. ${sim()}</p>
+        ${blocks || "<p class=\"note\">No program activity file loaded.</p>"}`;
+    } catch (err) { programBlock = ""; }
     main.innerHTML = banner() + `<h2>Strategy activity over time</h2>
       <p>Equity after simulated fills and settlements. The final liquidation mark is not on this clock if it has no timestamp. ${sim()}</p>
       ${toolbar()}
       ${equityChart(series, ids)}
       <div class="legend">${legend}</div>
       <h3>Simulated trades by day</h3>
-      ${activityTable(trades)}`;
+      ${activityTable(trades)}
+      ${programBlock}`;
     bindToolbar();
   }
 
@@ -614,16 +827,52 @@
       <td>${flag.market_ticker ? `<a href="#market/${esc(flag.market_ticker)}">${esc(flag.market_ticker)}</a>` : ""}</td>
       <td class="small">${esc(flag.competition_id || "")}</td>
     </tr>`).join("");
+    let programBlock = "";
+    try {
+      const manifest = await ensureProgramManifest();
+      if (manifest && !manifest._error && manifest.status !== "missing") {
+        const counts = Object.entries(manifest.flag_counts || {});
+        const samples = (manifest.flag_samples || []).map((flag) => `<li class="small"><code>${esc(flag.code)}</code> (${esc(flag.universe || "")}) ${esc(flag.market_ticker || "")}: ${esc((flag.message || "").slice(0, 180))}</li>`).join("");
+        programBlock = `<div class="card">
+          <h3>Program data flags</h3>
+          <p class="small">Data-quality flags raised while preparing the 1,000-strategy run. They name candle gaps and unusable market metadata, not strategy behavior.</p>
+          <div class="table-wrap"><table><tbody>${counts.map(([code, count]) => `<tr><td><code>${esc(code)}</code></td><td class="num">${esc(count)}</td></tr>`).join("") || `<tr><td>No program flags.</td></tr>`}</tbody></table></div>
+          ${samples ? `<details><summary>Sample flag messages</summary><ul class="clean">${samples}</ul></details>` : ""}
+        </div>`;
+      }
+    } catch (err) { programBlock = ""; }
     main.innerHTML = banner() + `<h2>Flags and irregularities</h2>
       <p>Review flags are not corrections. They mark a gap, a wide book, a failed request, or a fee type the engine did not treat as a plain quadratic taker fee.</p>
       ${toolbar()}
-      <div class="table-wrap"><table><thead><tr><th>Severity</th><th>Code</th><th>Message</th><th>Market</th><th>Competition</th></tr></thead><tbody>${body || `<tr><td colspan="5">No flags.</td></tr>`}</tbody></table></div>`;
+      <div class="table-wrap"><table><thead><tr><th>Severity</th><th>Code</th><th>Message</th><th>Market</th><th>Competition</th></tr></thead><tbody>${body || `<tr><td colspan="5">No flags.</td></tr>`}</tbody></table></div>
+      ${programBlock}`;
     bindToolbar();
   }
 
-  function renderQuality() {
+  async function renderQuality() {
     const q = state.summary.data_quality || {};
     const exchange = q.exchange_status || {};
+    let programBlock = "";
+    try {
+      const manifest = await ensureProgramManifest();
+      if (manifest && !manifest._error && manifest.status !== "missing") {
+        const replay = manifest.replay || {};
+        const clock = manifest.decision_clock || {};
+        const universeRows = Object.entries(manifest.universes || {}).map(([u, info]) =>
+          `<tr><td>${esc(u)}</td><td class="num">${esc(info.trade_rows)}</td><td class="num">${esc(info.runtime_seconds)}s</td><td class="small"><code>${esc(String(info.combined_ledger_sha256 || "").slice(0, 24))}…</code></td></tr>`
+        ).join("");
+        programBlock = `<div class="card">
+          <h3>Research program reproduction</h3>
+          <p>Program ${esc(manifest.program_version || "?")} on engine ${esc(manifest.engine_version || "?")}, built ${esc(manifest.generated_at || "—")}. ${esc(manifest.participants || 0)} participants, ${esc(manifest.trade_rows_total || 0)} ledger rows.</p>
+          <p class="small">Decision clock: ${esc(clock.rule || "")} Prior window: ${esc(clock.prior_window)} candles. ${esc(clock.settlement_rule || "")}</p>
+          <p class="small">Replay: ${esc(replay.status || "—")} — ${esc(replay.note || "")}</p>
+          <div class="table-wrap"><table><thead><tr><th>Universe</th><th class="num">Ledger rows</th><th class="num">Runtime</th><th>Combined ledger SHA-256</th></tr></thead><tbody>${universeRows}</tbody></table></div>
+          <p class="links"><a href="data/sim/program/manifest.json">manifest.json</a> <a href="data/sim/program/ledger_hashes.json">ledger_hashes.json</a> <a href="data/sim/program/SCHEMA.md">SCHEMA.md</a></p>
+        </div>`;
+      }
+    } catch (err) {
+      programBlock = "";
+    }
     main.innerHTML = banner() + `<h2>Data-quality status</h2>
       <div class="grid">
         <div class="stat"><b>${esc(q.status || "—")}</b><span>Bundle status</span></div>
@@ -651,6 +900,7 @@
         <p>Input SHA-256 of <code>data/kalshi/markets.jsonl</code>: <code>${esc(state.summary.input_sha256 || "")}</code></p>
         <p class="small">Engine ${esc(state.summary.engine_version)}. Build reruns every competition before writing and refuses a ledger that does not match. Replay: ${esc((state.summary.replay || {}).status || "not recorded")} ${esc((state.summary.replay || {}).ledger_sha256 || "")}.</p>
       </div>
+      ${programBlock}
       <p class="links"><a href="data/kalshi/manifest.json">manifest.json</a> <a href="data/kalshi/failures.json">failures.json</a> <a href="data/kalshi/SCHEMA.md">field sources</a></p>`;
   }
 
@@ -786,15 +1036,463 @@
         <p>The market payload has <code>fee_type</code> and <code>fee_multiplier</code>. It does not include the 0.07 coefficient. The <a href="https://kalshi.com/fee-schedule">fee schedule</a> retrieved 2026-09-24 lists most markets at multiplier 1 with a taker range of $0.07–$1.75 per 100 contracts. The engine uses round-up-to-cent of multiplier × 0.07 × contracts × price × (1 − price), which matches that range at 1 cent and at 50 cents. Fee-off runs are on the Compare page so the interpretation is not hidden inside the rank.</p>
       </div>
       <div class="card">
+        <h3>The 1000-strategy program</h3>
+        <p>Ten research topics, ten batches of one hundred parameterized strategies. Batch-001 trades at seeded random times and exists as the null band. Every variant is a predeclared hypothesis with fixed parameters. The program engine shares the primary engine's fill rule (<code>compute_fill</code>) and decision clock; a test compares the two engines' ledgers line by line, and the build replays batch-001 and refuses to publish on mismatch.</p>
+        <p class="small">Program ledgers stream to one gzipped CSV per batch and universe: participant, time, market, action, side, price, qty, fee, cash after, realized P&amp;L, fill source, note. The price column always names the stored candle field it came from. A strategy sees at most the 24 prior candles of its market — every declared lookback fits inside that window, which the tests assert.</p>
+        <p class="small"><a href="#program">Program overview</a> · <a href="#board">Program board</a> · <a href="#topics">Topics and hypotheses</a> · <a href="data/sim/program/SCHEMA.md">Ledger schema</a></p>
+      </div>
+      <div class="card">
         <h3>What was refused</h3>
         <ul class="clean">
           <li>No guessed nominees for sealed years.</li>
           <li>No filled-in Kalshi history when an endpoint failed or a candle had no price.</li>
           <li>No use of the fetch-time order book as if it had been the book at an earlier decision.</li>
           <li>No claim that this panel is the whole Kalshi exchange. The scope is in Data quality.</li>
+          <li>No family result presented as an edge when its median sits inside the batch-001 null band.</li>
         </ul>
       </div>
       <p><a href="docs/METHOD.md">Full method note</a> · <a href="LIMITATIONS.md">Limitations for the next session</a></p>`;
+  }
+
+  function nullBandRows(families) {
+    const bands = (families && families.null_band) || {};
+    return PROGRAM_UNIVERSES.map(([u, label, kind]) => {
+      const band = bands[u];
+      if (!band || !band.n) return "";
+      return `<tr>
+        <td>${esc(label)}<br><span class="muted small">${esc(kind)}</span></td>
+        <td class="num">${esc(band.n)}</td>
+        <td class="num">${num(band.p05 != null ? band.p05.toFixed(4) : "")}</td>
+        <td class="num">${num(band.median != null ? band.median.toFixed(4) : "")}</td>
+        <td class="num">${num(band.p95 != null ? band.p95.toFixed(4) : "")}</td>
+        <td class="num">${num(band.min != null ? band.min.toFixed(4) : "")} – ${num(band.max != null ? band.max.toFixed(4) : "")}</td>
+      </tr>`;
+    }).join("");
+  }
+
+  function universeNote(u) {
+    const found = PROGRAM_UNIVERSES.find((row) => row[0] === u);
+    return found ? `${found[1]} — ${found[2]}` : u;
+  }
+
+  function batchQuickStats(board, batch) {
+    const out = {};
+    board.filter((row) => row.b === batch).forEach((row) => {
+      (out[row.u] = out[row.u] || []).push(Number(row.eq));
+    });
+    Object.keys(out).forEach((u) => {
+      const values = out[u].sort((a, b) => a - b);
+      out[u] = { n: values.length, median: values[Math.floor((values.length - 1) / 2)], min: values[0], max: values[values.length - 1] };
+    });
+    return out;
+  }
+
+  async function renderProgram() {
+    main.innerHTML = `<p class="loading">Loading the program bundle…</p>`;
+    const manifest = await ensureProgramManifest();
+    if (!manifest || manifest._error || manifest.status === "missing") {
+      main.innerHTML = banner() + "<h2>The 1000-strategy research program</h2>" + programMissing();
+      return;
+    }
+    let families = null;
+    try { families = await ensureProgramFamilies(); } catch (err) { families = null; }
+    let board = [];
+    try { board = await ensureProgramBoard(); } catch (err) { board = []; }
+    const replay = manifest.replay || {};
+    const universeRows = Object.entries(manifest.universes || {}).map(([u, info]) => `<tr>
+      <td>${esc(universeNote(u))}<br><span class="muted small"><code>${esc(info.competition_id || "")}</code></span></td>
+      <td class="num">${esc(info.markets_used)}</td>
+      <td class="num">${esc(info.candle_events)}</td>
+      <td class="num">${esc(info.trade_rows)}</td>
+      <td class="num">${esc(info.open_positions)}</td>
+      <td class="small"><code title="Fold of the sorted per-participant ledger SHA-256 values. Reproduce any batch with scripts/verify_program.py.">${esc(String(info.combined_ledger_sha256 || "").slice(0, 16))}…</code></td>
+    </tr>`).join("");
+    const batchCards = (manifest.batches || []).map((batch) => {
+      const stats = board.length ? batchQuickStats(board, batch) : {};
+      const statLine = PROGRAM_UNIVERSES.map(([u, label]) => {
+        const row = stats[u];
+        if (!row) return "";
+        return `<span class="chip">${esc(label)} median ${esc(row.median != null ? row.median.toFixed(2) : "—")}</span>`;
+      }).join(" ");
+      return `<article class="card">
+        <h3><a href="#topics">${esc(batch)}</a></h3>
+        <p class="small">${statLine || "No ledger rows loaded."}</p>
+        <p class="small"><a href="data/sim/program/batches/${esc(batch)}.json">Batch report JSON</a> · <a href="#board">Board filtered to ${esc(batch)}</a> · ${sim()}</p>
+      </article>`;
+    }).join("");
+    const files = (manifest.files || []).map((file) => `<tr>
+      <td class="small"><a href="${esc(file.path)}">${esc(file.path)}</a></td>
+      <td class="num">${esc(file.bytes)}</td>
+      <td class="small"><code title="${esc(file.sha256)}">${esc(file.sha256.slice(0, 12))}…</code></td>
+    </tr>`).join("");
+    main.innerHTML = banner() + `<h2>The 1000-strategy research program</h2>
+      <p>${esc(manifest.participants)} simulated participants in ${esc((manifest.batches || []).length)} batches of 100, each batch one research topic, each variant one predeclared hypothesis. Same decision clock, size rules, and fee reading as the primary competitions. ${sim()} ${badge("review", "Not Kalshi users")}</p>
+      <div class="grid">
+        <div class="stat"><b>${esc(manifest.participants)}</b><span>Simulated participants</span></div>
+        <div class="stat"><b>${esc(manifest.trade_rows_total)}</b><span>Ledger rows (all paper)</span></div>
+        <div class="stat"><b>${esc(replay.status || "—")}</b><span>Replay of ${esc(replay.batch || "")} (${esc(replay.participants_checked || 0)} ledgers)</span></div>
+        <div class="stat"><b>${esc(manifest.generated_at || "—")}</b><span>Built at (UTC)</span></div>
+      </div>
+      <h3>Null band — the floor every claim has to clear</h3>
+      <p class="small">Distribution of the 100 random-entry participants (batch-001) per universe. A family median inside this band is not evidence of an edge. ${esc((families || {}).wording || "")}</p>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Universe</th><th class="num">n</th><th class="num">p05</th><th class="num">Median</th><th class="num">p95</th><th class="num">Min – max</th>
+      </tr></thead><tbody>${nullBandRows(families) || `<tr><td colspan="6">families.json not loaded.</td></tr>`}</tbody></table></div>
+      <h3>Universes</h3>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Universe</th><th class="num">Markets</th><th class="num">Candle events</th><th class="num">Ledger rows</th><th class="num">Open positions</th><th>Ledger hash</th>
+      </tr></thead><tbody>${universeRows}</tbody></table></div>
+      <h3>Batches</h3>
+      <div class="cards">${batchCards}</div>
+      <h3>How to verify a line</h3>
+      <div class="card">
+        <ul class="clean">
+          <li>Every ledger row's price names the candle field it came from. The candle is in <code>data/sim/candles/{ticker}.json</code>; the recipe is <a href="data/sim/program/SCHEMA.md">data/sim/program/SCHEMA.md</a>.</li>
+          <li>Replay any batch: <code>python scripts/verify_program.py batch-004</code>; the hashes are in <a href="data/sim/program/ledger_hashes.json">ledger_hashes.json</a>.</li>
+          <li>Audit cash, P&amp;L, and prices line by line: <code>python scripts/audit_program.py</code>. Last audit in this checkout: see LIMITATIONS.md.</li>
+          <li>The build re-ran ${esc(replay.batch || "the replay batch")} after the full pass and compared per-participant ledger hashes: ${badge(replay.status === "matched" ? "official" : "review", replay.status || "unknown")}.</li>
+        </ul>
+      </div>
+      <h3>File inventory (sha-256 in manifest.json)</h3>
+      <div class="table-wrap"><table><thead><tr><th>File</th><th class="num">Bytes</th><th>SHA-256</th></tr></thead><tbody>${files}</tbody></table></div>
+      <p class="links"><a href="#board">Program board</a> <a href="#families">Family results</a> <a href="#topics">Research topics</a> <a href="data/sim/program/manifest.json">manifest.json</a> <a href="data/sim/program/leaderboard.csv">leaderboard.csv</a></p>`;
+  }
+
+  function programBoardToolbar(familiesInUniverse) {
+    const batches = ["all"].concat([...new Set(state.pBoard.map((row) => row.b))].sort());
+    const opts = batches.map((b) => `<option value="${esc(b)}" ${state.pb.batch === b ? "selected" : ""}>${esc(b)}</option>`).join("");
+    const famOpts = ["all"].concat(familiesInUniverse).map((f) => `<option value="${esc(f)}" ${state.pb.family === f ? "selected" : ""}>${esc(f)}</option>`).join("");
+    const tabs = PROGRAM_UNIVERSES.map(([u, label, kind]) =>
+      `<button class="ghost" type="button" data-u="${esc(u)}" ${state.pb.u === u ? 'aria-current="true"' : ""}>${esc(label)}</button>`
+    ).join("");
+    return `<div class="toolbar">
+      <div>${tabs}</div>
+      <label>Batch<select id="pbbatch">${opts}</select></label>
+      <label>Family<select id="pbfamily">${famOpts}</select></label>
+      <label>Search<input id="pbq" type="search" value="${esc(state.pb.q)}" placeholder="Participant, strategy"></label>
+    </div>`;
+  }
+
+  const BOARD_COLUMNS = [
+    ["r", "Rank"], ["p", "Participant"], ["f", "Family"], ["s", "Strategy id"],
+    ["eq", "Equity"], ["real", "Realized"], ["unreal", "Unrealized"], ["fees", "Fees"],
+    ["n", "Trades"], ["mkts", "Markets"], ["dd", "Drawdown"], ["roi", "ROI"], ["wr", "Win rate"],
+  ];
+
+  async function renderProgramBoard() {
+    main.innerHTML = `<p class="loading">Loading the program board…</p>`;
+    const [manifest, board, people] = await Promise.all([ensureProgramManifest(), ensureProgramBoard().catch(() => null), ensureProgramPeople().catch(() => [])]);
+    if (!board) {
+      main.innerHTML = banner() + "<h2>Program board</h2>" + programMissing();
+      return;
+    }
+    let families = null;
+    try { families = await ensureProgramFamilies(); } catch (err) { families = null; }
+    const peopleById = {};
+    people.forEach((person) => { peopleById[person.id] = person; });
+    if (!PROGRAM_UNIVERSES.some(([u]) => u === state.pb.u)) state.pb.u = PROGRAM_UNIVERSES[0][0];
+    const universeRows = board.filter((row) => row.u === state.pb.u);
+    const familiesInUniverse = [...new Set(universeRows.map((row) => row.f))].sort();
+    const q = state.pb.q.trim().toLowerCase();
+    let rows = universeRows.filter((row) => {
+      if (state.pb.batch !== "all" && row.b !== state.pb.batch) return false;
+      if (state.pb.family !== "all" && row.f !== state.pb.family) return false;
+      if (!q) return true;
+      const person = peopleById[row.p] || {};
+      return `${row.p} ${row.s} ${person.display_name || ""} ${row.f}`.toLowerCase().includes(q);
+    });
+    const sortKey = state.pb.sort;
+    rows = rows.slice().sort((a, b) => {
+      if (sortKey === "p" || sortKey === "f" || sortKey === "s" || sortKey === "b") {
+        return state.pb.dir * String(a[sortKey]).localeCompare(String(b[sortKey]));
+      }
+      const av = a[sortKey] == null ? -Infinity : Number(a[sortKey]);
+      const bv = b[sortKey] == null ? -Infinity : Number(b[sortKey]);
+      return sortKey === "r" ? state.pb.dir * (av - bv) : state.pb.dir * (bv - av);
+    });
+    const nullBand = families && families.null_band ? families.null_band[state.pb.u] : null;
+    const pageSize = 50;
+    const pages = Math.max(1, Math.ceil(rows.length / pageSize));
+    state.pb.page = Math.min(state.pb.page, pages - 1);
+    const pageRows = rows.slice(state.pb.page * pageSize, (state.pb.page + 1) * pageSize);
+    const header = BOARD_COLUMNS.map(([key, label]) =>
+      `<th class="num"><button class="ghost sort" type="button" data-sort="${esc(key)}">${esc(label)}${state.pb.sort === key ? (state.pb.dir === 1 ? " ▲" : " ▼") : ""}</button></th>`
+    ).join("");
+    const body = pageRows.map((row) => {
+      const person = peopleById[row.p] || {};
+      return `<tr>
+        <td class="num">${esc(row.r)}${row.tied_flag ? " tie" : ""}</td>
+        <td><a href="#participant/${esc(row.p)}">${esc(row.p)}</a><br><span class="muted small">${esc(person.display_name || person.hypothesis || "")} ${sim()}</span></td>
+        <td><a href="#families" data-family-link="${esc(row.f)}">${esc(row.f)}</a></td>
+        <td class="small"><code>${esc(row.s)}</code></td>
+        <td class="num">${num(row.eq)}</td>
+        <td class="num">${num(row.real)}</td>
+        <td class="num">${num(row.unreal)}</td>
+        <td class="num">${num(row.fees)}</td>
+        <td class="num">${esc(row.n)}</td>
+        <td class="num">${esc(row.mkts)}</td>
+        <td class="num">${num(row.dd)}</td>
+        <td class="num">${num(row.roi)}</td>
+        <td class="num">${row.wr == null ? "—" : num(row.wr)}</td>
+      </tr>`;
+    }).join("");
+    main.innerHTML = banner() + `<h2>Program board</h2>
+      <p>${esc(universeNote(state.pb.u))}. All ${esc(board.length / 3)} participants share the same stored prices and $10,000 paper cash. ${sim()}</p>
+      ${nullBand ? `<p class="note">Null band here: p05 ${esc(nullBand.p05.toFixed(2))}, median ${esc(nullBand.median.toFixed(2))}, p95 ${esc(nullBand.p95.toFixed(2))} across ${esc(nullBand.n)} random entries. Outranking p95 is the floor, not a trophy.</p>` : ""}
+      ${programBoardToolbar(familiesInUniverse)}
+      <p class="muted small">${esc(rows.length)} of ${esc(universeRows.length)} participants shown after filters. Ledger rows per participant are on the participant page.</p>
+      <div class="table-wrap"><table><thead><tr>${header}</tr></thead><tbody>${body || `<tr><td colspan="${BOARD_COLUMNS.length}">No rows.</td></tr>`}</tbody></table></div>
+      <p><button class="ghost" type="button" id="pbprev" ${state.pb.page === 0 ? "disabled" : ""}>Previous</button>
+      Page ${esc(state.pb.page + 1)} of ${esc(pages)}
+      <button class="ghost" type="button" id="pbnext" ${state.pb.page >= pages - 1 ? "disabled" : ""}>Next</button></p>`;
+    main.querySelectorAll("[data-u]").forEach((button) => button.addEventListener("click", () => {
+      state.pb.u = button.getAttribute("data-u");
+      state.pb.page = 0;
+      render();
+    }));
+    main.querySelectorAll("[data-sort]").forEach((button) => button.addEventListener("click", () => {
+      const key = button.getAttribute("data-sort");
+      if (state.pb.sort === key) state.pb.dir *= -1;
+      else { state.pb.sort = key; state.pb.dir = key === "r" ? 1 : -1; }
+      render();
+    }));
+    main.querySelectorAll("[data-family-link]").forEach((link) => link.addEventListener("click", () => {
+      state.fam.family = link.getAttribute("data-family-link");
+      state.fam.u = state.pb.u;
+    }));
+    const batchSelect = document.getElementById("pbbatch");
+    const familySelect = document.getElementById("pbfamily");
+    const qInput = document.getElementById("pbq");
+    if (batchSelect) batchSelect.addEventListener("change", () => { state.pb.batch = batchSelect.value; state.pb.page = 0; render(); });
+    if (familySelect) familySelect.addEventListener("change", () => { state.pb.family = familySelect.value; state.pb.page = 0; render(); });
+    if (qInput) qInput.addEventListener("input", () => { state.pb.q = qInput.value; state.pb.page = 0; render(); });
+    const prev = document.getElementById("pbprev");
+    const next = document.getElementById("pbnext");
+    if (prev) prev.addEventListener("click", () => { state.pb.page = Math.max(0, state.pb.page - 1); render(); });
+    if (next) next.addEventListener("click", () => { state.pb.page = Math.min(pages - 1, state.pb.page + 1); render(); });
+  }
+
+  function sensitivityTable(sensitivity) {
+    const families = Object.keys(sensitivity || {});
+    if (!families.length) return "";
+    return families.map((family) => {
+      const rows = Object.entries(sensitivity[family]).map(([param, points]) =>
+        `<tr><td class="small">${esc(param)}</td><td class="small">${points.map((point) =>
+          `<span class="chip" title="n=${esc(point.n)} variants">${esc(point.value)} → ${num(point.median_equity.toFixed(2))}</span>`
+        ).join(" ")}</td></tr>`
+      ).join("");
+      return `<h4>${esc(family)} — median equity by parameter value</h4>
+        <div class="table-wrap"><table><tbody>${rows}</tbody></table></div>`;
+    }).join("");
+  }
+
+  async function renderFamilies() {
+    main.innerHTML = `<p class="loading">Loading family results…</p>`;
+    const [families, board, people] = await Promise.all([
+      ensureProgramFamilies().catch(() => null),
+      ensureProgramBoard().catch(() => null),
+      ensureProgramPeople().catch(() => []),
+    ]);
+    if (!families || !board) {
+      main.innerHTML = banner() + "<h2>Family results</h2>" + programMissing();
+      return;
+    }
+    if (!PROGRAM_UNIVERSES.some(([u]) => u === state.fam.u)) state.fam.u = PROGRAM_UNIVERSES[0][0];
+    const u = state.fam.u;
+    const bands = families.null_band || {};
+    const band = bands[u] || {};
+    const names = Object.keys(families.families || {}).sort();
+    const peopleById = {};
+    people.forEach((person) => { peopleById[person.id] = person; });
+    const sidToVariant = {};
+    people.forEach((person) => { sidToVariant[person.strategy_id] = person; });
+    const rows = names.map((family) => {
+      const stats = (families.families[family] || {})[u];
+      if (!stats || family === "null_model") return "";
+      const top = (stats.top || [])[2] || {};
+      const bottom = (stats.bottom || [])[0] || {};
+      const topPerson = sidToVariant[top.s] || {};
+      return `<tr>
+        <td><a href="#families" data-fam="${esc(family)}"><strong>${esc(family)}</strong></a></td>
+        <td class="num">${esc(stats.n)}</td>
+        <td class="num">${num(stats.median != null ? stats.median.toFixed(2) : "")}</td>
+        <td class="num">${num(stats.q1 != null ? stats.q1.toFixed(2) : "")} – ${num(stats.q3 != null ? stats.q3.toFixed(2) : "")}</td>
+        <td class="num">${esc((100 * (stats.share_above_null_p95 || 0)).toFixed(1))}%</td>
+        <td class="small">${topPerson.id ? `<a href="#participant/${esc(topPerson.id)}">${esc(top.s)}</a> ${num(top.eq)}` : "—"}</td>
+        <td class="small">${bottom.s ? `${esc(bottom.s)} ${num(bottom.eq)}` : "—"}</td>
+      </tr>`;
+    }).join("");
+    const tabs = PROGRAM_UNIVERSES.map(([uu, label]) =>
+      `<button class="ghost" type="button" data-u="${esc(uu)}" ${u === uu ? 'aria-current="true"' : ""}>${esc(label)}</button>`
+    ).join("");
+    let detail = "";
+    if (state.fam.family && (families.families || {})[state.fam.family]) {
+      const family = state.fam.family;
+      const stats = (families.families[family] || {})[u] || {};
+      const variants = people.filter((person) => person.family === family);
+      const boardById = {};
+      board.filter((row) => row.u === u && row.f === family).forEach((row) => { boardById[row.p] = row; });
+      const sorted = variants.slice().sort((a, b) => {
+        const ra = boardById[a.id] || { r: 99999 };
+        const rb = boardById[b.id] || { r: 99999 };
+        return ra.r - rb.r;
+      });
+      detail = `<h3>${esc(family)} on ${esc(universeNote(u))}</h3>
+        <p class="small">${esc((variants[0] || {}).hypothesis ? "Each variant below is one predeclared hypothesis. Parameters make the difference; the entry rule is shared." : "")}</p>
+        <div class="table-wrap"><table><thead><tr>
+          <th class="num">Rank</th><th>Variant</th><th>Hypothesis</th><th class="num">Equity</th><th class="num">Fees</th><th class="num">Trades</th>
+        </tr></thead><tbody>${sorted.map((person) => {
+          const row = boardById[person.id] || {};
+          return `<tr>
+            <td class="num">${esc(row.r != null ? row.r : "—")}</td>
+            <td><a href="#participant/${esc(person.id)}">${esc(person.display_name)}</a><br><code class="small">${esc(person.strategy_id)}</code></td>
+            <td class="small">${esc(person.hypothesis)}</td>
+            <td class="num">${row.eq != null ? num(row.eq) : "—"}</td>
+            <td class="num">${row.fees != null ? num(row.fees) : "—"}</td>
+            <td class="num">${row.n != null ? esc(row.n) : "—"}</td>
+          </tr>`;
+        }).join("")}</tbody></table></div>
+        <p class="small">Family stats on this universe: median ${num(stats.median != null ? stats.median.toFixed(2) : "")}, n=${esc(stats.n)}, share above the null p95 ${esc((100 * (stats.share_above_null_p95 || 0)).toFixed(1))}%.</p>`;
+    }
+    main.innerHTML = banner() + `<h2>Family results</h2>
+      <p>A family shares one entry rule; variants scan its parameters. Reading a family median against the null band answers "does this rule do anything at all on this snapshot?" ${sim()}</p>
+      <p class="note">Null band on ${esc(universeNote(u))}: median ${esc(band.median != null ? band.median.toFixed(2) : "—")}, p95 ${esc(band.p95 != null ? band.p95.toFixed(2) : "—")}. ${esc(families.wording || "")}</p>
+      <div class="toolbar"><div>${tabs}</div></div>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Family</th><th class="num">Variants</th><th class="num">Median equity</th><th class="num">q1 – q3</th><th class="num">Above null p95</th><th>Top variant</th><th>Bottom variant</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>
+      ${detail}
+      <p class="links"><a href="#board">Program board</a> <a href="#topics">Research topics</a></p>`;
+    main.querySelectorAll("[data-u]").forEach((button) => button.addEventListener("click", () => {
+      state.fam.u = button.getAttribute("data-u");
+      render();
+    }));
+    main.querySelectorAll("[data-fam]").forEach((link) => link.addEventListener("click", () => {
+      state.fam.family = link.getAttribute("data-fam");
+      state.fam.u = state.fam.u;
+      render();
+    }));
+  }
+
+  async function renderTopics() {
+    main.innerHTML = `<p class="loading">Loading the research topics…</p>`;
+    const manifest = await ensureProgramManifest();
+    if (!manifest || manifest.status === "missing") {
+      main.innerHTML = banner() + "<h2>Research topics</h2>" + programMissing();
+      return;
+    }
+    const batches = manifest.batches || [];
+    let reports = [];
+    try {
+      reports = await Promise.all(batches.map((batch) => ensureBatchReport(batch)));
+    } catch (err) {
+      reports = [];
+    }
+    let people = [];
+    try { people = await ensureProgramPeople(); } catch (err) { people = []; }
+    const sections = reports.map((report, index) => {
+      const batch = batches[index];
+      const variants = people.filter((person) => person.batch === batch);
+      const universeBlocks = Object.entries(report.universes || {}).map(([u, info]) => {
+        const best = info.best || {};
+        const worst = info.worst || {};
+        return `<div class="card">
+          <h4>${esc(universeNote(u))}</h4>
+          <p class="small">
+            ${esc(info.entered)} of ${esc((info.leaderboard || []).length)} variants placed a simulated order.
+            Median equity ${num(info.equity && info.equity.median != null ? info.equity.median.toFixed(2) : "—")};
+            best ${best.p ? `<a href="#participant/${esc(best.p)}">${esc(best.p)}</a> ${num(best.eq)}` : "—"};
+            worst ${worst.p ? `${esc(worst.p)} ${num(worst.eq)}` : "—"}.
+            Share above the null p95: ${esc((100 * (info.share_above_null_p95 || 0)).toFixed(1))}%.
+            Ledger rows: ${esc(info.trade_rows)}.
+          </p>
+          <p class="small">Null band here: median ${esc(info.null_band && info.null_band.median != null ? info.null_band.median.toFixed(2) : "—")}, p05–p95 ${esc(info.null_band && info.null_band.p05 != null ? info.null_band.p05.toFixed(2) : "—")}–${esc(info.null_band && info.null_band.p95 != null ? info.null_band.p95.toFixed(2) : "—")}.</p>
+          ${sensitivityTable(info.param_sensitivity)}
+          <p class="small"><a href="${esc(info.trades_csv)}">Gzipped simulated ledger CSV</a> · ${sim()}</p>
+        </div>`;
+      }).join("");
+      const hypothesisList = variants.map((person) =>
+        `<li><strong><a href="#participant/${esc(person.id)}">${esc(person.display_name)}</a></strong> <code class="small">${esc(person.strategy_id)}</code><br>
+        <span class="muted small">${esc(JSON.stringify(person.parameters))}</span><br>${esc(person.hypothesis)}</li>`
+      ).join("");
+      return `<section class="card" id="${esc(batch)}">
+        <h3>${esc(batch)} — ${esc(report.topic)}</h3>
+        <p>${esc(report.statement)}</p>
+        <p class="small muted">${esc(report.variant_count)} variants, families: ${esc((report.families || []).join(", "))}. ${esc((report.universes?.nobel_settled?.caution) || "")}</p>
+        <details><summary>Open the ${esc(report.variant_count)} predeclared hypotheses, one by one</summary>
+          <ul class="clean">${hypothesisList}</ul>
+        </details>
+        ${universeBlocks}
+        <p class="links"><a href="data/sim/program/batches/${esc(batch)}.json">Batch JSON</a> <a href="#board">Board</a></p>
+      </section>`;
+    }).join("");
+    main.innerHTML = banner() + `<h2>Research topics</h2>
+      <p>Ten topics, ten batches, one hundred predeclared hypotheses per topic. Batch-001 is the null reference on purpose: it exists so no other number has to be read as skill. ${sim()}</p>
+      ${sections || "<p>Batch reports did not load.</p>"}`;
+  }
+
+  async function renderProgramParticipant(person) {
+    const [board, manifest] = await Promise.all([ensureProgramBoard().catch(() => null), ensureProgramManifest()]);
+    const boards = board ? board.filter((row) => row.p === person.id) : [];
+    const boardRows = boards.map((row) => `<tr>
+      <td>${esc(universeNote(row.u))}</td>
+      <td class="num">${esc(row.r)}${row.tied_flag ? " tie" : ""}</td>
+      <td class="num">${num(row.eq)}</td>
+      <td class="num">${num(row.real)}</td>
+      <td class="num">${num(row.unreal)}</td>
+      <td class="num">${num(row.fees)}</td>
+      <td class="num">${esc(row.n)}</td>
+      <td class="num">${esc(row.mkts)}</td>
+      <td class="num">${row.wr == null ? "—" : num(row.wr)}</td>
+      <td class="num">${num(row.dd)}</td>
+      <td class="num">${esc(fmtUnix(row.t0))}<br>${esc(fmtUnix(row.t1))}</td>
+    </tr>`).join("");
+    const ledgerButtons = PROGRAM_UNIVERSES.map(([u, label]) =>
+      `<button class="ghost" type="button" data-ledger="${esc(person.batch)}|${esc(u)}|${esc(person.id)}">${esc(label)} ledger rows</button>`
+    ).join(" ");
+    main.innerHTML = banner() + `<p><a href="#board">Program board</a> · <a href="#topics">${esc(person.batch)}</a></p>
+      <h2>${esc(person.display_name)}</h2>
+      <p><code>${esc(person.username)}</code> · strategy <code>${esc(person.strategy_id)}</code> · family <a href="#families">${esc(person.family)}</a> ${sim()} ${badge("review", "Not a real account")}</p>
+      <div class="card">
+        <h3>Predeclared hypothesis</h3>
+        <p>${esc(person.hypothesis)}</p>
+        <p class="small">Parameters: <code>${esc(JSON.stringify(person.parameters))}</code></p>
+        <p class="small">Topic: ${esc(person.topic)} · batch ${esc(person.batch)}.</p>
+      </div>
+      <h3>Performance by universe</h3>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Universe</th><th class="num">Rank</th><th class="num">Equity</th><th class="num">Realized</th><th class="num">Unrealized</th><th class="num">Fees</th><th class="num">Trades</th><th class="num">Markets</th><th class="num">Win rate</th><th class="num">Drawdown</th><th>First / last ledger row (UTC)</th>
+      </tr></thead><tbody>${boardRows || `<tr><td colspan="11">program leaderboard not loaded</td></tr>`}</tbody></table></div>
+      <h3>Simulated ledger rows</h3>
+      <p class="small">Rows stream from the gzipped per-batch ledgers. Loading one file may take a few seconds. The price in every row names its candle field; audit recipe in <a href="data/sim/program/SCHEMA.md">SCHEMA.md</a>.</p>
+      <p>${ledgerButtons}</p>
+      <div id="pledger"></div>`;
+    main.querySelectorAll("[data-ledger]").forEach((button) => button.addEventListener("click", async () => {
+      const [batch, universe, pid] = button.getAttribute("data-ledger").split("|");
+      const mount = document.getElementById("pledger");
+      mount.innerHTML = `<p class="loading">Loading ${esc(universe)} ledger…</p>`;
+      try {
+        const rows = await loadProgramLedger(batch, universe, pid);
+        const shown = rows.slice(0, 300);
+        mount.innerHTML = `<p class="small">${esc(rows.length)} ledger rows for ${esc(pid)} on ${esc(universe)}. Showing ${esc(shown.length)}. Full file: <a href="data/sim/program/trades/${esc(batch)}/${esc(universe)}.csv.gz">${esc(batch)}/${esc(universe)}.csv.gz</a>. ${sim()}</p>
+          <div class="table-wrap"><table><thead><tr>
+            <th>Time (UTC)</th><th>Market</th><th>Action</th><th class="num">Price</th><th class="num">Qty</th><th class="num">Fee</th><th class="num">Cash after</th><th class="num">Realized</th><th>Fill src</th><th>Note</th>
+          </tr></thead><tbody>${shown.map((row) => `<tr>
+            <td class="small">${esc(fmtUnix(row.ts_unix))}</td>
+            <td><a href="#market/${esc(row.ticker)}">${esc(row.ticker)}</a></td>
+            <td>${esc(row.action)} ${esc(row.side)}</td>
+            <td class="num">${esc(row.price)}</td>
+            <td class="num">${esc(row.qty)}</td>
+            <td class="num">${num(row.fee)}</td>
+            <td class="num">${num(row.cash_after)}</td>
+            <td class="num">${num(row.realized_pnl)}</td>
+            <td class="num">${esc(row.fill_src)}</td>
+            <td>${programNote(row.note)}</td>
+          </tr>`).join("") || `<tr><td colspan="10">No rows for this participant in this universe.</td></tr>`}</tbody></table></div>`;
+      } catch (err) {
+        mount.innerHTML = `<p class="note">Ledger load failed: ${esc(err.message)}. The file is <a href="data/sim/program/trades/${esc(batch)}/${esc(universe)}.csv.gz">${esc(batch)}/${esc(universe)}.csv.gz</a>.</p>`;
+      }
+    }));
   }
 
   function renderMissing(err) {
@@ -825,6 +1523,10 @@
       state.competition = first ? first.config.competition_id : "";
     }
     if (state.view === "leaderboard") return renderLeaderboard();
+    if (state.view === "board") return renderProgramBoard();
+    if (state.view === "program") return renderProgram();
+    if (state.view === "families") return renderFamilies();
+    if (state.view === "topics") return renderTopics();
     if (state.view === "competitions") return renderCompetitions();
     if (state.view === "participants") return renderParticipants();
     if (state.view === "participant") return renderParticipant();

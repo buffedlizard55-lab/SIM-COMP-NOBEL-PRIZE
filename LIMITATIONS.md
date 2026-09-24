@@ -1,6 +1,37 @@
 # Limitations for the next session
 
-Written 2026-09-24, after the first working desk. These are the gaps that still block a stronger project. They are not hidden in the leaderboard.
+## 2026-09-24 (second session): the 1000-strategy program
+
+What changed this session: the simulated layer grew from 11 primary strategies to 1,011 participants. The research program (`simcomp/research_program.py`, `simcomp/program.py`) runs 1,000 parameterized strategies in 10 batches of 100 over the same three universes, with the same decision clock, size rules, and fee reading. Both engines share `compute_fill`; parity between them is tested; batch-001 is replayed after every full pass and the build aborts on mismatch. New limits this session:
+
+1. The program runs 1,000 participants per universe in one pass and streams ledgers to 30 gzipped CSVs. Runtime in the sandbox was about 115 seconds for 796,804 ledger rows, plus the primary competitions (which run twice for the replay proof). The GitHub Actions workflow timeout was raised to 60 minutes because collection plus the older double-run plus the program now shares one job. If collection gets slower, split collect and simulate into two jobs.
+2. Program ledgers are compact: note codes instead of full reason strings, and no candle fields copied onto each row. The full numeric justification for a row is reproducible from `data/sim/candles/{ticker}.json` plus the variant's parameters; `data/sim/program/SCHEMA.md` is the recipe. The primary 11-participant ledger keeps the rich per-field format. If a reviewer wants program rows in the rich format, the only honest way is a re-run per batch (`scripts/verify_program.py`); storing both formats for ~800k rows would roughly double repository size.
+3. The strategy view is a 24-candle window. Every registered lookback fits inside it and the registry refuses a variant that needs more; a future family with a longer lookback must raise `PROGRAM_PRIOR_WINDOW` deliberately, not silently.
+4. The null band is 100 random-entry variants. It is a floor, not a significance test at 100 trials; the share-above-p95 statistic is descriptive.
+5. Program equity curves are not stored — only final equity, drawdown, and per-market rollups. Investigating "when did this variant go wrong" uses the ledger rows, not a curve.
+6. The site board loads `leaderboard.json` (~1.1 MB) and participant drill-down decompresses a whole batch ledger in the browser. That was acceptable here; if batches grow, move to per-participant files.
+7. The audit in `scripts/audit_program.py` recomputes cash, P&L, fill prices against stored candles, ledger-row field counts, forward-universe settlement absence, and manifest hashes (run 2026-09-24: 796,804 rows, 0 clock/cash/P&L violations, 4,000 price samples matched, manifest clean). It does not re-derive the strategy intents — that is what the replay proof and parity tests are for.
+8. 2025 physics, chemistry, and medicine 2025 Kalshi contracts are still absent from the stored snapshot for the historical endpoint reasons documented below; the forward universe covers the 2026 events. No 2026 Nobel settlement exists yet (announcements start 6 October 2026), so every 2026-universe rank is a liquidation mark.
+
+Second review session, what it caught and fixed (kept here because they are easy to re-break):
+
+1. Site + ledger CSV: the site ledger parser split naively on commas. Two latent bugs — notes could carry a comma and Python's csv module writes CRLF (a bare `\r` would have glued itself to the last column). The build now guarantees comma-free, `\r`-free note codes, and the site parser is a small quoted/CRLF-safe CSV reader. Keeping rows comma-free at the writer instead of only hardening the reader is done on purpose: `awk` and `split(",")` keep working for a reviewer.
+2. Engine parity probe: running the program engine with full-history views exposed a genuine divergence for exactly one primary strategy — `volume_momentum` reads the unbounded prior list. Registered program families are all window-bounded (deepest lookback 15 of 24), so program results are unaffected, and a test now refuses any registry entry that breaks the window. Full-history runs stay byte-identical to the primary engine.
+3. `markets.json` existed with no consumer: program market-by-market rollups are now on every market page, under the primary results, with the null cohort median for reference. Program activity per day and program data flags are on the Activity and Flags views.
+4. The audit now also rejects ledger rows with the wrong field count and any settlement row in the forward universe.
+
+### Suggested next session, in order (updated)
+
+1. After the Actions run on `main`, diff the fresh snapshot: confirm `failures.json`, re-read the null band and the family medians before trusting any rank, and rerun `scripts/audit_program.py`.
+2. After 6–13 October 2026, ingest the new prize records from the official API (not from Kalshi prices), then let the forward competitions settle from the Kalshi `result` field only. Do not type winners in by hand from headlines.
+3. Re-fetch the Nobel API and one nomination year page from a network that can reach nobelprize.org; diff against `catalog.json`.
+4. Add `GET /markets/trades` archiving so the decision clock can move from candle closes to the trade tape, with the same no-lookahead rule.
+5. Add a daily-sampled equity curve per program participant if the site needs time-series views beyond the primary 11.
+6. Consider splitting the Actions job (collect → simulate) and caching `data/sim/candles` between runs.
+
+## 2026-09-24 (first session): after the first working desk
+
+These are the gaps that still block a stronger project. They are not hidden in the leaderboard.
 
 ## Collection
 

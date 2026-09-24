@@ -1,0 +1,403 @@
+{
+  "program_version": "2.0.0",
+  "engine_version": "1.0.0",
+  "generated_at_unix": 1790279271,
+  "generated_at": "2026-09-24T19:47:51Z",
+  "generated_from": "data/kalshi/markets.jsonl",
+  "participants": 1000,
+  "batches": [
+    "batch-001",
+    "batch-002",
+    "batch-003",
+    "batch-004",
+    "batch-005",
+    "batch-006",
+    "batch-007",
+    "batch-008",
+    "batch-009",
+    "batch-010"
+  ],
+  "variant_count": 1000,
+  "trade_rows_total": 796804,
+  "universes": {
+    "nobel_forward": {
+      "competition_id": "program-nobel-forward",
+      "kind": "forward_simulation",
+      "data_tier": "live_kalshi",
+      "markets_used": 134,
+      "candle_events": 7908,
+      "runtime_seconds": 49.18,
+      "trade_rows": 260784,
+      "combined_ledger_sha256": "acbdf99b74689aacb02dcef34c42224926fc378ee022fd3a0b0be016ccd9d87f",
+      "open_positions": 34792
+    },
+    "nobel_settled": {
+      "competition_id": "program-nobel-settled",
+      "kind": "historical_backtest",
+      "data_tier": "historical_kalshi",
+      "markets_used": 66,
+      "candle_events": 6875,
+      "runtime_seconds": 40.521,
+      "trade_rows": 224658,
+      "combined_ledger_sha256": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
+      "open_positions": 0
+    },
+    "panel_settled": {
+      "competition_id": "program-panel-settled",
+      "kind": "historical_backtest",
+      "data_tier": "historical_kalshi",
+      "markets_used": 50,
+      "candle_events": 4702,
+      "runtime_seconds": 34.097,
+      "trade_rows": 311362,
+      "combined_ledger_sha256": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3",
+      "open_positions": 0
+    }
+  },
+  "replay": {
+    "status": "matched",
+    "batch": "batch-001",
+    "participants_checked": 300,
+    "universes": {
+      "nobel_forward": "acbdf99b74689aacb02dcef34c42224926fc378ee022fd3a0b0be016ccd9d87f",
+      "nobel_settled": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
+      "panel_settled": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3"
+    },
+    "note": "batch-001 was rerun against the stored candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill.",
+    "replay_universe_hashes": {
+      "nobel_forward": "921dd167ed999f899a8f65a1f7996f33ec11768b185a400ecb49c566643637ca",
+      "nobel_settled": "b538de95ac560e4744a1b19469c3604516433e8b49a8cbef05f89777ad603bfb",
+      "panel_settled": "572d1e3111e8d8dbef10ae25ad703b9ef0048a0ddce138cc126aa06ab93dd712"
+    }
+  },
+  "decision_clock": {
+    "rule": "A decision at candle end T uses only that market's candles with end_period_ts <= T, and only when T is strictly before settlement_ts. Same rule as the primary competitions.",
+    "prior_window": 24,
+    "settlement_rule": "Official result applied only at settlement_ts, after the decision loop."
+  },
+  "flag_counts": {
+    "no_pre_settlement_candles": 14
+  },
+  "flag_samples": [
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-CHOW has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-CHOW"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-CONC has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-CONC"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-IAJ has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-IAJ"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-ICRC has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-ICRC"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-IPRA has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-IPRA"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-ISS has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-ISS"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-MMEY has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-MMEY"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-PCFF has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-PCFF"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-RSF has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-RSF"
+    },
+    {
+      "universe": "nobel_forward",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-26-SGSV has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-26-SGSV"
+    },
+    {
+      "universe": "nobel_settled",
+      "code": "no_pre_settlement_candles",
+      "severity": "info",
+      "message": "KXNOBELPEACE-25 has no candlestick ending before settlement (or before a proved decision clock).",
+      "market_ticker": "KXNOBELPEACE-25"
+    }
+  ],
+  "disclaimer": "Every participant, trade, position, and P&L figure in the program is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices and results are Kalshi data only where a source URL is shown.",
+  "files": [
+    {
+      "path": "data/sim/program/activity.json",
+      "bytes": 48253,
+      "sha256": "0417c52d78e82922c1defec702eee7d69f61a9004e48bb18dfdda70874b45938"
+    },
+    {
+      "path": "data/sim/program/batches/batch-001.json",
+      "bytes": 116278,
+      "sha256": "19a28b087a439038fe6d4c965ab8746f6f9b89c70b2e84d03fe10a7027962eb3"
+    },
+    {
+      "path": "data/sim/program/batches/batch-002.json",
+      "bytes": 115388,
+      "sha256": "675b30cad53dce935e3bc103776ede31d3fff77f03bf25e47d72952eab682114"
+    },
+    {
+      "path": "data/sim/program/batches/batch-003.json",
+      "bytes": 119704,
+      "sha256": "1fcea945a53b2cb9ef78e99507c54c685ce8ba45cbca28ab69b48464e97505e3"
+    },
+    {
+      "path": "data/sim/program/batches/batch-004.json",
+      "bytes": 118783,
+      "sha256": "dfebd44c20b468460ace4885c03056b459a36c2125ddae0f51fb632a6c718c76"
+    },
+    {
+      "path": "data/sim/program/batches/batch-005.json",
+      "bytes": 120195,
+      "sha256": "0e07e4480a5d3b07aae358e968a81963bfe14f14660f10608643638f46666bc1"
+    },
+    {
+      "path": "data/sim/program/batches/batch-006.json",
+      "bytes": 121116,
+      "sha256": "f705c9c8cb9323c068ac91e80e1e465954d3abb0319f5ca5d54a0c186a96c088"
+    },
+    {
+      "path": "data/sim/program/batches/batch-007.json",
+      "bytes": 124157,
+      "sha256": "0360f2d007e4cc6f88c238bba35094e92899011655e70694430cdec774a21943"
+    },
+    {
+      "path": "data/sim/program/batches/batch-008.json",
+      "bytes": 127276,
+      "sha256": "b0d5c11729d44ea19d6e054fe7fed680ab5202acf9f4d66ab978a37fb487e241"
+    },
+    {
+      "path": "data/sim/program/batches/batch-009.json",
+      "bytes": 122432,
+      "sha256": "2a1f50314785e76ab630f2f76722676dc44aeebb7ab97b80215eca44fcb3e9bd"
+    },
+    {
+      "path": "data/sim/program/batches/batch-010.json",
+      "bytes": 124595,
+      "sha256": "fcca1b25042e1b0d8bdd973a87eba031d34f71d82377140cc196007206bf596e"
+    },
+    {
+      "path": "data/sim/program/families.json",
+      "bytes": 32470,
+      "sha256": "650db281d344d18fd39c21b734585bd241eb3440280cc654c060493d5605d281"
+    },
+    {
+      "path": "data/sim/program/leaderboard.csv",
+      "bytes": 588096,
+      "sha256": "b3d035d975ef9cc58043f81f18313288c2d894fa19de7a0ee523cfdefde42f18"
+    },
+    {
+      "path": "data/sim/program/leaderboard.json",
+      "bytes": 1127409,
+      "sha256": "9ecf52f9059a20a6ce794485bc25688e4647082b3d5350e243d1a4dbb2a59a1e"
+    },
+    {
+      "path": "data/sim/program/ledger_hashes.json",
+      "bytes": 246055,
+      "sha256": "bda94699c0731f9f83c91f28fb504ec802f5ca2552c8851ba6c2c33be0568cbc"
+    },
+    {
+      "path": "data/sim/program/markets.json",
+      "bytes": 360016,
+      "sha256": "dbcc820322dc4ae5d8a88fcbcdc18ec9ab6f1bfc96179aafdc84b906e884c35f"
+    },
+    {
+      "path": "data/sim/program/notes.json",
+      "bytes": 60975,
+      "sha256": "9af8ffb130f483e05f6b3ff189b8dee04c3ed3c6580cd60df277e7bb4404d134"
+    },
+    {
+      "path": "data/sim/program/participants.json",
+      "bytes": 449748,
+      "sha256": "ba756dbffb617fc33c990981a6243e653e60e561da0cca11e74bc992f8e00902"
+    },
+    {
+      "path": "data/sim/program/positions.csv.gz",
+      "bytes": 169406,
+      "sha256": "4a061bc9ee8665ceebd88c1bb974e66546fb04ed3fab28cbfd4a1a454a2c816c"
+    },
+    {
+      "path": "data/sim/program/strategies.json",
+      "bytes": 425269,
+      "sha256": "8102a5833665633195b8ac3ddd471ea278df394f5b121f5a88d07e1d4587f666"
+    },
+    {
+      "path": "data/sim/program/trades/batch-001/nobel_forward.csv.gz",
+      "bytes": 69174,
+      "sha256": "ba8cbccd78c02b68fbe0f8761035cf017d6ce4602e96d6c37e1482b9897bedff"
+    },
+    {
+      "path": "data/sim/program/trades/batch-001/nobel_settled.csv.gz",
+      "bytes": 92905,
+      "sha256": "25e01cd148c682074e4818a2b88dd8093d237564c3b200f0c78afde073bb77a0"
+    },
+    {
+      "path": "data/sim/program/trades/batch-001/panel_settled.csv.gz",
+      "bytes": 79552,
+      "sha256": "7aa21d393b1b8d5f7ea27ead0e4106428c1018a67604af9bb8f4c6183dc9d650"
+    },
+    {
+      "path": "data/sim/program/trades/batch-002/nobel_settled.csv.gz",
+      "bytes": 1517,
+      "sha256": "48229151f612539884ecb6b39ec38e892c5993f0a84e8a93c2c6c19ba8d7cf60"
+    },
+    {
+      "path": "data/sim/program/trades/batch-002/panel_settled.csv.gz",
+      "bytes": 20358,
+      "sha256": "d807d77c571301b7b38f77d0908e2332d45677425b2be314d4748c0c03c88a02"
+    },
+    {
+      "path": "data/sim/program/trades/batch-003/nobel_forward.csv.gz",
+      "bytes": 48346,
+      "sha256": "0a78f2ae011dc3d5c706889532902c07f425b00027f876b89bdc8b921037fef9"
+    },
+    {
+      "path": "data/sim/program/trades/batch-003/nobel_settled.csv.gz",
+      "bytes": 61511,
+      "sha256": "ccd8ba5bee7bf27c0f3afe2882b6881ed03b7c41d6eff78782482af81153d10d"
+    },
+    {
+      "path": "data/sim/program/trades/batch-003/panel_settled.csv.gz",
+      "bytes": 44920,
+      "sha256": "97f18d7489f9d0f5834464c1e0bae959db3993a815a2e6d40e754cd080af5f2c"
+    },
+    {
+      "path": "data/sim/program/trades/batch-004/nobel_forward.csv.gz",
+      "bytes": 679760,
+      "sha256": "1df74e278ea5060ae43eb43016c745686df06f68a6528b7ca60150eb1bc9f232"
+    },
+    {
+      "path": "data/sim/program/trades/batch-004/nobel_settled.csv.gz",
+      "bytes": 646424,
+      "sha256": "cc7edda91b73b799766f29cc92be4e14546013aa9a3e1f063e1dc6ed43189f2b"
+    },
+    {
+      "path": "data/sim/program/trades/batch-004/panel_settled.csv.gz",
+      "bytes": 799283,
+      "sha256": "5da59603ce438c1f385170674828cae569a106b5b7f98cbde71e838c1f96e194"
+    },
+    {
+      "path": "data/sim/program/trades/batch-005/nobel_forward.csv.gz",
+      "bytes": 691762,
+      "sha256": "8f791876fb1ca565e0d55d180a756bf7a6c810fc93168dc6ee43972b74b10c26"
+    },
+    {
+      "path": "data/sim/program/trades/batch-005/nobel_settled.csv.gz",
+      "bytes": 681392,
+      "sha256": "5fe4e5a66369973dd1d8a694e858fb2ce678bd432b558d75c9a8c2bfe0968bf1"
+    },
+    {
+      "path": "data/sim/program/trades/batch-005/panel_settled.csv.gz",
+      "bytes": 951701,
+      "sha256": "c13981c055cbb99924b87bc5c6deabf374cbe7ad1f8acd7cd9628bc05609c3f4"
+    },
+    {
+      "path": "data/sim/program/trades/batch-006/nobel_forward.csv.gz",
+      "bytes": 148353,
+      "sha256": "3d10a1a83d5a4f58420e09669a05d6e3bff632025ba164d42709d618468bae3a"
+    },
+    {
+      "path": "data/sim/program/trades/batch-006/nobel_settled.csv.gz",
+      "bytes": 97741,
+      "sha256": "e4ba6e59f846b54ecbd32373aa8e0bf5bb14f48c52b8c0c1e25e48cb9830efee"
+    },
+    {
+      "path": "data/sim/program/trades/batch-006/panel_settled.csv.gz",
+      "bytes": 192687,
+      "sha256": "e11dd0fa356c11bf6e5c5df48848dd5d95d87edf9f653b105a26f9e548d7f95d"
+    },
+    {
+      "path": "data/sim/program/trades/batch-007/nobel_settled.csv.gz",
+      "bytes": 2092,
+      "sha256": "3dabc238ab8cfcf93de68601c6fd04db6ab3a090b6ed3eb170cb3f086a914a03"
+    },
+    {
+      "path": "data/sim/program/trades/batch-007/panel_settled.csv.gz",
+      "bytes": 61510,
+      "sha256": "4d1e9fbabc9dd0bfe7968fb060bf69564b7a9b466229759c42b535f51c0bd142"
+    },
+    {
+      "path": "data/sim/program/trades/batch-008/nobel_forward.csv.gz",
+      "bytes": 230817,
+      "sha256": "a93114ff681c50cd0ada2b5e77d488f7bdb4f5833fcca08c7af45513c934a390"
+    },
+    {
+      "path": "data/sim/program/trades/batch-008/nobel_settled.csv.gz",
+      "bytes": 225081,
+      "sha256": "e67bde155c01a642e78dd0c56d3136b71ea074cf633517a8432a80ce2c247214"
+    },
+    {
+      "path": "data/sim/program/trades/batch-008/panel_settled.csv.gz",
+      "bytes": 368302,
+      "sha256": "9c8128415a1949027431eef8be76f78533f092ec191cf4ba8727f493d6966786"
+    },
+    {
+      "path": "data/sim/program/trades/batch-009/nobel_forward.csv.gz",
+      "bytes": 13342,
+      "sha256": "0f11bd4316e31405d8c898228e063648e1c057295edd0b7967caf08cdad26c5e"
+    },
+    {
+      "path": "data/sim/program/trades/batch-009/nobel_settled.csv.gz",
+      "bytes": 16797,
+      "sha256": "69e13e3b8db1d2348129cc55f658ccfc2ec37aa9219512af2e87a524f490565c"
+    },
+    {
+      "path": "data/sim/program/trades/batch-009/panel_settled.csv.gz",
+      "bytes": 44554,
+      "sha256": "04aad9a9e062b4c03c8b871d19d7cfd105a30c9517b88727daff2205c2732daa"
+    },
+    {
+      "path": "data/sim/program/trades/batch-010/nobel_forward.csv.gz",
+      "bytes": 35014,
+      "sha256": "bc8b4106b4c2fe90b730ba9d6c71eddac59c4283998b00302addb403d9eecb1e"
+    },
+    {
+      "path": "data/sim/program/trades/batch-010/nobel_settled.csv.gz",
+      "bytes": 36634,
+      "sha256": "a2ce0af98ae0ec46ae3c270cb9232204f5b07ff0e7cb458d089962273b90c195"
+    },
+    {
+      "path": "data/sim/program/trades/batch-010/panel_settled.csv.gz",
+      "bytes": 53912,
+      "sha256": "26da455b10418b3e915c0732dcbbc6450a97c0c1ce13a9919d7eb20ecc903fbf"
+    }
+  ]
+}

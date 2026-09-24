@@ -88,9 +88,9 @@ class Book:
 class DecisionView:
     """The only object a strategy receives. No result, no future candles."""
 
-    __slots__ = ("as_of_ts", "market", "candle", "prior", "position", "cash", "ever_traded")
+    __slots__ = ("as_of_ts", "market", "candle", "prior", "position", "cash", "ever_traded", "candle_index")
 
-    def __init__(self, as_of_ts, market, candle, prior, position, cash, ever_traded):
+    def __init__(self, as_of_ts, market, candle, prior, position, cash, ever_traded, candle_index=None):
         self.as_of_ts = as_of_ts
         self.market = market
         self.candle = candle
@@ -98,6 +98,9 @@ class DecisionView:
         self.position = position
         self.cash = cash
         self.ever_traded = ever_traded
+        # 0-based ordinal of this decision candle inside the market's usable candle
+        # list. None on the primary engine path; the program engine always sets it.
+        self.candle_index = candle_index
 
     @staticmethod
     def decimal(value) -> Decimal:
@@ -212,6 +215,9 @@ def _mark(position: Position, candle: Candle | None) -> tuple[Decimal, str]:
 def assign_ranks(rows: list[dict]) -> None:
     """Competition rank. Equal ending equity shares a rank. Alphabetical id is not a win."""
     rows.sort(key=lambda row: (-D(row["ending_equity"]), row["participant_id"]))
+    counts: dict[str, int] = {}
+    for row in rows:
+        counts[row["ending_equity"]] = counts.get(row["ending_equity"], 0) + 1
     seen = None
     rank = 0
     for index, row in enumerate(rows, start=1):
@@ -220,7 +226,7 @@ def assign_ranks(rows: list[dict]) -> None:
             rank = index
             seen = equity
         row["rank"] = rank
-        row["tied"] = sum(1 for other in rows if other["ending_equity"] == equity) > 1
+        row["tied"] = counts[equity] > 1
 
 
 def _drawdown(book: Book, equity: Decimal) -> None:
@@ -495,12 +501,17 @@ def run_competition(markets: list[Market], config: SimConfig, strategies: list[S
         })
     assign_ranks(leaderboard)
 
+    trades_by_pid_market: dict[tuple[str, str], list] = {}
+    for trade in trades:
+        key = (trade["participant_id"], trade["market_ticker"])
+        trades_by_pid_market.setdefault(key, []).append(trade)
+
     market_results = []
     for market, candles in prepared:
         by_participant = {}
         for participant in participants:
             pid = participant["id"]
-            related = [t for t in trades if t["participant_id"] == pid and t["market_ticker"] == market.ticker]
+            related = trades_by_pid_market.get((pid, market.ticker), [])
             pos = positions.get((pid, market.ticker), Position())
             mark, mark_source = _mark(pos, candles[-1]) if pos.qty else (ZERO, "flat")
             realized = sum(D(t["realized_pnl_this_event"]) for t in related if t["action"] != "buy")
@@ -581,32 +592,61 @@ def _equity_point(config, participant, book, positions, end_ts, ticker, candle) 
     }
 
 
-def _apply_intent(seq, config, participant, strategy, market, candle, book, pos, intent: Intent, end_ts):
+@dataclass
+class FillResult:
+    """Economics of one simulated fill. No presentation fields."""
+
+    action: str
+    side: str
+    qty: int
+    requested: int
+    clip: str
+    price: Decimal
+    source: str
+    fee: Decimal
+    fee_model: str
+    notional: Decimal
+    realized: Decimal
+    # Cost basis the fill added to (buy) or removed from (sell) the position,
+    # for callers that track open cost basis incrementally.
+    cost_delta: Decimal = ZERO
+    closed_position: bool = False
+
+
+def compute_fill(config: SimConfig, market: Market, candle: Candle, book: Book, pos: Position, intent: Intent):
+    """Apply one intent to book and position. Returns (FillResult | None, clip_reason).
+
+    This is the single fill rule. run_competition and the program engine both use it,
+    so a replay on stored candles reproduces the same economics by construction.
+    """
     if intent.action not in ("buy", "sell") or intent.side not in ("yes", "no"):
-        return seq, None, "intent was not a buy or sell of yes or no"
+        return None, "intent was not a buy or sell of yes or no"
     if intent.action == "sell":
         if pos.qty <= 0 or pos.side != intent.side:
-            return seq, None, "no position on that side to sell"
+            return None, "no position on that side to sell"
         price, source = _quote_fill(candle, "sell", intent.side, config.fill_model)
         if price is None:
-            return seq, None, source
+            return None, source
         qty = pos.qty if intent.quantity is None else min(intent.quantity, pos.qty)
         if qty < 1:
-            return seq, None, "sell quantity clipped to zero"
+            return None, "sell quantity clipped to zero"
         fee = taker_fee(market.fee_multiplier, qty, price) if config.fees_enabled and _fee_applies(market) else ZERO
         fee_model = _fee_model(config, market)
         proceeds = price * qty
         if proceeds < fee:
-            return seq, None, "exit fee exceeds proceeds; not filled"
+            return None, "exit fee exceeds proceeds; not filled"
         alloc = pos.cost * Decimal(qty) / Decimal(pos.qty)
         realized = proceeds - fee - alloc
+        allocated_before = pos.cost
         book.cash += proceeds - fee
         book.fees += fee
         book.realized += realized
         book.trade_count += 1
         pos.qty -= qty
         pos.cost -= alloc
+        closed = False
         if pos.qty == 0:
+            closed = True
             pos.side = ""
             pos.avg_entry_price = ZERO
             pos.cost = ZERO
@@ -615,20 +655,21 @@ def _apply_intent(seq, config, participant, strategy, market, candle, book, pos,
                 book.wins += 1
             elif realized < 0:
                 book.losses += 1
-        seq += 1
-        return seq, _trade_row(
-            seq, config, participant, strategy, market, candle, intent, qty, qty, "",
-            price, source, fee, fee_model, proceeds, book.cash, realized, end_ts,
+        return FillResult(
+            action="sell", side=intent.side, qty=qty, requested=qty, clip="",
+            price=price, source=source, fee=fee, fee_model=fee_model,
+            notional=proceeds, realized=realized,
+            cost_delta=-(allocated_before if closed else alloc), closed_position=closed,
         ), ""
 
     if pos.qty and pos.side != intent.side:
-        return seq, None, "opposite side blocked; a sell must come first"
+        return None, "opposite side blocked; a sell must come first"
     price, source = _quote_fill(candle, "buy", intent.side, config.fill_model)
     if price is None:
-        return seq, None, source
+        return None, source
     qty, clip = _size_for(config, book, pos, price, intent.quantity)
     if qty < 1:
-        return seq, None, clip or "size clipped to zero"
+        return None, clip or "size clipped to zero"
     fee = taker_fee(market.fee_multiplier, qty, price) if config.fees_enabled and _fee_applies(market) else ZERO
     fee_model = _fee_model(config, market)
     cost = price * qty + fee
@@ -636,11 +677,11 @@ def _apply_intent(seq, config, participant, strategy, market, candle, book, pos,
         # Shrink to what cash can pay, including the fee. One retry.
         qty = int(book.cash / (price + (fee / qty if qty else price)))
         if qty < 1:
-            return seq, None, "cash cannot cover price plus fee"
+            return None, "cash cannot cover price plus fee"
         fee = taker_fee(market.fee_multiplier, qty, price) if config.fees_enabled and _fee_applies(market) else ZERO
         cost = price * qty + fee
         if cost > book.cash:
-            return seq, None, "cash cannot cover price plus fee"
+            return None, "cash cannot cover price plus fee"
         clip = (clip + "; " if clip else "") + "shrunk to remaining cash"
     book.cash -= cost
     book.fees += fee
@@ -650,10 +691,21 @@ def _apply_intent(seq, config, participant, strategy, market, candle, book, pos,
     pos.cost += cost
     pos.qty = new_qty
     pos.side = intent.side
+    return FillResult(
+        action="buy", side=intent.side, qty=qty, requested=intent.quantity or qty, clip=clip,
+        price=price, source=source, fee=fee, fee_model=fee_model,
+        notional=cost, realized=ZERO, cost_delta=cost, closed_position=False,
+    ), ""
+
+
+def _apply_intent(seq, config, participant, strategy, market, candle, book, pos, intent: Intent, end_ts):
+    fill, clip = compute_fill(config, market, candle, book, pos, intent)
+    if fill is None:
+        return seq, None, clip
     seq += 1
     return seq, _trade_row(
-        seq, config, participant, strategy, market, candle, intent, intent.quantity or qty, qty, clip,
-        price, source, fee, fee_model, cost, book.cash, ZERO, end_ts,
+        seq, config, participant, strategy, market, candle, intent, fill.requested, fill.qty, fill.clip,
+        fill.price, fill.source, fill.fee, fill.fee_model, fill.notional, book.cash, fill.realized, end_ts,
     ), ""
 
 

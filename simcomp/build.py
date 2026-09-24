@@ -12,6 +12,8 @@ from simcomp import ENGINE_VERSION
 from simcomp.engine import SimConfig, attach_later_results, run_competition
 from simcomp.kalshi_parse import market_from_payload, parse_candle
 from simcomp.money import money
+from simcomp.program import REPLAY_BATCH, run_program
+from simcomp.research_program import program_variants
 from simcomp.strategies import PARTICIPANTS, clone_strategies, default_strategies
 
 ROOT_DEFAULT = Path(__file__).resolve().parents[1]
@@ -297,6 +299,29 @@ def _laureate_gaps(catalog_path: Path, settled: list) -> list[dict]:
     return flags
 
 
+def _program_summary_pointer(manifest: dict | None) -> dict:
+    if not manifest:
+        return {"status": "not_run", "participants": 0}
+    return {
+        "status": "ok",
+        "participants": manifest.get("participants", 0),
+        "batches": manifest.get("batches", []),
+        "trade_rows_total": manifest.get("trade_rows_total", 0),
+        "generated_at": manifest.get("generated_at"),
+        "replay": manifest.get("replay", {}),
+        "universes": manifest.get("universes", {}),
+        "paths": {
+            "manifest": "data/sim/program/manifest.json",
+            "leaderboard": "data/sim/program/leaderboard.json",
+            "families": "data/sim/program/families.json",
+            "markets": "data/sim/program/markets.json",
+            "strategies": "data/sim/program/strategies.json",
+            "participants": "data/sim/program/participants.json",
+            "schema": "data/sim/program/SCHEMA.md",
+        },
+    }
+
+
 def ledger_sha256(trades: list[dict]) -> str:
     keys = (
         "trade_id", "competition_id", "participant_id", "market_ticker",
@@ -306,7 +331,7 @@ def ledger_sha256(trades: list[dict]) -> str:
     return hashlib.sha256(blob).hexdigest()
 
 
-def build(root: Path | None = None) -> dict:
+def build(root: Path | None = None, skip_program: bool = False) -> dict:
     root = root or ROOT_DEFAULT
     records = load_records(root)
     markets = [record_to_market(record) for record in records]
@@ -383,6 +408,13 @@ def build(root: Path | None = None) -> dict:
         "rows": len(all_trades),
         "note": "The engine was run twice on the stored candles. The trade ledger matched. This is not a Kalshi fill.",
     }
+
+    program_manifest = None
+    if not skip_program:
+        print("running the 1000-strategy research program…")
+        program_manifest = run_program(root, grouped, program_variants(), replay=True)
+    elif (root / "data" / "sim" / "program" / "manifest.json").exists():
+        program_manifest = json.loads((root / "data" / "sim" / "program" / "manifest.json").read_text(encoding="utf-8"))
 
     manifest_path = root / "data" / "kalshi" / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
@@ -519,6 +551,7 @@ def build(root: Path | None = None) -> dict:
             {"name": "Nomination archive", "url": "https://www.nobelprize.org/nomination/archive/", "role": "other candidates, where the 50-year seal is open"},
         ],
         "assumptions": [config.assumption_note for config, _u, _o in _configs()],
+        "program": _program_summary_pointer(program_manifest),
         "research_questions": [
             {"question": "How do different strategies perform under different market conditions?", "view": "compare"},
             {"question": "How does a strategy perform against other simulated strategies?", "view": "leaderboard"},
@@ -587,4 +620,47 @@ def _write_leaderboard_md(path: Path, competitions, summary) -> None:
                 f"{row['realized_pnl']} | {row['unrealized_pnl']} | {row['fees']} | {row['trade_count']} |"
             )
         lines.append("")
+    _append_program_section(lines, path.parent / "program")
     path.write_text("\n".join(lines))
+
+
+_PROGRAM_UNIVERSE_TITLES = {
+    "nobel_forward": "Program, Nobel markets, forward simulation",
+    "nobel_settled": "Program, settled Nobel markets, historical backtest",
+    "panel_settled": "Program, settled panel, historical backtest",
+}
+
+
+def _append_program_section(lines: list, program_dir: Path) -> None:
+    leader_path = program_dir / "leaderboard.json"
+    manifest_path = program_dir / "manifest.json"
+    if not leader_path.exists() or not manifest_path.exists():
+        return
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    rows = json.loads(leader_path.read_text(encoding="utf-8"))
+    lines.append("## The 1000-strategy research program")
+    lines.append("")
+    lines.append(
+        f"{manifest.get('participants', 0)} simulated participants in {len(manifest.get('batches', []))} batches. "
+        f"{manifest.get('trade_rows_total', 0)} ledger rows. Replay of {manifest.get('replay', {}).get('batch', '')}: "
+        f"{manifest.get('replay', {}).get('status', 'unknown')}. Same decision clock, size rules, and fee reading as the "
+        "primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below)."
+    )
+    for universe in ("nobel_forward", "nobel_settled", "panel_settled"):
+        universe_rows = [row for row in rows if row["u"] == universe]
+        universe_rows.sort(key=lambda row: row["r"])
+        lines.append("")
+        lines.append(f"### {_PROGRAM_UNIVERSE_TITLES.get(universe, universe)}")
+        lines.append("")
+        lines.append("| Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+        for row in universe_rows[:10]:
+            lines.append(
+                f"| {row['r']} | {row['p']} | {row['s']} | {row['f']} | {row['eq']} | "
+                f"{row['real']} | {row['unreal']} | {row['fees']} | {row['n']} |"
+            )
+    lines.append("")
+    lines.append(
+        "A null-model participant (batch-001) is a random valid entry, not a trader. "
+        "Outranking batch-001's band is the floor any finding has to clear."
+    )

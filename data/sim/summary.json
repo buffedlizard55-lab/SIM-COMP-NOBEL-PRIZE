@@ -3788,6 +3788,84 @@
     "Momentum and volume-momentum require a 0.05 move instead of 0.02. Other strategies are unchanged. Shows threshold sensitivity.",
     "Fills use the candle's last trade price when one exists. No fallback to the quote. Candles without a trade are not filled."
   ],
+  "program": {
+    "status": "ok",
+    "participants": 1000,
+    "batches": [
+      "batch-001",
+      "batch-002",
+      "batch-003",
+      "batch-004",
+      "batch-005",
+      "batch-006",
+      "batch-007",
+      "batch-008",
+      "batch-009",
+      "batch-010"
+    ],
+    "trade_rows_total": 796804,
+    "generated_at": "2026-09-24T19:47:51Z",
+    "replay": {
+      "status": "matched",
+      "batch": "batch-001",
+      "participants_checked": 300,
+      "universes": {
+        "nobel_forward": "acbdf99b74689aacb02dcef34c42224926fc378ee022fd3a0b0be016ccd9d87f",
+        "nobel_settled": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
+        "panel_settled": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3"
+      },
+      "note": "batch-001 was rerun against the stored candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill.",
+      "replay_universe_hashes": {
+        "nobel_forward": "921dd167ed999f899a8f65a1f7996f33ec11768b185a400ecb49c566643637ca",
+        "nobel_settled": "b538de95ac560e4744a1b19469c3604516433e8b49a8cbef05f89777ad603bfb",
+        "panel_settled": "572d1e3111e8d8dbef10ae25ad703b9ef0048a0ddce138cc126aa06ab93dd712"
+      }
+    },
+    "universes": {
+      "nobel_forward": {
+        "competition_id": "program-nobel-forward",
+        "kind": "forward_simulation",
+        "data_tier": "live_kalshi",
+        "markets_used": 134,
+        "candle_events": 7908,
+        "runtime_seconds": 49.18,
+        "trade_rows": 260784,
+        "combined_ledger_sha256": "acbdf99b74689aacb02dcef34c42224926fc378ee022fd3a0b0be016ccd9d87f",
+        "open_positions": 34792
+      },
+      "nobel_settled": {
+        "competition_id": "program-nobel-settled",
+        "kind": "historical_backtest",
+        "data_tier": "historical_kalshi",
+        "markets_used": 66,
+        "candle_events": 6875,
+        "runtime_seconds": 40.521,
+        "trade_rows": 224658,
+        "combined_ledger_sha256": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
+        "open_positions": 0
+      },
+      "panel_settled": {
+        "competition_id": "program-panel-settled",
+        "kind": "historical_backtest",
+        "data_tier": "historical_kalshi",
+        "markets_used": 50,
+        "candle_events": 4702,
+        "runtime_seconds": 34.097,
+        "trade_rows": 311362,
+        "combined_ledger_sha256": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3",
+        "open_positions": 0
+      }
+    },
+    "paths": {
+      "manifest": "data/sim/program/manifest.json",
+      "leaderboard": "data/sim/program/leaderboard.json",
+      "families": "data/sim/program/families.json",
+      "markets": "data/sim/program/markets.json",
+      "strategies": "data/sim/program/strategies.json",
+      "participants": "data/sim/program/participants.json",
+      "schema": "data/sim/program/SCHEMA.md"
+    }
+  },
   "research_questions": [
     {
       "question": "How do different strategies perform under different market conditions?",
