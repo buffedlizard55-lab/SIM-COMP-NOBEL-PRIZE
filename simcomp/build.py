@@ -161,6 +161,15 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             writer.writerow(flat)
 
 
+def ledger_sha256(trades: list[dict]) -> str:
+    keys = (
+        "trade_id", "competition_id", "participant_id", "market_ticker",
+        "action", "side", "price", "quantity", "fee", "cash_after", "timestamp_unix",
+    )
+    blob = json.dumps([{key: row.get(key) for key in keys} for row in trades], separators=(",", ":")).encode()
+    return hashlib.sha256(blob).hexdigest()
+
+
 def build(root: Path | None = None) -> dict:
     root = root or ROOT_DEFAULT
     records = load_records(root)
@@ -181,13 +190,19 @@ def build(root: Path | None = None) -> dict:
     for config, universe, overrides in _configs():
         result = run_competition(grouped[universe], config, clone_strategies(overrides))
         attach_later_results(result, grouped[universe])
-        competitions.append({
+        entry = {
             "config": result["config"],
             "leaderboard": result["leaderboard"],
             "markets_used": result["markets_used"],
             "trade_count": len(result["trades"]),
             "flag_count": len(result["flags"]),
-        })
+        }
+        if result["markets_used"] == 0:
+            entry["empty_reason"] = (
+                "No stored market in this universe had a candlestick the engine could use "
+                "without looking past settlement. No prices were invented to fill that gap."
+            )
+        competitions.append(entry)
         all_trades.extend(result["trades"])
         all_positions.extend(result["positions"])
         all_equity.extend(result["equity"])
@@ -216,18 +231,46 @@ def build(root: Path | None = None) -> dict:
             ],
         })
 
+    replay_trades = []
+    for config, universe, overrides in _configs():
+        replay = run_competition(grouped[universe], config, clone_strategies(overrides))
+        replay_trades.extend(replay["trades"])
+    first_sha = ledger_sha256(all_trades)
+    second_sha = ledger_sha256(replay_trades)
+    if first_sha != second_sha or len(all_trades) != len(replay_trades):
+        raise SystemExit(
+            f"replay mismatch: {first_sha} ({len(all_trades)}) vs {second_sha} ({len(replay_trades)})"
+        )
+    replay_proof = {
+        "status": "matched",
+        "ledger_sha256": first_sha,
+        "rows": len(all_trades),
+        "note": "The engine was run twice on the stored candles. The trade ledger matched. This is not a Kalshi fill.",
+    }
+
     manifest_path = root / "data" / "kalshi" / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     failures_path = root / "data" / "kalshi" / "failures.json"
     failures = json.loads(failures_path.read_text()) if failures_path.exists() else []
-    for failure in failures:
+    if failures:
         all_flags.append({
-            "code": "collection_failure",
+            "code": "collection_failures",
             "severity": "review",
-            "message": json.dumps(failure)[:500],
-            "market_ticker": failure.get("ticker"),
+            "message": (
+                f"{len(failures)} collector requests failed or were capped. "
+                "See data/kalshi/failures.json. Those rows were not filled in."
+            ),
+            "market_ticker": "",
             "competition_id": "",
         })
+        for failure in failures[:12]:
+            all_flags.append({
+                "code": "collection_failure",
+                "severity": "review",
+                "message": json.dumps(failure)[:400],
+                "market_ticker": failure.get("ticker"),
+                "competition_id": "",
+            })
 
     market_index = []
     candle_dir = root / "data" / "sim" / "candles"
@@ -306,6 +349,7 @@ def build(root: Path | None = None) -> dict:
         "generated_from": "data/kalshi/markets.jsonl",
         "input_sha256": input_hash(jsonl) if jsonl.exists() else "",
         "fetched_at": manifest.get("fetched_at"),
+        "replay": replay_proof,
         "disclaimer": (
             "Every participant, trade, position, and P&L figure in this competition is simulated. "
             "None of it is a Kalshi order, a Kalshi user, or a real fill. "
@@ -352,6 +396,13 @@ def build(root: Path | None = None) -> dict:
     sim.mkdir(parents=True, exist_ok=True)
     (sim / "summary.json").write_text(json.dumps(summary, indent=2))
     (sim / "trades.json").write_text(json.dumps(all_trades))
+    by_comp: dict[str, list] = {}
+    for trade in all_trades:
+        by_comp.setdefault(trade["competition_id"], []).append(trade)
+    trade_dir = sim / "trades_by_competition"
+    trade_dir.mkdir(parents=True, exist_ok=True)
+    for cid, rows in by_comp.items():
+        (trade_dir / f"{cid}.json").write_text(json.dumps(rows, separators=(",", ":")))
     (sim / "positions.json").write_text(json.dumps(all_positions))
     (sim / "equity.json").write_text(json.dumps(all_equity))
     (sim / "market_results.json").write_text(json.dumps(all_market_results))
@@ -387,6 +438,9 @@ def _write_leaderboard_md(path: Path, competitions, summary) -> None:
         lines.append(f"## {comp['config']['title']}")
         lines.append("")
         lines.append(f"Id: `{comp['config']['competition_id']}`. Kind: {comp['config']['kind']}. Markets used: {comp['markets_used']}.")
+        if comp.get("empty_reason"):
+            lines.append("")
+            lines.append(comp["empty_reason"])
         lines.append("")
         lines.append("| Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |")
         lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")

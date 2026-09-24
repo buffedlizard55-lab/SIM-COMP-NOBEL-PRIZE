@@ -26,6 +26,8 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 67.
 
 Id: `nobel-settled-primary`. Kind: historical_backtest. Markets used: 0.
 
+No stored market in this universe had a candlestick the engine could use without looking past settlement. No prices were invented to fill that gap.
+
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sim-kira-null | seeded_null | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |

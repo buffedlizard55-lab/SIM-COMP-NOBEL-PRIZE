@@ -3,6 +3,12 @@
   "generated_from": "data/kalshi/markets.jsonl",
   "input_sha256": "d7febdfd265844fd4c6fdf473d0ac789590cfe74c48e4765d8c446a6872c0ade",
   "fetched_at": "2026-09-24T17:29:32Z",
+  "replay": {
+    "status": "matched",
+    "ledger_sha256": "cf1027240062f0e30b6c68c951af7310d907a017d82d4376fb58da95d4d48aad",
+    "rows": 28147,
+    "note": "The engine was run twice on the stored candles. The trade ledger matched. This is not a Kalshi fill."
+  },
   "disclaimer": "Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.",
   "participants_trade_with_each_other": false,
   "competitions": [
@@ -270,7 +276,7 @@
       ],
       "markets_used": 67,
       "trade_count": 3839,
-      "flag_count": 452
+      "flag_count": 86
     },
     {
       "config": {
@@ -536,7 +542,8 @@
       ],
       "markets_used": 0,
       "trade_count": 0,
-      "flag_count": 0
+      "flag_count": 0,
+      "empty_reason": "No stored market in this universe had a candlestick the engine could use without looking past settlement. No prices were invented to fill that gap."
     },
     {
       "config": {
@@ -802,7 +809,7 @@
       ],
       "markets_used": 35,
       "trade_count": 3776,
-      "flag_count": 163
+      "flag_count": 0
     },
     {
       "config": {
@@ -1068,7 +1075,7 @@
       ],
       "markets_used": 67,
       "trade_count": 4093,
-      "flag_count": 280
+      "flag_count": 86
     },
     {
       "config": {
@@ -1334,7 +1341,7 @@
       ],
       "markets_used": 67,
       "trade_count": 3381,
-      "flag_count": 796
+      "flag_count": 86
     },
     {
       "config": {
@@ -1600,7 +1607,8 @@
       ],
       "markets_used": 0,
       "trade_count": 0,
-      "flag_count": 0
+      "flag_count": 0,
+      "empty_reason": "No stored market in this universe had a candlestick the engine could use without looking past settlement. No prices were invented to fill that gap."
     },
     {
       "config": {
@@ -1866,7 +1874,8 @@
       ],
       "markets_used": 0,
       "trade_count": 0,
-      "flag_count": 0
+      "flag_count": 0,
+      "empty_reason": "No stored market in this universe had a candlestick the engine could use without looking past settlement. No prices were invented to fill that gap."
     },
     {
       "config": {
@@ -2132,7 +2141,7 @@
       ],
       "markets_used": 35,
       "trade_count": 3792,
-      "flag_count": 153
+      "flag_count": 0
     },
     {
       "config": {
@@ -2398,7 +2407,7 @@
       ],
       "markets_used": 35,
       "trade_count": 3062,
-      "flag_count": 782
+      "flag_count": 0
     },
     {
       "config": {
@@ -2664,7 +2673,7 @@
       ],
       "markets_used": 35,
       "trade_count": 2602,
-      "flag_count": 135
+      "flag_count": 0
     },
     {
       "config": {
@@ -2930,7 +2939,7 @@
       ],
       "markets_used": 35,
       "trade_count": 3602,
-      "flag_count": 1846
+      "flag_count": 0
     }
   ],
   "participants": [

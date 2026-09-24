@@ -118,9 +118,21 @@ def _lifespan_seconds(raw: dict) -> int | None:
     return end_ts - open_ts
 
 
-def choose_interval(raw: dict) -> int:
-    span = _lifespan_seconds(raw)
+def choose_interval(raw: dict, now: int | None = None) -> int:
+    """Hourly candles for short lives and for markets that opened in the last two days.
+
+    A daily candle has not closed yet for a market listed today, so a daily
+    request returns an empty list. That empty list is not a price of zero.
+    """
+    open_ts = parse_unix(raw.get("open_time"))
+    settlement = parse_unix(raw.get("settlement_ts"))
+    end = settlement if settlement is not None else now
+    if end is None:
+        end = parse_unix(raw.get("close_time"))
+    span = (end - open_ts) if open_ts is not None and end is not None else None
     if span is None or span <= 10 * 86400:
+        return 60
+    if settlement is None and open_ts is not None and now is not None and (now - open_ts) <= 2 * 86400:
         return 60
     return 1440
 
@@ -185,9 +197,11 @@ def collect(root: Path) -> dict:
             "/markets", {"series_ticker": ticker, "limit": 200, "mve_filter": "exclude"}, "markets", cap=2000
         )
         failures.extend(live_failures)
+        # Historical filters are mutually exclusive. mve_filter with series_ticker
+        # returns HTTP 400. Multivariate rows are dropped later, not by this query.
         hist_rows, hist_failures = client.paginate(
             "/historical/markets",
-            {"series_ticker": ticker, "limit": 200, "mve_filter": "exclude"},
+            {"series_ticker": ticker, "limit": 200},
             "markets",
             cap=2000,
         )
@@ -205,21 +219,26 @@ def collect(root: Path) -> dict:
             if raw.get("ticker"):
                 # Live payload wins if both exist. The historical copy is not silently merged.
                 market_raw[raw["ticker"]] = raw
-        covered_events = {row.get("event_ticker") for row in market_raw.values()}
-        for event in event_rows:
-            event_ticker = event.get("event_ticker")
-            if not event_ticker or event_ticker in covered_events:
-                continue
-            for path, tier in (("/markets", "live"), ("/historical/markets", "historical")):
+        # Event fallback is for Nobel series only. Panel series can have hundreds of
+        # events; the panel is a capped sample from the series query, not every event.
+        if series.get("_role") == "nobel":
+            covered_events = {row.get("event_ticker") for row in market_raw.values()}
+            for event in event_rows:
+                event_ticker = event.get("event_ticker")
+                if not event_ticker or event_ticker in covered_events:
+                    continue
                 extra, extra_failures = client.paginate(
-                    path, {"event_ticker": event_ticker, "limit": 200, "mve_filter": "exclude"}, "markets", cap=1000
+                    "/historical/markets",
+                    {"event_ticker": event_ticker, "limit": 200},
+                    "markets",
+                    cap=1000,
                 )
                 failures.extend(extra_failures)
                 for raw in extra:
                     raw = dict(raw)
-                    raw["_tier"] = tier
+                    raw["_tier"] = "historical"
                     raw["_role"] = series["_role"]
-                    if raw.get("ticker") and (tier == "live" or raw["ticker"] not in market_raw):
+                    if raw.get("ticker") and raw["ticker"] not in market_raw:
                         market_raw[raw["ticker"]] = raw
 
     selected = []
@@ -263,8 +282,8 @@ def collect(root: Path) -> dict:
         panel_kept[series_ticker] += 1
         raw["_role"] = "panel"
         raw["_panel_rank_rule"] = (
-            f"top {PANEL_CAP_PER_SERIES} by volume_fp among settled binary markets in {series_ticker} "
-            "with settlement_ts, lifespan >= 6h, and volume > 0"
+            f"top {PANEL_CAP_PER_SERIES} by volume_fp among settled binary markets returned for {series_ticker} "
+            "(historical query capped at 2000 rows), with settlement_ts, lifespan >= 6h, and volume > 0"
         )
         selected.append(raw)
 
@@ -280,7 +299,7 @@ def collect(root: Path) -> dict:
                     raw["series_ticker"] = known
                     break
         series = by_ticker.get(series_ticker, {})
-        interval = choose_interval(raw)
+        interval = choose_interval(raw, client.fetched_at_unix)
         open_ts = parse_unix(raw.get("open_time")) or (client.fetched_at_unix - 120 * 86400)
         end_ts = client.fetched_at_unix
         settlement_ts = parse_unix(raw.get("settlement_ts"))
@@ -308,6 +327,24 @@ def collect(root: Path) -> dict:
                 )
                 if candle_status == 200:
                     tier = "historical"
+        if (
+            candle_status == 200
+            and isinstance(candle_body, dict)
+            and not candle_body.get("candlesticks")
+            and interval == 1440
+        ):
+            # A daily window can be empty when the market opened today. Retry hourly.
+            # Do not treat the empty daily response as a price.
+            params["period_interval"] = 60
+            interval = 60
+            if tier == "historical":
+                candle_status, candle_body, candle_url = client.get(
+                    f"/historical/markets/{ticker}/candlesticks", params
+                )
+            elif series_ticker:
+                candle_status, candle_body, candle_url = client.get(
+                    f"/series/{series_ticker}/markets/{ticker}/candlesticks", params
+                )
         candles = []
         if candle_status == 200 and isinstance(candle_body, dict):
             for item in candle_body.get("candlesticks") or []:
@@ -404,11 +441,11 @@ def collect(root: Path) -> dict:
         "orderbooks_stored": len(orderbooks),
         "failure_count": len(failures),
         "scope": {
-            "nobel": "Every non-multivariate market returned by GET /markets and GET /historical/markets for series whose ticker or title contains NOBEL, plus the known Nobel series list.",
+            "nobel": "Every non-multivariate market returned by GET /markets and GET /historical/markets for series whose ticker or title contains NOBEL, plus the known Nobel series list. Historical requests do not send mve_filter; that parameter is mutually exclusive with series_ticker and event_ticker and returns HTTP 400.",
             "panel": (
                 "Not a complete Kalshi history. For each panel series, the collector keeps at most "
                 f"{PANEL_CAP_PER_SERIES} settled binary markets with a settlement timestamp, lifespan of at least 6 hours, "
-                "and volume greater than zero, highest volume first."
+                "and volume greater than zero, highest volume first, among the first 2000 historical rows returned for that series. This is not a global volume ranking."
             ),
             "not_invented": "Failed requests are listed in failures.json. No price, volume, or result is filled in.",
         },

@@ -22,12 +22,13 @@
   const state = {
     summary: null,
     trades: [],
-    positions: [],
+    tradesFor: "",
+    positions: null,
     markets: [],
-    results: [],
+    results: null,
     comparisons: [],
-    flags: [],
-    equity: [],
+    flags: null,
+    equity: null,
     catalog: null,
     view: "leaderboard",
     arg: "",
@@ -72,6 +73,38 @@
     return response.json();
   }
 
+  async function ensureTrades(id) {
+    if (!id) return [];
+    if (state.tradesFor === id) return state.trades;
+    state.trades = await loadJSON("data/sim/trades_by_competition/" + encodeURIComponent(id) + ".json");
+    state.tradesFor = id;
+    return state.trades;
+  }
+
+  async function ensurePositions() {
+    if (state.positions) return state.positions;
+    state.positions = await loadJSON("data/sim/positions.json");
+    return state.positions;
+  }
+
+  async function ensureResults() {
+    if (state.results) return state.results;
+    state.results = await loadJSON("data/sim/market_results.json");
+    return state.results;
+  }
+
+  async function ensureFlags() {
+    if (state.flags) return state.flags;
+    state.flags = await loadJSON("data/sim/flags.json");
+    return state.flags;
+  }
+
+  async function ensureEquity() {
+    if (state.equity) return state.equity;
+    state.equity = await loadJSON("data/sim/equity.json");
+    return state.equity;
+  }
+
   function parseHash() {
     const raw = (location.hash || "#leaderboard").replace(/^#/, "");
     const [view, arg] = raw.split("/");
@@ -106,6 +139,15 @@
     nav.innerHTML = NAV.map(([id, label]) =>
       `<a href="#${id}" ${id === current ? 'aria-current="page"' : ""}>${esc(label)}</a>`
     ).join("");
+  }
+
+  function nameMatchNote(market) {
+    const series = String(market.series_ticker || "");
+    const ticker = String(market.ticker || "");
+    if (series.indexOf("TRUMPNOBEL") !== -1 || ticker.indexOf("TRUMPNOBEL") !== -1) {
+      return `<p class="note">Name match only. This is not the Nobel Peace Prize winner market. Read the contract rules, not the ticker substring.</p>`;
+    }
+    return "";
   }
 
   function banner() {
@@ -173,14 +215,14 @@
         <div class="stat"><b>${esc(stats.markets_stored || 0)}</b><span>Kalshi markets stored</span></div>
         <div class="stat"><b>${esc((stats.nobel_series || []).length)}</b><span>Nobel series found</span></div>
         <div class="stat"><b>${esc(stats.fetched_at || "—")}</b><span>Snapshot time (UTC)</span></div>
-        <div class="stat"><b>${esc(state.trades.length)}</b><span>Simulated ledger rows</span></div>
+        <div class="stat"><b>${esc((state.summary.competitions || []).reduce((n, c) => n + Number(c.trade_count || 0), 0))}</b><span>Simulated ledger rows</span></div>
       </div>
       ${toolbar()}
       ${comps.map((comp) => `<section class="card">
         <p>${comp.config.kind === "forward_simulation" ? live() : hist()} ${sim()} ${comp.config.primary ? "" : badge("info", "Assumption run")}</p>
         <h3>${esc(comp.config.title)}</h3>
         <p class="small muted">${esc(comp.config.assumption_note)} Markets used: ${esc(comp.markets_used)}. Starting cash ${esc(comp.config.starting_cash)}.</p>
-        ${leaderboardTable(comp)}
+        ${comp.empty_reason ? `<p class="note">${esc(comp.empty_reason)}</p>` : leaderboardTable(comp)}
       </section>`).join("")}
       <p class="small">A blank settled win rate means nothing has settled in that run. Forward ranks are mark-to-market, not a track record.</p>`;
     bindToolbar();
@@ -216,7 +258,7 @@
     bindToolbar();
   }
 
-  function renderParticipant() {
+  async function renderParticipant() {
     const person = (state.summary.participants || []).find((p) => p.id === state.arg);
     if (!person) {
       main.innerHTML = `<p>No simulated participant ${esc(state.arg)}.</p>`;
@@ -237,8 +279,15 @@
         <td class="num">${num(row.max_drawdown)}</td>
       </tr>`;
     }).join("");
-    const trades = state.trades.filter((row) => row.participant_id === person.id).slice(0, 80);
-    const positions = state.positions.filter((row) => row.participant_id === person.id);
+    const comp = selectedCompetition();
+    let trades = [];
+    let positions = [];
+    try {
+      trades = (await ensureTrades(comp.config.competition_id)).filter((row) => row.participant_id === person.id).slice(0, 80);
+      positions = (await ensurePositions()).filter((row) => row.participant_id === person.id && row.competition_id === comp.config.competition_id);
+    } catch (err) {
+      trades = [];
+    }
     main.innerHTML = banner() + `<p><a href="#participants">All participants</a></p>
       <h2>${esc(person.display_name)}</h2>
       <p><code>${esc(person.username)}</code> ${sim()} ${badge("review", "Not a real account")}</p>
@@ -248,10 +297,12 @@
         <th>Competition</th><th class="num">Rank</th><th class="num">Equity</th><th class="num">Realized</th>
         <th class="num">Unrealized</th><th class="num">Fees</th><th class="num">Trades</th><th class="num">Win rate</th><th class="num">Drawdown</th>
       </tr></thead><tbody>${boards}</tbody></table></div>
+      ${toolbar()}
       <h3>Open simulated positions</h3>
       ${positionTable(positions)}
-      <h3>Recent simulated ledger rows</h3>
+      <h3>Recent simulated ledger rows for the selected competition</h3>
       ${tradeTable(trades)}`;
+    bindToolbar();
   }
 
   function renderStrategies() {
@@ -284,19 +335,22 @@
     </tr></thead><tbody>${body || `<tr><td colspan="8">No simulated trades in this filter.</td></tr>`}</tbody></table></div>`;
   }
 
-  function renderTrades() {
+  async function renderTrades() {
     const comp = selectedCompetition();
     const id = comp ? comp.config.competition_id : "";
+    let loaded = [];
+    try { loaded = await ensureTrades(id); } catch (err) { loaded = []; }
     const q = state.q.trim().toLowerCase();
-    const rows = state.trades.filter((row) => {
-      if (id && row.competition_id !== id) return false;
+    const rows = loaded.filter((row) => {
       if (!q) return true;
       return `${row.market_ticker} ${row.participant_id} ${row.reason} ${row.strategy_id}`.toLowerCase().includes(q);
     }).slice(0, 300);
+    const empty = comp && comp.empty_reason ? `<p class="note">${esc(comp.empty_reason)}</p>` : "";
     main.innerHTML = banner() + `<h2>Simulated trades and settlements</h2>
       <p>Showing up to 300 rows for the selected competition. The full ledger is <a href="data/sim/trades.csv">trades.csv</a>. ${sim()}</p>
       ${toolbar()}
-      ${tradeTable(rows)}`;
+      ${empty}
+      ${comp && comp.empty_reason ? "" : tradeTable(rows)}`;
     bindToolbar();
   }
 
@@ -317,11 +371,12 @@
     </tr></thead><tbody>${body || `<tr><td colspan="8">No open simulated positions.</td></tr>`}</tbody></table></div>`;
   }
 
-  function renderMarkets() {
+  async function renderMarkets() {
     const comp = selectedCompetition();
     const id = comp ? comp.config.competition_id : "";
     const q = state.q.trim().toLowerCase();
-    const results = state.results.filter((row) => !id || row.competition_id === id);
+    let results = [];
+    try { results = (await ensureResults()).filter((row) => !id || row.competition_id === id); } catch (err) { results = []; }
     const byTicker = new Map(results.map((row) => [row.ticker + "|" + row.competition_id, row]));
     const rows = state.markets.filter((market) => {
       if (!q) return true;
@@ -332,7 +387,7 @@
       const tier = market.tier === "historical" ? hist() : live();
       return `<tr>
         <td><a href="#market/${esc(market.ticker)}">${esc(market.ticker)}</a><br>${tier} ${official()}</td>
-        <td>${esc(market.subtitle || market.title)}<br><span class="muted small">${esc(market.series_ticker)} · ${esc(market.status)}</span></td>
+        <td>${esc(market.subtitle || market.title)}<br><span class="muted small">${esc(market.series_ticker)} · ${esc(market.status)}</span>${nameMatchNote(market)}</td>
         <td>${esc(market.result || "unsettled")}<br><span class="muted small">official field, not simulated</span></td>
         <td class="num">${esc(market.volume_fp || "")}</td>
         <td class="num">${esc(market.yes_bid_dollars || "")} / ${esc(market.yes_ask_dollars || "")}</td>
@@ -357,11 +412,17 @@
     }
     let candles = [];
     try { candles = await loadJSON(`data/sim/candles/${encodeURIComponent(market.ticker)}.json`); } catch (err) { candles = []; }
-    const trades = state.trades.filter((row) => row.market_ticker === market.ticker);
-    const results = state.results.filter((row) => row.ticker === market.ticker);
+    let trades = [];
+    let results = [];
+    try {
+      const comp = selectedCompetition();
+      trades = (await ensureTrades(comp.config.competition_id)).filter((row) => row.market_ticker === market.ticker);
+      results = (await ensureResults()).filter((row) => row.ticker === market.ticker);
+    } catch (err) { trades = []; results = []; }
     const sources = (market.settlement_sources || []).map((src) => `<a href="${esc(src.url)}">${esc(src.name)}</a>`).join(", ") || "—";
     main.innerHTML = banner() + `<p><a href="#markets">All markets</a></p>
       <h2>${esc(market.subtitle || market.title)}</h2>
+      ${nameMatchNote(market)}
       <p><code>${esc(market.ticker)}</code> ${market.tier === "historical" ? hist() : live()} ${official()} ${sim()} activity is separate below.</p>
       <div class="split">
         <div>
@@ -450,11 +511,17 @@
       </div>`;
   }
 
-  function renderActivity() {
+  async function renderActivity() {
     const comp = selectedCompetition();
     const id = comp ? comp.config.competition_id : "";
+    let equity = [];
+    let trades = [];
+    try {
+      equity = await ensureEquity();
+      trades = await ensureTrades(id);
+    } catch (err) { equity = []; trades = []; }
     const series = {};
-    state.equity.filter((point) => point.competition_id === id && point.timestamp_unix).forEach((point) => {
+    equity.filter((point) => point.competition_id === id && point.timestamp_unix).forEach((point) => {
       (series[point.participant_id] = series[point.participant_id] || []).push(point);
     });
     const ids = Object.keys(series);
@@ -465,7 +532,7 @@
       ${equityChart(series, ids)}
       <div class="legend">${legend}</div>
       <h3>Simulated trades by day</h3>
-      ${activityTable(id)}`;
+      ${activityTable(trades)}`;
     bindToolbar();
   }
 
@@ -488,9 +555,9 @@
     return `<svg class="chart" viewBox="0 0 ${w} ${h}" role="img" aria-label="Simulated equity">${paths}</svg>`;
   }
 
-  function activityTable(id) {
+  function activityTable(trades) {
     const counts = {};
-    state.trades.filter((row) => row.competition_id === id && row.timestamp).forEach((row) => {
+    (trades || []).filter((row) => row.timestamp).forEach((row) => {
       const day = row.timestamp.slice(0, 10);
       const key = day + "|" + row.strategy_id;
       counts[key] = (counts[key] || 0) + 1;
@@ -502,9 +569,11 @@
     return `<div class="table-wrap"><table><thead><tr><th>Day (UTC)</th><th>Strategy</th><th class="num">Ledger rows</th></tr></thead><tbody>${rows || `<tr><td colspan="3">No timestamped simulated trades.</td></tr>`}</tbody></table></div>`;
   }
 
-  function renderFlags() {
+  async function renderFlags() {
     const q = state.q.trim().toLowerCase();
-    const rows = state.flags.filter((flag) => !q || JSON.stringify(flag).toLowerCase().includes(q)).slice(0, 400);
+    let flags = [];
+    try { flags = await ensureFlags(); } catch (err) { flags = []; }
+    const rows = flags.filter((flag) => !q || JSON.stringify(flag).toLowerCase().includes(q)).slice(0, 400);
     const body = rows.map((flag) => `<tr>
       <td>${badge(flag.severity === "review" || flag.severity === "integrity" ? "review" : "info", flag.severity || "info")}</td>
       <td><code>${esc(flag.code || "")}</code></td>
@@ -546,7 +615,7 @@
       <div class="card">
         <h3>Reproduction</h3>
         <p>Input SHA-256 of <code>data/kalshi/markets.jsonl</code>: <code>${esc(state.summary.input_sha256 || "")}</code></p>
-        <p class="small">Engine ${esc(state.summary.engine_version)}. Rerun with <code>python scripts/refresh.py --skip-collect</code>. The refresh script reruns every competition and requires the ledger to match.</p>
+        <p class="small">Engine ${esc(state.summary.engine_version)}. Build reruns every competition before writing and refuses a ledger that does not match. Replay: ${esc((state.summary.replay || {}).status || "not recorded")} ${esc((state.summary.replay || {}).ledger_sha256 || "")}.</p>
       </div>
       <p class="links"><a href="data/kalshi/manifest.json">manifest.json</a> <a href="data/kalshi/failures.json">failures.json</a> <a href="data/kalshi/SCHEMA.md">field sources</a></p>`;
   }
@@ -740,24 +809,14 @@
   async function boot() {
     renderNav();
     try {
-      const [summary, trades, positions, markets, results, comparisons, flags, equity] = await Promise.all([
+      const [summary, markets, comparisons] = await Promise.all([
         loadJSON("data/sim/summary.json"),
-        loadJSON("data/sim/trades.json"),
-        loadJSON("data/sim/positions.json"),
         loadJSON("data/sim/market_index.json"),
-        loadJSON("data/sim/market_results.json"),
         loadJSON("data/sim/comparisons.json"),
-        loadJSON("data/sim/flags.json"),
-        loadJSON("data/sim/equity.json"),
       ]);
       state.summary = summary;
-      state.trades = trades;
-      state.positions = positions;
       state.markets = markets;
-      state.results = results;
       state.comparisons = comparisons;
-      state.flags = flags;
-      state.equity = equity;
     } catch (err) {
       state.error = err.message;
     }

@@ -1,7 +1,7 @@
 {
   "source_url": "https://api.nobelprize.org/2/nobelPrize/phy/2025",
   "retrieved": "2026-09-24",
-  "note": "Official API body retrieved 2026-09-24. Compared with catalog.json prize physics-2025.",
+  "note": "Extract of the official API body retrieved 2026-09-24, not a byte-for-byte copy. Names, portions, date awarded, prize amount, and English motivation were compared with catalog.json prize physics-2025 and matched. Swedish text and link objects from the live response are omitted here.",
   "body": [
     {
       "awardYear": "2025",

@@ -34,7 +34,7 @@ python scripts/refresh.py
 python -m unittest discover -s tests -v
 ```
 
-`refresh.py` collects, simulates, then reruns the simulation and requires the same ledger. `--skip-collect` reruns from the stored snapshot.
+`refresh.py` collects, then builds. The build reruns every competition and refuses to write if the ledger does not match. `--skip-collect` reruns from the stored snapshot.
 
 GitHub Actions workflow **Collect Kalshi and simulate** runs on a schedule and on changes to `simcomp/` or `scripts/`. The build sandbox used for the first version could not open TLS to Kalshi or nobelprize.org. Actions can. Failed requests are recorded and left empty.
 
@@ -44,7 +44,7 @@ Primary runs, each with its own $10,000 paper bankroll:
 
 - `nobel-forward-primary` — open Nobel markets. Unsettled. Rank is a liquidation mark, not a win rate.
 - `nobel-settled-primary` — settled Nobel markets whose candles end before `settlement_ts`.
-- `panel-settled-primary` — a capped settled panel (`KXHIGHNY`, `KXFEDDECISION`), not the whole exchange.
+- `panel-settled-primary` — a capped settled panel (`KXHIGHNY`, `KXFEDDECISION`) among the first 2000 historical rows per series, not the whole exchange.
 
 Assumption runs (fees off, larger size, wider momentum threshold, fill at last trade) are separate competitions. They are not the primary leaderboard.
 

@@ -319,13 +319,8 @@ def run_competition(markets: list[Market], config: SimConfig, strategies: list[S
                     _drawdown(book, _equity(book, positions, participant["id"], market.ticker, candle))
                     equity_points.append(_equity_point(config, participant, book, positions, end_ts, market.ticker, candle))
                 elif clip:
-                    flags.append({
-                        "code": "order_not_filled",
-                        "severity": "info",
-                        "message": f"{participant['id']} {market.ticker} {intent.action} {intent.side}: {clip}",
-                        "market_ticker": market.ticker,
-                        "participant_id": participant["id"],
-                    })
+                    key = (participant["id"], clip.split(";")[0][:80])
+                    skip_counts[key] = skip_counts.get(key, 0) + 1
 
     # Settlement is a later event. Strategies are not called.
     for market, candles in prepared:

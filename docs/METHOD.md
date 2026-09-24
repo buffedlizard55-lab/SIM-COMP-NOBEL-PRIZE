@@ -44,7 +44,9 @@ on taker-style fills when `fee_type` starts with `quadratic`. That formula match
 
 Nobel universe: every non-multivariate market the collector could retrieve for a series whose ticker or title contains `NOBEL`, from both the live and historical market endpoints. Open or unsettled markets go to the forward competition. Markets with an official `yes` or `no` result and a settlement timestamp go to the historical Nobel competition.
 
-Panel universe: not the whole exchange. For `KXHIGHNY` and `KXFEDDECISION`, the collector keeps at most 25 settled binary markets with a settlement timestamp, at least six hours between open and settlement, and volume greater than zero, highest volume first. If a series 404s, it is listed in `failures.json` and left empty.
+Panel universe: not the whole exchange. For `KXHIGHNY` and `KXFEDDECISION`, the collector keeps at most 25 settled binary markets with a settlement timestamp, at least six hours between open and settlement, and volume greater than zero, highest volume first, among the first 2000 historical rows returned for that series. That is not a global volume ranking. If a series 404s, it is listed in `failures.json` and left empty.
+
+A series whose ticker contains `NOBEL` is not automatically a prize-winner market. `KXTRUMPNOBEL` is a name match. The contract rules are the market.
 
 Failed requests are not filled in.
 

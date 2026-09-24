@@ -7,11 +7,11 @@ Written 2026-09-24, after the first working desk. These are the gaps that still 
 1. This sandbox cannot open TLS to `api.nobelprize.org`, `www.nobelprize.org`, or the Kalshi API hosts (`SSL_ERROR_SYSCALL`). Collection runs in GitHub Actions, where the public API is reachable. If that workflow did not commit a snapshot, the leaderboard files will be missing until someone runs `python scripts/refresh.py` on a network that can reach Kalshi.
 2. The Nobel market universe is complete only for series the collector actually received. A series whose title does not contain "NOBEL" and that is not in the known list will be missed. Physics is `KXNOBELPHYSICS`, not `KXNOBELPHYS`.
 3. The settled panel is a cap, not a history of the exchange. Twenty-five markets per series, two series (`KXHIGHNY`, `KXFEDDECISION`). Weather markets are short-lived. Fed markets use `fee_type=quadratic_with_maker_fees`; the engine charges the taker formula only and says so.
-4. Candles are hourly when a market's open-to-settlement span is 10 days or less, otherwise daily. One-minute candles are not stored. Intra-hour path is not available to strategies, on purpose.
+4. Candles are hourly when the open-to-settlement span is 10 days or less, when the market opened within two days of the fetch, or when a daily request returns an empty list. One-minute candles are not stored. Intra-hour path is not available to strategies, on purpose. An empty candle list is not a price.
 5. Public trades (`GET /markets/trades`) are not yet archived. The decision clock is the candlestick close. A trade-level backtest would need that endpoint, with the same no-lookahead rule.
 6. The fetch-time order book is stored for up to 15 open Nobel markets and is not used for decisions. There is no historical order-book replay. Quote closes are the book history the API actually returned.
 7. `close_time` and `expected_expiration_time` on a settled payload may have been revised. Primary strategies do not use them. A "late entry" strategy would need point-in-time metadata this API snapshot does not provide.
-8. Rate limits and partial pagination are recorded in `failures.json`. A stopped page is a hole, not a zero.
+8. Rate limits and partial pagination are recorded in `failures.json`. A stopped page is a hole, not a zero. The first snapshot (2026-09-24T17:29:32Z) had 575 HTTP 400s because `mve_filter` was sent with `series_ticker` or `event_ticker` on `/historical/markets`. Those filters are mutually exclusive. That bug is why `nobel_settled` was 0. The collector no longer sends `mve_filter` on historical calls. Do not treat that empty settled book as a finding about Kalshi.
 
 ## Simulation
 
@@ -34,7 +34,7 @@ Written 2026-09-24, after the first working desk. These are the gaps that still 
 
 20. GitHub Pages serves the repository root from `main`. It updates after merge, not from this branch. The preview in the build sandbox is the local static server.
 21. The Kalshi website link on a market page is a path built from the series ticker. The API URL is the one to trust if they disagree.
-22. The desk loads the full trade ledger in the browser. If a later snapshot grows past a few hundred thousand rows, split the ledger by competition before the page gets slow.
+22. The leaderboard does not download the full trade ledger. Each competition's ledger is `data/sim/trades_by_competition/{id}.json`. `trades.json` remains the full audit file.
 
 ## Suggested next session, in order
 

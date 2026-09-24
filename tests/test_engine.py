@@ -216,6 +216,22 @@ class StrategySeparationTests(unittest.TestCase):
         self.assertTrue(all(row["simulated"] is True and row["real_order"] is False for row in result["trades"]))
 
 
+class IntervalTests(unittest.TestCase):
+    def test_market_opened_today_uses_hourly(self):
+        from simcomp.collect import choose_interval
+        raw = {"open_time": "2026-09-24T14:00:00Z", "close_time": "2026-10-14T03:59:00Z"}
+        self.assertEqual(choose_interval(raw, 1790270972), 60)
+
+    def test_short_settled_market_uses_hourly(self):
+        from simcomp.collect import choose_interval
+        raw = {
+            "open_time": "2025-10-10T18:00:00Z",
+            "settlement_ts": "2025-10-17T01:33:10Z",
+            "close_time": "2025-10-17T00:33:07Z",
+        }
+        self.assertEqual(choose_interval(raw, 1790270972), 60)
+
+
 class NobelCatalogTests(unittest.TestCase):
     def test_catalog_counts_and_no_invented_nominees(self):
         import json
