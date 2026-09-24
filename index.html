@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIM-COMP Nobel Prize</title>
+  <meta name="description" content="Nobel Prize records from official sources, and a simulated competition on public Kalshi market data. Simulated trades are not real orders.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1914'/%3E%3Cpath d='M6 22V8h2.2l4.3 9.2L16.8 8H19v14h-1.8v-9.4L13.2 22h-1.6L7.8 12.6V22zM21 8h5.2v1.6h-3.3V22H21z' fill='%23f4f0e6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <div class="mast-inner">
+      <p class="stamp">Simulated competition · not real Kalshi trades</p>
+      <div class="brand">
+        <p class="eyebrow">Research desk · official links on every record</p>
+        <h1>SIM-COMP Nobel Prize</h1>
+        <p class="lede">A Nobel Prize record you can check line by line, and a paper-trading competition on stored Kalshi prices. The leaderboard is the point of this desk. The prizes are the archive underneath it.</p>
+      </div>
+    </div>
+    <nav class="views" aria-label="Sections" id="nav"></nav>
+  </header>
+  <main id="main">
+    <p class="loading" id="boot">Loading the competition record…</p>
+    <noscript>
+      <p>JavaScript is required for the desk. The review files are still here:</p>
+      <ul>
+        <li><a href="data/sim/LEADERBOARD.md">Simulated leaderboard</a></li>
+        <li><a href="data/sim/trades.csv">Simulated trades</a></li>
+        <li><a href="data/nobel/prizes.csv">Nobel prizes</a></li>
+        <li><a href="data/nobel/laureates.csv">Laureates</a></li>
+        <li><a href="data/nobel/nominations.csv">Nomination archive rows</a></li>
+        <li><a href="docs/METHOD.md">Method</a></li>
+      </ul>
+    </noscript>
+  </main>
+  <footer class="colophon">
+    <p>Not affiliated with Kalshi, Nobel Prize Outreach, or the Nobel Foundation. Market fields link to the Kalshi Trade API. Prize fields link to nobelprize.org. Simulated names, orders, and P&amp;L are paper only.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[
+  {
+    "url": "/series",
+    "status": 200,
+    "body": "stopped at cap 5000",
+    "params": {}
+  },
+  {
+    "url": "/events",
+    "status": 200,
+    "body": "stopped at cap 500",
+    "params": {
+      "series_ticker": "KXHIGHNY"
+    }
+  },
+  {
+    "url": "/historical/markets",
+    "status": 200,
+    "body": "stopped at cap 2000",
+    "params": {
+      "series_ticker": "KXHIGHNY"
+    }
+  }
+]
