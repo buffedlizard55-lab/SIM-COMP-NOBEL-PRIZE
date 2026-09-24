@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-09-24T20:11:30Z",
-  "fetched_at_unix": 1790280690,
+  "fetched_at": "2026-09-24T23:17:25Z",
+  "fetched_at_unix": 1790291845,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
   "calls": 340,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
