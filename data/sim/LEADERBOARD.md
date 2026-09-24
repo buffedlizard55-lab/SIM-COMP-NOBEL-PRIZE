@@ -2,7 +2,7 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-09-24T17:59:54Z
+Kalshi snapshot: 2026-09-24T18:04:09Z
 
 ## Nobel markets, forward simulation
 
@@ -13,7 +13,7 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 134.
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 4 | sim-kira-null | seeded_null | 8725.3260 | 0.0000 | -1274.6740 | 121.4300 | 60 |
+| 4 | sim-kira-null | seeded_null | 8726.2350 | 0.0000 | -1273.7650 | 121.4300 | 60 |
 | 5 | sim-gina-tight | tight_value | 8333.5740 | 0.0000 | -1666.4260 | 205.7300 | 67 |
 | 6 | sim-cleo-longshot | longshot_hold | 8044.1500 | 0.0000 | -1955.8500 | 225.8500 | 67 |
 | 7 | sim-elena-revert | mean_revert | 7480.2900 | -2431.2800 | -88.4300 | 432.0200 | 136 |

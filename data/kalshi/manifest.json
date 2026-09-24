@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-09-24T17:59:54Z",
-  "fetched_at_unix": 1790272794,
+  "fetched_at": "2026-09-24T18:04:09Z",
+  "fetched_at_unix": 1790273049,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
-  "calls": 328,
+  "calls": 340,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
   "exchange_status": {
     "exchange_active": true,
@@ -69,8 +69,8 @@
     "KXFEDDECISION": 25
   },
   "panel_cap_per_series": 25,
-  "markets_stored": 252,
-  "markets_with_candles": 252,
+  "markets_stored": 264,
+  "markets_with_candles": 264,
   "events_stored": 650,
   "orderbooks_stored": 15,
   "failure_count": 3,

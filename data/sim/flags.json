@@ -2,8 +2,92 @@
   {
     "code": "no_pre_settlement_candles",
     "severity": "info",
+    "message": "KXNOBELPEACE-26-CHOW has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-CONC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IAJ has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ICRC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IPRA has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ISS has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-MMEY has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-PCFF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-RSF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-SGSV has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
     "message": "KXNOBELPEACE-26-VNAK has no candlestick ending before settlement (or before a proved decision clock).",
     "market_ticker": "KXNOBELPEACE-26-VNAK",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-WTO has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-YAD has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
     "competition_id": "nobel-forward-primary"
   },
   {
@@ -160,8 +244,92 @@
   {
     "code": "no_pre_settlement_candles",
     "severity": "info",
+    "message": "KXNOBELPEACE-26-CHOW has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-CONC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IAJ has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ICRC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IPRA has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ISS has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-MMEY has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-PCFF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-RSF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-SGSV has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
     "message": "KXNOBELPEACE-26-VNAK has no candlestick ending before settlement (or before a proved decision clock).",
     "market_ticker": "KXNOBELPEACE-26-VNAK",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-WTO has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-YAD has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
     "competition_id": "nobel-forward-fee-off"
   },
   {
@@ -311,8 +479,92 @@
   {
     "code": "no_pre_settlement_candles",
     "severity": "info",
+    "message": "KXNOBELPEACE-26-CHOW has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-CONC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IAJ has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ICRC has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-IPRA has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-ISS has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-MMEY has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-PCFF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-RSF has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-SGSV has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
     "message": "KXNOBELPEACE-26-VNAK has no candlestick ending before settlement (or before a proved decision clock).",
     "market_ticker": "KXNOBELPEACE-26-VNAK",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-WTO has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "no_pre_settlement_candles",
+    "severity": "info",
+    "message": "KXNOBELPEACE-26-YAD has no candlestick ending before settlement (or before a proved decision clock).",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
     "competition_id": "nobel-forward-size-250"
   },
   {

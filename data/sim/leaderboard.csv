@@ -2,7 +2,7 @@ participant_id,display_name,strategy_id,simulated,starting_cash,ending_equity,ca
 sim-ada-hold,Ada Hold,hold_cash,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-primary
 sim-basil-favorite,Basil Favorite,favorite_hold,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-primary
 sim-jonas-exit,Jonas Exit,favorite_exit,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-primary
-sim-kira-null,Kira Null,seeded_null,True,10000.0000,8725.3260,5184.4950,3540.8310,0.0000,-1274.6740,121.4300,60,60,-0.1275,1274.6740,0,0,0,,4,False,nobel-forward-primary
+sim-kira-null,Kira Null,seeded_null,True,10000.0000,8726.2350,5184.4950,3541.7400,0.0000,-1273.7650,121.4300,60,60,-0.1274,1273.7650,0,0,0,,4,False,nobel-forward-primary
 sim-gina-tight,Gina Tight,tight_value,True,10000.0000,8333.5740,6427.5300,1906.0440,0.0000,-1666.4260,205.7300,67,67,-0.1666,1666.4260,0,0,0,,5,False,nobel-forward-primary
 sim-cleo-longshot,Cleo Longshot,longshot_hold,True,10000.0000,8044.1500,6124.1500,1920.0000,0.0000,-1955.8500,225.8500,67,67,-0.1956,1955.8500,0,0,0,,6,False,nobel-forward-primary
 sim-elena-revert,Elena Revert,mean_revert,True,10000.0000,7480.2900,7420.2900,60.0000,-2431.2800,-88.4300,432.0200,136,2,-0.2520,2519.7100,67,0,67,0.0000,7,False,nobel-forward-primary
@@ -35,7 +35,7 @@ sim-farid-fade,Farid Fade,contrarian,True,10000.0000,1657.3600,1657.3600,0.0000,
 sim-ada-hold,Ada Hold,hold_cash,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-fee-off
 sim-basil-favorite,Basil Favorite,favorite_hold,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-fee-off
 sim-jonas-exit,Jonas Exit,favorite_exit,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-fee-off
-sim-kira-null,Kira Null,seeded_null,True,10000.0000,8846.7560,5305.9250,3540.8310,0.0000,-1153.2440,0.0000,60,60,-0.1153,1153.2440,0,0,0,,4,False,nobel-forward-fee-off
+sim-kira-null,Kira Null,seeded_null,True,10000.0000,8847.6650,5305.9250,3541.7400,0.0000,-1152.3350,0.0000,60,60,-0.1152,1152.3350,0,0,0,,4,False,nobel-forward-fee-off
 sim-gina-tight,Gina Tight,tight_value,True,10000.0000,8539.3040,6633.2600,1906.0440,0.0000,-1460.6960,0.0000,67,67,-0.1461,1460.6960,0,0,0,,5,False,nobel-forward-fee-off
 sim-cleo-longshot,Cleo Longshot,longshot_hold,True,10000.0000,8270.0000,6350.0000,1920.0000,0.0000,-1730.0000,0.0000,67,67,-0.1730,1730.0000,0,0,0,,6,False,nobel-forward-fee-off
 sim-elena-revert,Elena Revert,mean_revert,True,10000.0000,7912.3100,7852.3100,60.0000,-2007.6900,-80.0000,0.0000,136,2,-0.2088,2087.6900,67,1,65,0.0149,7,False,nobel-forward-fee-off
@@ -46,7 +46,7 @@ sim-farid-fade,Farid Fade,contrarian,True,10000.0000,813.9850,0.6140,813.3710,-8
 sim-ada-hold,Ada Hold,hold_cash,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-size-250
 sim-basil-favorite,Basil Favorite,favorite_hold,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-size-250
 sim-jonas-exit,Jonas Exit,favorite_exit,True,10000.0000,10000.0000,10000.0000,0.0000,0.0000,0.0000,0.0000,0,0,0.0000,0.0000,0,0,0,,1,True,nobel-forward-size-250
-sim-kira-null,Kira Null,seeded_null,True,10000.0000,8410.1290,788.0970,7622.0320,0.0000,-1589.8710,141.4600,60,60,-0.1590,1589.8710,0,0,0,,4,False,nobel-forward-size-250
+sim-kira-null,Kira Null,seeded_null,True,10000.0000,8412.3970,788.0970,7624.3000,0.0000,-1587.6030,141.4600,60,60,-0.1588,1587.6030,0,0,0,,4,False,nobel-forward-size-250
 sim-gina-tight,Gina Tight,tight_value,True,10000.0000,8195.6600,6275.6600,1920.0000,0.0000,-1804.3400,212.3400,67,67,-0.1804,1804.3400,0,0,0,,5,False,nobel-forward-size-250
 sim-cleo-longshot,Cleo Longshot,longshot_hold,True,10000.0000,8044.1500,6124.1500,1920.0000,0.0000,-1955.8500,225.8500,67,67,-0.1956,1955.8500,0,0,0,,6,False,nobel-forward-size-250
 sim-elena-revert,Elena Revert,mean_revert,True,10000.0000,7360.5300,7300.5300,60.0000,-2551.0400,-88.4300,459.9700,136,2,-0.2639,2639.4700,67,0,67,0.0000,7,False,nobel-forward-size-250

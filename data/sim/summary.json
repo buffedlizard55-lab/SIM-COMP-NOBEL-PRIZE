@@ -1,8 +1,8 @@
 {
   "engine_version": "1.0.0",
   "generated_from": "data/kalshi/markets.jsonl",
-  "input_sha256": "8565f5e13b10427432c2e5107b2b0c30bc1fa1df6f42637d6077faf29a02b949",
-  "fetched_at": "2026-09-24T17:59:54Z",
+  "input_sha256": "c55395d0f9d42508e5288c7a99559cfd0ad6ee37bd1a1b96f64b47719cf2924b",
+  "fetched_at": "2026-09-24T18:04:09Z",
   "replay": {
     "status": "matched",
     "ledger_sha256": "13490d89630e9e32b1e5729c054e0bac1c7c21218585634946533ad6615a6143",
@@ -106,16 +106,16 @@
           "strategy_id": "seeded_null",
           "simulated": true,
           "starting_cash": "10000.0000",
-          "ending_equity": "8725.3260",
+          "ending_equity": "8726.2350",
           "cash": "5184.4950",
-          "liquidation_value": "3540.8310",
+          "liquidation_value": "3541.7400",
           "realized_pnl": "0.0000",
-          "unrealized_pnl": "-1274.6740",
+          "unrealized_pnl": "-1273.7650",
           "fees": "121.4300",
           "trade_count": 60,
           "open_positions": 60,
-          "roi": "-0.1275",
-          "max_drawdown": "1274.6740",
+          "roi": "-0.1274",
+          "max_drawdown": "1273.7650",
           "settled_round_trips": 0,
           "wins": 0,
           "losses": 0,
@@ -287,7 +287,7 @@
       ],
       "markets_used": 134,
       "trade_count": 3880,
-      "flag_count": 19
+      "flag_count": 31
     },
     {
       "config": {
@@ -937,16 +937,16 @@
           "strategy_id": "seeded_null",
           "simulated": true,
           "starting_cash": "10000.0000",
-          "ending_equity": "8846.7560",
+          "ending_equity": "8847.6650",
           "cash": "5305.9250",
-          "liquidation_value": "3540.8310",
+          "liquidation_value": "3541.7400",
           "realized_pnl": "0.0000",
-          "unrealized_pnl": "-1153.2440",
+          "unrealized_pnl": "-1152.3350",
           "fees": "0.0000",
           "trade_count": 60,
           "open_positions": 60,
-          "roi": "-0.1153",
-          "max_drawdown": "1153.2440",
+          "roi": "-0.1152",
+          "max_drawdown": "1152.3350",
           "settled_round_trips": 0,
           "wins": 0,
           "losses": 0,
@@ -1118,7 +1118,7 @@
       ],
       "markets_used": 134,
       "trade_count": 4133,
-      "flag_count": 19
+      "flag_count": 31
     },
     {
       "config": {
@@ -1214,16 +1214,16 @@
           "strategy_id": "seeded_null",
           "simulated": true,
           "starting_cash": "10000.0000",
-          "ending_equity": "8410.1290",
+          "ending_equity": "8412.3970",
           "cash": "788.0970",
-          "liquidation_value": "7622.0320",
+          "liquidation_value": "7624.3000",
           "realized_pnl": "0.0000",
-          "unrealized_pnl": "-1589.8710",
+          "unrealized_pnl": "-1587.6030",
           "fees": "141.4600",
           "trade_count": 60,
           "open_positions": 60,
-          "roi": "-0.1590",
-          "max_drawdown": "1589.8710",
+          "roi": "-0.1588",
+          "max_drawdown": "1587.6030",
           "settled_round_trips": 0,
           "wins": 0,
           "losses": 0,
@@ -1395,7 +1395,7 @@
       ],
       "markets_used": 134,
       "trade_count": 3424,
-      "flag_count": 19
+      "flag_count": 31
     },
     {
       "config": {
@@ -3664,7 +3664,7 @@
     }
   ],
   "data_quality": {
-    "fetched_at": "2026-09-24T17:59:54Z",
+    "fetched_at": "2026-09-24T18:04:09Z",
     "exchange_status": {
       "exchange_active": true,
       "exchange_index_statuses": [
@@ -3706,8 +3706,8 @@
       "orders_updated_ts": "2026-07-25T00:00:00Z",
       "trades_created_ts": "2026-07-25T00:00:00Z"
     },
-    "markets_stored": 252,
-    "markets_with_candle_responses": 252,
+    "markets_stored": 264,
+    "markets_with_candle_responses": 264,
     "collection_failures": 3,
     "nobel_series": [
       "KXNOBELCHEM",
@@ -3737,7 +3737,7 @@
       "not_invented": "Failed requests are listed in failures.json. No price, volume, or result is filled in."
     },
     "universes": {
-      "nobel_forward": 135,
+      "nobel_forward": 147,
       "nobel_settled": 67,
       "panel_settled": 50
     },

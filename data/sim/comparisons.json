@@ -38,9 +38,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "8725.3260",
+        "ending_equity": "8726.2350",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-1274.6740",
+        "unrealized_pnl": "-1273.7650",
         "fees": "121.4300",
         "trade_count": 60,
         "rank": 4
@@ -392,9 +392,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "8846.7560",
+        "ending_equity": "8847.6650",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-1153.2440",
+        "unrealized_pnl": "-1152.3350",
         "fees": "0.0000",
         "trade_count": 60,
         "rank": 4
@@ -510,9 +510,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "8410.1290",
+        "ending_equity": "8412.3970",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-1589.8710",
+        "unrealized_pnl": "-1587.6030",
         "fees": "141.4600",
         "trade_count": 60,
         "rank": 4
