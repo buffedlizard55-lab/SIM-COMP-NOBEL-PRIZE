@@ -56,6 +56,34 @@ Prize rows, names, portions, amounts, dates, and motivations come from the Nobel
 
 Other candidates are the names on stored nomination-archive list pages. Sealed years have empty nominee lists. Economic sciences is not in the public nomination archive. Neither gap is filled with guesses.
 
+## The research program (1,000 strategies, 10 batches)
+
+The program layer (`simcomp/research_program.py`, `simcomp/program.py`) is the same
+simulation under a batch discipline:
+
+- Everything above applies unchanged: decision clock, fill fields, size rules, fee
+  reading, no participant-to-participant trading. The two engines share
+  `compute_fill`, and `tests/test_program.py ParityTests` proves they produce the
+  same ledger, equity, P&L, fees, and drawdown for the same strategies.
+- 1,000 variants are enumerated one at a time in the registry, grouped into 10
+  research topics of 100 variants each. Parameters are predeclared before any run.
+- Batch-001 is the null reference: random valid entries driven by stored SHA-256
+  seeds. Every family result is displayed next to the null band. A median inside
+  the band is not an edge.
+- A program strategy receives at most the 24 prior candles of its market. Every
+  declared lookback fits inside the window; the registry and tests refuse a
+  variant that needs more.
+- Program ledgers are compact CSV (`data/sim/program/trades/{batch}/{universe}.csv.gz`).
+  The price always names the stored candle field it came from (`YA`, `YB`, `NA`,
+  `NB`, `MR`). Settlement rows are the only rows that use the official result,
+  and they sit exactly at `settlement_ts`.
+- After every full pass, batch-001 is rerun in all three universes and every
+  per-participant ledger hash must match (`manifest.json → replay`), or the build
+  refuses to write the bundle.
+- `scripts/audit_program.py` replays the CSV ledgers against the stored candles:
+  cash chain, realized P&L, decision clock, sampled fill prices, and manifest
+  hashes. `scripts/verify_program.py` re-runs a batch end to end.
+
 ## Reproduction
 
 `python scripts/refresh.py` collects, simulates, and reruns the simulation to require an identical ledger. `python scripts/refresh.py --skip-collect` reruns from the stored snapshot. The input hash is the SHA-256 of `data/kalshi/markets.jsonl`.

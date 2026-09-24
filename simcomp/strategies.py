@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field
+from decimal import Decimal
 
 from simcomp.money import usable_quote
 
@@ -55,6 +56,24 @@ class Strategy:
     name = ""
     summary = ""
     parameters: dict = {}
+
+    def __init__(self):
+        self._cache: dict = {}
+
+    def _num(self, key, ctx) -> Decimal:
+        """Parameter as Decimal, cached per instance. parameters stay the audit source."""
+        cached = self._cache.get(key)
+        if cached is None:
+            cached = ctx.decimal(self.parameters[key])
+            self._cache[key] = cached
+        return cached
+
+    def _int(self, key) -> int:
+        cached = self._cache.get(key)
+        if cached is None:
+            cached = int(self.parameters[key])
+            self._cache[key] = cached
+        return cached
 
     def decide(self, ctx) -> Decision:
         raise NotImplementedError
@@ -109,9 +128,9 @@ class FavoriteHold(Strategy):
         p = self.parameters
         if not usable_quote(ask):
             return Decision(note="no usable yes ask")
-        if not _spread_ok(candle, ctx.decimal(p["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
-        if ask < ctx.decimal(p["min_ask"]) or ask > ctx.decimal(p["max_ask"]):
+        if ask < self._num("min_ask", ctx) or ask > self._num("max_ask", ctx):
             return Decision(note="yes ask outside favorite band")
         return Decision(
             intents=[Intent("buy", "yes", reason=(
@@ -136,9 +155,9 @@ class LongshotHold(Strategy):
         p = self.parameters
         if not usable_quote(ask):
             return Decision(note="no usable yes ask")
-        if not _spread_ok(candle, ctx.decimal(p["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
-        if ask < ctx.decimal(p["min_ask"]) or ask > ctx.decimal(p["max_ask"]):
+        if ask < self._num("min_ask", ctx) or ask > self._num("max_ask", ctx):
             return Decision(note="yes ask outside longshot band")
         return Decision(
             intents=[Intent("buy", "yes", reason=(
@@ -154,17 +173,17 @@ class _MoveStrategy(Strategy):
 
     def decide(self, ctx) -> Decision:
         p = self.parameters
-        if len(ctx.prior) < int(p["min_prior_candles"]):
+        if len(ctx.prior) < self._int("min_prior_candles"):
             return Decision(note="not enough prior candles")
         candle = ctx.candle
-        if not _spread_ok(candle, ctx.decimal(p["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
         current, current_src = _reference_price(candle)
         previous, previous_src = _reference_price(ctx.prior[-1])
         if current is None or previous is None:
             return Decision(note="no reference price on this candle or the prior candle")
         move = current - previous
-        threshold = ctx.decimal(p["min_move"])
+        threshold = self._num("min_move", ctx)
         if abs(move) < threshold:
             return Decision(note=f"move {move} below {threshold}")
         follow_yes = move > 0
@@ -206,10 +225,10 @@ class MeanRevert(Strategy):
     parameters = {"deviation": "0.06", "lookback": 3, "max_spread": "0.12"}
 
     def decide(self, ctx) -> Decision:
-        lookback = int(self.parameters["lookback"])
+        lookback = self._int("lookback")
         if len(ctx.prior) < lookback:
             return Decision(note="not enough prior candles for the mean")
-        if not _spread_ok(ctx.candle, ctx.decimal(self.parameters["max_spread"])):
+        if not _spread_ok(ctx.candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
         refs = []
         for candle in ctx.prior[-lookback:]:
@@ -221,7 +240,7 @@ class MeanRevert(Strategy):
         current, src = _reference_price(ctx.candle)
         if current is None:
             return Decision(note="no reference price")
-        deviation = ctx.decimal(self.parameters["deviation"])
+        deviation = self._num("deviation", ctx)
         if ctx.position.qty and ctx.position.side == "yes" and current >= mean:
             return Decision(
                 intents=[Intent("sell", "yes", ctx.position.qty, reason=(
@@ -254,9 +273,9 @@ class TightValue(Strategy):
         ask = candle.yes_ask_close
         if not usable_quote(ask):
             return Decision(note="no usable yes ask")
-        if not _spread_ok(candle, ctx.decimal(self.parameters["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread wider than the tight cap or missing")
-        if ask > ctx.decimal(self.parameters["max_ask"]):
+        if ask > self._num("max_ask", ctx):
             return Decision(note="ask above value cap")
         return Decision(
             intents=[Intent("buy", "yes", reason=(
@@ -279,9 +298,9 @@ class DiversifiedSlice(Strategy):
         ask = candle.yes_ask_close
         if not usable_quote(ask) or not usable_quote(candle.yes_bid_close):
             return Decision(note="book is not two-sided")
-        if not _spread_ok(candle, ctx.decimal(self.parameters["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap")
-        if ask < ctx.decimal(self.parameters["min_ask"]) or ask > ctx.decimal(self.parameters["max_ask"]):
+        if ask < self._num("min_ask", ctx) or ask > self._num("max_ask", ctx):
             return Decision(note="ask outside slice band")
         return Decision(
             intents=[Intent("buy", "yes", reason=(
@@ -299,23 +318,23 @@ class VolumeMomentum(Strategy):
 
     def decide(self, ctx) -> Decision:
         p = self.parameters
-        if len(ctx.prior) < int(p["min_prior_candles"]):
+        if len(ctx.prior) < self._int("min_prior_candles"):
             return Decision(note="not enough prior candles for a volume median")
         volumes = [c.volume for c in ctx.prior if c.volume is not None]
-        if len(volumes) < int(p["min_prior_candles"]) or ctx.candle.volume is None:
+        if len(volumes) < self._int("min_prior_candles") or ctx.candle.volume is None:
             return Decision(note="volume missing")
         ordered = sorted(volumes)
         median = ordered[(len(ordered) - 1) // 2]
         if ctx.candle.volume <= median:
             return Decision(note=f"volume {ctx.candle.volume} is not above prior median {median}")
-        if not _spread_ok(ctx.candle, ctx.decimal(p["max_spread"])):
+        if not _spread_ok(ctx.candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
         current, current_src = _reference_price(ctx.candle)
         previous, previous_src = _reference_price(ctx.prior[-1])
         if current is None or previous is None:
             return Decision(note="no reference price")
         move = current - previous
-        if abs(move) < ctx.decimal(p["min_move"]):
+        if abs(move) < self._num("min_move", ctx):
             return Decision(note="move below threshold")
         side = "yes" if move > 0 else "no"
         reason = (
@@ -344,12 +363,12 @@ class FavoriteExit(Strategy):
             if not usable_quote(bid):
                 return Decision(note="cannot exit; no usable bid")
             entry = ctx.position.avg_entry_price
-            if bid >= entry + ctx.decimal(self.parameters["take"]):
+            if bid >= entry + self._num("take", ctx):
                 return Decision(
                     intents=[Intent("sell", "yes", ctx.position.qty, reason=f"bid {bid} is {self.parameters['take']} above entry {entry}")],
                     note="take profit",
                 )
-            if bid <= entry - ctx.decimal(self.parameters["stop"]):
+            if bid <= entry - self._num("stop", ctx):
                 return Decision(
                     intents=[Intent("sell", "yes", ctx.position.qty, reason=f"bid {bid} is {self.parameters['stop']} below entry {entry}")],
                     note="stop",
@@ -360,9 +379,9 @@ class FavoriteExit(Strategy):
         ask = candle.yes_ask_close
         if not usable_quote(ask):
             return Decision(note="no usable yes ask")
-        if not _spread_ok(candle, ctx.decimal(self.parameters["max_spread"])):
+        if not _spread_ok(candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
-        if ask < ctx.decimal(self.parameters["min_ask"]) or ask > ctx.decimal(self.parameters["max_ask"]):
+        if ask < self._num("min_ask", ctx) or ask > self._num("max_ask", ctx):
             return Decision(note="yes ask outside favorite band")
         return Decision(
             intents=[Intent("buy", "yes", reason=f"yes ask close {ask} inside favorite band")],
@@ -383,13 +402,13 @@ class SeededNull(Strategy):
     def decide(self, ctx) -> Decision:
         if ctx.position.qty:
             return Decision(note="null model holds until settlement")
-        if not _spread_ok(ctx.candle, ctx.decimal(self.parameters["max_spread"])):
+        if not _spread_ok(ctx.candle, self._num("max_spread", ctx)):
             return Decision(note="spread outside cap or missing")
         digest = hashlib.sha256(
             f"{self.parameters['seed']}|{ctx.market.ticker}|{ctx.candle.end_period_ts}".encode()
         ).hexdigest()
         bucket = int(digest[:8], 16) % 1000
-        if bucket >= int(self.parameters["fire_per_mille"]):
+        if bucket >= self._int("fire_per_mille"):
             return Decision(note="null draw did not fire")
         side = "yes" if int(digest[8:10], 16) % 2 == 0 else "no"
         return Decision(
