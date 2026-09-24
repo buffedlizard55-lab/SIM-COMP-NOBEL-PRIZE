@@ -209,6 +209,20 @@ def _mark(position: Position, candle: Candle | None) -> tuple[Decimal, str]:
     return ZERO, "unknown side"
 
 
+def assign_ranks(rows: list[dict]) -> None:
+    """Competition rank. Equal ending equity shares a rank. Alphabetical id is not a win."""
+    rows.sort(key=lambda row: (-D(row["ending_equity"]), row["participant_id"]))
+    seen = None
+    rank = 0
+    for index, row in enumerate(rows, start=1):
+        equity = row["ending_equity"]
+        if equity != seen:
+            rank = index
+            seen = equity
+        row["rank"] = rank
+        row["tied"] = sum(1 for other in rows if other["ending_equity"] == equity) > 1
+
+
 def _drawdown(book: Book, equity: Decimal) -> None:
     if equity > book.peak:
         book.peak = equity
@@ -479,9 +493,7 @@ def run_competition(markets: list[Market], config: SimConfig, strategies: list[S
             "losses": book.losses,
             "win_rate_settled": None if trips == 0 else money(Decimal(book.wins) / Decimal(trips)),
         })
-    leaderboard.sort(key=lambda row: (D(row["ending_equity"]), row["participant_id"]), reverse=True)
-    for rank, row in enumerate(leaderboard, start=1):
-        row["rank"] = rank
+    assign_ranks(leaderboard)
 
     market_results = []
     for market, candles in prepared:

@@ -32,9 +32,9 @@
       },
       "leaderboard": [
         {
-          "participant_id": "sim-jonas-exit",
-          "display_name": "Jonas Exit",
-          "strategy_id": "favorite_exit",
+          "participant_id": "sim-ada-hold",
+          "display_name": "Ada Hold",
+          "strategy_id": "hold_cash",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -51,7 +51,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -73,12 +74,13 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 2
+          "rank": 1,
+          "tied": true
         },
         {
-          "participant_id": "sim-ada-hold",
-          "display_name": "Ada Hold",
-          "strategy_id": "hold_cash",
+          "participant_id": "sim-jonas-exit",
+          "display_name": "Jonas Exit",
+          "strategy_id": "favorite_exit",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -95,7 +97,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 3
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-kira-null",
@@ -117,7 +120,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -139,7 +143,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -161,7 +166,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -183,7 +189,8 @@
           "wins": 0,
           "losses": 67,
           "win_rate_settled": "0.0000",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -205,7 +212,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -227,7 +235,8 @@
           "wins": 15,
           "losses": 296,
           "win_rate_settled": "0.0482",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -249,7 +258,8 @@
           "wins": 11,
           "losses": 668,
           "win_rate_settled": "0.0162",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -271,7 +281,8 @@
           "wins": 14,
           "losses": 652,
           "win_rate_settled": "0.0210",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 134,
@@ -317,7 +328,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -339,7 +351,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -361,7 +374,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -383,7 +397,8 @@
           "wins": 20,
           "losses": 27,
           "win_rate_settled": "0.4255",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -405,7 +420,8 @@
           "wins": 3,
           "losses": 25,
           "win_rate_settled": "0.1071",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -427,7 +443,8 @@
           "wins": 3,
           "losses": 29,
           "win_rate_settled": "0.0938",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -449,7 +466,8 @@
           "wins": 2,
           "losses": 54,
           "win_rate_settled": "0.0357",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -471,7 +489,8 @@
           "wins": 3,
           "losses": 54,
           "win_rate_settled": "0.0526",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -493,7 +512,8 @@
           "wins": 45,
           "losses": 247,
           "win_rate_settled": "0.1541",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -515,7 +535,8 @@
           "wins": 37,
           "losses": 449,
           "win_rate_settled": "0.0761",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -537,7 +558,8 @@
           "wins": 24,
           "losses": 514,
           "win_rate_settled": "0.0446",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 66,
@@ -583,7 +605,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -605,7 +628,8 @@
           "wins": 5,
           "losses": 11,
           "win_rate_settled": "0.3125",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -627,7 +651,8 @@
           "wins": 10,
           "losses": 6,
           "win_rate_settled": "0.6250",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -649,7 +674,8 @@
           "wins": 9,
           "losses": 28,
           "win_rate_settled": "0.2432",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -671,7 +697,8 @@
           "wins": 2,
           "losses": 35,
           "win_rate_settled": "0.0541",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -693,7 +720,8 @@
           "wins": 6,
           "losses": 39,
           "win_rate_settled": "0.1333",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -715,7 +743,8 @@
           "wins": 11,
           "losses": 34,
           "win_rate_settled": "0.2444",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -737,7 +766,8 @@
           "wins": 25,
           "losses": 94,
           "win_rate_settled": "0.2101",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -759,7 +789,8 @@
           "wins": 98,
           "losses": 448,
           "win_rate_settled": "0.1795",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -781,7 +812,8 @@
           "wins": 81,
           "losses": 474,
           "win_rate_settled": "0.1459",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -803,7 +835,8 @@
           "wins": 153,
           "losses": 586,
           "win_rate_settled": "0.2070",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 50,
@@ -830,9 +863,9 @@
       },
       "leaderboard": [
         {
-          "participant_id": "sim-jonas-exit",
-          "display_name": "Jonas Exit",
-          "strategy_id": "favorite_exit",
+          "participant_id": "sim-ada-hold",
+          "display_name": "Ada Hold",
+          "strategy_id": "hold_cash",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -849,7 +882,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -871,12 +905,13 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 2
+          "rank": 1,
+          "tied": true
         },
         {
-          "participant_id": "sim-ada-hold",
-          "display_name": "Ada Hold",
-          "strategy_id": "hold_cash",
+          "participant_id": "sim-jonas-exit",
+          "display_name": "Jonas Exit",
+          "strategy_id": "favorite_exit",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -893,7 +928,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 3
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-kira-null",
@@ -915,7 +951,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -937,7 +974,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -959,7 +997,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -981,7 +1020,8 @@
           "wins": 1,
           "losses": 65,
           "win_rate_settled": "0.0149",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -1003,7 +1043,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -1025,7 +1066,8 @@
           "wins": 19,
           "losses": 286,
           "win_rate_settled": "0.0611",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -1047,7 +1089,8 @@
           "wins": 18,
           "losses": 678,
           "win_rate_settled": "0.0254",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -1069,7 +1112,8 @@
           "wins": 25,
           "losses": 696,
           "win_rate_settled": "0.0332",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 134,
@@ -1096,9 +1140,9 @@
       },
       "leaderboard": [
         {
-          "participant_id": "sim-jonas-exit",
-          "display_name": "Jonas Exit",
-          "strategy_id": "favorite_exit",
+          "participant_id": "sim-ada-hold",
+          "display_name": "Ada Hold",
+          "strategy_id": "hold_cash",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -1115,7 +1159,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -1137,12 +1182,13 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 2
+          "rank": 1,
+          "tied": true
         },
         {
-          "participant_id": "sim-ada-hold",
-          "display_name": "Ada Hold",
-          "strategy_id": "hold_cash",
+          "participant_id": "sim-jonas-exit",
+          "display_name": "Jonas Exit",
+          "strategy_id": "favorite_exit",
           "simulated": true,
           "starting_cash": "10000.0000",
           "ending_equity": "10000.0000",
@@ -1159,7 +1205,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 3
+          "rank": 1,
+          "tied": true
         },
         {
           "participant_id": "sim-kira-null",
@@ -1181,7 +1228,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -1203,7 +1251,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -1225,7 +1274,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -1247,7 +1297,8 @@
           "wins": 0,
           "losses": 67,
           "win_rate_settled": "0.0000",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -1269,7 +1320,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -1291,7 +1343,8 @@
           "wins": 15,
           "losses": 287,
           "win_rate_settled": "0.0497",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -1313,7 +1366,8 @@
           "wins": 10,
           "losses": 518,
           "win_rate_settled": "0.0189",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -1335,7 +1389,8 @@
           "wins": 9,
           "losses": 599,
           "win_rate_settled": "0.0148",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 134,
@@ -1381,7 +1436,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-ada-hold",
@@ -1403,7 +1459,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -1425,7 +1482,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -1447,7 +1505,8 @@
           "wins": 20,
           "losses": 27,
           "win_rate_settled": "0.4255",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -1469,7 +1528,8 @@
           "wins": 3,
           "losses": 24,
           "win_rate_settled": "0.1071",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -1491,7 +1551,8 @@
           "wins": 3,
           "losses": 29,
           "win_rate_settled": "0.0938",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -1513,7 +1574,8 @@
           "wins": 2,
           "losses": 54,
           "win_rate_settled": "0.0357",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -1535,7 +1597,8 @@
           "wins": 3,
           "losses": 54,
           "win_rate_settled": "0.0526",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -1557,7 +1620,8 @@
           "wins": 52,
           "losses": 230,
           "win_rate_settled": "0.1781",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -1579,7 +1643,8 @@
           "wins": 53,
           "losses": 469,
           "win_rate_settled": "0.0987",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -1601,7 +1666,8 @@
           "wins": 34,
           "losses": 477,
           "win_rate_settled": "0.0631",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 66,
@@ -1647,7 +1713,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -1669,7 +1736,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -1691,7 +1759,8 @@
           "wins": 1,
           "losses": 1,
           "win_rate_settled": "0.5000",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -1713,7 +1782,8 @@
           "wins": 20,
           "losses": 27,
           "win_rate_settled": "0.4255",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -1735,7 +1805,8 @@
           "wins": 3,
           "losses": 25,
           "win_rate_settled": "0.1071",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -1757,7 +1828,8 @@
           "wins": 3,
           "losses": 29,
           "win_rate_settled": "0.0938",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -1779,7 +1851,8 @@
           "wins": 2,
           "losses": 54,
           "win_rate_settled": "0.0357",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -1801,7 +1874,8 @@
           "wins": 3,
           "losses": 54,
           "win_rate_settled": "0.0526",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -1823,7 +1897,8 @@
           "wins": 36,
           "losses": 233,
           "win_rate_settled": "0.1338",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -1845,7 +1920,8 @@
           "wins": 34,
           "losses": 441,
           "win_rate_settled": "0.0716",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -1867,7 +1943,8 @@
           "wins": 21,
           "losses": 490,
           "win_rate_settled": "0.0411",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 66,
@@ -1913,7 +1990,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -1935,7 +2013,8 @@
           "wins": 5,
           "losses": 11,
           "win_rate_settled": "0.3125",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -1957,7 +2036,8 @@
           "wins": 10,
           "losses": 6,
           "win_rate_settled": "0.6250",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -1979,7 +2059,8 @@
           "wins": 9,
           "losses": 28,
           "win_rate_settled": "0.2432",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -2001,7 +2082,8 @@
           "wins": 2,
           "losses": 35,
           "win_rate_settled": "0.0541",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -2023,7 +2105,8 @@
           "wins": 6,
           "losses": 39,
           "win_rate_settled": "0.1333",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -2045,7 +2128,8 @@
           "wins": 31,
           "losses": 74,
           "win_rate_settled": "0.2605",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -2067,7 +2151,8 @@
           "wins": 11,
           "losses": 34,
           "win_rate_settled": "0.2444",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -2089,7 +2174,8 @@
           "wins": 228,
           "losses": 464,
           "win_rate_settled": "0.3085",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -2111,7 +2197,8 @@
           "wins": 119,
           "losses": 416,
           "win_rate_settled": "0.2136",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -2133,7 +2220,8 @@
           "wins": 134,
           "losses": 564,
           "win_rate_settled": "0.1869",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 50,
@@ -2179,7 +2267,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -2201,7 +2290,8 @@
           "wins": 5,
           "losses": 11,
           "win_rate_settled": "0.3125",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -2223,7 +2313,8 @@
           "wins": 10,
           "losses": 6,
           "win_rate_settled": "0.6250",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -2245,7 +2336,8 @@
           "wins": 9,
           "losses": 28,
           "win_rate_settled": "0.2432",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -2267,7 +2359,8 @@
           "wins": 2,
           "losses": 35,
           "win_rate_settled": "0.0541",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -2289,7 +2382,8 @@
           "wins": 6,
           "losses": 39,
           "win_rate_settled": "0.1333",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -2311,7 +2405,8 @@
           "wins": 11,
           "losses": 34,
           "win_rate_settled": "0.2444",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -2333,7 +2428,8 @@
           "wins": 25,
           "losses": 94,
           "win_rate_settled": "0.2101",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -2355,7 +2451,8 @@
           "wins": 59,
           "losses": 277,
           "win_rate_settled": "0.1751",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -2377,7 +2474,8 @@
           "wins": 59,
           "losses": 385,
           "win_rate_settled": "0.1326",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -2399,7 +2497,8 @@
           "wins": 131,
           "losses": 481,
           "win_rate_settled": "0.2141",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 50,
@@ -2445,7 +2544,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -2467,7 +2567,8 @@
           "wins": 5,
           "losses": 11,
           "win_rate_settled": "0.3125",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -2489,7 +2590,8 @@
           "wins": 10,
           "losses": 6,
           "win_rate_settled": "0.6250",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -2511,7 +2613,8 @@
           "wins": 9,
           "losses": 28,
           "win_rate_settled": "0.2432",
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -2533,7 +2636,8 @@
           "wins": 2,
           "losses": 35,
           "win_rate_settled": "0.0541",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -2555,7 +2659,8 @@
           "wins": 6,
           "losses": 39,
           "win_rate_settled": "0.1333",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -2577,7 +2682,8 @@
           "wins": 11,
           "losses": 34,
           "win_rate_settled": "0.2444",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -2599,7 +2705,8 @@
           "wins": 25,
           "losses": 94,
           "win_rate_settled": "0.2101",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -2621,7 +2728,8 @@
           "wins": 61,
           "losses": 190,
           "win_rate_settled": "0.2430",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-dmitri-momentum",
@@ -2643,7 +2751,8 @@
           "wins": 61,
           "losses": 238,
           "win_rate_settled": "0.2040",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -2665,7 +2774,8 @@
           "wins": 153,
           "losses": 586,
           "win_rate_settled": "0.2070",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 50,
@@ -2711,7 +2821,8 @@
           "wins": 265,
           "losses": 384,
           "win_rate_settled": "0.4083",
-          "rank": 1
+          "rank": 1,
+          "tied": false
         },
         {
           "participant_id": "sim-ines-volume",
@@ -2733,7 +2844,8 @@
           "wins": 233,
           "losses": 337,
           "win_rate_settled": "0.4088",
-          "rank": 2
+          "rank": 2,
+          "tied": false
         },
         {
           "participant_id": "sim-kira-null",
@@ -2755,7 +2867,8 @@
           "wins": 13,
           "losses": 23,
           "win_rate_settled": "0.3611",
-          "rank": 3
+          "rank": 3,
+          "tied": false
         },
         {
           "participant_id": "sim-ada-hold",
@@ -2777,7 +2890,8 @@
           "wins": 0,
           "losses": 0,
           "win_rate_settled": null,
-          "rank": 4
+          "rank": 4,
+          "tied": false
         },
         {
           "participant_id": "sim-jonas-exit",
@@ -2799,7 +2913,8 @@
           "wins": 7,
           "losses": 9,
           "win_rate_settled": "0.4375",
-          "rank": 5
+          "rank": 5,
+          "tied": false
         },
         {
           "participant_id": "sim-basil-favorite",
@@ -2821,7 +2936,8 @@
           "wins": 10,
           "losses": 6,
           "win_rate_settled": "0.6250",
-          "rank": 6
+          "rank": 6,
+          "tied": false
         },
         {
           "participant_id": "sim-elena-revert",
@@ -2843,7 +2959,8 @@
           "wins": 56,
           "losses": 55,
           "win_rate_settled": "0.5045",
-          "rank": 7
+          "rank": 7,
+          "tied": false
         },
         {
           "participant_id": "sim-cleo-longshot",
@@ -2865,7 +2982,8 @@
           "wins": 2,
           "losses": 34,
           "win_rate_settled": "0.0556",
-          "rank": 8
+          "rank": 8,
+          "tied": false
         },
         {
           "participant_id": "sim-gina-tight",
@@ -2887,7 +3005,8 @@
           "wins": 6,
           "losses": 39,
           "win_rate_settled": "0.1333",
-          "rank": 9
+          "rank": 9,
+          "tied": false
         },
         {
           "participant_id": "sim-hiro-slice",
@@ -2909,7 +3028,8 @@
           "wins": 11,
           "losses": 34,
           "win_rate_settled": "0.2444",
-          "rank": 10
+          "rank": 10,
+          "tied": false
         },
         {
           "participant_id": "sim-farid-fade",
@@ -2931,7 +3051,8 @@
           "wins": 226,
           "losses": 423,
           "win_rate_settled": "0.3482",
-          "rank": 11
+          "rank": 11,
+          "tied": false
         }
       ],
       "markets_used": 50,

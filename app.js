@@ -185,7 +185,7 @@
     const q = state.q.trim().toLowerCase();
     const rows = comp.leaderboard.filter((row) => !q || `${row.participant_id} ${row.strategy_id}`.toLowerCase().includes(q));
     const body = rows.map((row) => `<tr>
-      <td class="num">${esc(row.rank)}</td>
+      <td class="num">${esc(displayRank(rows, row))}${rows.filter((other) => other.ending_equity === row.ending_equity).length > 1 ? " tie" : ""}</td>
       <td><a href="#participant/${esc(row.participant_id)}">${esc(row.participant_id)}</a><br><span class="muted small">${esc(row.display_name)} ${sim()}</span></td>
       <td><a href="#strategies">${esc(row.strategy_id)}</a></td>
       <td class="num">${num(row.ending_equity)}</td>
@@ -196,13 +196,45 @@
       <td class="num">${row.win_rate_settled == null ? "—" : num(row.win_rate_settled)}</td>
       <td class="num">${num(row.max_drawdown)}</td>
     </tr>`).join("");
-    return `<div class="table-wrap"><table>
+    return boardNote(comp) + `<div class="table-wrap"><table>
       <thead><tr>
         <th class="num">Rank</th><th>Participant</th><th>Strategy</th>
         <th class="num">Ending equity</th><th class="num">Realized</th><th class="num">Unrealized</th>
         <th class="num">Fees</th><th class="num">Trades</th><th class="num">Settled win rate</th><th class="num">Max drawdown</th>
       </tr></thead><tbody>${body || `<tr><td colspan="10">No rows.</td></tr>`}</tbody>
     </table></div>`;
+  }
+
+  function displayRank(rows, row) {
+    const index = rows.findIndex((other) => other.ending_equity === row.ending_equity);
+    return index >= 0 ? index + 1 : row.rank;
+  }
+
+  function boardNote(comp) {
+    const rows = comp.leaderboard || [];
+    if (!rows.length || comp.empty_reason) return "";
+    const top = rows[0].ending_equity;
+    const tied = rows.filter((row) => row.ending_equity === top);
+    const bits = [];
+    if (tied.length > 1) bits.push(tied.length + " participants share the top equity. Same cash is a tie. Alphabetical order is not a win.");
+    if (tied.every((row) => Number(row.trade_count) === 0)) bits.push("The top equity did not place a simulated trade. Unspent cash is the baseline, not a market call.");
+    return bits.length ? `<p class="note">${esc(bits.join(" "))}</p>` : "";
+  }
+
+  function coverageCard() {
+    const nobel = state.markets.filter((market) => market.universe === "nobel" || String(market.series_ticker || "").indexOf("NOBEL") !== -1);
+    const settled = nobel.filter((market) => market.result === "yes" || market.result === "no");
+    const events = Array.from(new Set(settled.map((market) => market.event_ticker))).sort();
+    const yes = settled.filter((market) => market.result === "yes").map((market) => market.ticker + " (" + (market.subtitle || market.title) + ")");
+    const series = Array.from(new Set(nobel.map((market) => market.series_ticker)));
+    const openOnly = series.filter((name) => !nobel.some((market) => market.series_ticker === name && (market.result === "yes" || market.result === "no")));
+    return `<div class="card">
+      <h3>What the settled Nobel book does not cover</h3>
+      <p>Settled events stored: ${esc(events.join(", ") || "none")}.</p>
+      <p>Official yes contracts: ${esc(yes.join("; ") || "none")}. A yes is Kalshi's result field, not a simulated call.</p>
+      <p>Series with markets stored but no settled result: ${esc(openOnly.join(", ") || "none")}. That hole is not evidence the prize was not awarded, and no contract was invented to fill it.</p>
+      <p class="small">A ticker containing NOBEL can be a name match. KXTRUMPNOBEL is not the Peace Prize winner market.</p>
+    </div>`;
   }
 
   function renderLeaderboard() {
@@ -224,6 +256,7 @@
         <p class="small muted">${esc(comp.config.assumption_note)} Markets used: ${esc(comp.markets_used)}. Starting cash ${esc(comp.config.starting_cash)}.</p>
         ${comp.empty_reason ? `<p class="note">${esc(comp.empty_reason)}</p>` : leaderboardTable(comp)}
       </section>`).join("")}
+      ${coverageCard()}
       <p class="small">A blank settled win rate means nothing has settled in that run. Forward ranks are mark-to-market, not a track record.</p>`;
     bindToolbar();
   }
@@ -606,6 +639,7 @@
         <p>Panel series: ${esc((q.panel_series || []).join(", ") || "none")}. Kept: <code>${esc(JSON.stringify(q.panel_kept || {}))}</code></p>
         <p>Universes simulated: <code>${esc(JSON.stringify(q.universes || {}))}</code></p>
       </div>
+      ${coverageCard()}
       <div class="card">
         <h3>Scope, so the gaps are visible</h3>
         <p>${esc((q.scope || {}).nobel || "")}</p>

@@ -161,6 +161,142 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             writer.writerow(flat)
 
 
+def _fold(text: str) -> str:
+    import unicodedata
+    norm = unicodedata.normalize("NFKD", text or "")
+    return "".join(ch for ch in norm if not unicodedata.combining(ch)).casefold()
+
+
+def _name_in_blob(blob: str, name: str) -> bool:
+    folded = _fold(name)
+    if folded and folded in blob:
+        return True
+    last = (name or "").split()[-1] if (name or "").split() else ""
+    return len(last) >= 4 and _fold(last) in blob
+
+
+def _subject_from_series(series: str) -> str:
+    text = (series or "").upper()
+    for token, subject in (
+        ("ECON", "economics"),
+        ("PEACE", "peace"),
+        ("LIT", "literature"),
+        ("CHEM", "chemistry"),
+        ("MED", "medicine"),
+        ("PHYS", "physics"),
+    ):
+        if token in text:
+            return subject
+    return ""
+
+
+def _event_year(event_ticker: str) -> int | None:
+    tail = (event_ticker or "").rsplit("-", 1)[-1]
+    digits = "".join(ch for ch in tail if ch.isdigit())
+    if len(digits) < 2:
+        return None
+    year = int(digits[-2:])
+    return 2000 + year if year < 70 else 1900 + year
+
+
+def coverage_flags(root: Path, markets: list) -> list[dict]:
+    """Holes a reader could mistake for findings. Does not invent markets."""
+    flags = []
+    nobel = [m for m in markets if m.universe == "nobel" or "NOBEL" in (m.series_ticker or "")]
+    settled = [m for m in nobel if (m.result or "") in ("yes", "no")]
+    events = sorted({m.event_ticker for m in settled if m.event_ticker})
+    flags.append({
+        "code": "settled_nobel_coverage",
+        "severity": "info",
+        "message": (
+            "Settled Nobel events stored: " + (", ".join(events) if events else "none")
+            + ". This is what the collector received, not every prize Kalshi might have listed under another ticker."
+        ),
+        "market_ticker": "",
+        "competition_id": "",
+    })
+    by_series: dict[str, list] = {}
+    for market in nobel:
+        by_series.setdefault(market.series_ticker or "?", []).append(market)
+    for series, rows in sorted(by_series.items()):
+        if rows and not any((m.result or "") in ("yes", "no") for m in rows):
+            flags.append({
+                "code": "no_settled_markets_stored",
+                "severity": "review",
+                "message": (
+                    f"{series}: {len(rows)} stored markets, none with an official yes or no. "
+                    "Absence is a hole in this snapshot, not evidence the prize was not awarded."
+                ),
+                "market_ticker": series,
+                "competition_id": "",
+            })
+    manifest_path = root / "data" / "kalshi" / "manifest.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        stored_series = {m.series_ticker for m in nobel}
+        for series in manifest.get("nobel_series") or []:
+            if series not in stored_series:
+                flags.append({
+                    "code": "series_listed_no_markets_stored",
+                    "severity": "review",
+                    "message": (
+                        f"{series} was in the collector's Nobel series list, and this snapshot stored no markets for it. "
+                        "The historical and live market queries returned nothing usable. No contracts were invented."
+                    ),
+                    "market_ticker": series,
+                    "competition_id": "",
+                })
+    catalog_path = root / "data" / "nobel" / "catalog.json"
+    if catalog_path.exists():
+        flags.extend(_laureate_gaps(catalog_path, settled))
+    return flags
+
+
+def _laureate_gaps(catalog_path: Path, settled: list) -> list[dict]:
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    by_key: dict[tuple[int, str], list[str]] = {}
+    for prize in catalog.get("prizes") or []:
+        if not prize.get("awarded"):
+            continue
+        year = prize.get("year")
+        subject = prize.get("category")
+        if not isinstance(year, int) or not subject:
+            continue
+        names = []
+        for row in prize.get("laureates") or []:
+            name = row.get("familyName") or row.get("displayName") or ""
+            if name:
+                names.append(name)
+        if names:
+            by_key.setdefault((year, subject), []).extend(names)
+    grouped: dict[tuple[int, str], list] = {}
+    for market in settled:
+        subject = _subject_from_series(market.series_ticker)
+        year = _event_year(market.event_ticker)
+        if subject and year:
+            grouped.setdefault((year, subject), []).append(market)
+    flags = []
+    for key, rows in sorted(grouped.items()):
+        names = by_key.get(key) or []
+        if not names:
+            continue
+        blob = _fold(" ".join(f"{m.ticker} {m.subtitle} {m.rules_primary}" for m in rows))
+        missing = [name for name in names if not _name_in_blob(blob, name)]
+        if not missing:
+            continue
+        flags.append({
+            "code": "laureate_not_in_stored_contracts",
+            "severity": "review",
+            "message": (
+                f"{key[0]} {key[1]}: stored contracts do not name {', '.join(missing)}. "
+                "Those names are from the Nobel catalog, not from Kalshi. No yes market was added to fill the gap."
+            ),
+            "market_ticker": rows[0].event_ticker,
+            "competition_id": "",
+        })
+    return flags
+
+
 def ledger_sha256(trades: list[dict]) -> str:
     keys = (
         "trade_id", "competition_id", "participant_id", "market_ticker",
@@ -263,7 +399,8 @@ def build(root: Path | None = None) -> dict:
             "market_ticker": "",
             "competition_id": "",
         })
-        for failure in failures[:12]:
+    all_flags.extend(coverage_flags(root, markets))
+    for failure in failures[:12]:
             all_flags.append({
                 "code": "collection_failure",
                 "severity": "review",

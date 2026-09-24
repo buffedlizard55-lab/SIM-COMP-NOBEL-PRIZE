@@ -481,6 +481,69 @@
     "competition_id": ""
   },
   {
+    "code": "settled_nobel_coverage",
+    "severity": "info",
+    "message": "Settled Nobel events stored: KXNOBELECON-25, KXNOBELLIT-25, KXNOBELPEACE-25, KXTRUMPNOBEL-25OCT15, NOBELLIT-23. This is what the collector received, not every prize Kalshi might have listed under another ticker.",
+    "market_ticker": "",
+    "competition_id": ""
+  },
+  {
+    "code": "no_settled_markets_stored",
+    "severity": "review",
+    "message": "KXNOBELCHEM: 30 stored markets, none with an official yes or no. Absence is a hole in this snapshot, not evidence the prize was not awarded.",
+    "market_ticker": "KXNOBELCHEM",
+    "competition_id": ""
+  },
+  {
+    "code": "no_settled_markets_stored",
+    "severity": "review",
+    "message": "KXNOBELMED: 37 stored markets, none with an official yes or no. Absence is a hole in this snapshot, not evidence the prize was not awarded.",
+    "market_ticker": "KXNOBELMED",
+    "competition_id": ""
+  },
+  {
+    "code": "no_settled_markets_stored",
+    "severity": "review",
+    "message": "KXNOBELPHYSICS: 24 stored markets, none with an official yes or no. Absence is a hole in this snapshot, not evidence the prize was not awarded.",
+    "market_ticker": "KXNOBELPHYSICS",
+    "competition_id": ""
+  },
+  {
+    "code": "series_listed_no_markets_stored",
+    "severity": "review",
+    "message": "NOBELCHEM was in the collector's Nobel series list, and this snapshot stored no markets for it. The historical and live market queries returned nothing usable. No contracts were invented.",
+    "market_ticker": "NOBELCHEM",
+    "competition_id": ""
+  },
+  {
+    "code": "series_listed_no_markets_stored",
+    "severity": "review",
+    "message": "NOBELECON was in the collector's Nobel series list, and this snapshot stored no markets for it. The historical and live market queries returned nothing usable. No contracts were invented.",
+    "market_ticker": "NOBELECON",
+    "competition_id": ""
+  },
+  {
+    "code": "series_listed_no_markets_stored",
+    "severity": "review",
+    "message": "NOBELMED was in the collector's Nobel series list, and this snapshot stored no markets for it. The historical and live market queries returned nothing usable. No contracts were invented.",
+    "market_ticker": "NOBELMED",
+    "competition_id": ""
+  },
+  {
+    "code": "series_listed_no_markets_stored",
+    "severity": "review",
+    "message": "NOBELPHYSICS was in the collector's Nobel series list, and this snapshot stored no markets for it. The historical and live market queries returned nothing usable. No contracts were invented.",
+    "market_ticker": "NOBELPHYSICS",
+    "competition_id": ""
+  },
+  {
+    "code": "laureate_not_in_stored_contracts",
+    "severity": "review",
+    "message": "2025 economics: stored contracts do not name Joel Mokyr, Philippe Aghion, Peter Howitt. Those names are from the Nobel catalog, not from Kalshi. No yes market was added to fill the gap.",
+    "market_ticker": "KXNOBELECON-25",
+    "competition_id": ""
+  },
+  {
     "code": "collection_failure",
     "severity": "review",
     "message": "{\"url\": \"/series\", \"status\": 200, \"body\": \"stopped at cap 5000\"}",

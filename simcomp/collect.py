@@ -96,7 +96,16 @@ class KalshiClient:
             if not cursor or not batch:
                 break
         if len(rows) >= cap:
-            failures.append({"url": path, "status": 200, "body": f"stopped at cap {cap}"})
+            failures.append({
+                "url": path,
+                "status": 200,
+                "body": f"stopped at cap {cap}",
+                "params": {
+                    key: params.get(key)
+                    for key in ("series_ticker", "event_ticker", "status", "mve_filter")
+                    if params.get(key)
+                },
+            })
         return rows, failures
 
 
@@ -327,16 +336,25 @@ def collect(root: Path) -> dict:
                 )
                 if candle_status == 200:
                     tier = "historical"
+        candle_note = ""
         if (
             candle_status == 200
             and isinstance(candle_body, dict)
             and not candle_body.get("candlesticks")
             and interval == 1440
         ):
-            # A daily window can be empty when the market opened today. Retry hourly.
-            # Do not treat the empty daily response as a price.
-            params["period_interval"] = 60
-            interval = 60
+            # A daily window can be empty when the market opened today. Retry hourly
+            # only if the request stays inside Kalshi's 5000-candle cap. An empty
+            # daily list is not a price, and an oversized hourly request is not one either.
+            span = params["end_ts"] - params["start_ts"]
+            if span / 60 <= 5000:
+                params["period_interval"] = 60
+                interval = 60
+            else:
+                candle_note = (
+                    "Daily candlesticks were empty. Hourly retry skipped because the window "
+                    f"would be {span / 60:.0f} candles, above the 5000 cap. No price was invented."
+                )
             if tier == "historical":
                 candle_status, candle_body, candle_url = client.get(
                     f"/historical/markets/{ticker}/candlesticks", params
@@ -372,6 +390,7 @@ def collect(root: Path) -> dict:
             "source_url": market.source_url,
             "candle_source_url": candle_url,
             "candle_status": candle_status,
+            "candle_note": candle_note,
             "period_interval": interval,
             "series": {
                 "ticker": series.get("ticker"),

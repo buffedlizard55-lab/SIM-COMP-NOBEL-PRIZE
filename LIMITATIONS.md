@@ -36,6 +36,18 @@ Written 2026-09-24, after the first working desk. These are the gaps that still 
 21. The Kalshi website link on a market page is a path built from the series ticker. The API URL is the one to trust if they disagree.
 22. The leaderboard does not download the full trade ledger. Each competition's ledger is `data/sim/trades_by_competition/{id}.json`. `trades.json` remains the full audit file.
 
+## What the 2026-09-24 17:47 UTC snapshot actually contains
+
+Checked against the stored files and, for the holes, against the public Kalshi endpoints on the same day.
+
+- Settled Nobel events stored: `KXNOBELECON-25`, `KXNOBELLIT-25`, `KXNOBELPEACE-25`, `KXTRUMPNOBEL-25OCT15`, `NOBELLIT-23`. Official yes contracts in that set: László Krasznahorkai, María Corina Machado, Jon Fosse. Those names match the Nobel catalog for literature 2025, peace 2025, and literature 2023.
+- `GET /historical/markets?series_ticker=KXNOBELPHYSICS`, `KXNOBELCHEM`, and `KXNOBELMED` returned empty lists. Live `/events` for those series returned only the 2026 events. No 2025 physics, chemistry, or medicine contracts were stored because the public endpoints used here did not return them. That is not a finding that those prizes were not awarded.
+- `KXNOBELECON-25` has 20 stored contracts, every one `result=no`. The catalog laureates Joel Mokyr, Philippe Aghion, and Peter Howitt are not among the stored contract names. The event endpoint's market list, read on 2026-09-24, also did not include them. No yes market was added.
+- `KXTRUMPNOBEL-25OCT15` settled `no`. It is a name match, not the Peace Prize winner market.
+- `KXNOBELPEACE-25` (the event-level contract, volume 0) had an empty daily candle response. An hourly retry asked for about 7096 candles and Kalshi rejected it at the 5000 cap. The child contracts in that event do have candles. The parent is not a traded price that was dropped.
+- One historical market query stopped at the 2000-row cap. The failure row did not name the series. The next collector records the query parameters. The panel remains a capped sample, not a global volume rank.
+- The series catalog page stopped at 5000 rows, and one events page stopped at 500. Known Nobel series were still requested by ticker.
+
 ## Suggested next session, in order
 
 1. Confirm the Actions snapshot committed, and read `failures.json` before trusting a zero.

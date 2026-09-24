@@ -179,6 +179,23 @@ class AccountingTests(unittest.TestCase):
         self.assertEqual(buys[0]["price"], "0.4600")
         self.assertEqual(buys[0]["fill_price_source"], "yes_ask.close")
 
+    def test_equal_equity_shares_rank(self):
+        from simcomp.engine import assign_ranks
+        rows = [
+            {"participant_id": "sim-jonas-exit", "ending_equity": "10000.0000"},
+            {"participant_id": "sim-ada-hold", "ending_equity": "10000.0000"},
+            {"participant_id": "sim-basil-favorite", "ending_equity": "10000.0000"},
+            {"participant_id": "sim-cleo-longshot", "ending_equity": "8044.1500"},
+        ]
+        assign_ranks(rows)
+        self.assertEqual([row["rank"] for row in rows], [1, 1, 1, 4])
+        self.assertEqual(
+            [row["participant_id"] for row in rows],
+            ["sim-ada-hold", "sim-basil-favorite", "sim-jonas-exit", "sim-cleo-longshot"],
+        )
+        self.assertTrue(rows[0]["tied"])
+        self.assertFalse(rows[3]["tied"])
+
     def test_same_start_and_replay(self):
         candles = [
             candle(2000, "0.40", "0.42", "0.41"),

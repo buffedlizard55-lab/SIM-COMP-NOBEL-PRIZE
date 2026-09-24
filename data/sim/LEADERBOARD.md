@@ -10,9 +10,9 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 134.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 2 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 3 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 4 | sim-kira-null | seeded_null | 8725.3260 | 0.0000 | -1274.6740 | 121.4300 | 60 |
 | 5 | sim-gina-tight | tight_value | 8333.5740 | 0.0000 | -1666.4260 | 205.7300 | 67 |
 | 6 | sim-cleo-longshot | longshot_hold | 8044.1500 | 0.0000 | -1955.8500 | 225.8500 | 67 |

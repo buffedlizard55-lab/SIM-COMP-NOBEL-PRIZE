@@ -6,8 +6,8 @@
     "assumption_note": "Primary forward run. Fills at the closing quote. Taker fee interpretation on. Positions marked to the closing bid. Outcomes are not known.",
     "leaderboard": [
       {
-        "participant_id": "sim-jonas-exit",
-        "strategy_id": "favorite_exit",
+        "participant_id": "sim-ada-hold",
+        "strategy_id": "hold_cash",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
@@ -23,17 +23,17 @@
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 2
+        "rank": 1
       },
       {
-        "participant_id": "sim-ada-hold",
-        "strategy_id": "hold_cash",
+        "participant_id": "sim-jonas-exit",
+        "strategy_id": "favorite_exit",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 3
+        "rank": 1
       },
       {
         "participant_id": "sim-kira-null",
@@ -360,8 +360,8 @@
     "assumption_note": "Same decisions and fills as the primary size rules, but the taker fee is not charged. Not the primary leaderboard.",
     "leaderboard": [
       {
-        "participant_id": "sim-jonas-exit",
-        "strategy_id": "favorite_exit",
+        "participant_id": "sim-ada-hold",
+        "strategy_id": "hold_cash",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
@@ -377,17 +377,17 @@
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 2
+        "rank": 1
       },
       {
-        "participant_id": "sim-ada-hold",
-        "strategy_id": "hold_cash",
+        "participant_id": "sim-jonas-exit",
+        "strategy_id": "favorite_exit",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 3
+        "rank": 1
       },
       {
         "participant_id": "sim-kira-null",
@@ -478,8 +478,8 @@
     "assumption_note": "Entry budget raised from $100 to $250 and the per-market cost cap from $300 to $750. Fees stay on. Not the primary leaderboard.",
     "leaderboard": [
       {
-        "participant_id": "sim-jonas-exit",
-        "strategy_id": "favorite_exit",
+        "participant_id": "sim-ada-hold",
+        "strategy_id": "hold_cash",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
@@ -495,17 +495,17 @@
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 2
+        "rank": 1
       },
       {
-        "participant_id": "sim-ada-hold",
-        "strategy_id": "hold_cash",
+        "participant_id": "sim-jonas-exit",
+        "strategy_id": "favorite_exit",
         "ending_equity": "10000.0000",
         "realized_pnl": "0.0000",
         "unrealized_pnl": "0.0000",
         "fees": "0.0000",
         "trade_count": 0,
-        "rank": 3
+        "rank": 1
       },
       {
         "participant_id": "sim-kira-null",
