@@ -3,7 +3,7 @@
 
 Usage:
     python scripts/verify_program.py batch-004
-    python scripts/verify_program.py global        # all ten batches, slow
+    python scripts/verify_program.py global        # all twenty batches, slow (~4 min)
     python scripts/verify_program.py batch-001 --universe panel_settled
 
 This is the manual-review replay: it rebuilds the batch from the stored Kalshi
@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from simcomp.build import load_records, record_to_market, _bucket  # noqa: E402
-from simcomp.program import UNIVERSES, run_universe  # noqa: E402
+from simcomp.program import UNIVERSES, program_channels, run_universe  # noqa: E402
 from simcomp.research_program import program_variants  # noqa: E402
 
 
@@ -59,10 +59,13 @@ def main() -> int:
         if bucket:
             grouped[bucket].append(market)
     universes = [universe_arg] if universe_arg else list(UNIVERSES)
+    # Same decision-time channels as the build: event records, categories, and the
+    # global settled pool (every stored market, visible only after settlement_ts).
+    channels = program_channels(ROOT, grouped)
     mismatches = 0
     checked = 0
     for universe in universes:
-        result = run_universe(grouped.get(universe) or [], universe, selected, None)
+        result = run_universe(grouped.get(universe) or [], universe, selected, None, **channels)
         for pid, digest in result["ledger_hashes"].items():
             checked += 1
             if recorded.get(universe, {}).get(pid) != digest:

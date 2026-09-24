@@ -88,9 +88,13 @@ class Book:
 class DecisionView:
     """The only object a strategy receives. No result, no future candles."""
 
-    __slots__ = ("as_of_ts", "market", "candle", "prior", "position", "cash", "ever_traded", "candle_index")
+    __slots__ = (
+        "as_of_ts", "market", "candle", "prior", "position", "cash", "ever_traded", "candle_index",
+        "event", "settled", "schedule",
+    )
 
-    def __init__(self, as_of_ts, market, candle, prior, position, cash, ever_traded, candle_index=None):
+    def __init__(self, as_of_ts, market, candle, prior, position, cash, ever_traded, candle_index=None,
+                 event=None, settled=None, schedule=None):
         self.as_of_ts = as_of_ts
         self.market = market
         self.candle = candle
@@ -101,6 +105,12 @@ class DecisionView:
         # 0-based ordinal of this decision candle inside the market's usable candle
         # list. None on the primary engine path; the program engine always sets it.
         self.candle_index = candle_index
+        # Optional decision-time channels (simcomp/context.py). None on the primary
+        # engine path. Each is built only from records whose timestamp is <= as_of_ts
+        # (event quotes) or strictly < as_of_ts (settled results); see context.py.
+        self.event = event
+        self.settled = settled
+        self.schedule = schedule
 
     @staticmethod
     def decimal(value) -> Decimal:

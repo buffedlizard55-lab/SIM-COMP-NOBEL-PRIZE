@@ -56,33 +56,75 @@ Prize rows, names, portions, amounts, dates, and motivations come from the Nobel
 
 Other candidates are the names on stored nomination-archive list pages. Sealed years have empty nominee lists. Economic sciences is not in the public nomination archive. Neither gap is filled with guesses.
 
-## The research program (1,000 strategies, 10 batches)
+## The research program (2,000 strategies, 20 batches)
 
-The program layer (`simcomp/research_program.py`, `simcomp/program.py`) is the same
-simulation under a batch discipline:
+The program layer (`simcomp/research_program.py`, `simcomp/research_phase2.py`,
+`simcomp/program.py`) is the same simulation under a batch discipline:
 
-- Everything above applies unchanged: decision clock, fill fields, size rules, fee
-  reading, no participant-to-participant trading. The two engines share
-  `compute_fill`, and `tests/test_program.py ParityTests` proves they produce the
-  same ledger, equity, P&L, fees, and drawdown for the same strategies.
-- 1,000 variants are enumerated one at a time in the registry, grouped into 10
-  research topics of 100 variants each. Parameters are predeclared before any run.
+- Everything above applies unchanged: the decision clock, fill fields, size rules,
+  fee reading and no participant-to-participant trading.
+  - The two engines share `compute_fill`.
+  - `tests/test_program.py ParityTests` proves they produce the same ledger,
+    equity, P&L, fees and drawdown for the same strategies.
+- 2,000 variants are enumerated one at a time in the registry, in 20 research
+  topics of 100 variants each. Parameters and research cards were declared
+  before any run.
 - Batch-001 is the null reference: random valid entries driven by stored SHA-256
-  seeds. Every family result is displayed next to the null band. A median inside
-  the band is not an edge.
-- A program strategy receives at most the 24 prior candles of its market. Every
-  declared lookback fits inside the window; the registry and tests refuse a
-  variant that needs more.
+  seeds. 21 families also have a matched placebo in the same batch. The placebo
+  runs the family's own trigger (same markets, timestamps and contract count) but
+  picks the side of each buy with a seeded coin, which isolates the value of
+  choosing the side.
+- A program strategy receives at most the 24 prior candles of its own market.
 - Program ledgers are compact CSV (`data/sim/program/trades/{batch}/{universe}.csv.gz`).
-  The price always names the stored candle field it came from (`YA`, `YB`, `NA`,
-  `NB`, `MR`). Settlement rows are the only rows that use the official result,
-  and they sit exactly at `settlement_ts`.
-- After every full pass, batch-001 is rerun in all three universes and every
-  per-participant ledger hash must match (`manifest.json → replay`), or the build
-  refuses to write the bundle.
-- `scripts/audit_program.py` replays the CSV ledgers against the stored candles:
-  cash chain, realized P&L, decision clock, sampled fill prices, and manifest
-  hashes. `scripts/verify_program.py` re-runs a batch end to end.
+  - The price always names the stored candle field it came from (`YA`, `YB`,
+    `NA`, `NB`, `MR`).
+  - Settlement rows are the only rows that use the official result, and they
+    sit exactly at `settlement_ts`.
+- After every full pass, batches 001, 011, 013 and 018 are re-run in all three
+  universes. Every per-participant ledger hash must match
+  (`manifest.json → replay`), or the build refuses to write the bundle.
+- Verdict rules are in `simcomp/analysis.py` and on the site's Research view;
+  see docs/PROGRAM.md.
+
+### Information channels (what a program strategy may read at decision time T)
+
+Each research card lists the channels its family reads. The engine builds each
+channel so that nothing dated after T can reach the strategy
+(`simcomp/context.py`; tests in `tests/test_phase2.py ChannelLookahead`).
+
+| Channel | What it contains at T | Source field |
+| --- | --- | --- |
+| `own_candles` | This market's decision candle and at most 24 prior candles: closing bid, ask, trade, volume and open interest. | Kalshi candlesticks, `end_period_ts <= T` |
+| `own_book` | The participant's own simulated cash and position. | Engine state |
+| `event_quotes` | The latest candle **at or before T** of every stored contract in the same Kalshi event. A sibling with no candle yet at T is absent, not zero. | Kalshi candlesticks plus `event_ticker` |
+| `settled_pool` | Official results of markets whose `settlement_ts` is **strictly before T**. Includes each market's pre-settlement reference-price path (candles ending before its own settlement), for walk-forward calibration. | Kalshi `result` and `settlement_ts` |
+| `schedule` | The event's published `strike_date`. Empty for Nobel events, which have none. | Kalshi Get Event `strike_date` |
+| `clock` | The decision timestamp: UTC hour, weekday, and market age since `open_time`. | Candle `end_period_ts`, market `open_time` |
+| `seed` | A SHA-256 draw from a fixed seed. Carries no market information. | Code |
+
+No channel ever carries the following:
+
+- `result`, `settlement_value` or `expiration_value` of the market being decided;
+- any candle ending after T;
+- `close_time` or `expected_expiration_time`.
+
+On settled Nobel markets, `close_time` is revised to the moment trading was
+halted after the announcement, which is after-the-fact information
+(KXNOBELLIT-25 and KXNOBELECON-25 were checked on 2026-09-24).
+`expected_expiration_time` is uninformative. The schedule parser refuses
+`close_time`-style values.
+
+Two field facts limit what can be tested on Nobel (checked against the Get Event
+endpoint on 2026-09-24):
+
+- Nobel events report `mutually_exclusive: false`.
+- Nobel events have no `strike_date`.
+
+As a result, the sum-over-event family `event_underround_yes` never fires on
+Nobel (it shows NOT TESTED), and the batch-014 horizon rules are tested on the
+panel only. Event families that read sibling prices still run on Nobel, behind a
+probability-mass gate, because stored sibling sums are incomplete. The Kalshi
+docs say nested markets of older historical events can be omitted.
 
 ## Reproduction
 

@@ -246,3 +246,9 @@ details summary { cursor: pointer; font-weight: 600; font-family: var(--serif); 
 details ul { max-height: 26rem; overflow-y: auto; border-left: 2px solid var(--line); padding-left: 1rem; }
 th button { font-family: inherit; }
 .bar { display: inline-block; height: 0.7rem; background: var(--paper-2); border: 1px solid var(--line); }
+
+/* Research cards */
+.card-fields { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1rem; margin: 0.75rem 0; }
+.card-fields dt { font-weight: 600; color: var(--muted); }
+.card-fields dd { margin: 0; }
+@media (max-width: 640px) { .card-fields { grid-template-columns: 1fr; } .card-fields dt { margin-top: 0.4rem; } }
