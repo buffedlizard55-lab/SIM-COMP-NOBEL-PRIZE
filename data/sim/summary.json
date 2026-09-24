@@ -1,8 +1,8 @@
 {
   "engine_version": "1.0.0",
   "generated_from": "data/kalshi/markets.jsonl",
-  "input_sha256": "3c15af193961c18de20cb9b7bbe6a911b25505474cfbda88547ddd2e7cd6ab37",
-  "fetched_at": "2026-09-24T17:47:42Z",
+  "input_sha256": "8565f5e13b10427432c2e5107b2b0c30bc1fa1df6f42637d6077faf29a02b949",
+  "fetched_at": "2026-09-24T17:59:54Z",
   "replay": {
     "status": "matched",
     "ledger_sha256": "13490d89630e9e32b1e5729c054e0bac1c7c21218585634946533ad6615a6143",
@@ -3664,7 +3664,7 @@
     }
   ],
   "data_quality": {
-    "fetched_at": "2026-09-24T17:47:42Z",
+    "fetched_at": "2026-09-24T17:59:54Z",
     "exchange_status": {
       "exchange_active": true,
       "exchange_index_statuses": [
@@ -3707,8 +3707,8 @@
       "trades_created_ts": "2026-07-25T00:00:00Z"
     },
     "markets_stored": 252,
-    "markets_with_candle_responses": 251,
-    "collection_failures": 4,
+    "markets_with_candle_responses": 252,
+    "collection_failures": 3,
     "nobel_series": [
       "KXNOBELCHEM",
       "KXNOBELECON",

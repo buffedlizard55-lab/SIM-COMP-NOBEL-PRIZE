@@ -476,7 +476,7 @@
   {
     "code": "collection_failures",
     "severity": "review",
-    "message": "4 collector requests failed or were capped. See data/kalshi/failures.json. Those rows were not filled in.",
+    "message": "3 collector requests failed or were capped. See data/kalshi/failures.json. Those rows were not filled in.",
     "market_ticker": "",
     "competition_id": ""
   },
@@ -546,29 +546,22 @@
   {
     "code": "collection_failure",
     "severity": "review",
-    "message": "{\"url\": \"/series\", \"status\": 200, \"body\": \"stopped at cap 5000\"}",
+    "message": "{\"url\": \"/series\", \"status\": 200, \"body\": \"stopped at cap 5000\", \"params\": {}}",
     "market_ticker": null,
     "competition_id": ""
   },
   {
     "code": "collection_failure",
     "severity": "review",
-    "message": "{\"url\": \"/events\", \"status\": 200, \"body\": \"stopped at cap 500\"}",
+    "message": "{\"url\": \"/events\", \"status\": 200, \"body\": \"stopped at cap 500\", \"params\": {\"series_ticker\": \"KXHIGHNY\"}}",
     "market_ticker": null,
     "competition_id": ""
   },
   {
     "code": "collection_failure",
     "severity": "review",
-    "message": "{\"url\": \"/historical/markets\", \"status\": 200, \"body\": \"stopped at cap 2000\"}",
+    "message": "{\"url\": \"/historical/markets\", \"status\": 200, \"body\": \"stopped at cap 2000\", \"params\": {\"series_ticker\": \"KXHIGHNY\"}}",
     "market_ticker": null,
-    "competition_id": ""
-  },
-  {
-    "code": "collection_failure",
-    "severity": "review",
-    "message": "{\"url\": \"https://external-api.kalshi.com/trade-api/v2/historical/markets/KXNOBELPEACE-25/candlesticks?start_ts=1734557426&end_ts=1760103718&period_interval=60\", \"status\": 400, \"body\": {\"error\": {\"code\": \"bad_request\", \"message\": \"bad request\", \"details\": \"requested time range with candlesticks: 7096.192222, max candlesticks: 5000\"}}, \"ticker\": \"KXNOBELPEACE-25\"}",
-    "market_ticker": "KXNOBELPEACE-25",
     "competition_id": ""
   }
 ]
