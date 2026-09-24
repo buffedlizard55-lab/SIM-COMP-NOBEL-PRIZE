@@ -1,7 +1,7 @@
 [
   {
     "ticker": "KXNOBELPEACE-26-DJT",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-DJT/orderbook",
     "body": {
@@ -253,7 +253,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-SUD",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-SUD/orderbook",
     "body": {
@@ -377,19 +377,11 @@
           ],
           [
             "0.7100",
-            "171.15"
-          ],
-          [
-            "0.7200",
-            "3.98"
+            "175.13"
           ],
           [
             "0.7500",
             "50.00"
-          ],
-          [
-            "0.7600",
-            "500.00"
           ],
           [
             "0.7700",
@@ -397,11 +389,11 @@
           ],
           [
             "0.7800",
-            "92.98"
+            "503.98"
           ],
           [
             "0.7900",
-            "149.00"
+            "500.00"
           ],
           [
             "0.8000",
@@ -413,7 +405,7 @@
           ],
           [
             "0.8200",
-            "32.36"
+            "532.36"
           ],
           [
             "0.8500",
@@ -421,7 +413,7 @@
           ],
           [
             "0.8600",
-            "416.00"
+            "415.00"
           ],
           [
             "0.8700",
@@ -485,7 +477,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-VOL",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-VOL/orderbook",
     "body": {
@@ -608,7 +600,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-27-PLEO",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-PLEO/orderbook",
     "body": {
@@ -744,7 +736,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-DOC",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-DOC/orderbook",
     "body": {
@@ -972,7 +964,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-MIN",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-MIN/orderbook",
     "body": {
@@ -1084,7 +1076,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-MAR",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-MAR/orderbook",
     "body": {
@@ -1228,7 +1220,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-27-STC",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-STC/orderbook",
     "body": {
@@ -1344,23 +1336,27 @@
           ],
           [
             "0.8500",
-            "497.74"
+            "897.74"
           ],
           [
             "0.8600",
-            "2382.82"
+            "2782.82"
           ],
           [
             "0.8700",
-            "500.00"
+            "900.00"
           ],
           [
             "0.8800",
-            "34.91"
+            "434.91"
           ],
           [
             "0.8900",
-            "264.00"
+            "664.00"
+          ],
+          [
+            "0.9000",
+            "304.00"
           ],
           [
             "0.9100",
@@ -1370,11 +1366,11 @@
         "yes_dollars": [
           [
             "0.0100",
-            "98.00"
+            "498.00"
           ],
           [
             "0.0200",
-            "1.00"
+            "401.00"
           ],
           [
             "0.0300",
@@ -1404,7 +1400,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-27-SSHA",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-SSHA/orderbook",
     "body": {
@@ -1488,7 +1484,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-27-UNRWA",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-UNRWA/orderbook",
     "body": {
@@ -1588,7 +1584,7 @@
           ],
           [
             "0.8900",
-            "177.00"
+            "113.00"
           ],
           [
             "0.9000",
@@ -1609,20 +1605,20 @@
           [
             "0.9500",
             "93.00"
+          ],
+          [
+            "0.9600",
+            "6.00"
           ]
         ],
         "yes_dollars": [
           [
             "0.0100",
-            "923.00"
+            "722.00"
           ],
           [
             "0.0200",
-            "208.00"
-          ],
-          [
-            "0.0300",
-            "55.00"
+            "220.00"
           ]
         ]
       }
@@ -1632,7 +1628,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-ELO",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-ELO/orderbook",
     "body": {
@@ -1719,7 +1715,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-FRA",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-FRA/orderbook",
     "body": {
@@ -1838,7 +1834,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-27-YNAV",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-YNAV/orderbook",
     "body": {
@@ -1994,7 +1990,7 @@
   },
   {
     "ticker": "KXNOBELPEACE-26-ICJ",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-26-ICJ/orderbook",
     "body": {
@@ -2046,11 +2042,11 @@
           ],
           [
             "0.8800",
-            "179.00"
+            "400.00"
           ],
           [
             "0.8900",
-            "400.00"
+            "298.00"
           ],
           [
             "0.9000",
@@ -2080,11 +2076,11 @@
         "yes_dollars": [
           [
             "0.0100",
-            "400.00"
+            "900.00"
           ],
           [
             "0.0200",
-            "945.42"
+            "445.42"
           ],
           [
             "0.0400",
@@ -2098,7 +2094,7 @@
   },
   {
     "ticker": "KXNOBELPHYSICS-26-JPRE",
-    "fetched_at": "2026-09-24T17:29:32Z",
+    "fetched_at": "2026-09-24T17:47:42Z",
     "status": 200,
     "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPHYSICS-26-JPRE/orderbook",
     "body": {
