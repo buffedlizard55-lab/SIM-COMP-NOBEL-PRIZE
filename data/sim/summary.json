@@ -3790,7 +3790,7 @@
   ],
   "program": {
     "status": "ok",
-    "participants": 1000,
+    "participants": 2000,
     "batches": [
       "batch-001",
       "batch-002",
@@ -3801,24 +3801,40 @@
       "batch-007",
       "batch-008",
       "batch-009",
-      "batch-010"
+      "batch-010",
+      "batch-011",
+      "batch-012",
+      "batch-013",
+      "batch-014",
+      "batch-015",
+      "batch-016",
+      "batch-017",
+      "batch-018",
+      "batch-019",
+      "batch-020"
     ],
-    "trade_rows_total": 796975,
-    "generated_at": "2026-09-24T20:14:29Z",
+    "trade_rows_total": 912971,
+    "generated_at": "2026-09-24T21:48:07Z",
     "replay": {
       "status": "matched",
-      "batch": "batch-001",
-      "participants_checked": 300,
+      "batch": "batch-001, batch-011, batch-013, batch-018",
+      "batches": [
+        "batch-001",
+        "batch-011",
+        "batch-013",
+        "batch-018"
+      ],
+      "participants_checked": 1200,
       "universes": {
-        "nobel_forward": "e38ad14ee24727d5388a738b2f0805776332b83d35ff07b34c96d2e8df4e65db",
-        "nobel_settled": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
-        "panel_settled": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3"
+        "nobel_forward": "81a5161599077b76ef601df95c46adc8aa0327e9d1db71bf54a1b94c3c2da6eb",
+        "nobel_settled": "b3fce551cb80130416273d42c0cc310f8778b014114f213fc129dac046240e54",
+        "panel_settled": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c"
       },
-      "note": "batch-001 was rerun against the stored candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill.",
+      "note": "batch-001, batch-011, batch-013, batch-018 were rerun (fresh strategy memory via reset()) against the stored candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill.",
       "replay_universe_hashes": {
-        "nobel_forward": "e4a6e23e36791ecc9feca7b9230625b7f130b37c69580cdd4e435c81d07e5f2a",
-        "nobel_settled": "b538de95ac560e4744a1b19469c3604516433e8b49a8cbef05f89777ad603bfb",
-        "panel_settled": "572d1e3111e8d8dbef10ae25ad703b9ef0048a0ddce138cc126aa06ab93dd712"
+        "nobel_forward": "4f56bc1e7280d4d3ed5be025134214b78aac0c872f09249e247707b4c876c4d1",
+        "nobel_settled": "ee0437d73cc95c992f038fe5124c32b830d86e7a97bbacfa055044a8615acb07",
+        "panel_settled": "2ad727b1197ae1a480050ad04ac32952f47eb87c8ff57af035a53a2a5ceee8bd"
       }
     },
     "universes": {
@@ -3828,10 +3844,10 @@
         "data_tier": "live_kalshi",
         "markets_used": 147,
         "candle_events": 8022,
-        "runtime_seconds": 59.683,
-        "trade_rows": 260955,
-        "combined_ledger_sha256": "e38ad14ee24727d5388a738b2f0805776332b83d35ff07b34c96d2e8df4e65db",
-        "open_positions": 34963
+        "runtime_seconds": 95.863,
+        "trade_rows": 290352,
+        "combined_ledger_sha256": "81a5161599077b76ef601df95c46adc8aa0327e9d1db71bf54a1b94c3c2da6eb",
+        "open_positions": 64360
       },
       "nobel_settled": {
         "competition_id": "program-nobel-settled",
@@ -3839,9 +3855,9 @@
         "data_tier": "historical_kalshi",
         "markets_used": 66,
         "candle_events": 6875,
-        "runtime_seconds": 47.959,
-        "trade_rows": 224658,
-        "combined_ledger_sha256": "787a0597fbf17d4d2f9762f4d928c97dcec51a31afbf945af2f911a24ac83b38",
+        "runtime_seconds": 72.798,
+        "trade_rows": 259322,
+        "combined_ledger_sha256": "b3fce551cb80130416273d42c0cc310f8778b014114f213fc129dac046240e54",
         "open_positions": 0
       },
       "panel_settled": {
@@ -3850,9 +3866,9 @@
         "data_tier": "historical_kalshi",
         "markets_used": 50,
         "candle_events": 4702,
-        "runtime_seconds": 39.497,
-        "trade_rows": 311362,
-        "combined_ledger_sha256": "27677cf3a06ab5403a130ec7fb8613257189fd930129346470834174d6136af3",
+        "runtime_seconds": 50.848,
+        "trade_rows": 363297,
+        "combined_ledger_sha256": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c",
         "open_positions": 0
       }
     },

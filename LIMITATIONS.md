@@ -1,5 +1,71 @@
 # Limitations for the next session
 
+## 2026-09-24 (third session): 2,000 strategies, information channels, verdicts
+
+**What changed.** The program doubled to 2,000 variants in 20 batches of 100, so there are 2,011 simulated participants including the primary 11.
+
+- Batches 011–020 add families that read declared information channels:
+  - sibling contracts in the same Kalshi event, at or before T;
+  - official results of markets settled strictly before T;
+  - Kalshi's `strike_date`.
+- Every family has a research card with sources verified on 2026-09-24.
+- 21 families have a matched placebo, and every (family, settled universe) pair gets a predeclared verdict (`simcomp/analysis.py`). The results are shown in the site's Research view and in the P(Win) card on the leaderboard.
+- The build replays four batches instead of one.
+- A **Tests** workflow runs on pull requests.
+- The collect workflow now also commits `docs/RESEARCH.md`.
+
+**New or sharpened limits.** Read these before quoting any verdict.
+
+1. **Five SUPPORTED-ON-SNAPSHOT results out of 173 tests, against about 8.7 expected false passes at 5%.** The supported count is consistent with luck.
+   - None of the five is supported in both settled universes.
+   - Three of the four Nobel ones get 42–47% of their P&L from KXNOBELPEACE-25.
+   - Three of the five share the logit / favorite-longshot entry (`kelly_fraction` and `edge_scaled_size` size off the logit edge, and `logit_momentum_agree`).
+
+   Correlated families are not independent tests. The binomial p-value in research.json assumes independent variants and overstates the evidence; it is shown for transparency, not as a significance test.
+2. **Only 5 settled Nobel events, and 3 of them have a YES.**
+   - Any Nobel verdict rests on a handful of outcomes.
+   - The panel (35 events, 11 with a YES) is Fed and weather markets, not Nobel markets.
+   - A result that holds on the panel says nothing direct about Nobel markets.
+3. **Chemistry, medicine and physics have no settled history in the snapshot.**
+   - Their 2025 contracts were not returned by the public endpoints.
+   - They trade only in the forward universe, and no settled result speaks to them.
+   - The flag `nobel_subjects_without_settled_history` is computed from the data each build, not hardcoded.
+4. **Nobel events report `mutually_exclusive: false` and have no `strike_date`** (spot-checked against the Get Event endpoint on 2026-09-24).
+   - `event_underround_yes` is NOT TESTED on Nobel.
+   - Schedule and horizon families are tested on the panel only.
+   - Event families that read sibling prices run behind a probability-mass gate, because stored sibling sets can be incomplete: Kalshi omits nested markets of older historical events.
+5. **Verdict medians use only the variants that traded.**
+   - `median_eq_all_variants` is also stored.
+   - A family that mostly stays in cash can have a strong traded median from a few variants. `entered` / `n` is shown next to every result.
+   - Families with fewer than 3 traded variants are LOW-POWER by rule. This demoted `logit_skip_conflict` (2 traded variants, above the Nobel null p95).
+6. **Cash is not recycled.** Settlement cash is applied after the decision loop, so a participant cannot redeploy a win inside the same universe. This understates compounding strategies and makes the per-event leave-one-out an exact subtraction. Changing it would change every ledger hash.
+7. **Panel selection uses lifetime volume.** The panel is the top 25 settled markets by final volume among the first 2,000 historical rows per series. Final volume is known only after the fact. That is a selection bias in which markets exist in the panel; it is not a lookahead inside any decision. It is listed as a data-quality flag.
+8. **`close_time` is excluded everywhere.** On settled Nobel markets it is revised to the post-announcement halt, which would leak the outcome date. Families that need a Nobel announcement date therefore cannot be built from Kalshi fields, and no date was typed in by hand.
+9. **The P(Win) card is for settled universes only.** In the forward universe the top-decile cut is exactly $10,000, because unsettled positions are marked at the bid and almost nobody is above starting cash, so `p_top_decile` there means nothing.
+10. **Runtime.** A full rebuild from the stored snapshot takes about 5 minutes in the development sandbox (912,971 ledger rows, program bundle about 20 MB), up from about 2 minutes. The Actions timeout (60 minutes) is still ample.
+11. **No browser render in this session.** The sandbox has no headless browser. `app.js` was syntax-checked (`node --check`), and the JSON it loads was checked, but the Research view and P(Win) card have not been looked at in a browser before merge. Check the live Pages site after merge.
+
+**Verified this session.**
+
+- 39 unit tests pass.
+- `scripts/audit_program.py` is clean on 912,971 rows.
+- `verify_program.py batch-013` and `batch-018` reproduce 300 ledgers each.
+- The four-batch build replay matched.
+- The 11 primary strategies have real-data parity in both engines.
+- Three Kalshi events were spot-checked field by field (URLs in docs/PROGRAM.md).
+
+### Suggested next session, in order (supersedes the lists below)
+
+1. After 6–13 October 2026, when the 2026 Nobel markets settle on Kalshi, re-run with no code change. This is the out-of-sample test the program was built for.
+   - The five SUPPORTED-ON-SNAPSHOT families and their placebos are the predeclared hypotheses to check.
+   - Take settlements from Kalshi `result` only, and ingest prizes from the Nobel API, not from headlines.
+2. Look at the live site's Research view and P(Win) card in a browser, on desktop and mobile.
+3. Recover 2025 physics, chemistry and medicine contracts, if any public endpoint returns them (for example event-by-ticker on `KXNOBELPHYSICS-25`). Record a failure rather than filling a gap.
+4. Add cash recycling as a separate, versioned engine option with its own competitions. Do not change the default ledger.
+5. Add a family-level correction for correlated tests, for example a block bootstrap over events, and report it next to the current rules.
+6. Add a trade-tape archive (`GET /markets/trades`) so the decision clock can move from candle closes to trades.
+7. Widen the panel to more event-structured series with `mutually_exclusive: true`, to give the event families more than one testing ground. Select by a pre-registered rule that does not use final volume.
+
 ## 2026-09-24 (second session): the 1000-strategy program
 
 What changed this session: the simulated layer grew from 11 primary strategies to 1,011 participants. The research program (`simcomp/research_program.py`, `simcomp/program.py`) runs 1,000 parameterized strategies in 10 batches of 100 over the same three universes, with the same decision clock, size rules, and fee reading. Both engines share `compute_fill`; parity between them is tested; batch-001 is replayed after every full pass and the build aborts on mismatch. New limits this session:

@@ -48,13 +48,14 @@ jobs:
           path: |
             data/kalshi
             data/sim
+            docs/RESEARCH.md
           if-no-files-found: warn
 
       - name: Commit snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/kalshi data/sim
+          git add data/kalshi data/sim docs/RESEARCH.md
           if git diff --cached --quiet; then
             echo "No data changes"
           else

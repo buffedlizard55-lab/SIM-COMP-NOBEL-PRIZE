@@ -1,4 +1,4 @@
-"""Strategy research program: 1000+ parameterized variants in 10 batches of 100.
+"""Strategy research program: 2,000 parameterized variants in 20 batches of 100 (phase 1: batches 1-10, phase 2: 11-20 in research_phase2.py).
 
 Each batch is one research topic. Each variant is one testable hypothesis with
 predeclared parameters. Nothing here looks past the decision candle: every rule
@@ -727,24 +727,51 @@ def _class_lookback(cls: type, parameters: dict) -> int:
     return 1
 
 
-def program_variants() -> list[Variant]:
-    """Enumerate the program one strategy at a time. 100 per batch, 10 batches."""
+PHASE1_BATCHES = range(1, 11)
+PHASE2_BATCHES = range(11, 21)
+ALL_BATCHES = range(1, 21)
+
+
+def _phase(batch_number: int) -> int:
+    return 1 if batch_number in PHASE1_BATCHES else 2
+
+
+def program_variants(batches=None) -> list[Variant]:
+    """Enumerate the program one strategy at a time: 100 per batch, 20 batches.
+
+    Batches 001-010 are phase 1 (own-candle rules). Batches 011-020 are phase 2
+    (research cards, decision-time event/settled/schedule channels, placebos).
+    The registry refuses a family without a valid research card and any variant
+    whose lookback exceeds the program's prior window.
+    """
+    from simcomp.research_cards import validate_cards
+    from simcomp.research_phase2 import PHASE2_TOPICS, phase2_rows
+
     variants: list[Variant] = []
     seen_ids: set[str] = set()
     seen_users: set[str] = set()
-    for batch_number in range(1, 11):
+    for batch_number in (batches or ALL_BATCHES):
         batch = f"batch-{batch_number:03d}"
-        topic, _statement = TOPICS[batch]
-        rows = _variants_for_batch(batch)
+        if _phase(batch_number) == 1:
+            topic, _statement = TOPICS[batch]
+            rows = [(f, prm, (lambda c: (lambda q: _instantiate(c, q)))(cls), h, d, cls)
+                    for f, prm, cls, h, d in _variants_for_batch(batch)]
+        else:
+            topic, _statement = PHASE2_TOPICS[batch]
+            rows = [(f, prm, factory, h, d, factory.cls) for f, prm, factory, h, d in phase2_rows(batch)]
         if len(rows) != 100:  # registry contract; tests also assert
             raise ValueError(f"{batch} has {len(rows)} variants, expected 100")
-        for index, (family, parameters, cls, hypothesis, display) in enumerate(rows, start=1):
-            lookback = _class_lookback(cls, parameters)
-            if lookback + 1 > PROGRAM_PRIOR_WINDOW:
-                raise ValueError(
-                    f"{family} variant {parameters} needs {lookback + 1} prior candles, "
-                    f"window is {PROGRAM_PRIOR_WINDOW}"
-                )
+        validate_cards({row[0] for row in rows})
+        for index, (family, parameters, factory, hypothesis, display, cls) in enumerate(rows, start=1):
+            strategy = factory(parameters)
+            # Phase 1 keeps its original contract (lookback + 1 <= window). Phase 2
+            # strategies declare the prior candles they read; it must fit the window.
+            if _phase(batch_number) == 1:
+                too_deep = _class_lookback(cls, parameters) + 1 > PROGRAM_PRIOR_WINDOW
+            else:
+                too_deep = strategy.required_prior() > PROGRAM_PRIOR_WINDOW
+            if too_deep:
+                raise ValueError(f"{family} variant {parameters} reads beyond the {PROGRAM_PRIOR_WINDOW}-candle window")
             family_slug = family.replace("_", "-")
             strategy_id = f"{family_slug}-b{batch_number:03d}-{index:03d}"
             username = f"sim-b{batch_number:03d}-{index:03d}"
@@ -752,8 +779,9 @@ def program_variants() -> list[Variant]:
                 raise ValueError(f"duplicate id or username at {strategy_id}")
             seen_ids.add(strategy_id)
             seen_users.add(username)
-            strategy = cls()
-            strategy.parameters = dict(parameters)
+            if _phase(batch_number) == 2:
+                from simcomp.research_cards import card_for
+                hypothesis = f"{card_for(family)['predicts']} Variant: {hypothesis}."
             variants.append(Variant(
                 batch=batch,
                 topic=topic,
@@ -767,5 +795,14 @@ def program_variants() -> list[Variant]:
     return variants
 
 
+def _instantiate(cls, parameters):
+    strategy = cls()
+    strategy.parameters = dict(parameters)
+    return strategy
+
+
 def topic_statement(batch: str) -> tuple[str, str]:
-    return TOPICS[batch]
+    if batch in TOPICS:
+        return TOPICS[batch]
+    from simcomp.research_phase2 import PHASE2_TOPICS
+    return PHASE2_TOPICS[batch]

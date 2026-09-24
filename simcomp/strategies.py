@@ -59,6 +59,13 @@ class Strategy:
 
     def __init__(self):
         self._cache: dict = {}
+        self._state: dict = {}
+
+    def reset(self) -> None:
+        """Forget per-run memory. The program engine calls this before every universe
+        and every replay, so a strategy's memory is only ever built from views it was
+        shown in the current run. Parameter caches are pure and are kept."""
+        self._state = {}
 
     def _num(self, key, ctx) -> Decimal:
         """Parameter as Decimal, cached per instance. parameters stay the audit source."""

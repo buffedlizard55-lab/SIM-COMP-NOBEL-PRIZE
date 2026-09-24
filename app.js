@@ -4,6 +4,7 @@
   const NAV = [
     ["leaderboard", "Leaderboard"],
     ["board", "Program board"],
+    ["research", "Research"],
     ["program", "Program"],
     ["families", "Families"],
     ["topics", "Topics"],
@@ -47,6 +48,8 @@
     pBatches: {},
     pMarkets: null,
     pActivity: null,
+    pResearch: null,
+    rs: { kind: "all", verdict: "all", q: "" },
     pLedger: { key: "", rows: [], error: "" },
     pb: { u: "nobel_settled", batch: "all", family: "all", page: 0, sort: "r", dir: 1, q: "" },
     fam: { u: "nobel_settled", family: "" },
@@ -160,7 +163,7 @@
   }
 
   function programMissing() {
-    return `<div class="card"><p>The 1000-strategy program bundle is not in this checkout. Run <code>python scripts/refresh.py</code> to build it from the stored Kalshi snapshot. ${sim()}</p></div>`;
+    return `<div class="card"><p>The research program bundle is not in this checkout. Run <code>python scripts/refresh.py</code> to build it from the stored Kalshi snapshot. ${sim()}</p></div>`;
   }
 
   async function loadProgramLedger(batch, universe, pid) {
@@ -390,10 +393,11 @@
           ).join("<br>")}</td></tr>`;
         }).join("") : "";
         programCard = `<div class="card">
-          <h3><a href="#board">The 1000-strategy research program</a> ${sim()}</h3>
+          <h3><a href="#board">The research program</a> ${sim()}</h3>
           <p>${esc(manifest.participants)} simulated participants in ${esc((manifest.batches || []).length)} batches, ${esc(manifest.trade_rows_total)} ledger rows, replay ${esc(replay.status || "—")}. The board is the working competition leaderboard: <a href="#board">open it</a>. Top three per universe:</p>
           <div class="table-wrap"><table><tbody>${topRows}</tbody></table></div>
         </div>`;
+        try { programCard += pWinCard(await ensureResearch()); } catch (err) { /* research.json optional */ }
       }
     } catch (err) {
       programCard = "";
@@ -763,12 +767,12 @@
         if (!days.length) return "";
         const peak = Math.max(...days.map((row) => Number(row.ledger_rows)));
         return `<h4>${esc(label)} <span class="muted small">${sim()} last ${esc(days.length)} active days</span></h4>
-          <div class="table-wrap"><table><thead><tr><th>Day (UTC)</th><th class="num">Ledger rows, 1000 participants</th><th></th></tr></thead><tbody>
+          <div class="table-wrap"><table><thead><tr><th>Day (UTC)</th><th class="num">Ledger rows, all program participants</th><th></th></tr></thead><tbody>
           ${days.map((row) => `<tr><td>${esc(row.day)}</td><td class="num">${esc(row.ledger_rows)}</td><td><span class="bar" style="width:${Math.max(1, Math.round(120 * Number(row.ledger_rows) / peak))}px"></span></td></tr>`).join("")}
           </tbody></table></div>`;
       }).join("");
       programBlock = `<h3>Program activity over time</h3>
-        <p class="small">Ledger rows per day for the full 1,000-participant program, from the same stored candles. ${sim()}</p>
+        <p class="small">Ledger rows per day for the full program, from the same stored candles. ${sim()}</p>
         ${blocks || "<p class=\"note\">No program activity file loaded.</p>"}`;
     } catch (err) { programBlock = ""; }
     main.innerHTML = banner() + `<h2>Strategy activity over time</h2>
@@ -835,7 +839,7 @@
         const samples = (manifest.flag_samples || []).map((flag) => `<li class="small"><code>${esc(flag.code)}</code> (${esc(flag.universe || "")}) ${esc(flag.market_ticker || "")}: ${esc((flag.message || "").slice(0, 180))}</li>`).join("");
         programBlock = `<div class="card">
           <h3>Program data flags</h3>
-          <p class="small">Data-quality flags raised while preparing the 1,000-strategy run. They name candle gaps and unusable market metadata, not strategy behavior.</p>
+          <p class="small">Data-quality flags raised while preparing the program run. They name candle gaps and unusable market metadata, not strategy behavior.</p>
           <div class="table-wrap"><table><tbody>${counts.map(([code, count]) => `<tr><td><code>${esc(code)}</code></td><td class="num">${esc(count)}</td></tr>`).join("") || `<tr><td>No program flags.</td></tr>`}</tbody></table></div>
           ${samples ? `<details><summary>Sample flag messages</summary><ul class="clean">${samples}</ul></details>` : ""}
         </div>`;
@@ -1036,10 +1040,10 @@
         <p>The market payload has <code>fee_type</code> and <code>fee_multiplier</code>. It does not include the 0.07 coefficient. The <a href="https://kalshi.com/fee-schedule">fee schedule</a> retrieved 2026-09-24 lists most markets at multiplier 1 with a taker range of $0.07–$1.75 per 100 contracts. The engine uses round-up-to-cent of multiplier × 0.07 × contracts × price × (1 − price), which matches that range at 1 cent and at 50 cents. Fee-off runs are on the Compare page so the interpretation is not hidden inside the rank.</p>
       </div>
       <div class="card">
-        <h3>The 1000-strategy program</h3>
-        <p>Ten research topics, ten batches of one hundred parameterized strategies. Batch-001 trades at seeded random times and exists as the null band. Every variant is a predeclared hypothesis with fixed parameters. The program engine shares the primary engine's fill rule (<code>compute_fill</code>) and decision clock; a test compares the two engines' ledgers line by line, and the build replays batch-001 and refuses to publish on mismatch.</p>
+        <h3>The research program</h3>
+        <p>Twenty research topics, twenty batches of one hundred parameterized strategies (2,000 simulated participants). Batch-001 trades at seeded random times and exists as the null band; batch-020 adds a second, matched-rate null. Every family has a research card (question, mechanism, verified source, information used, predicted sign, falsification rule) and most entry families have a matched placebo that keeps the trigger and randomizes only the side. Batches 011-020 may also read three decision-time channels: sibling contracts of the same event at or before T, markets whose official result settled strictly before T, and Kalshi's published event strike_date (never close_time, which leaks on settled Nobel markets). The program engine shares the primary engine's fill rule (<code>compute_fill</code>) and decision clock; a test compares the two engines' ledgers line by line, and the build replays batches 001, 011, 013 and 018 and refuses to publish on mismatch.</p>
         <p class="small">Program ledgers stream to one gzipped CSV per batch and universe: participant, time, market, action, side, price, qty, fee, cash after, realized P&amp;L, fill source, note. The price column always names the stored candle field it came from. A strategy sees at most the 24 prior candles of its market — every declared lookback fits inside that window, which the tests assert.</p>
-        <p class="small"><a href="#program">Program overview</a> · <a href="#board">Program board</a> · <a href="#topics">Topics and hypotheses</a> · <a href="data/sim/program/SCHEMA.md">Ledger schema</a></p>
+        <p class="small"><a href="#program">Program overview</a> · <a href="#research">Research findings</a> · <a href="#board">Program board</a> · <a href="#topics">Topics and hypotheses</a> · <a href="data/sim/program/SCHEMA.md">Ledger schema</a></p>
       </div>
       <div class="card">
         <h3>What was refused</h3>
@@ -1091,7 +1095,7 @@
     main.innerHTML = `<p class="loading">Loading the program bundle…</p>`;
     const manifest = await ensureProgramManifest();
     if (!manifest || manifest._error || manifest.status === "missing") {
-      main.innerHTML = banner() + "<h2>The 1000-strategy research program</h2>" + programMissing();
+      main.innerHTML = banner() + "<h2>The research program</h2>" + programMissing();
       return;
     }
     let families = null;
@@ -1125,7 +1129,7 @@
       <td class="num">${esc(file.bytes)}</td>
       <td class="small"><code title="${esc(file.sha256)}">${esc(file.sha256.slice(0, 12))}…</code></td>
     </tr>`).join("");
-    main.innerHTML = banner() + `<h2>The 1000-strategy research program</h2>
+    main.innerHTML = banner() + `<h2>The research program</h2>
       <p>${esc(manifest.participants)} simulated participants in ${esc((manifest.batches || []).length)} batches of 100, each batch one research topic, each variant one predeclared hypothesis. Same decision clock, size rules, and fee reading as the primary competitions. ${sim()} ${badge("review", "Not Kalshi users")}</p>
       <div class="grid">
         <div class="stat"><b>${esc(manifest.participants)}</b><span>Simulated participants</span></div>
@@ -1338,6 +1342,7 @@
         return ra.r - rb.r;
       });
       detail = `<h3>${esc(family)} on ${esc(universeNote(u))}</h3>
+        <p class="small"><a href="#research/${esc(family)}">Research card and verdict for ${esc(family)}</a></p>
         <p class="small">${esc((variants[0] || {}).hypothesis ? "Each variant below is one predeclared hypothesis. Parameters make the difference; the entry rule is shared." : "")}</p>
         <div class="table-wrap"><table><thead><tr>
           <th class="num">Rank</th><th>Variant</th><th>Hypothesis</th><th class="num">Equity</th><th class="num">Fees</th><th class="num">Trades</th>
@@ -1372,6 +1377,204 @@
       state.fam.u = state.fam.u;
       render();
     }));
+  }
+
+  // ---------------------------------------------------------------------------
+  // Research view: research cards, predeclared verdict rules, power, sources.
+  // Reads data/sim/program/research.json (written by simcomp/analysis.py).
+  // ---------------------------------------------------------------------------
+
+  async function ensureResearch() {
+    if (state.pResearch) return state.pResearch;
+    state.pResearch = await loadJSON("data/sim/program/research.json");
+    return state.pResearch;
+  }
+
+  function verdictBadge(verdict) {
+    const v = String(verdict || "");
+    const kind = v === "SUPPORTED-ON-SNAPSHOT" ? "official"
+      : v === "NOT SUPPORTED" ? "review"
+      : v === "REFERENCE" ? "hist"
+      : v === "MIXED" ? "live"
+      : "info";
+    return badge(kind, v || "—");
+  }
+
+  function signed(value) {
+    if (value == null) return "—";
+    const n = Number(value);
+    return (n >= 0 ? "+" : "") + n.toFixed(2);
+  }
+
+  function researchCell(stats) {
+    if (!stats) return "—";
+    if (!stats.entered) return `<span class="muted">no fills</span><br>${verdictBadge(stats.verdict)}`;
+    return `${num(stats.median_eq != null ? stats.median_eq.toFixed(2) : "")} <span class="muted small">(${esc(signed(stats.vs_null_median))} vs null)</span><br>${verdictBadge(stats.verdict)}`;
+  }
+
+  function sourceLinks(research, ids) {
+    return (ids || []).map((id) => {
+      const src = (research.sources || {})[id] || {};
+      return src.url
+        ? `<a href="${esc(src.url)}" rel="noopener" title="${esc(src.citation || "")}">${esc(id)}</a>`
+        : `<span title="${esc(src.citation || "")}">${esc(id)}</span>`;
+    }).join(", ");
+  }
+
+  function researchDetail(research, fam) {
+    const card = fam.card || {};
+    const rows = ["nobel_settled", "panel_settled", "nobel_forward"].map((u) => {
+      const s = (fam.universes || {})[u];
+      if (!s) return "";
+      return `<tr>
+        <td>${esc(universeNote(u))}</td>
+        <td class="num">${esc(s.entered)}/${esc(s.n)}</td>
+        <td class="num">${s.median_eq != null ? num(s.median_eq.toFixed(2)) : "—"}</td>
+        <td class="num">${esc(signed(s.vs_null_median))}</td>
+        <td class="num">${esc(signed(s.vs_cash))}</td>
+        <td class="num">${s.placebo_median_eq != null ? esc(signed(s.vs_placebo)) : "—"}</td>
+        <td class="num">${esc((100 * (s.share_above_null_p95 || 0)).toFixed(1))}%<br><span class="muted small">p=${esc(s.binom_p_indep < 0.000001 ? "<1e-6" : s.binom_p_indep)}</span></td>
+        <td class="num">${s.loo_worst_median_eq != null ? num(s.loo_worst_median_eq.toFixed(2)) : "—"}<br><span class="muted small">${esc(s.loo_worst_event || "")}</span></td>
+        <td class="num">${esc(s.settled_events_touched)} (${esc(s.yes_events_touched)} YES)</td>
+        <td class="small">${esc(s.top_event || "—")} ${s.top_event_share != null ? esc((100 * s.top_event_share).toFixed(0)) + "%" : ""}</td>
+        <td class="num">${esc((100 * (s.p_top_decile || 0)).toFixed(0))}%</td>
+        <td class="num">${esc((100 * (s.clip_rate || 0)).toFixed(1))}%</td>
+        <td>${verdictBadge(s.verdict)}<br><span class="small muted">${esc(s.why || "")}</span></td>
+      </tr>`;
+    }).join("");
+    const channels = (card.channels || []).map((c) => `<li><code>${esc(c)}</code> — ${esc((research.channels || {})[c] || "")}</li>`).join("");
+    const sources = (card.sources || []).map((id) => {
+      const src = (research.sources || {})[id] || {};
+      return `<li>${src.url ? `<a href="${esc(src.url)}" rel="noopener">${esc(src.citation || id)}</a>` : esc(src.citation || id)}<br><span class="small muted">Used for: ${esc(src.claim_used || "")}</span></li>`;
+    }).join("");
+    return `<section class="card" id="research-detail">
+      <p>${sim()} ${badge("info", card.kind || "")} ${verdictBadge(fam.overall)}</p>
+      <h3><code>${esc(fam.family)}</code> <span class="muted small">${esc((fam.batches || []).join(", "))} · ${esc(fam.variants)} variants</span></h3>
+      <dl class="card-fields">
+        <dt>Question</dt><dd>${esc(card.question)}</dd>
+        <dt>Mechanism</dt><dd>${esc(card.mechanism)}</dd>
+        <dt>Predicts</dt><dd>${esc(card.predicts)}</dd>
+        <dt>Falsified if</dt><dd>${esc(card.falsified_if)}</dd>
+        ${card.placebo_of ? `<dt>Placebo of</dt><dd><a href="#research/${esc(card.placebo_of)}">${esc(card.placebo_of)}</a></dd>` : ""}
+        <dt>Consistency</dt><dd>${esc(fam.consistency || "—")}</dd>
+      </dl>
+      <h4>Information the rule reads at decision time</h4><ul class="small">${channels}</ul>
+      <h4>Sources (verified ${esc(research.sources_verified_on)})</h4><ul class="small">${sources}</ul>
+      <p class="small">A cited paper suggested the rule; its result is not evidence for the simulated result.</p>
+      <h4>Results by universe</h4>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Universe</th><th class="num">Traded</th><th class="num">Median equity (traded)</th><th class="num">vs null median</th><th class="num">vs $10,000</th><th class="num">vs placebo</th><th class="num">Above null p95</th><th class="num">Worst leave-one-event-out</th><th class="num">Settled events</th><th>Largest event share</th><th class="num">P(top 10%)</th><th class="num">Clip rate</th><th>Verdict</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>
+      <p class="small">The p-value assumes independent variants; they share signals and markets, so it overstates the evidence. <a href="#families" data-fam-link="${esc(fam.family)}">Variants and parameters</a> · <a href="#research">All families</a></p>
+    </section>`;
+  }
+
+  async function renderResearch() {
+    main.innerHTML = `<p class="loading">Loading research findings…</p>`;
+    let research = null;
+    try { research = await ensureResearch(); } catch (err) { research = null; }
+    if (!research) {
+      main.innerHTML = banner() + "<h2>Research findings</h2>" + programMissing();
+      return;
+    }
+    const f = state.rs;
+    const families = research.families || [];
+    const selected = state.arg ? families.find((fam) => fam.family === state.arg) : null;
+    const kinds = Array.from(new Set(families.map((fam) => (fam.card || {}).kind))).sort();
+    const verdicts = Array.from(new Set(families.map((fam) => fam.overall))).sort();
+    const q = f.q.trim().toLowerCase();
+    const shown = families.filter((fam) =>
+      (f.kind === "all" || (fam.card || {}).kind === f.kind)
+      && (f.verdict === "all" || fam.overall === f.verdict)
+      && (!q || fam.family.toLowerCase().includes(q) || String((fam.card || {}).question || "").toLowerCase().includes(q))
+    );
+    const rows = shown.map((fam) => {
+      const ns = (fam.universes || {}).nobel_settled;
+      const ps = (fam.universes || {}).panel_settled;
+      return `<tr>
+        <td>${esc((fam.batches || [""])[0].replace("batch-", ""))}</td>
+        <td><a href="#research/${esc(fam.family)}"><code>${esc(fam.family)}</code></a><br><span class="small muted">${esc((fam.card || {}).question || "")}</span></td>
+        <td class="small">${esc((fam.card || {}).kind || "")}</td>
+        <td class="num">${researchCell(ns)}</td>
+        <td class="num">${researchCell(ps)}</td>
+        <td class="num small">${ns ? esc((100 * (ns.p_top_decile || 0)).toFixed(0)) : "—"}% / ${ps ? esc((100 * (ps.p_top_decile || 0)).toFixed(0)) : "—"}%</td>
+        <td>${verdictBadge(fam.overall)}<br><span class="small muted">${esc(fam.consistency || "")}</span></td>
+      </tr>`;
+    }).join("");
+    const power = Object.entries(research.universes || {}).map(([u, info]) => `<tr>
+      <td>${esc(universeNote(u))}</td><td class="num">${esc(info.markets)}</td><td class="num">${esc(info.events)}</td>
+      <td class="num">${esc(info.settled_events)}</td><td class="num">${esc(info.events_with_yes)}</td>
+      <td class="num">${esc((info.null || {}).p05)} / ${esc((info.null || {}).median)} / ${esc((info.null || {}).p95)}</td>
+      <td class="num">${esc(info.top_decile_cut)}</td>
+    </tr>`).join("");
+    const rules = Object.entries(research.rules || {}).map(([k, v]) => `<li>${verdictBadge(k)} ${esc(v)}</li>`).join("");
+    const counts = Object.entries(research.overall_counts || {}).sort().map(([k, v]) => `<div class="stat"><b>${esc(v)}</b><span>${esc(k)}</span></div>`).join("");
+    const mt = research.multiple_testing || {};
+    const quality = (research.data_quality || []).map((flag) => `<li>${badge(flag.severity === "warning" ? "review" : "info", flag.code)} ${esc(flag.message)}</li>`).join("");
+    const sourceRows = Object.entries(research.sources || {}).map(([id, src]) => `<tr>
+      <td><code>${esc(id)}</code></td>
+      <td class="small">${esc(src.citation)}<br><span class="muted">${esc(src.claim_used || "")}</span></td>
+      <td class="small">${src.url ? `<a href="${esc(src.url)}" rel="noopener">link</a>` : "—"}</td>
+    </tr>`).join("");
+    const opt = (value, current, label) => `<option value="${esc(value)}" ${value === current ? "selected" : ""}>${esc(label || value)}</option>`;
+    main.innerHTML = banner() + `<h2>Research findings</h2>
+      <p>Every family below has a research card written with its rule: the question, the mechanism, the published idea that suggested it, the information it reads, the predicted sign, and what would count against it. Verdicts follow fixed rules and are recomputed on every build. ${sim()}</p>
+      ${selected ? researchDetail(research, selected) : ""}
+      <div class="grid">${counts}</div>
+      <p class="note"><strong>Maximize P(Win), own the outcome.</strong> ${esc(mt.family_universe_tests)} family × universe tests reached a verdict; about ${esc(mt.expected_false_passes_at_5pct)} would pass a 5% bar by luck alone. A "supported" family is a lead to test on new markets, not a proven edge. Most families are not supported or cannot be told apart from luck on this snapshot.</p>
+      <h3>Verdict rules</h3><ul class="small">${rules}</ul>
+      <h3>Power: what each universe can show</h3>
+      <div class="table-wrap"><table><thead><tr><th>Universe</th><th class="num">Markets</th><th class="num">Events</th><th class="num">Settled events</th><th class="num">Events with a YES</th><th class="num">Null p05 / median / p95</th><th class="num">Top-10% cut</th></tr></thead><tbody>${power}</tbody></table></div>
+      <h3>Families</h3>
+      <div class="toolbar">
+        <label>Kind<select id="rs-kind">${opt("all", f.kind, "All kinds")}${kinds.map((k) => opt(k, f.kind)).join("")}</select></label>
+        <label>Overall verdict<select id="rs-verdict">${opt("all", f.verdict, "All verdicts")}${verdicts.map((v) => opt(v, f.verdict)).join("")}</select></label>
+        <label>Search<input id="rs-q" type="search" value="${esc(f.q)}" placeholder="family or question"></label>
+      </div>
+      <p class="small muted">${esc(shown.length)} of ${esc(families.length)} families. Medians use the variants that traded; a variant that never trades ends at $10,000 and is not evidence. P(top 10%) counts all variants: Nobel / panel.</p>
+      <div class="table-wrap"><table><thead><tr>
+        <th>Batch</th><th>Family and question</th><th>Kind</th><th class="num">Settled Nobel</th><th class="num">Settled panel</th><th class="num">P(top 10%)</th><th>Overall</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>
+      <h3>Data-quality limits that affect research</h3><ul class="small">${quality}</ul>
+      <h3>Sources</h3>
+      <div class="table-wrap"><table><thead><tr><th>id</th><th>Citation and the claim used</th><th>Link</th></tr></thead><tbody>${sourceRows}</tbody></table></div>
+      <p class="links"><a href="data/sim/program/research.json">research.json</a> <a href="docs/RESEARCH.md">RESEARCH.md</a> <a href="#families">Families</a> <a href="#board">Program board</a></p>`;
+    const kindSel = document.getElementById("rs-kind");
+    const verdictSel = document.getElementById("rs-verdict");
+    const qInput = document.getElementById("rs-q");
+    if (kindSel) kindSel.addEventListener("change", () => { f.kind = kindSel.value; renderResearch(); });
+    if (verdictSel) verdictSel.addEventListener("change", () => { f.verdict = verdictSel.value; renderResearch(); });
+    if (qInput) qInput.addEventListener("change", () => { f.q = qInput.value; renderResearch(); });
+    main.querySelectorAll("[data-fam-link]").forEach((link) => link.addEventListener("click", () => {
+      state.fam.family = link.getAttribute("data-fam-link");
+    }));
+    if (selected) {
+      const el = document.getElementById("research-detail");
+      if (el && el.scrollIntoView) el.scrollIntoView();
+    }
+  }
+
+  function pWinCard(research) {
+    if (!research || !research.families) return "";
+    const blocks = ["nobel_settled", "panel_settled"].map((u) => {
+      const REF = ["null", "control", "placebo"];
+      const pool = research.families
+        .filter((fam) => (fam.universes || {})[u])
+        .map((fam) => ({ fam, s: fam.universes[u] }))
+        .filter((item) => item.s.n >= 4)
+        .sort((a, b) => (b.s.p_top_decile - a.s.p_top_decile) || a.fam.family.localeCompare(b.fam.family));
+      const ranked = pool.filter((item) => !REF.includes((item.fam.card || {}).kind)).slice(0, 5);
+      const luck = pool.find((item) => REF.includes((item.fam.card || {}).kind));
+      const pct = (item) => esc((100 * item.s.p_top_decile).toFixed(0)) + "%";
+      return `<tr><td>${esc(universeNote(u))}</td><td class="small">${ranked.map((item) =>
+        `<a href="#research/${esc(item.fam.family)}">${esc(item.fam.family)}</a> ${pct(item)} ${verdictBadge(item.s.verdict)}`
+      ).join("<br>")}${luck ? `<br><span class="muted">Luck yardstick: best reference family <a href="#research/${esc(luck.fam.family)}">${esc(luck.fam.family)}</a> ${pct(luck)}</span>` : ""}</td></tr>`;
+    }).join("");
+    return `<div class="card">
+      <h3>Maximize P(Win): which families finish in the top 10%? ${sim()}</h3>
+      <p class="small">Share of each family's variants (families with at least 4) that ended in the top decile of the 2,000-participant board, settled universes only. Null, control and placebo families are left out of the ranking; the best of them is shown as a yardstick, because a random side choice can also land in the top decile on few events. A high share with a weak verdict means the family got lucky on few events. <a href="#research">Research findings</a></p>
+      <div class="table-wrap"><table><tbody>${blocks}</tbody></table></div>
+    </div>`;
   }
 
   async function renderTopics() {
@@ -1427,7 +1630,7 @@
       </section>`;
     }).join("");
     main.innerHTML = banner() + `<h2>Research topics</h2>
-      <p>Ten topics, ten batches, one hundred predeclared hypotheses per topic. Batch-001 is the null reference on purpose: it exists so no other number has to be read as skill. ${sim()}</p>
+      <p>${esc(batches.length)} topics, ${esc(batches.length)} batches, one hundred predeclared hypotheses per topic. Batch-001 is the null reference on purpose: it exists so no other number has to be read as skill. Family verdicts: <a href="#research">Research findings</a>. ${sim()}</p>
       ${sections || "<p>Batch reports did not load.</p>"}`;
   }
 
@@ -1457,7 +1660,7 @@
         <h3>Predeclared hypothesis</h3>
         <p>${esc(person.hypothesis)}</p>
         <p class="small">Parameters: <code>${esc(JSON.stringify(person.parameters))}</code></p>
-        <p class="small">Topic: ${esc(person.topic)} · batch ${esc(person.batch)}.</p>
+        <p class="small">Topic: ${esc(person.topic)} · batch ${esc(person.batch)}. Research card and family verdict: <a href="#research/${esc(person.family)}">${esc(person.family)}</a>.</p>
       </div>
       <h3>Performance by universe</h3>
       <div class="table-wrap"><table><thead><tr>
@@ -1524,6 +1727,7 @@
     }
     if (state.view === "leaderboard") return renderLeaderboard();
     if (state.view === "board") return renderProgramBoard();
+    if (state.view === "research") return renderResearch();
     if (state.view === "program") return renderProgram();
     if (state.view === "families") return renderFamilies();
     if (state.view === "topics") return renderTopics();

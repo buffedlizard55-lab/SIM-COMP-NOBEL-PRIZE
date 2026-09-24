@@ -411,7 +411,7 @@ def build(root: Path | None = None, skip_program: bool = False) -> dict:
 
     program_manifest = None
     if not skip_program:
-        print("running the 1000-strategy research program…")
+        print("running the research program (20 batches x 100 simulated participants)…")
         program_manifest = run_program(root, grouped, program_variants(), replay=True)
     elif (root / "data" / "sim" / "program" / "manifest.json").exists():
         program_manifest = json.loads((root / "data" / "sim" / "program" / "manifest.json").read_text(encoding="utf-8"))
@@ -638,7 +638,7 @@ def _append_program_section(lines: list, program_dir: Path) -> None:
         return
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     rows = json.loads(leader_path.read_text(encoding="utf-8"))
-    lines.append("## The 1000-strategy research program")
+    lines.append("## The research program (2,000 simulated participants)")
     lines.append("")
     lines.append(
         f"{manifest.get('participants', 0)} simulated participants in {len(manifest.get('batches', []))} batches. "
@@ -662,5 +662,6 @@ def _append_program_section(lines: list, program_dir: Path) -> None:
     lines.append("")
     lines.append(
         "A null-model participant (batch-001) is a random valid entry, not a trader. "
-        "Outranking batch-001's band is the floor any finding has to clear."
+        "Outranking batch-001's band is the floor any finding has to clear. Family verdicts under predeclared "
+        "rules (null band, matched placebo, leave-one-event-out, power) are in `docs/RESEARCH.md`."
     )

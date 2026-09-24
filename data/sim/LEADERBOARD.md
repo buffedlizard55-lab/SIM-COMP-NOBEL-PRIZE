@@ -58,53 +58,53 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 | 10 | sim-dmitri-momentum | momentum | 3223.0200 | -6776.9800 | 0.0000 | 2428.1900 | 1072 |
 | 11 | sim-farid-fade | contrarian | 1657.3600 | -8342.6400 | 0.0000 | 4089.6900 | 1429 |
 
-## The 1000-strategy research program
+## The research program (2,000 simulated participants)
 
-1000 simulated participants in 10 batches. 796975 ledger rows. Replay of batch-001: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 912971 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b002-001 | favorite-band-b002-001 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-002 | favorite-band-b002-002 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-003 | favorite-band-b002-003 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-004 | favorite-band-b002-004 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-005 | favorite-band-b002-005 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-006 | favorite-band-b002-006 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-007 | favorite-band-b002-007 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-008 | favorite-band-b002-008 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-009 | favorite-band-b002-009 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b002-010 | favorite-band-b002-010 | favorite_band | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10100.0000 | 0.0000 | 100.0000 | 6.9200 | 3 |
+| 1 | sim-b011-095 | placebo-event-leader-b011-095 | placebo_event_leader | 10100.0000 | 0.0000 | 100.0000 | 6.9200 | 3 |
+| 1 | sim-b013-079 | uniform-field-prior-b013-079 | uniform_field_prior | 10100.0000 | 0.0000 | 100.0000 | 6.9200 | 3 |
+| 4 | sim-b013-082 | uniform-field-prior-b013-082 | uniform_field_prior | 10077.6800 | 0.0000 | 77.6800 | 4.7600 | 2 |
+| 5 | sim-b013-048 | learned-base-rate-b013-048 | learned_base_rate | 10071.7600 | 0.0000 | 71.7600 | 8.5200 | 4 |
+| 6 | sim-b013-084 | uniform-field-prior-b013-084 | uniform_field_prior | 10070.3100 | 0.0000 | 70.3100 | 8.4400 | 4 |
+| 7 | sim-b013-081 | uniform-field-prior-b013-081 | uniform_field_prior | 10062.6500 | 0.0000 | 62.6500 | 9.0100 | 5 |
+| 8 | sim-b013-046 | learned-base-rate-b013-046 | learned_base_rate | 10048.8300 | 0.0000 | 48.8300 | 6.0200 | 4 |
+| 9 | sim-b017-064 | cash-reserve-gate-b017-064 | cash_reserve_gate | 10035.9000 | 0.0000 | 35.9000 | 8.2600 | 10 |
+| 10 | sim-b013-013 | learned-bucket-calibration-b013-013 | learned_bucket_calibration | 10025.9210 | 0.0000 | 25.9210 | 17.5300 | 22 |
 
 ### Program, settled Nobel markets, historical backtest
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b001-044 | null-model-b001-044 | null_model | 10514.3900 | 514.3900 | 0.0000 | 70.8300 | 54 |
-| 2 | sim-b009-020 | breakout-hold-b009-020 | breakout_hold | 10169.1600 | 169.1600 | 0.0000 | 41.2200 | 10 |
-| 2 | sim-b009-021 | breakout-hold-b009-021 | breakout_hold | 10169.1600 | 169.1600 | 0.0000 | 41.2200 | 10 |
-| 4 | sim-b009-019 | breakout-hold-b009-019 | breakout_hold | 10165.9400 | 165.9400 | 0.0000 | 44.4300 | 10 |
-| 5 | sim-b001-071 | null-model-b001-071 | null_model | 10158.7300 | 158.7300 | 0.0000 | 37.1500 | 31 |
-| 6 | sim-b001-019 | null-model-b001-019 | null_model | 10132.8200 | 132.8200 | 0.0000 | 66.1000 | 50 |
-| 7 | sim-b001-063 | null-model-b001-063 | null_model | 10126.3700 | 126.3700 | 0.0000 | 28.4600 | 22 |
-| 8 | sim-b001-072 | null-model-b001-072 | null_model | 10107.1700 | 107.1700 | 0.0000 | 38.7900 | 31 |
-| 9 | sim-b001-041 | null-model-b001-041 | null_model | 10098.2700 | 98.2700 | 0.0000 | 70.1000 | 54 |
-| 10 | sim-b001-085 | null-model-b001-085 | null_model | 10074.8600 | 74.8600 | 0.0000 | 71.8300 | 61 |
+| 1 | sim-b013-087 | placebo-learned-bucket-calibration-b013-087 | placebo_learned_bucket_calibration | 10585.1700 | 585.1700 | 0.0000 | 24.7500 | 27 |
+| 2 | sim-b001-044 | null-model-b001-044 | null_model | 10514.3900 | 514.3900 | 0.0000 | 70.8300 | 54 |
+| 3 | sim-b019-008 | ablation-lagged-signal-b019-008 | ablation_lagged_signal | 10343.5700 | 343.5700 | 0.0000 | 52.5100 | 26 |
+| 4 | sim-b016-084 | fade-the-rally-b016-084 | fade_the_rally | 10325.0000 | 325.0000 | 0.0000 | 15.8800 | 11 |
+| 5 | sim-b016-081 | fade-the-rally-b016-081 | fade_the_rally | 10309.3300 | 309.3300 | 0.0000 | 15.2500 | 10 |
+| 6 | sim-b016-069 | range-breakout-b016-069 | range_breakout | 10286.7400 | 286.7400 | 0.0000 | 57.4800 | 45 |
+| 7 | sim-b015-032 | volume-spike-fade-b015-032 | volume_spike_fade | 10277.9200 | 277.9200 | 0.0000 | 38.2600 | 40 |
+| 8 | sim-b013-024 | learned-bucket-calibration-b013-024 | learned_bucket_calibration | 10275.8600 | 275.8600 | 0.0000 | 24.2900 | 21 |
+| 9 | sim-b016-083 | fade-the-rally-b016-083 | fade_the_rally | 10254.1400 | 254.1400 | 0.0000 | 18.9600 | 20 |
+| 10 | sim-b013-085 | uniform-field-prior-b013-085 | uniform_field_prior | 10249.0700 | 249.0700 | 0.0000 | 29.1900 | 18 |
 
 ### Program, settled panel, historical backtest
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b001-066 | null-model-b001-066 | null_model | 10792.3500 | 792.3500 | 0.0000 | 33.9000 | 19 |
-| 2 | sim-b001-012 | null-model-b001-012 | null_model | 10705.5600 | 705.5600 | 0.0000 | 74.7900 | 39 |
-| 3 | sim-b001-081 | null-model-b001-081 | null_model | 10592.9600 | 592.9600 | 0.0000 | 101.6500 | 45 |
-| 4 | sim-b001-003 | null-model-b001-003 | null_model | 10554.3900 | 554.3900 | 0.0000 | 80.4900 | 37 |
-| 5 | sim-b001-014 | null-model-b001-014 | null_model | 10554.3600 | 554.3600 | 0.0000 | 61.6900 | 34 |
-| 6 | sim-b001-071 | null-model-b001-071 | null_model | 10553.8300 | 553.8300 | 0.0000 | 53.5400 | 23 |
-| 7 | sim-b001-055 | null-model-b001-055 | null_model | 10551.5400 | 551.5400 | 0.0000 | 53.3400 | 19 |
-| 8 | sim-b001-028 | null-model-b001-028 | null_model | 10526.8200 | 526.8200 | 0.0000 | 77.7500 | 34 |
-| 9 | sim-b001-016 | null-model-b001-016 | null_model | 10404.1300 | 404.1300 | 0.0000 | 76.9200 | 33 |
-| 10 | sim-b001-018 | null-model-b001-018 | null_model | 10350.9500 | 350.9500 | 0.0000 | 53.0700 | 31 |
+| 1 | sim-b015-070 | spread-compression-b015-070 | spread_compression | 11014.1000 | 1014.1000 | 0.0000 | 33.5200 | 16 |
+| 2 | sim-b013-075 | learned-age-calibration-b013-075 | learned_age_calibration | 10989.1900 | 989.1900 | 0.0000 | 79.3100 | 46 |
+| 3 | sim-b013-073 | learned-age-calibration-b013-073 | learned_age_calibration | 10801.8400 | 801.8400 | 0.0000 | 58.2200 | 36 |
+| 3 | sim-b013-077 | learned-age-calibration-b013-077 | learned_age_calibration | 10801.8400 | 801.8400 | 0.0000 | 58.2200 | 36 |
+| 5 | sim-b013-013 | learned-bucket-calibration-b013-013 | learned_bucket_calibration | 10800.7100 | 800.7100 | 0.0000 | 57.8000 | 36 |
+| 5 | sim-b013-017 | learned-bucket-calibration-b013-017 | learned_bucket_calibration | 10800.7100 | 800.7100 | 0.0000 | 57.8000 | 36 |
+| 7 | sim-b001-066 | null-model-b001-066 | null_model | 10792.3500 | 792.3500 | 0.0000 | 33.9000 | 19 |
+| 8 | sim-b013-014 | learned-bucket-calibration-b013-014 | learned_bucket_calibration | 10780.0100 | 780.0100 | 0.0000 | 56.5100 | 33 |
+| 8 | sim-b013-018 | learned-bucket-calibration-b013-018 | learned_bucket_calibration | 10780.0100 | 780.0100 | 0.0000 | 56.5100 | 33 |
+| 10 | sim-b020-082 | null-matched-rate-b020-082 | null_matched_rate | 10763.4900 | 763.4900 | 0.0000 | 94.5800 | 30 |
 
-A null-model participant (batch-001) is a random valid entry, not a trader. Outranking batch-001's band is the floor any finding has to clear.
+A null-model participant (batch-001) is a random valid entry, not a trader. Outranking batch-001's band is the floor any finding has to clear. Family verdicts under predeclared rules (null band, matched placebo, leave-one-event-out, power) are in `docs/RESEARCH.md`.

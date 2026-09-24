@@ -1,4 +1,4 @@
-"""High-throughput program engine for the 1000-strategy research program.
+"""High-throughput program engine for the 2,000-strategy research program (20 batches of 100).
 
 Same economics as engine.run_competition (shared compute_fill), different output
 shape: compact gzip CSV ledgers per batch and universe, aggregate JSON for the
@@ -27,6 +27,7 @@ from __future__ import annotations
 import csv
 import gzip
 import hashlib
+import io
 import json
 import time
 from dataclasses import dataclass, field
@@ -45,12 +46,14 @@ from simcomp.engine import (
     decision_candles,
     _mark,
 )
+from simcomp.analysis import analyse, data_quality_flags, render_markdown
+from simcomp.context import EventIndex, SettledPool, build_settled_records
 from simcomp.kalshi_parse import Candle, Market
 from simcomp.money import ZERO, money, unix_to_iso, D
 from simcomp.research_program import PROGRAM_PRIOR_WINDOW, Variant, program_variants, topic_statement
 from simcomp.strategies import Decision, Intent
 
-PROGRAM_VERSION = "2.0.0"
+PROGRAM_VERSION = "3.0.0"
 
 UNIVERSES = {
     "nobel_forward": {
@@ -92,7 +95,10 @@ def _ledger_note(text: str) -> str:
     """Note codes never carry a comma, so the compact CSV parses field-by-field."""
     return (text or "intent").split(";")[0].replace(",", " ")[:64]
 
-REPLAY_BATCH = "batch-001"
+# Rerun after the full pass and compared ledger by ledger: the null band, the
+# event channel (011), the settled-pool learners (013), and stateful exits (018).
+REPLAY_BATCHES = ("batch-001", "batch-011", "batch-013", "batch-018")
+REPLAY_BATCH = ", ".join(REPLAY_BATCHES)
 
 
 @dataclass
@@ -112,6 +118,12 @@ class ParticipantAgg:
         self.ledger_hash.update(b"\n")
 
 
+def _gzip_text(path: Path):
+    """Text writer for a gzip file with a fixed header (mtime=0), so identical
+    ledgers produce byte-identical files and stable sha256 values in the manifest."""
+    return io.TextIOWrapper(gzip.GzipFile(str(path), "wb", compresslevel=6, mtime=0), encoding="utf-8", newline="")
+
+
 class _CsvSinks:
     """One gzipped CSV writer per (batch, universe), opened lazily."""
 
@@ -126,7 +138,7 @@ class _CsvSinks:
         if entry is None:
             path = self.directory / batch / f"{self.universe}.csv.gz"
             path.parent.mkdir(parents=True, exist_ok=True)
-            raw = gzip.open(path, "wt", encoding="utf-8", newline="", compresslevel=6)
+            raw = _gzip_text(path)
             writer = csv.writer(raw)
             writer.writerow(CSV_COLUMNS)
             entry = (raw, writer, path)
@@ -179,6 +191,9 @@ def run_universe(
     sink: _CsvSinks | None,
     collect_note_counts: dict | None = None,
     prior_window: int | None = None,
+    events_by_ticker: dict | None = None,
+    settled_pool: SettledPool | None = None,
+    categories: dict | None = None,
 ) -> dict:
     """One pass over every participant in the universe. Mirrors run_competition economics.
 
@@ -215,8 +230,15 @@ def run_universe(
             continue
         prepared.append((market, candles))
 
+    # Decision-time channels (simcomp/context.py). The event index sees only this
+    # universe's stored markets; the settled pool is global but strictly < T.
+    event_index = EventIndex(prepared, events_by_ticker or {})
+    categories = categories or {}
+
     participants = []
     for variant in variants:
+        # Replays and later universes reuse the same instances; memory must not carry over.
+        variant.strategy.reset()
         participants.append({
             "id": variant.username,
             "batch": variant.batch,
@@ -230,6 +252,7 @@ def run_universe(
     positions: dict[tuple[str, str], Position] = {}
     ever: dict[tuple[str, str], bool] = {}
     per_market: dict[tuple[str, str], list] = {}  # (pid, ticker) -> [trade_rows, realized Decimal]
+    clips: dict[str, int] = {}  # pid -> fills whose size the engine clipped
     activity: dict[str, int] = {}  # ISO day -> ledger rows
 
     events = []
@@ -257,7 +280,16 @@ def run_universe(
             open_time=market.open_time,
             series_ticker=market.series_ticker,
             event_ticker=market.event_ticker,
+            category=categories.get(market.series_ticker, ""),
         )
+        event_key = market.event_ticker or market.ticker
+        event_view = event_index.view(event_key, end_ts)
+        if event_view is not None and any(q.end_ts > end_ts for q in event_view.quotes):
+            raise RuntimeError("lookahead guard: event view contains a later candle")
+        schedule_view = event_index.schedule(event_key)
+        settled_view = settled_pool.view(end_ts) if settled_pool is not None else None
+        if settled_view is not None and settled_view.records and settled_view.records[-1].settlement_ts >= end_ts:
+            raise RuntimeError("lookahead guard: settled pool not strictly before the decision")
         for participant in participants:
             pid = participant["id"]
             strategy = strats[pid]
@@ -273,6 +305,9 @@ def run_universe(
                 cash=book.cash,
                 ever_traded=ever.get((pid, market.ticker), False),
                 candle_index=index,
+                event=event_view,
+                settled=settled_view,
+                schedule=schedule_view,
             )
             if hasattr(view.market, "result") or hasattr(view, "result"):
                 raise RuntimeError("decision view leaked result")
@@ -292,6 +327,7 @@ def run_universe(
                 note = _ledger_note(decision.note)
                 if clip:
                     note = _ledger_note(note + " | clip " + clip)
+                    clips[pid] = clips.get(pid, 0) + 1
                 canonical = (
                     end_ts, market.ticker, fill.action, fill.side, money(fill.price),
                     fill.qty, money(fill.fee), money(book.cash), money(fill.realized),
@@ -489,7 +525,34 @@ def run_universe(
         "activity": activity,
         "ledger_hashes": ledger_hashes,
         "combined_ledger_sha256": combined.hexdigest(),
+        # In-memory only (not written as-is): inputs for simcomp/analysis.py.
+        "event_pnl": _event_pnl(per_market, {m.ticker: (m.event_ticker or m.ticker) for m, _c in prepared}),
+        "clips": clips,
+        "event_outcomes": _event_outcomes(prepared),
     }
+
+
+def _event_pnl(per_market: dict, event_of: dict) -> dict:
+    """pid -> {event_ticker: P&L} (realized + settlement + final mark, fees included)."""
+    out: dict[str, dict] = {}
+    for (pid, ticker), (_rows, pnl) in per_market.items():
+        bucket = out.setdefault(pid, {})
+        event = event_of.get(ticker, ticker)
+        bucket[event] = bucket.get(event, ZERO) + pnl
+    return out
+
+
+def _event_outcomes(prepared: list) -> dict:
+    """event -> {markets, yes, settled}: the power available to test anything on this universe."""
+    out: dict[str, dict] = {}
+    for market, _candles in prepared:
+        entry = out.setdefault(market.event_ticker or market.ticker, {"markets": 0, "yes": 0, "settled": 0})
+        entry["markets"] += 1
+        result = market.settled_result
+        if result:
+            entry["settled"] += 1
+            entry["yes"] += 1 if result == "yes" else 0
+    return out
 
 
 def _drawdown(book: Book, equity: Decimal) -> None:
@@ -564,6 +627,31 @@ def _param_sensitivity(rows: list[dict], variants_by_sid: dict[str, Variant]) ->
     return out
 
 
+def load_events(root: Path) -> dict:
+    path = root / "data" / "kalshi" / "events.json"
+    if not path.exists():
+        return {}
+    records = json.loads(path.read_text())
+    return {r["event_ticker"]: r for r in records if r.get("event_ticker")}
+
+
+def program_channels(root: Path, grouped: dict[str, list]) -> dict:
+    """Keyword arguments for run_universe: event records, category map, settled pool.
+
+    The settled pool is built from every stored market in every universe; each
+    record becomes visible only strictly after its own Kalshi settlement_ts.
+    """
+    events = load_events(root)
+    categories: dict[str, str] = {}
+    for record in events.values():
+        series, category = record.get("series_ticker"), record.get("category")
+        if series and category and series not in categories:
+            categories[series] = category
+    all_markets = [m for markets in grouped.values() for m in markets]
+    records = build_settled_records(all_markets, decision_candles, categories)
+    return {"events_by_ticker": events, "settled_pool": SettledPool(records), "categories": categories}
+
+
 def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | None = None,
                 replay: bool = True, log=print) -> dict:
     """Run every batch over every universe and write the program bundle."""
@@ -578,6 +666,8 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
     trades_dir = program_dir / "trades"
     program_dir.mkdir(parents=True, exist_ok=True)
 
+    channels = program_channels(root, grouped)
+
     note_counts: dict = {}
     universe_results: dict[str, dict] = {}
     trade_files: dict[str, dict] = {}
@@ -585,7 +675,7 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
         markets = grouped.get(universe) or []
         sink = _CsvSinks(trades_dir, universe)
         t0 = time.time()
-        result = run_universe(markets, universe, variants, sink, note_counts)
+        result = run_universe(markets, universe, variants, sink, note_counts, **channels)
         files = sink.close()
         result["runtime_seconds"] = round(time.time() - t0, 3)
         result["trade_rows_by_batch"] = sink.rows_by_batch
@@ -594,14 +684,14 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
         log(f"program {universe}: {len(variants)} participants, {result['markets_used']} markets, "
             f"{result['events']} candle events in {result['runtime_seconds']}s")
 
-    replay_proof = {"status": "skipped", "batch": REPLAY_BATCH}
+    replay_proof = {"status": "skipped", "batch": REPLAY_BATCH, "batches": list(REPLAY_BATCHES)}
     if replay:
-        replay_variants = [v for v in variants if v.batch == REPLAY_BATCH]
+        replay_variants = [v for v in variants if v.batch in REPLAY_BATCHES]
         matched = True
         checked = 0
         details = {}
         for universe in ("nobel_forward", "nobel_settled", "panel_settled"):
-            second = run_universe(grouped.get(universe) or [], universe, replay_variants, None)
+            second = run_universe(grouped.get(universe) or [], universe, replay_variants, None, **channels)
             first_hashes = universe_results[universe]["ledger_hashes"]
             for pid, digest in second["ledger_hashes"].items():
                 checked += 1
@@ -612,11 +702,12 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
         replay_proof = {
             "status": "matched" if matched else "mismatch",
             "batch": REPLAY_BATCH,
+            "batches": list(REPLAY_BATCHES),
             "participants_checked": checked,
             "universes": {u: universe_results[u]["combined_ledger_sha256"] for u in universe_results},
             "note": (
-                f"{REPLAY_BATCH} was rerun against the stored candles after the full pass. "
-                "Per-participant ledger hashes matched. This is not a Kalshi fill."
+                f"{REPLAY_BATCH} were rerun (fresh strategy memory via reset()) against the stored "
+                "candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill."
             ) if matched else "Ledger mismatch. Do not trust the bundle.",
             "replay_universe_hashes": details,
         }
@@ -638,7 +729,7 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
 
     # Open positions, gzipped (audit for unrealized P&L decomposition).
     positions_path = program_dir / "positions.csv.gz"
-    with gzip.open(positions_path, "wt", encoding="utf-8", newline="", compresslevel=6) as raw:
+    with _gzip_text(positions_path) as raw:
         writer = csv.writer(raw)
         writer.writerow(["universe", "participant_id", "ticker", "side", "qty", "avg_entry", "cost",
                          "liquidation", "unrealized_pnl", "mark_src", "mark_ts_unix"])
@@ -745,6 +836,12 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
             }
         (batch_dir / f"{batch}.json").write_text(json.dumps(report, separators=(",", ":")))
 
+    # Research analysis: predeclared verdict rules per family (simcomp/analysis.py).
+    research = analyse(universe_results, variants)
+    research["data_quality"] = data_quality_flags(grouped, universe_results)
+    research["replay"] = {"status": replay_proof["status"], "batches": list(REPLAY_BATCHES)}
+    (program_dir / "research.json").write_text(json.dumps(research, separators=(",", ":"), default=str))
+
     # Manifest with a verifiable file inventory.
     def file_entry(path: Path) -> dict:
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
@@ -799,6 +896,18 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
             ),
             "prior_window": PROGRAM_PRIOR_WINDOW,
             "settlement_rule": "Official result applied only at settlement_ts, after the decision loop.",
+            "channels": {
+                "event_quotes": "Sibling contracts of the same event in the same universe: latest candle with end_period_ts <= T.",
+                "settled_pool": "Markets (any universe) whose settlement_ts < T, with their official result.",
+                "schedule": "Event strike_date when Kalshi publishes one on a whole minute; close_time is never used.",
+                "guards": "The engine raises if any channel contains a record stamped after T (or a pool record at/after T).",
+            },
+        },
+        "research": {
+            "file": "data/sim/program/research.json",
+            "overall_counts": research["overall_counts"],
+            "multiple_testing": research["multiple_testing"],
+            "families": len(research["families"]),
         },
         "flag_counts": flag_counts,
         "flag_samples": open_flags[:40],
@@ -811,6 +920,9 @@ def run_program(root: Path, grouped: dict[str, list], variants: list[Variant] | 
     }
     manifest_path = program_dir / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2))
+    docs_dir = root / "docs"
+    if docs_dir.is_dir():
+        (docs_dir / "RESEARCH.md").write_text(render_markdown(research, manifest))
     log(f"program done in {round(time.time() - started, 1)}s: {len(variants)} participants, "
         f"{total_trade_rows} ledger rows, replay {replay_proof['status']}")
     return manifest

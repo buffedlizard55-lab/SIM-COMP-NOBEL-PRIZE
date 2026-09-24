@@ -133,9 +133,9 @@ class RegistryTests(unittest.TestCase):
         self.variants = program_variants()
 
     def test_at_least_one_thousand_strategies_one_by_one(self):
-        self.assertGreaterEqual(len(self.variants), 1000)
+        self.assertGreaterEqual(len(self.variants), 2000)
         per_batch = Counter(v.batch for v in self.variants)
-        self.assertEqual(len(per_batch), 10)
+        self.assertEqual(len(per_batch), 20)
         for batch, count in per_batch.items():
             self.assertEqual(count, 100, batch)
         ids = [v.strategy_id for v in self.variants]
@@ -292,6 +292,11 @@ class RealSnapshotParityTests(unittest.TestCase):
         variants = program_variants()
         worst = 0
         for variant in variants:
+            if hasattr(variant.strategy, "required_prior"):  # phase 2 declares what it reads
+                needed = variant.strategy.required_prior()
+                self.assertLessEqual(needed, PROGRAM_PRIOR_WINDOW, variant.strategy_id)
+                worst = max(worst, needed)
+                continue
             lookback = _class_lookback(type(variant.strategy), variant.strategy.parameters)
             self.assertLessEqual(lookback + 1, PROGRAM_PRIOR_WINDOW, variant.strategy_id)
             worst = max(worst, lookback + 1)
