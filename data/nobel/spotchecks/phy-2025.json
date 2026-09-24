@@ -1,0 +1,35 @@
+{
+  "source_url": "https://api.nobelprize.org/2/nobelPrize/phy/2025",
+  "retrieved": "2026-09-24",
+  "note": "Official API body retrieved 2026-09-24. Compared with catalog.json prize physics-2025.",
+  "body": [
+    {
+      "awardYear": "2025",
+      "category": {"en": "Physics"},
+      "categoryFullName": {"en": "The Nobel Prize in Physics"},
+      "dateAwarded": "2025-10-07",
+      "prizeAmount": 11000000,
+      "prizeAmountAdjusted": 11000000,
+      "laureates": [
+        {
+          "id": "1050",
+          "knownName": {"en": "John Clarke"},
+          "portion": "1/3",
+          "motivation": {"en": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"}
+        },
+        {
+          "id": "1051",
+          "knownName": {"en": "Michel H. Devoret"},
+          "portion": "1/3",
+          "motivation": {"en": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"}
+        },
+        {
+          "id": "1052",
+          "knownName": {"en": "John M. Martinis"},
+          "portion": "1/3",
+          "motivation": {"en": "for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit"}
+        }
+      ]
+    }
+  ]
+}
