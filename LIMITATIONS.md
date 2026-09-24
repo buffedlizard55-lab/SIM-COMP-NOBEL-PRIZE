@@ -45,7 +45,8 @@ Checked against the stored files and, for the holes, against the public Kalshi e
 - `KXNOBELECON-25` has 20 stored contracts, every one `result=no`. The catalog laureates Joel Mokyr, Philippe Aghion, and Peter Howitt are not among the stored contract names. The event endpoint's market list, read on 2026-09-24, also did not include them. No yes market was added.
 - `KXTRUMPNOBEL-25OCT15` settled `no`. It is a name match, not the Peace Prize winner market.
 - `KXNOBELPEACE-25` (the event-level contract, volume 0) had an empty daily candle response. An hourly retry asked for about 7096 candles and Kalshi rejected it at the 5000 cap. The child contracts in that event do have candles. The parent is not a traded price that was dropped.
-- One historical market query stopped at the 2000-row cap. The failure row did not name the series. The next collector records the query parameters. The panel remains a capped sample, not a global volume rank.
+- The 17:59 UTC collect named the caps: `KXHIGHNY` events stopped at 500, and `KXHIGHNY` historical markets stopped at 2000. The panel is the top 25 among those rows, not a global volume rank. The unfiltered series catalog still stops at 5000. Known Nobel series are requested by ticker after that page stops.
+- The oversized hourly candle request for `KXNOBELPEACE-25` is no longer sent. That parent contract has volume 0. Its child contracts still have candles.
 - The series catalog page stopped at 5000 rows, and one events page stopped at 500. Known Nobel series were still requested by ticker.
 
 ## Suggested next session, in order
