@@ -2,6 +2,46 @@
   {
     "code": "unmarked_position",
     "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CHOW: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CONC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
     "message": "sim-cleo-longshot KXNOBELPEACE-26-DAR: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-DAR",
     "participant_id": "sim-cleo-longshot",
@@ -34,6 +74,62 @@
   {
     "code": "unmarked_position",
     "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IAJ: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ICRC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IPRA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ISS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-MMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-PCFF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-RSF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
     "message": "sim-cleo-longshot KXNOBELPEACE-26-SAM: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-SAM",
     "participant_id": "sim-cleo-longshot",
@@ -42,9 +138,209 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-cleo-longshot KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-SGSV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
     "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-WTO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-YAD: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-dmitri-momentum",
     "competition_id": "nobel-forward-primary"
   },
   {
@@ -82,9 +378,97 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-farid-fade KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-primary"
   },
   {
@@ -130,305 +514,289 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-gina-tight KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-gina-tight KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ABEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ABEN",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-hiro-slice KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-AHUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-AHUN",
+    "message": "sim-hiro-slice KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ASUR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ASUR",
+    "message": "sim-hiro-slice KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-BDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-BDRU",
+    "message": "sim-hiro-slice KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-CJUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-CJUN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DDRU",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DSLA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DSLA",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-FHAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HCLE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HCLE",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HHOB: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HHOB",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HZOG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HZOG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JBEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JBEN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JDIC: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JDIC",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFRI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFRI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFUJ: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFUJ",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JGOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JGOR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KDEI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KDEI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KKAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KKAN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KMOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KMOR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-LCAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-LCAN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MCOO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MCOO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MHAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MHAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MKIN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MKIN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-NFER: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-PWAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-PWAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RRAD: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RRAD",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RVAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RVAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SELL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SOGA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SOGA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SORK: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SORK",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-TSPR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-TSPR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-VLEE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-WSCH: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-WSCH",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YCHA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YCHA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YLO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YLO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-primary"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ZCHE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ZCHE",
-    "participant_id": "sim-hiro-slice",
+    "message": "sim-ines-volume KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
@@ -442,48 +810,64 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-DDRU: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DDRU",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-FHAR: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-NFER: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-SELL: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-primary"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-VLEE: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-primary"
   },
@@ -508,6 +892,86 @@
     "severity": "review",
     "message": "sim-kira-null KXNOBELPEACE-26-EUR: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-EUR",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPEACE-26-ICRC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-primary"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-primary"
   },
@@ -521,6 +985,46 @@
   {
     "code": "unmarked_position",
     "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CHOW: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CONC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
     "message": "sim-cleo-longshot KXNOBELPEACE-26-DAR: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-DAR",
     "participant_id": "sim-cleo-longshot",
@@ -553,6 +1057,62 @@
   {
     "code": "unmarked_position",
     "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IAJ: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ICRC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IPRA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ISS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-MMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-PCFF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-RSF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
     "message": "sim-cleo-longshot KXNOBELPEACE-26-SAM: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-SAM",
     "participant_id": "sim-cleo-longshot",
@@ -561,9 +1121,233 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-cleo-longshot KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-SGSV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
     "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-WTO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-YAD: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-farid-fade",
     "competition_id": "nobel-forward-fee-off"
   },
   {
@@ -601,9 +1385,97 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-farid-fade KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-fee-off"
   },
   {
@@ -649,305 +1521,289 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-gina-tight KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-gina-tight KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ABEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ABEN",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-hiro-slice KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-AHUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-AHUN",
+    "message": "sim-hiro-slice KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ASUR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ASUR",
+    "message": "sim-hiro-slice KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-BDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-BDRU",
+    "message": "sim-hiro-slice KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-CJUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-CJUN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DDRU",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DSLA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DSLA",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-FHAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HCLE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HCLE",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HHOB: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HHOB",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HZOG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HZOG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JBEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JBEN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JDIC: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JDIC",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFRI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFRI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFUJ: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFUJ",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JGOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JGOR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KDEI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KDEI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KKAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KKAN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KMOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KMOR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-LCAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-LCAN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MCOO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MCOO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MHAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MHAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MKIN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MKIN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-NFER: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-PWAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-PWAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RRAD: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RRAD",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RVAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RVAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SELL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SOGA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SOGA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SORK: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SORK",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-TSPR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-TSPR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-VLEE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-WSCH: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-WSCH",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YCHA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YCHA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YLO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YLO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-fee-off"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ZCHE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ZCHE",
-    "participant_id": "sim-hiro-slice",
+    "message": "sim-ines-volume KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
@@ -961,48 +1817,64 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-DDRU: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DDRU",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-FHAR: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-NFER: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-SELL: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-fee-off"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-VLEE: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-fee-off"
   },
@@ -1029,6 +1901,126 @@
     "market_ticker": "KXNOBELPEACE-26-EUR",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPEACE-26-ICRC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-fee-off"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CHOW: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CHOW",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-CONC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-CONC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
@@ -1065,6 +2057,62 @@
   {
     "code": "unmarked_position",
     "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IAJ: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IAJ",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ICRC: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ICRC",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-IPRA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-IPRA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-ISS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-ISS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-MMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-MMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-PCFF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-PCFF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-RSF: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-RSF",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
     "message": "sim-cleo-longshot KXNOBELPEACE-26-SAM: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-SAM",
     "participant_id": "sim-cleo-longshot",
@@ -1073,9 +2121,177 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-cleo-longshot KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-SGSV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-SGSV",
     "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-WTO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-WTO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPEACE-26-YAD: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-YAD",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-cleo-longshot KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-cleo-longshot",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-dmitri-momentum",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-dmitri-momentum KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-dmitri-momentum",
     "competition_id": "nobel-forward-size-250"
   },
   {
@@ -1113,9 +2329,65 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-farid-fade KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-farid-fade KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-farid-fade",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
+    "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-size-250"
   },
   {
@@ -1161,304 +2433,280 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-gina-tight KXNOBELPEACE-26-SAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELPEACE-26-SAR",
+    "message": "sim-gina-tight KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-gina-tight",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ABEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ABEN",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-gina-tight KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
+    "participant_id": "sim-gina-tight",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-hiro-slice KXNOBELLIT-26-AMI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-AMI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-AHUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-AHUN",
+    "message": "sim-hiro-slice KXNOBELLIT-26-CES: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-CES",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ASUR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ASUR",
+    "message": "sim-hiro-slice KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-BDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-BDRU",
+    "message": "sim-hiro-slice KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-CJUN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-CJUN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-CFRE: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-CFRE",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DDRU: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DDRU",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-DSLA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-DSLA",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-IDAU: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-IDAU",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-FHAR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HCLE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HCLE",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HHOB: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HHOB",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-HZOG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-HZOG",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JBEN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JBEN",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JDIC: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JDIC",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFRI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFRI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JFUJ: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JFUJ",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-JGOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-JGOR",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KDEI: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KDEI",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KKAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KKAN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-KMOR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-KMOR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-LCAN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-LCAN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MCOO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MCOO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MHAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MHAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-MKIN: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-MKIN",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-NFER: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-PWAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-PWAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RRAD: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RRAD",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-RVAL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-RVAL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SELL: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SOGA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SOGA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-SORK: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SORK",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-TSPR: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-TSPR",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-VLEE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-WSCH: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-WSCH",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YCHA: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YCHA",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-YLO: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-YLO",
-    "participant_id": "sim-hiro-slice",
-    "competition_id": "nobel-forward-size-250"
-  },
-  {
-    "code": "unmarked_position",
-    "severity": "review",
-    "message": "sim-hiro-slice KXNOBELMED-26-ZCHE: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-ZCHE",
+    "message": "sim-hiro-slice KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
     "participant_id": "sim-hiro-slice",
     "competition_id": "nobel-forward-size-250"
   },
@@ -1473,40 +2721,64 @@
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-EMIG: no usable yes bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-EMIG",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-FHAR: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-FHAR",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-NFER: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-NFER",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PJAR: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PJAR",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-SELL: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-SELL",
-    "participant_id": "sim-kira-null",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-PSHO: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-PSHO",
+    "participant_id": "sim-ines-volume",
     "competition_id": "nobel-forward-size-250"
   },
   {
     "code": "unmarked_position",
     "severity": "review",
-    "message": "sim-kira-null KXNOBELMED-26-VLEE: no usable NO bid; liquidation mark set to 0 and flagged",
-    "market_ticker": "KXNOBELMED-26-VLEE",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-RBIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-RBIS",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SMAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SMAL",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-ines-volume KXNOBELPHYSICS-26-SWHI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SWHI",
+    "participant_id": "sim-ines-volume",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELLIT-26-SAL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELLIT-26-SAL",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-size-250"
   },
@@ -1531,6 +2803,78 @@
     "severity": "review",
     "message": "sim-kira-null KXNOBELPEACE-26-EUR: no usable yes bid; liquidation mark set to 0 and flagged",
     "market_ticker": "KXNOBELPEACE-26-EUR",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPEACE-26-VOL: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPEACE-26-VOL",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-DCHA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-DCHA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-EDIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-EDIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JEIS: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JEIS",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-JJAI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-JJAI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MDAV: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MDAV",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-MHEI: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-MHEI",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-SSEA: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-SSEA",
+    "participant_id": "sim-kira-null",
+    "competition_id": "nobel-forward-size-250"
+  },
+  {
+    "code": "unmarked_position",
+    "severity": "review",
+    "message": "sim-kira-null KXNOBELPHYSICS-26-YMEY: no usable yes bid; liquidation mark set to 0 and flagged",
+    "market_ticker": "KXNOBELPHYSICS-26-YMEY",
     "participant_id": "sim-kira-null",
     "competition_id": "nobel-forward-size-250"
   },
