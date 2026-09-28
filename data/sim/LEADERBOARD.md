@@ -2,7 +2,7 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-09-27T17:43:13Z
+Kalshi snapshot: 2026-09-28T20:06:39Z
 
 ## Nobel markets, forward simulation
 
@@ -13,14 +13,14 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 147.
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 4 | sim-gina-tight | tight_value | 7454.1340 | 0.0000 | -2545.8660 | 289.7300 | 98 |
-| 5 | sim-kira-null | seeded_null | 7441.4150 | 0.0000 | -2558.5850 | 218.8400 | 108 |
-| 6 | sim-cleo-longshot | longshot_hold | 6316.5300 | 0.0000 | -3683.4700 | 366.9700 | 113 |
-| 7 | sim-elena-revert | mean_revert | 5534.6200 | -3821.4700 | -643.9100 | 715.9900 | 232 |
-| 8 | sim-hiro-slice | diversified_slice | 4791.2840 | 0.0000 | -5208.7160 | 461.3000 | 127 |
-| 9 | sim-ines-volume | volume_momentum | 3527.0890 | -5619.3030 | -853.6080 | 1481.4900 | 697 |
-| 10 | sim-dmitri-momentum | momentum | 573.3520 | -9325.9890 | -100.6590 | 2077.2900 | 1425 |
-| 11 | sim-farid-fade | contrarian | 389.4990 | -9358.3850 | -252.1160 | 2154.4900 | 1407 |
+| 4 | sim-gina-tight | tight_value | 7355.2740 | 0.0000 | -2644.7260 | 289.7300 | 98 |
+| 5 | sim-kira-null | seeded_null | 7297.9550 | 0.0000 | -2702.0450 | 225.5600 | 111 |
+| 6 | sim-cleo-longshot | longshot_hold | 6200.5900 | 0.0000 | -3799.4100 | 371.9100 | 114 |
+| 7 | sim-elena-revert | mean_revert | 5494.2000 | -3943.2600 | -562.5400 | 726.4100 | 235 |
+| 8 | sim-hiro-slice | diversified_slice | 4700.6740 | 0.0000 | -5299.3260 | 461.3000 | 127 |
+| 9 | sim-ines-volume | volume_momentum | 3286.6250 | -5763.7030 | -949.6720 | 1502.5000 | 712 |
+| 10 | sim-dmitri-momentum | momentum | 556.3120 | -9348.3790 | -95.3090 | 2079.9900 | 1431 |
+| 11 | sim-farid-fade | contrarian | 384.4890 | -9376.1350 | -239.3760 | 2157.0000 | 1420 |
 
 ## Settled Nobel markets, historical backtest
 
@@ -60,22 +60,22 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The research program (2,000 simulated participants)
 
-2000 simulated participants in 20 batches. 952323 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 956637 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b013-084 | uniform-field-prior-b013-084 | uniform_field_prior | 10134.6600 | 0.0000 | 134.6600 | 16.3300 | 8 |
-| 2 | sim-b013-048 | learned-base-rate-b013-048 | learned_base_rate | 10124.6700 | 0.0000 | 124.6700 | 14.7300 | 7 |
-| 3 | sim-b013-081 | uniform-field-prior-b013-081 | uniform_field_prior | 10124.5100 | 0.0000 | 124.5100 | 16.8400 | 9 |
-| 4 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10122.2200 | 0.0000 | 122.2200 | 11.3200 | 5 |
-| 4 | sim-b011-095 | placebo-event-leader-b011-095 | placebo_event_leader | 10122.2200 | 0.0000 | 122.2200 | 11.3200 | 5 |
-| 6 | sim-b013-079 | uniform-field-prior-b013-079 | uniform_field_prior | 10119.0100 | 0.0000 | 119.0100 | 9.3600 | 4 |
-| 7 | sim-b013-086 | uniform-field-prior-b013-086 | uniform_field_prior | 10105.7200 | 0.0000 | 105.7200 | 27.3200 | 16 |
-| 8 | sim-b013-047 | learned-base-rate-b013-047 | learned_base_rate | 10102.4900 | 0.0000 | 102.4900 | 26.0600 | 15 |
-| 9 | sim-b013-045 | learned-base-rate-b013-045 | learned_base_rate | 10096.7300 | 0.0000 | 96.7300 | 26.7600 | 16 |
-| 10 | sim-b013-082 | uniform-field-prior-b013-082 | uniform_field_prior | 10096.6900 | 0.0000 | 96.6900 | 7.2000 | 3 |
+| 1 | sim-b013-084 | uniform-field-prior-b013-084 | uniform_field_prior | 10158.8100 | 0.0000 | 158.8100 | 16.3300 | 8 |
+| 2 | sim-b013-048 | learned-base-rate-b013-048 | learned_base_rate | 10155.3700 | 0.0000 | 155.3700 | 14.7300 | 7 |
+| 3 | sim-b013-081 | uniform-field-prior-b013-081 | uniform_field_prior | 10152.1200 | 0.0000 | 152.1200 | 16.8400 | 9 |
+| 4 | sim-b013-086 | uniform-field-prior-b013-086 | uniform_field_prior | 10134.8400 | 0.0000 | 134.8400 | 27.3200 | 16 |
+| 5 | sim-b013-047 | learned-base-rate-b013-047 | learned_base_rate | 10128.1000 | 0.0000 | 128.1000 | 26.0600 | 15 |
+| 6 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10126.8000 | 0.0000 | 126.8000 | 11.3200 | 5 |
+| 6 | sim-b011-095 | placebo-event-leader-b011-095 | placebo_event_leader | 10126.8000 | 0.0000 | 126.8000 | 11.3200 | 5 |
+| 8 | sim-b013-045 | learned-base-rate-b013-045 | learned_base_rate | 10125.8500 | 0.0000 | 125.8500 | 26.7600 | 16 |
+| 9 | sim-b013-079 | uniform-field-prior-b013-079 | uniform_field_prior | 10123.6300 | 0.0000 | 123.6300 | 9.3600 | 4 |
+| 10 | sim-b013-085 | uniform-field-prior-b013-085 | uniform_field_prior | 10108.7530 | 0.0000 | 108.7530 | 48.2700 | 45 |
 
 ### Program, settled Nobel markets, historical backtest
 
