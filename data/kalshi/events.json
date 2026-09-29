@@ -28,7 +28,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:23:36.102246Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -52,7 +52,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:23:36.102246Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -76,7 +76,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27SEP",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:22:20.530304Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -100,7 +100,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JUL",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:22:20.530304Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -124,7 +124,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:22:20.530304Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -148,7 +148,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27APR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:21:05.041061Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -172,7 +172,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27MAR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:21:05.041061Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -196,7 +196,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JAN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:19:43.854419Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -220,7 +220,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:19:43.854419Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -244,7 +244,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-09-28T20:15:59.31827Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -837,6 +837,29 @@
     "strike_period": "",
     "sub_title": "In May 2023",
     "title": "Fed meeting in May 2023?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26SEP30",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-09-29T09:36:19.507204Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-01T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Sep 30, 2026",
+    "title": "Highest temperature in New York City on Sep 30, 2026?",
     "_role": "panel"
   },
   {
@@ -12958,26 +12981,6 @@
     "strike_period": "",
     "sub_title": "On Feb 8, 2025",
     "title": "Highest temperature in NYC on Feb 8, 2025?",
-    "_role": "panel"
-  },
-  {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25FEB07",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "National Weather Service",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-02-08T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Feb 7, 2025",
-    "title": "Highest temperature in NYC on Feb 7, 2025?",
     "_role": "panel"
   },
   {
