@@ -244,7 +244,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-28T20:15:59.31827Z",
+    "last_updated_ts": "2026-09-30T18:52:10.732242Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -837,6 +837,29 @@
     "strike_period": "",
     "sub_title": "In May 2023",
     "title": "Fed meeting in May 2023?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT02",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-01T09:36:12.128664Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-03T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 2, 2026",
+    "title": "Highest temperature in New York City on Oct 2, 2026?",
     "_role": "panel"
   },
   {
@@ -12964,26 +12987,6 @@
     "strike_period": "",
     "sub_title": "On Feb 10, 2025",
     "title": "Highest temperature in NYC on Feb 10, 2025?",
-    "_role": "panel"
-  },
-  {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25FEB09",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.673104Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "National Weather Service",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-02-10T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Feb 9, 2025",
-    "title": "Highest temperature in NYC on Feb 9, 2025?",
     "_role": "panel"
   },
   {
