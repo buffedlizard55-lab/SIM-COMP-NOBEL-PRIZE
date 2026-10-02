@@ -42,8 +42,8 @@
     "exchange_index": 0,
     "fee_multiplier": 1,
     "fee_type": "quadratic",
-    "frequency": "annual",
-    "last_updated_ts": "2026-09-24T00:59:10.183731Z",
+    "frequency": "one_off",
+    "last_updated_ts": "2026-09-24T00:58:58.525974Z",
     "settlement_sources": [
       {
         "name": "Nobel Foundation",
@@ -53,95 +53,8 @@
     "tags": [
       "Physics & Math"
     ],
-    "ticker": "KXNOBELCHEM",
-    "title": "Nobel Chemistry prize",
-    "_role": "nobel"
-  },
-  {
-    "additional_prohibitions": [
-      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
-      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
-    ],
-    "categories": [
-      "Science and Technology"
-    ],
-    "category": "Science and Technology",
-    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
-    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
-    "exchange_index": 0,
-    "fee_multiplier": 1,
-    "fee_type": "quadratic",
-    "frequency": "annual",
-    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
-    "settlement_sources": [
-      {
-        "name": "Nobel Foundation",
-        "url": "https://www.nobelprize.org"
-      }
-    ],
-    "tags": [
-      "Physics & Math"
-    ],
-    "ticker": "KXNOBELLIT",
-    "title": "Nobel Literature prize",
-    "_role": "nobel"
-  },
-  {
-    "additional_prohibitions": [
-      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
-      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
-    ],
-    "categories": [
-      "Entertainment"
-    ],
-    "category": "Entertainment",
-    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
-    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
-    "exchange_index": 0,
-    "fee_multiplier": 1,
-    "fee_type": "quadratic",
-    "frequency": "annual",
-    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
-    "settlement_sources": [
-      {
-        "name": "Nobel Prize organization",
-        "url": "https://www.nobelprize.org/"
-      }
-    ],
-    "tags": [
-      "Nobel Prizes"
-    ],
-    "ticker": "NOBELLIT",
-    "title": "Nobel Literature prize",
-    "_role": "nobel"
-  },
-  {
-    "additional_prohibitions": [
-      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
-      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
-    ],
-    "categories": [
-      "Entertainment"
-    ],
-    "category": "Entertainment",
-    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
-    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
-    "exchange_index": 0,
-    "fee_multiplier": 1,
-    "fee_type": "quadratic",
-    "frequency": "annual",
-    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
-    "settlement_sources": [
-      {
-        "name": "Nobel Prize organization",
-        "url": "https://www.nobelprize.org/"
-      }
-    ],
-    "tags": [
-      "Nobel Prizes"
-    ],
-    "ticker": "NOBELECON",
-    "title": "Nobel Economics prize",
+    "ticker": "KXNOBELMED",
+    "title": "Nobel Physiology/Medicine prize",
     "_role": "nobel"
   },
   {
@@ -179,16 +92,15 @@
       "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
     ],
     "categories": [
-      "Politics",
       "Entertainment"
     ],
-    "category": "Politics",
-    "contract_terms_url": "https://assets.kalshi.com/contract_terms/PEACE.pdf",
-    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/PEACE.pdf",
+    "category": "Entertainment",
+    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
+    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
     "exchange_index": 0,
     "fee_multiplier": 1,
     "fee_type": "quadratic",
-    "frequency": "custom",
+    "frequency": "annual",
     "last_updated_ts": "2026-08-29T22:27:15.071958Z",
     "settlement_sources": [
       {
@@ -197,11 +109,68 @@
       }
     ],
     "tags": [
-      "International",
-      "Achievements"
+      "Nobel Prizes"
     ],
-    "ticker": "KXNOBELPEACE",
-    "title": "Nobel Peace Prize",
+    "ticker": "NOBELLIT",
+    "title": "Nobel Literature prize",
+    "_role": "nobel"
+  },
+  {
+    "additional_prohibitions": [
+      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+    ],
+    "categories": [
+      "Science and Technology"
+    ],
+    "category": "Science and Technology",
+    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
+    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
+    "exchange_index": 0,
+    "fee_multiplier": 1,
+    "fee_type": "quadratic",
+    "frequency": "annual",
+    "last_updated_ts": "2026-09-24T00:59:10.183731Z",
+    "settlement_sources": [
+      {
+        "name": "Nobel Foundation",
+        "url": "https://www.nobelprize.org"
+      }
+    ],
+    "tags": [
+      "Physics & Math"
+    ],
+    "ticker": "KXNOBELCHEM",
+    "title": "Nobel Chemistry prize",
+    "_role": "nobel"
+  },
+  {
+    "additional_prohibitions": [
+      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+    ],
+    "categories": [
+      "Entertainment"
+    ],
+    "category": "Entertainment",
+    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
+    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
+    "exchange_index": 0,
+    "fee_multiplier": 1,
+    "fee_type": "quadratic",
+    "frequency": "annual",
+    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
+    "settlement_sources": [
+      {
+        "name": "Nobel Prize organization",
+        "url": "https://www.nobelprize.org/"
+      }
+    ],
+    "tags": [
+      "Nobel Prizes"
+    ],
+    "ticker": "NOBELECON",
+    "title": "Nobel Economics prize",
     "_role": "nobel"
   },
   {
@@ -322,35 +291,6 @@
     "exchange_index": 0,
     "fee_multiplier": 1,
     "fee_type": "quadratic",
-    "frequency": "one_off",
-    "last_updated_ts": "2026-09-24T00:58:58.525974Z",
-    "settlement_sources": [
-      {
-        "name": "Nobel Foundation",
-        "url": "https://www.nobelprize.org"
-      }
-    ],
-    "tags": [
-      "Physics & Math"
-    ],
-    "ticker": "KXNOBELMED",
-    "title": "Nobel Physiology/Medicine prize",
-    "_role": "nobel"
-  },
-  {
-    "additional_prohibitions": [
-      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
-      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
-    ],
-    "categories": [
-      "Science and Technology"
-    ],
-    "category": "Science and Technology",
-    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
-    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
-    "exchange_index": 0,
-    "fee_multiplier": 1,
-    "fee_type": "quadratic",
     "frequency": "annual",
     "last_updated_ts": "2026-08-29T22:27:15.071958Z",
     "settlement_sources": [
@@ -430,6 +370,66 @@
       "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
     ],
     "categories": [
+      "Science and Technology"
+    ],
+    "category": "Science and Technology",
+    "contract_terms_url": "https://assets.kalshi.com/contract_terms/NOBEL.pdf",
+    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/NOBEL.pdf",
+    "exchange_index": 0,
+    "fee_multiplier": 1,
+    "fee_type": "quadratic",
+    "frequency": "annual",
+    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
+    "settlement_sources": [
+      {
+        "name": "Nobel Foundation",
+        "url": "https://www.nobelprize.org"
+      }
+    ],
+    "tags": [
+      "Physics & Math"
+    ],
+    "ticker": "KXNOBELLIT",
+    "title": "Nobel Literature prize",
+    "_role": "nobel"
+  },
+  {
+    "additional_prohibitions": [
+      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+    ],
+    "categories": [
+      "Politics",
+      "Entertainment"
+    ],
+    "category": "Politics",
+    "contract_terms_url": "https://assets.kalshi.com/contract_terms/PEACE.pdf",
+    "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/PEACE.pdf",
+    "exchange_index": 0,
+    "fee_multiplier": 1,
+    "fee_type": "quadratic",
+    "frequency": "custom",
+    "last_updated_ts": "2026-08-29T22:27:15.071958Z",
+    "settlement_sources": [
+      {
+        "name": "Nobel Prize organization",
+        "url": "https://www.nobelprize.org/"
+      }
+    ],
+    "tags": [
+      "International",
+      "Achievements"
+    ],
+    "ticker": "KXNOBELPEACE",
+    "title": "Nobel Peace Prize",
+    "_role": "nobel"
+  },
+  {
+    "additional_prohibitions": [
+      "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+      "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+    ],
+    "categories": [
       "Climate and Weather"
     ],
     "category": "Climate and Weather",
@@ -439,7 +439,7 @@
     "fee_multiplier": 1,
     "fee_type": "quadratic",
     "frequency": "daily",
-    "last_updated_ts": "2026-09-17T13:14:19.94284Z",
+    "last_updated_ts": "2026-10-01T20:50:16.961991Z",
     "product_metadata": {
       "important_info": {
         "id": "GLOBALTEMPERATURE-bulk-2026-09-02",
