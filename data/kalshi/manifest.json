@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-10-06T18:53:49Z",
-  "fetched_at_unix": 1791312829,
+  "fetched_at": "2026-10-07T19:19:23Z",
+  "fetched_at_unix": 1791400763,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
-  "calls": 344,
+  "calls": 347,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
   "exchange_status": {
     "exchange_active": true,
@@ -41,10 +41,10 @@
   },
   "cutoff_url": "https://external-api.kalshi.com/trade-api/v2/historical/cutoff",
   "historical_cutoff": {
-    "market_positions_last_updated_ts": "2026-08-07T00:00:00Z",
-    "market_settled_ts": "2026-08-07T00:00:00Z",
-    "orders_updated_ts": "2026-09-22T00:00:00Z",
-    "trades_created_ts": "2026-08-07T00:00:00Z"
+    "market_positions_last_updated_ts": "2026-08-08T00:00:00Z",
+    "market_settled_ts": "2026-08-08T00:00:00Z",
+    "orders_updated_ts": "2026-09-23T00:00:00Z",
+    "trades_created_ts": "2026-08-08T00:00:00Z"
   },
   "nobel_series": [
     "KXNOBELCHEM",
@@ -69,8 +69,8 @@
     "KXFEDDECISION": 25
   },
   "panel_cap_per_series": 25,
-  "markets_stored": 268,
-  "markets_with_candles": 268,
+  "markets_stored": 271,
+  "markets_with_candles": 271,
   "events_stored": 650,
   "orderbooks_stored": 15,
   "failure_count": 3,
