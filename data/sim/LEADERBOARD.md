@@ -2,43 +2,43 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-10-07T19:19:23Z
+Kalshi snapshot: 2026-10-08T19:15:51Z
 
 ## Nobel markets, forward simulation
 
-Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 63.
+Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 51.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 4 | sim-kira-null | seeded_null | 9172.6900 | 0.0000 | -827.3100 | 70.7100 | 37 |
-| 5 | sim-gina-tight | tight_value | 9032.6000 | 0.0000 | -967.4000 | 131.0000 | 60 |
-| 6 | sim-hiro-slice | diversified_slice | 8770.0600 | 0.0000 | -1229.9400 | 136.4800 | 37 |
-| 7 | sim-elena-revert | mean_revert | 8390.0600 | -1512.3300 | -97.6100 | 283.0500 | 98 |
-| 8 | sim-cleo-longshot | longshot_hold | 8367.4600 | 0.0000 | -1632.5400 | 171.0400 | 60 |
-| 9 | sim-ines-volume | volume_momentum | 4192.3910 | -5267.4810 | -540.1280 | 1399.6600 | 675 |
-| 10 | sim-dmitri-momentum | momentum | 489.5930 | -9418.7780 | -91.6290 | 2171.1400 | 1382 |
-| 11 | sim-farid-fade | contrarian | 391.0440 | -9409.5770 | -199.3790 | 2315.9600 | 1426 |
+| 4 | sim-kira-null | seeded_null | 9270.6000 | 0.0000 | -729.4000 | 61.5500 | 32 |
+| 5 | sim-gina-tight | tight_value | 9031.1600 | 0.0000 | -968.8400 | 97.4400 | 51 |
+| 6 | sim-hiro-slice | diversified_slice | 8875.6000 | 0.0000 | -1124.4000 | 96.4400 | 26 |
+| 7 | sim-elena-revert | mean_revert | 8662.5600 | -1305.7300 | -31.7100 | 234.2300 | 86 |
+| 8 | sim-cleo-longshot | longshot_hold | 8409.5800 | 0.0000 | -1590.4200 | 133.9200 | 49 |
+| 9 | sim-ines-volume | volume_momentum | 5447.6990 | -4339.1810 | -213.1200 | 1219.7700 | 595 |
+| 10 | sim-dmitri-momentum | momentum | 584.8930 | -9326.7460 | -88.3610 | 2214.4800 | 1220 |
+| 11 | sim-farid-fade | contrarian | 396.2080 | -9368.8820 | -234.9100 | 2301.4500 | 1243 |
 
 ## Settled Nobel markets, historical backtest
 
-Id: `nobel-settled-primary`. Kind: historical_backtest. Markets used: 157.
+Id: `nobel-settled-primary`. Kind: historical_backtest. Markets used: 169.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 2 | sim-jonas-exit | favorite_exit | 9996.5500 | -3.4500 | 0.0000 | 6.1500 | 3 |
 | 3 | sim-basil-favorite | favorite_hold | 9939.0100 | -60.9900 | 0.0000 | 3.8400 | 2 |
-| 4 | sim-kira-null | seeded_null | 8443.2850 | -1556.7150 | 0.0000 | 168.3400 | 88 |
-| 5 | sim-elena-revert | mean_revert | 6678.0500 | -3321.9500 | 0.0000 | 622.0400 | 171 |
-| 6 | sim-gina-tight | tight_value | 5873.8300 | -4126.1700 | 0.0000 | 296.7900 | 111 |
-| 7 | sim-ines-volume | volume_momentum | 4839.4600 | -5160.5400 | 0.0000 | 1531.3000 | 715 |
-| 8 | sim-hiro-slice | diversified_slice | 3879.1500 | -6120.8500 | 0.0000 | 456.8300 | 123 |
-| 9 | sim-cleo-longshot | longshot_hold | 3863.4300 | -6136.5700 | 0.0000 | 476.5700 | 148 |
+| 4 | sim-kira-null | seeded_null | 8190.7650 | -1809.2350 | 0.0000 | 181.2100 | 96 |
+| 5 | sim-elena-revert | mean_revert | 6230.7000 | -3769.3000 | 0.0000 | 689.3900 | 193 |
+| 6 | sim-gina-tight | tight_value | 5752.2100 | -4247.7900 | 0.0000 | 333.4100 | 123 |
+| 7 | sim-ines-volume | volume_momentum | 4796.7100 | -5203.2900 | 0.0000 | 1541.1200 | 750 |
+| 8 | sim-cleo-longshot | longshot_hold | 3709.9600 | -6290.0400 | 0.0000 | 515.0400 | 160 |
+| 9 | sim-hiro-slice | diversified_slice | 3614.8900 | -6385.1100 | 0.0000 | 501.0900 | 135 |
 | 10 | sim-dmitri-momentum | momentum | 3255.0100 | -6744.9900 | 0.0000 | 2001.5900 | 935 |
-| 11 | sim-farid-fade | contrarian | 1548.0900 | -8451.9100 | 0.0000 | 2261.3300 | 1034 |
+| 11 | sim-farid-fade | contrarian | 1548.0000 | -8452.0000 | 0.0000 | 2261.3600 | 1037 |
 
 ## Settled panel, historical backtest
 
@@ -60,37 +60,37 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The research program (2,000 simulated participants)
 
-2000 simulated participants in 20 batches. 1024115 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 1026104 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10092.9000 | 0.0000 | 92.9000 | 7.3400 | 3 |
-| 1 | sim-b011-095 | placebo-event-leader-b011-095 | placebo_event_leader | 10092.9000 | 0.0000 | 92.9000 | 7.3400 | 3 |
-| 3 | sim-b017-064 | cash-reserve-gate-b017-064 | cash_reserve_gate | 10080.4000 | 0.0000 | 80.4000 | 7.2100 | 10 |
-| 4 | sim-b013-079 | uniform-field-prior-b013-079 | uniform_field_prior | 10073.3600 | 0.0000 | 73.3600 | 4.7600 | 2 |
-| 4 | sim-b013-082 | uniform-field-prior-b013-082 | uniform_field_prior | 10073.3600 | 0.0000 | 73.3600 | 4.7600 | 2 |
-| 6 | sim-b013-048 | learned-base-rate-b013-048 | learned_base_rate | 10067.4300 | 0.0000 | 67.4300 | 8.7300 | 4 |
-| 7 | sim-b013-084 | uniform-field-prior-b013-084 | uniform_field_prior | 10066.0600 | 0.0000 | 66.0600 | 8.6500 | 4 |
-| 8 | sim-b013-085 | uniform-field-prior-b013-085 | uniform_field_prior | 10063.4350 | 0.0000 | 63.4350 | 16.5100 | 17 |
-| 9 | sim-b013-083 | uniform-field-prior-b013-083 | uniform_field_prior | 10062.4200 | 0.0000 | 62.4200 | 11.6700 | 9 |
-| 10 | sim-b013-086 | uniform-field-prior-b013-086 | uniform_field_prior | 10047.8400 | 0.0000 | 47.8400 | 9.7900 | 6 |
+| 1 | sim-b012-001 | logit-scale-b012-001 | logit_scale | 10114.5460 | 0.0000 | 114.5460 | 18.2800 | 35 |
+| 2 | sim-b012-009 | logit-scale-b012-009 | logit_scale | 10114.1470 | 0.0000 | 114.1470 | 19.0400 | 44 |
+| 3 | sim-b012-079 | fee-aware-logit-b012-079 | fee_aware_logit | 10112.0590 | 0.0000 | 112.0590 | 18.8400 | 43 |
+| 4 | sim-b012-011 | logit-scale-b012-011 | logit_scale | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-007 | kelly-fraction-b017-007 | kelly_fraction | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-010 | kelly-fraction-b017-010 | kelly_fraction | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-013 | kelly-fraction-b017-013 | kelly_fraction | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-039 | edge-scaled-size-b017-039 | edge_scaled_size | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-058 | cash-reserve-gate-b017-058 | cash_reserve_gate | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
+| 4 | sim-b017-060 | cash-reserve-gate-b017-060 | cash_reserve_gate | 10106.5100 | 0.0000 | 106.5100 | 17.3400 | 29 |
 
 ### Program, settled Nobel markets, historical backtest
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b017-038 | edge-scaled-size-b017-038 | edge_scaled_size | 10758.8200 | 758.8200 | 0.0000 | 61.7300 | 100 |
-| 2 | sim-b012-027 | logit-scale-b012-027 | logit_scale | 10758.4600 | 758.4600 | 0.0000 | 61.7000 | 100 |
-| 2 | sim-b017-040 | edge-scaled-size-b017-040 | edge_scaled_size | 10758.4600 | 758.4600 | 0.0000 | 61.7000 | 100 |
-| 4 | sim-b013-024 | learned-bucket-calibration-b013-024 | learned_bucket_calibration | 10753.1500 | 753.1500 | 0.0000 | 59.9000 | 53 |
-| 5 | sim-b013-085 | uniform-field-prior-b013-085 | uniform_field_prior | 10743.6200 | 743.6200 | 0.0000 | 65.9900 | 52 |
-| 6 | sim-b017-015 | kelly-fraction-b017-015 | kelly_fraction | 10727.2200 | 727.2200 | 0.0000 | 61.4000 | 102 |
-| 7 | sim-b017-008 | kelly-fraction-b017-008 | kelly_fraction | 10724.0000 | 724.0000 | 0.0000 | 58.4800 | 92 |
-| 8 | sim-b012-001 | logit-scale-b012-001 | logit_scale | 10722.2900 | 722.2900 | 0.0000 | 52.9600 | 68 |
-| 9 | sim-b012-017 | logit-scale-b012-017 | logit_scale | 10721.4700 | 721.4700 | 0.0000 | 59.2800 | 100 |
-| 10 | sim-b017-012 | kelly-fraction-b017-012 | kelly_fraction | 10715.8200 | 715.8200 | 0.0000 | 61.1900 | 102 |
+| 1 | sim-b013-085 | uniform-field-prior-b013-085 | uniform_field_prior | 10779.5500 | 779.5500 | 0.0000 | 69.9400 | 55 |
+| 2 | sim-b012-019 | logit-scale-b012-019 | logit_scale | 10759.1700 | 759.1700 | 0.0000 | 62.9500 | 100 |
+| 3 | sim-b017-016 | kelly-fraction-b017-016 | kelly_fraction | 10754.1900 | 754.1900 | 0.0000 | 63.0900 | 104 |
+| 4 | sim-b013-024 | learned-bucket-calibration-b013-024 | learned_bucket_calibration | 10744.1600 | 744.1600 | 0.0000 | 66.7600 | 62 |
+| 5 | sim-b017-014 | kelly-fraction-b017-014 | kelly_fraction | 10737.0900 | 737.0900 | 0.0000 | 62.8900 | 104 |
+| 6 | sim-b012-001 | logit-scale-b012-001 | logit_scale | 10721.6400 | 721.6400 | 0.0000 | 60.3100 | 80 |
+| 7 | sim-b017-011 | kelly-fraction-b017-011 | kelly_fraction | 10718.3600 | 718.3600 | 0.0000 | 62.1400 | 104 |
+| 8 | sim-b017-008 | kelly-fraction-b017-008 | kelly_fraction | 10705.4800 | 705.4800 | 0.0000 | 61.1000 | 104 |
+| 9 | sim-b017-058 | cash-reserve-gate-b017-058 | cash_reserve_gate | 10694.2200 | 694.2200 | 0.0000 | 58.4900 | 75 |
+| 10 | sim-b012-087 | fee-aware-logit-b012-087 | fee_aware_logit | 10690.5800 | 690.5800 | 0.0000 | 66.1200 | 99 |
 
 ### Program, settled panel, historical backtest
 
