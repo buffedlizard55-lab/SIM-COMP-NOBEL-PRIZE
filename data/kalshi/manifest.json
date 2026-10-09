@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-10-08T19:15:51Z",
-  "fetched_at_unix": 1791486951,
+  "fetched_at": "2026-10-09T18:47:50Z",
+  "fetched_at_unix": 1791571670,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
-  "calls": 347,
+  "calls": 355,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
   "exchange_status": {
     "exchange_active": true,
@@ -41,10 +41,10 @@
   },
   "cutoff_url": "https://external-api.kalshi.com/trade-api/v2/historical/cutoff",
   "historical_cutoff": {
-    "market_positions_last_updated_ts": "2026-08-09T00:00:00Z",
-    "market_settled_ts": "2026-08-09T00:00:00Z",
-    "orders_updated_ts": "2026-09-24T00:00:00Z",
-    "trades_created_ts": "2026-08-09T00:00:00Z"
+    "market_positions_last_updated_ts": "2026-08-10T00:00:00Z",
+    "market_settled_ts": "2026-08-10T00:00:00Z",
+    "orders_updated_ts": "2026-09-25T00:00:00Z",
+    "trades_created_ts": "2026-08-10T00:00:00Z"
   },
   "nobel_series": [
     "KXNOBELCHEM",
@@ -69,10 +69,10 @@
     "KXFEDDECISION": 25
   },
   "panel_cap_per_series": 25,
-  "markets_stored": 271,
-  "markets_with_candles": 271,
+  "markets_stored": 282,
+  "markets_with_candles": 282,
   "events_stored": 650,
-  "orderbooks_stored": 15,
+  "orderbooks_stored": 12,
   "failure_count": 3,
   "scope": {
     "nobel": "Every non-multivariate market returned by GET /markets and GET /historical/markets for series whose ticker or title contains NOBEL, plus the known Nobel series list. Historical requests do not send mve_filter; that parameter is mutually exclusive with series_ticker and event_ticker and returns HTTP 400.",

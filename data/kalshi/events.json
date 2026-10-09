@@ -842,6 +842,29 @@
   {
     "category": "Climate and Weather",
     "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT10",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-09T09:36:17.788132Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-11T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 10, 2026",
+    "title": "Highest temperature in New York City on Oct 10, 2026?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26OCT09",
     "exchange_index": 0,
     "last_updated_ts": "2026-10-08T09:37:32.384985Z",
@@ -12991,26 +13014,6 @@
     "_role": "panel"
   },
   {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25FEB17",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "National Weather Service",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-02-18T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Feb 17, 2025",
-    "title": "Highest temperature in NYC on Feb 17, 2025?",
-    "_role": "panel"
-  },
-  {
     "category": "Science and Technology",
     "collateral_return_type": "",
     "event_ticker": "KXNOBELCHEM-26",
@@ -13148,7 +13151,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELPEACE-26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-08T02:09:20.291145Z",
+    "last_updated_ts": "2026-10-08T23:14:44.2606Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELPEACE",
     "settlement_sources": [
