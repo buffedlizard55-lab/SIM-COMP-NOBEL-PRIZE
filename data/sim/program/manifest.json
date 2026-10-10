@@ -1,8 +1,8 @@
 {
   "program_version": "3.0.0",
   "engine_version": "1.0.0",
-  "generated_at_unix": 1791571798,
-  "generated_at": "2026-10-09T18:49:58Z",
+  "generated_at_unix": 1791654721,
+  "generated_at": "2026-10-10T17:52:01Z",
   "generated_from": "data/kalshi/markets.jsonl",
   "participants": 2000,
   "batches": [
@@ -28,18 +28,18 @@
     "batch-020"
   ],
   "variant_count": 2000,
-  "trade_rows_total": 893979,
+  "trade_rows_total": 895074,
   "universes": {
     "nobel_forward": {
       "competition_id": "program-nobel-forward",
       "kind": "forward_simulation",
       "data_tier": "live_kalshi",
       "markets_used": 12,
-      "candle_events": 904,
-      "runtime_seconds": 11.234,
-      "trade_rows": 34606,
-      "combined_ledger_sha256": "be7fad9fc1f9ea90c8d18c71947f441f2ddf66d782418a8f61d5ef51ee52b051",
-      "open_positions": 11628
+      "candle_events": 981,
+      "runtime_seconds": 16.197,
+      "trade_rows": 35701,
+      "combined_ledger_sha256": "2318e418eaacab50207d677aef4f8ce50d29870985539b04307ea60f13c343e6",
+      "open_positions": 11897
     },
     "nobel_settled": {
       "competition_id": "program-nobel-settled",
@@ -47,7 +47,7 @@
       "data_tier": "historical_kalshi",
       "markets_used": 219,
       "candle_events": 15782,
-      "runtime_seconds": 183.752,
+      "runtime_seconds": 241.459,
       "trade_rows": 496076,
       "combined_ledger_sha256": "30d256e44118c138d1b88b7f09d8e679bd22f1e4e7aa777d73c82e7a15571121",
       "open_positions": 0
@@ -58,7 +58,7 @@
       "data_tier": "historical_kalshi",
       "markets_used": 50,
       "candle_events": 4702,
-      "runtime_seconds": 52.052,
+      "runtime_seconds": 67.595,
       "trade_rows": 363297,
       "combined_ledger_sha256": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c",
       "open_positions": 0
@@ -75,13 +75,13 @@
     ],
     "participants_checked": 1200,
     "universes": {
-      "nobel_forward": "be7fad9fc1f9ea90c8d18c71947f441f2ddf66d782418a8f61d5ef51ee52b051",
+      "nobel_forward": "2318e418eaacab50207d677aef4f8ce50d29870985539b04307ea60f13c343e6",
       "nobel_settled": "30d256e44118c138d1b88b7f09d8e679bd22f1e4e7aa777d73c82e7a15571121",
       "panel_settled": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c"
     },
     "note": "batch-001, batch-011, batch-013, batch-018 were rerun (fresh strategy memory via reset()) against the stored candles after the full pass. Per-participant ledger hashes matched. This is not a Kalshi fill.",
     "replay_universe_hashes": {
-      "nobel_forward": "85d72bd6cbf6f13720e238c55440bbbc681e0793d50057b1e8b88df6576cbb7c",
+      "nobel_forward": "67f297f50a38f522eb69f1cdfd347168cf4127835babd6bd7f35e10d36721111",
       "nobel_settled": "2b04656a60dcf90b451d5f5a7d99df97079fcc5830a1c5441f2a08a474190411",
       "panel_settled": "2ad727b1197ae1a480050ad04ac32952f47eb87c8ff57af035a53a2a5ceee8bd"
     }
@@ -130,138 +130,138 @@
   "files": [
     {
       "path": "data/sim/program/activity.json",
-      "bytes": 52187,
-      "sha256": "89f3c9af5fb9c47e963c2235a286138910320056bfc263309649584c8130cbbc"
+      "bytes": 52228,
+      "sha256": "c5d9440fc869fa02c80128cd2c1cd78d23fb0464c8c4e33965a3f6ace26b815e"
     },
     {
       "path": "data/sim/program/batches/batch-001.json",
-      "bytes": 116537,
-      "sha256": "e29495c851c73dd62e9f3b570ca2d4ae0a087a33bf71da4c23828a5ca2a283a8"
+      "bytes": 116557,
+      "sha256": "448229c36f04a86c8852f7b1b149dbb94f22ff8d8c909848a2f01733a11ea95c"
     },
     {
       "path": "data/sim/program/batches/batch-002.json",
-      "bytes": 115553,
-      "sha256": "6b34c25908b24016b5c54b9d4e31bbdb1a8e90774bab5f444e2197d4a2d5b841"
+      "bytes": 115555,
+      "sha256": "f4c2bab01dbb90c951e9214d9aa5f05d796c53c3902f9554e8530c822df196fa"
     },
     {
       "path": "data/sim/program/batches/batch-003.json",
-      "bytes": 119906,
-      "sha256": "d3d2c602c1daa855ca97002858a1e203363a6aa26049f69d7448f3b49e87c5b2"
+      "bytes": 119938,
+      "sha256": "2d7ac78da174fc83a173b2fc58450bb72e7563d35f032eead38279917e59fc26"
     },
     {
       "path": "data/sim/program/batches/batch-004.json",
-      "bytes": 118740,
-      "sha256": "7ab55a1d1c604c7d9df0e31073a1c709750246a629a4ee7ac2960822d2d4316b"
+      "bytes": 118726,
+      "sha256": "46d10b630d7e485f80786deeac85998be62cba120faf4251375cb7a128970153"
     },
     {
       "path": "data/sim/program/batches/batch-005.json",
       "bytes": 120040,
-      "sha256": "3416f722fdb112207c7d3fcdfff0964827e5bde6a89513d9e10d4ed21bd5cda5"
+      "sha256": "926a9514d32c0c97d4ec12496ab07b69663af34c0f1b09ae13306356a06566d9"
     },
     {
       "path": "data/sim/program/batches/batch-006.json",
-      "bytes": 121250,
-      "sha256": "cd41c1e588e25e592de45bb4f2b0cd212c3a5da83756b74a702c81745c3e703f"
+      "bytes": 121142,
+      "sha256": "7fb10a2ca470dccd92023d6c9db6a058a26fb8cf0bf6077b3d6dc82e5fc85c16"
     },
     {
       "path": "data/sim/program/batches/batch-007.json",
-      "bytes": 124370,
-      "sha256": "55911304b855bdebac72d38a54c3b6647216f61e3a60cf9ba3b0442ad9eb9325"
+      "bytes": 124372,
+      "sha256": "422b1bf397bb6b8f0fef9aed643b4daabd94d08cdd20f2cedd54ea869a21befd"
     },
     {
       "path": "data/sim/program/batches/batch-008.json",
-      "bytes": 127076,
-      "sha256": "00838b7b3efe8ad46a97db737648a771b59a954fa996ad431fc259f134f59509"
+      "bytes": 127154,
+      "sha256": "105f860fa9b63aadfa052bc252092df2b5c35f3a88f6bc5d0187a3cc52f89892"
     },
     {
       "path": "data/sim/program/batches/batch-009.json",
-      "bytes": 122525,
-      "sha256": "4c677e0f0623ed4e9a03551ceb3e55dfcccd51edecb4d0f20a1ab9feb5aef105"
+      "bytes": 122526,
+      "sha256": "8af6c013342a28ce9b4de50ee55936afe956883847f0475f1c453b846c071450"
     },
     {
       "path": "data/sim/program/batches/batch-010.json",
-      "bytes": 124878,
-      "sha256": "e6d2f2e5474aa4cfef30a8489ba78edf268d9f3acaadfc3d2e10ededdcc8e1e2"
+      "bytes": 124899,
+      "sha256": "d89e8d297e13d1da3ae26d6d145283977da30d6e20fca4403dbbf1643838f0db"
     },
     {
       "path": "data/sim/program/batches/batch-011.json",
-      "bytes": 130813,
-      "sha256": "036317a45a1eb2fe54a160618644dd5cb86553e50bad720a206fdce60cb6f3c5"
+      "bytes": 130836,
+      "sha256": "b20b5bf84d7e48958d7d7fa75b5d8ae01c528a09c77e1f9d9f9c3c742af0fbba"
     },
     {
       "path": "data/sim/program/batches/batch-012.json",
-      "bytes": 125227,
-      "sha256": "4d54add99ba6b4b9989fd6d178e0ebbdb65b0ff38e7f55f3c095a1252abc21a0"
+      "bytes": 125266,
+      "sha256": "61dd40f71fa61dc52d5254865b24c92777d3344f861d6704579a5b29ef0d5f63"
     },
     {
       "path": "data/sim/program/batches/batch-013.json",
-      "bytes": 136709,
-      "sha256": "5668da9f0758f40f66b9a7861cd1eb7bf64881857ca9bb6d94bf18eba84a4244"
+      "bytes": 136715,
+      "sha256": "276a26cadecd520cc8cad7bdc896cf85e32df14d5e969f40d05ed89792b2d4d6"
     },
     {
       "path": "data/sim/program/batches/batch-014.json",
-      "bytes": 134134,
-      "sha256": "196c835a0806cf766e6518fb4094b727c6065779a1dc031c8eb74ebe8353533d"
+      "bytes": 134161,
+      "sha256": "5100ad06b35a3805eb1ee4c823f48d5fbb329169a35d37749b6ad31bb22eae04"
     },
     {
       "path": "data/sim/program/batches/batch-015.json",
-      "bytes": 138994,
-      "sha256": "5fc86b51c5c4df85636179bccd5c22fb170bd059c465393565b2a07d9aa76378"
+      "bytes": 139020,
+      "sha256": "57e82a23eb4b3faa5af91fa1b7892fdf5d45fcf3d446653739a2c0a52d94d4d1"
     },
     {
       "path": "data/sim/program/batches/batch-016.json",
-      "bytes": 132184,
-      "sha256": "7c86c7d8fbdb79a9103c0a3c4e486ac5d9cdcaa57fe0a603df7baea302607d64"
+      "bytes": 132210,
+      "sha256": "8c475d6176f613c6d9e4b772b1a7b04c4fe4956a3ee757aadecfaad24696b0ea"
     },
     {
       "path": "data/sim/program/batches/batch-017.json",
-      "bytes": 139503,
-      "sha256": "ddc9009502651383c99d3da3264c9236096b81b643caec247da2f5d6c7bc7055"
+      "bytes": 139528,
+      "sha256": "d4698b23565d441f79ce07123bf18bd1d8e56d7b2a4fbf202c683ff3878595f2"
     },
     {
       "path": "data/sim/program/batches/batch-018.json",
-      "bytes": 140845,
-      "sha256": "23e35dc5afeecaea0bf8549c96776b5a0f6de8928bb33adffae9aea7463f8afd"
+      "bytes": 140847,
+      "sha256": "0cd542195f186a1bfbf215e9c8171912132d32f14b531fd2ba84a0560d501886"
     },
     {
       "path": "data/sim/program/batches/batch-019.json",
-      "bytes": 144073,
-      "sha256": "dd45ff3816a850ae4ac7ff03992b74a4e6f932dd4a3692a1e586a64187e1fb2f"
+      "bytes": 144071,
+      "sha256": "08b52fea26f6cc75f18b0b6072b36684b272b4d5377360d8ad6ff8c88b56419a"
     },
     {
       "path": "data/sim/program/batches/batch-020.json",
-      "bytes": 135309,
-      "sha256": "c5548683675eeba1ca32a1dac932f3763af8774c005378b2e30cba7c509169e7"
+      "bytes": 135324,
+      "sha256": "3558a2167eb1bdec5c407a13902e3dc1d6ef3e5876c6761bc50451da627a03f4"
     },
     {
       "path": "data/sim/program/families.json",
-      "bytes": 223770,
-      "sha256": "ea89521367535c992f73cd67a093e1981c68fdfca06f2ea3bbd7eb6f9cf43f50"
+      "bytes": 223783,
+      "sha256": "718cdfb5a8ea93471470ed21e7279540a8a185079df5632f123eb2b07fec5494"
     },
     {
       "path": "data/sim/program/leaderboard.csv",
-      "bytes": 1179735,
-      "sha256": "08767b25542c62f33c928a8cdf107bf8c8a6434d5e387eadad5229b1063082ad"
+      "bytes": 1179863,
+      "sha256": "f3e5613f4474ea4e6ca1ef38f00a27b08d2aefab5cec31a3db480b4054c0cffb"
     },
     {
       "path": "data/sim/program/leaderboard.json",
-      "bytes": 2260823,
-      "sha256": "31552c3e6a79eb16e739b59e8eb336876b3e4023f9f6dc3ab810f35770fc227e"
+      "bytes": 2260972,
+      "sha256": "a90f26b630e2438928e0520bc3c63a28848db165ac925c1a626f36afbd5c7918"
     },
     {
       "path": "data/sim/program/ledger_hashes.json",
       "bytes": 492055,
-      "sha256": "552e8e22a45de1713465b1f64778f2c1ac4996ebbea24d7d3b6773aaa4c309a9"
+      "sha256": "8d55f3a165b26acc4a943b13e4064735df5211786bd492a8d868290188c927ff"
     },
     {
       "path": "data/sim/program/markets.json",
-      "bytes": 1996150,
-      "sha256": "d98bd7df6bbe7a7314d8d5a151b10c0d08c5745eb5cf5d949a1abbf22a8c25ee"
+      "bytes": 1998625,
+      "sha256": "fe47ed48a535517950e4e0e6d1f8a31e63bd511d8e3f398fd7de6f6e6de29343"
     },
     {
       "path": "data/sim/program/notes.json",
-      "bytes": 1471566,
-      "sha256": "edf5e10f1c7e5ec44953578a468456cdc6e887eeec5434514a50ffcb541e378c"
+      "bytes": 1471814,
+      "sha256": "c8f812a36657684f31df681c591e044ea4f2a135c766744c86ae402f28a3c0fe"
     },
     {
       "path": "data/sim/program/participants.json",
@@ -270,13 +270,13 @@
     },
     {
       "path": "data/sim/program/positions.csv.gz",
-      "bytes": 51579,
-      "sha256": "a9af0d024c07fb3f4cd0670fa92fd1fd43a522069601e7f14d0dd5d226e67413"
+      "bytes": 52822,
+      "sha256": "e32e9f7b5fd8856bbff7b56cfc6f3cc977780acc7865c7d7504a24aef52e8642"
     },
     {
       "path": "data/sim/program/research.json",
-      "bytes": 390222,
-      "sha256": "2365dc4e593f3995de7d1eb95baae032f5dd792662423def43664c7e1391cb44"
+      "bytes": 390233,
+      "sha256": "c7576f1c9e6d391cfbe2499147aea189d98bcd1e3329ddfa2d031c5680743165"
     },
     {
       "path": "data/sim/program/strategies.json",
@@ -285,8 +285,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-001/nobel_forward.csv.gz",
-      "bytes": 10144,
-      "sha256": "d47e2339009027528c72e16f5965bfbb59cd2242469b42ab84bfd24f28db92c9"
+      "bytes": 10482,
+      "sha256": "97e5d41bf0a50e8c2024f0d85663448b749e9bc7a311c93940204f329425eaec"
     },
     {
       "path": "data/sim/program/trades/batch-001/nobel_settled.csv.gz",
@@ -315,8 +315,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-003/nobel_forward.csv.gz",
-      "bytes": 4283,
-      "sha256": "93bd837349a6f4d82db23bc42fe62f750d63bf8b9849aee15da5a94d375ba7d9"
+      "bytes": 4591,
+      "sha256": "270bb6a8bfc2907f33d0aebd2c3237401d83a285cb6f43a0582701091816df13"
     },
     {
       "path": "data/sim/program/trades/batch-003/nobel_settled.csv.gz",
@@ -330,8 +330,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-004/nobel_forward.csv.gz",
-      "bytes": 62253,
-      "sha256": "3d39d3489d949047f60342a49cc0c34a059bb9c48cef74f0629f8f59dab5a3cd"
+      "bytes": 64193,
+      "sha256": "ab0d8ae78ae0b7e19e674658cafee8e845727746208deff02813067ba1fefd23"
     },
     {
       "path": "data/sim/program/trades/batch-004/nobel_settled.csv.gz",
@@ -345,8 +345,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-005/nobel_forward.csv.gz",
-      "bytes": 61475,
-      "sha256": "9495ebc2a04b18549718fc111b311d17a9e63e2e62185cdbf96b6040bed309bc"
+      "bytes": 63332,
+      "sha256": "88695e4aa6c1e5c74f184a54f786e63a5b91a1555ea91a635e461843d3e39a50"
     },
     {
       "path": "data/sim/program/trades/batch-005/nobel_settled.csv.gz",
@@ -360,8 +360,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-006/nobel_forward.csv.gz",
-      "bytes": 23424,
-      "sha256": "128eec221de75ca3482c84979c7c33466bdc427bb983fe7f595b6ea1fa002d90"
+      "bytes": 24420,
+      "sha256": "17655812199908d4b7ec56abd7c7156d38ef5a8d41dac2b36b3cad44cea2c74f"
     },
     {
       "path": "data/sim/program/trades/batch-006/nobel_settled.csv.gz",
@@ -385,8 +385,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-008/nobel_forward.csv.gz",
-      "bytes": 15816,
-      "sha256": "9e99b223dfa8bed69fd4604cdfbd1dd392ad609bb9f892c94aff856013c68a6c"
+      "bytes": 16729,
+      "sha256": "0d2a1c0df8c342c9dd4a0d155440cd5d47f097ff6e8b20cd1a9d1cdc4b091edd"
     },
     {
       "path": "data/sim/program/trades/batch-008/nobel_settled.csv.gz",
@@ -400,8 +400,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-009/nobel_forward.csv.gz",
-      "bytes": 1881,
-      "sha256": "3ce4798508f4f1b8a53aacfdfad69a675bdff8a4fcf2f40a763654f1f52e5bd5"
+      "bytes": 1935,
+      "sha256": "cc42de175f647bc7e9d4b6c8420a96e39f6b52256b7ffa9b954a30d0ec9c4dc8"
     },
     {
       "path": "data/sim/program/trades/batch-009/nobel_settled.csv.gz",
@@ -415,8 +415,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-010/nobel_forward.csv.gz",
-      "bytes": 3463,
-      "sha256": "28685801bd353752d68dd16cb9c3e63d8f9a68b32fd8554c17ece00afa41f2e7"
+      "bytes": 3600,
+      "sha256": "b1feaaf777fd10ac78332783b00f18f6305c4022b0e08633e38987fc37f6c46e"
     },
     {
       "path": "data/sim/program/trades/batch-010/nobel_settled.csv.gz",
@@ -430,8 +430,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-011/nobel_forward.csv.gz",
-      "bytes": 2296,
-      "sha256": "389ab81bd29fdb5307318467ab5c5cb9f5f70f4c4ea4728318f24abcc84d9494"
+      "bytes": 2309,
+      "sha256": "7ccaf29d055df4756cc5e3eca5a7fc370752b460543fa54a1e977dbe9ce66c75"
     },
     {
       "path": "data/sim/program/trades/batch-011/nobel_settled.csv.gz",
@@ -445,8 +445,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-012/nobel_forward.csv.gz",
-      "bytes": 3257,
-      "sha256": "d1d66b47c5e79b8b90dc95467824e64c72ae8150574e6309bc7c257578108da4"
+      "bytes": 3431,
+      "sha256": "6e6b6a8b7ab36bf5f8e9d80f0637618eeb6d3612663af0a844179858d9ae187e"
     },
     {
       "path": "data/sim/program/trades/batch-012/nobel_settled.csv.gz",
@@ -460,8 +460,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-013/nobel_forward.csv.gz",
-      "bytes": 4219,
-      "sha256": "004cbf8f4d02fc978bfb2c8c125c3c4813e6a6ab57bd0007d33c1034b322c77f"
+      "bytes": 4370,
+      "sha256": "d0bceeb94c19c4d862c2ed3627ca336418282b00e329dfcfd09dba1d6bf2ea58"
     },
     {
       "path": "data/sim/program/trades/batch-013/nobel_settled.csv.gz",
@@ -475,8 +475,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-014/nobel_forward.csv.gz",
-      "bytes": 2511,
-      "sha256": "c97dd8024f5565a524b25dbf7ddf26581a7707ac4da6133c40c150dcdc615893"
+      "bytes": 2777,
+      "sha256": "ef8beb9010940cd461ad1db51b6e34d5fd6ae1babe0b62d37e9ddb4206508615"
     },
     {
       "path": "data/sim/program/trades/batch-014/nobel_settled.csv.gz",
@@ -490,8 +490,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-015/nobel_forward.csv.gz",
-      "bytes": 5638,
-      "sha256": "0aadcd5479649ee6ee44cf3028523be203dacd0460adf76bf5639731db1f698e"
+      "bytes": 5859,
+      "sha256": "9d9899133a0d93f2c7abc66c01de0905d98312369c5737e24448e66420afb712"
     },
     {
       "path": "data/sim/program/trades/batch-015/nobel_settled.csv.gz",
@@ -505,8 +505,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-016/nobel_forward.csv.gz",
-      "bytes": 8070,
-      "sha256": "1475af533d754342616ae7b01929098645e96aa2f71494bbc932145231655af7"
+      "bytes": 8370,
+      "sha256": "99ad651cec034ad54bcfc71b6b817c778046780823e5c76c492ac09e6829a95d"
     },
     {
       "path": "data/sim/program/trades/batch-016/nobel_settled.csv.gz",
@@ -520,8 +520,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-017/nobel_forward.csv.gz",
-      "bytes": 3822,
-      "sha256": "0ad96305fa579df1d75c0a6d90a5009d3a7f8a6bf3ac9675e84a64730413a135"
+      "bytes": 3984,
+      "sha256": "e254e586c55219133be5178d108dd79c1c281cdfecaafb298ebc68a050aad8a0"
     },
     {
       "path": "data/sim/program/trades/batch-017/nobel_settled.csv.gz",
@@ -545,8 +545,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-019/nobel_forward.csv.gz",
-      "bytes": 6994,
-      "sha256": "6d3adc5e069bb3c9d5c8c0d4436cea31c61b07f5856baf580ad1b06d4c5b881d"
+      "bytes": 7041,
+      "sha256": "2deddd5ef6da63ba615b53050ccdb34fd6ee42beb3dfac716761a44cb9d0fa7c"
     },
     {
       "path": "data/sim/program/trades/batch-019/nobel_settled.csv.gz",
@@ -560,8 +560,8 @@
     },
     {
       "path": "data/sim/program/trades/batch-020/nobel_forward.csv.gz",
-      "bytes": 5553,
-      "sha256": "6984eac53bf6504965bb52f89e9a843c3bcc08a2fbce135ee4ef17c247e74a57"
+      "bytes": 5601,
+      "sha256": "09e663fa7ce7ad652273a0156220bdbfda252081c9f1a4516f77a759f67aff97"
     },
     {
       "path": "data/sim/program/trades/batch-020/nobel_settled.csv.gz",

@@ -38,9 +38,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "9909.1200",
+        "ending_equity": "9921.7800",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-90.8800",
+        "unrealized_pnl": "-78.2200",
         "fees": "19.0600",
         "trade_count": 12,
         "rank": 4
@@ -48,9 +48,9 @@
       {
         "participant_id": "sim-gina-tight",
         "strategy_id": "tight_value",
-        "ending_equity": "9880.4500",
+        "ending_equity": "9890.4500",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-119.5500",
+        "unrealized_pnl": "-109.5500",
         "fees": "29.5500",
         "trade_count": 12,
         "rank": 5
@@ -58,11 +58,11 @@
       {
         "participant_id": "sim-cleo-longshot",
         "strategy_id": "longshot_hold",
-        "ending_equity": "9811.9800",
+        "ending_equity": "9800.3100",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-188.0200",
-        "fees": "33.0200",
-        "trade_count": 11,
+        "unrealized_pnl": "-199.6900",
+        "fees": "34.6900",
+        "trade_count": 12,
         "rank": 6
       },
       {
@@ -78,41 +78,41 @@
       {
         "participant_id": "sim-ines-volume",
         "strategy_id": "volume_momentum",
-        "ending_equity": "9511.9900",
+        "ending_equity": "9496.5700",
         "realized_pnl": "-425.2800",
-        "unrealized_pnl": "-62.7300",
-        "fees": "127.2900",
-        "trade_count": 59,
+        "unrealized_pnl": "-78.1500",
+        "fees": "128.9600",
+        "trade_count": 60,
         "rank": 8
       },
       {
         "participant_id": "sim-elena-revert",
         "strategy_id": "mean_revert",
-        "ending_equity": "9292.1700",
-        "realized_pnl": "-695.4600",
-        "unrealized_pnl": "-12.3700",
-        "fees": "125.3900",
-        "trade_count": 42,
+        "ending_equity": "9290.6300",
+        "realized_pnl": "-710.4100",
+        "unrealized_pnl": "1.0400",
+        "fees": "130.6100",
+        "trade_count": 43,
         "rank": 9
       },
       {
         "participant_id": "sim-farid-fade",
         "strategy_id": "contrarian",
-        "ending_equity": "8217.8000",
-        "realized_pnl": "-1662.9800",
-        "unrealized_pnl": "-119.2200",
-        "fees": "335.7500",
-        "trade_count": 168,
+        "ending_equity": "8216.0400",
+        "realized_pnl": "-1669.0200",
+        "unrealized_pnl": "-114.9400",
+        "fees": "336.1700",
+        "trade_count": 170,
         "rank": 10
       },
       {
         "participant_id": "sim-dmitri-momentum",
         "strategy_id": "momentum",
-        "ending_equity": "7981.4800",
-        "realized_pnl": "-1943.5000",
-        "unrealized_pnl": "-75.0200",
-        "fees": "318.2000",
-        "trade_count": 168,
+        "ending_equity": "7960.6500",
+        "realized_pnl": "-1947.9500",
+        "unrealized_pnl": "-91.4000",
+        "fees": "320.2100",
+        "trade_count": 170,
         "rank": 11
       }
     ]
@@ -392,9 +392,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "9928.1800",
+        "ending_equity": "9940.8400",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-71.8200",
+        "unrealized_pnl": "-59.1600",
         "fees": "0.0000",
         "trade_count": 12,
         "rank": 4
@@ -402,9 +402,9 @@
       {
         "participant_id": "sim-gina-tight",
         "strategy_id": "tight_value",
-        "ending_equity": "9910.0000",
+        "ending_equity": "9920.0000",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-90.0000",
+        "unrealized_pnl": "-80.0000",
         "fees": "0.0000",
         "trade_count": 12,
         "rank": 5
@@ -412,11 +412,11 @@
       {
         "participant_id": "sim-cleo-longshot",
         "strategy_id": "longshot_hold",
-        "ending_equity": "9845.0000",
+        "ending_equity": "9835.0000",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-155.0000",
+        "unrealized_pnl": "-165.0000",
         "fees": "0.0000",
-        "trade_count": 11,
+        "trade_count": 12,
         "rank": 6
       },
       {
@@ -432,41 +432,41 @@
       {
         "participant_id": "sim-ines-volume",
         "strategy_id": "volume_momentum",
-        "ending_equity": "9639.2800",
+        "ending_equity": "9625.5300",
         "realized_pnl": "-313.6800",
-        "unrealized_pnl": "-47.0400",
+        "unrealized_pnl": "-60.7900",
         "fees": "0.0000",
-        "trade_count": 59,
+        "trade_count": 60,
         "rank": 8
       },
       {
         "participant_id": "sim-elena-revert",
         "strategy_id": "mean_revert",
-        "ending_equity": "9417.5600",
-        "realized_pnl": "-579.4200",
-        "unrealized_pnl": "-3.0200",
+        "ending_equity": "9421.2400",
+        "realized_pnl": "-583.7600",
+        "unrealized_pnl": "5.0000",
         "fees": "0.0000",
-        "trade_count": 42,
+        "trade_count": 43,
         "rank": 9
       },
       {
         "participant_id": "sim-farid-fade",
         "strategy_id": "contrarian",
-        "ending_equity": "8553.5500",
-        "realized_pnl": "-1348.6700",
-        "unrealized_pnl": "-97.7800",
+        "ending_equity": "8552.2100",
+        "realized_pnl": "-1353.6700",
+        "unrealized_pnl": "-94.1200",
         "fees": "0.0000",
-        "trade_count": 168,
+        "trade_count": 170,
         "rank": 10
       },
       {
         "participant_id": "sim-dmitri-momentum",
         "strategy_id": "momentum",
-        "ending_equity": "8299.6800",
-        "realized_pnl": "-1640.7800",
-        "unrealized_pnl": "-59.5400",
+        "ending_equity": "8280.8600",
+        "realized_pnl": "-1644.8200",
+        "unrealized_pnl": "-74.3200",
         "fees": "0.0000",
-        "trade_count": 168,
+        "trade_count": 170,
         "rank": 11
       }
     ]
@@ -510,9 +510,9 @@
       {
         "participant_id": "sim-kira-null",
         "strategy_id": "seeded_null",
-        "ending_equity": "9901.4000",
+        "ending_equity": "9911.7700",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-98.6000",
+        "unrealized_pnl": "-88.2300",
         "fees": "23.4500",
         "trade_count": 12,
         "rank": 4
@@ -520,9 +520,9 @@
       {
         "participant_id": "sim-gina-tight",
         "strategy_id": "tight_value",
-        "ending_equity": "9880.4500",
+        "ending_equity": "9890.4500",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-119.5500",
+        "unrealized_pnl": "-109.5500",
         "fees": "29.5500",
         "trade_count": 12,
         "rank": 5
@@ -530,11 +530,11 @@
       {
         "participant_id": "sim-cleo-longshot",
         "strategy_id": "longshot_hold",
-        "ending_equity": "9811.9800",
+        "ending_equity": "9800.3100",
         "realized_pnl": "0.0000",
-        "unrealized_pnl": "-188.0200",
-        "fees": "33.0200",
-        "trade_count": 11,
+        "unrealized_pnl": "-199.6900",
+        "fees": "34.6900",
+        "trade_count": 12,
         "rank": 6
       },
       {
@@ -550,41 +550,41 @@
       {
         "participant_id": "sim-ines-volume",
         "strategy_id": "volume_momentum",
-        "ending_equity": "9352.4900",
+        "ending_equity": "9341.2700",
         "realized_pnl": "-581.9300",
-        "unrealized_pnl": "-65.5800",
-        "fees": "168.8500",
-        "trade_count": 59,
+        "unrealized_pnl": "-76.8000",
+        "fees": "170.5200",
+        "trade_count": 60,
         "rank": 8
       },
       {
         "participant_id": "sim-elena-revert",
         "strategy_id": "mean_revert",
-        "ending_equity": "9277.1000",
-        "realized_pnl": "-707.7400",
-        "unrealized_pnl": "-15.1600",
-        "fees": "127.9000",
-        "trade_count": 42,
+        "ending_equity": "9276.0900",
+        "realized_pnl": "-724.9500",
+        "unrealized_pnl": "1.0400",
+        "fees": "133.9100",
+        "trade_count": 43,
         "rank": 9
       },
       {
         "participant_id": "sim-farid-fade",
         "strategy_id": "contrarian",
-        "ending_equity": "7762.2500",
-        "realized_pnl": "-2110.3400",
-        "unrealized_pnl": "-127.4100",
-        "fees": "430.7100",
-        "trade_count": 168,
+        "ending_equity": "7750.9000",
+        "realized_pnl": "-2116.3800",
+        "unrealized_pnl": "-132.7200",
+        "fees": "431.2400",
+        "trade_count": 170,
         "rank": 10
       },
       {
         "participant_id": "sim-dmitri-momentum",
         "strategy_id": "momentum",
-        "ending_equity": "7372.4400",
-        "realized_pnl": "-2531.2400",
-        "unrealized_pnl": "-96.3200",
-        "fees": "414.1700",
-        "trade_count": 168,
+        "ending_equity": "7347.7200",
+        "realized_pnl": "-2542.3400",
+        "unrealized_pnl": "-109.9400",
+        "fees": "416.6800",
+        "trade_count": 170,
         "rank": 11
       }
     ]
