@@ -2,7 +2,7 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-10-10T17:50:10Z
+Kalshi snapshot: 2026-10-11T18:03:00Z
 
 ## Nobel markets, forward simulation
 
@@ -13,14 +13,14 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 12.
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 4 | sim-kira-null | seeded_null | 9921.7800 | 0.0000 | -78.2200 | 19.0600 | 12 |
-| 5 | sim-gina-tight | tight_value | 9890.4500 | 0.0000 | -109.5500 | 29.5500 | 12 |
-| 6 | sim-cleo-longshot | longshot_hold | 9800.3100 | 0.0000 | -199.6900 | 34.6900 | 12 |
-| 7 | sim-hiro-slice | diversified_slice | 9738.8800 | 0.0000 | -261.1200 | 36.1200 | 10 |
-| 8 | sim-ines-volume | volume_momentum | 9496.5700 | -425.2800 | -78.1500 | 128.9600 | 60 |
-| 9 | sim-elena-revert | mean_revert | 9290.6300 | -710.4100 | 1.0400 | 130.6100 | 43 |
-| 10 | sim-farid-fade | contrarian | 8216.0400 | -1669.0200 | -114.9400 | 336.1700 | 170 |
-| 11 | sim-dmitri-momentum | momentum | 7960.6500 | -1947.9500 | -91.4000 | 320.2100 | 170 |
+| 4 | sim-kira-null | seeded_null | 9915.0600 | 0.0000 | -84.9400 | 19.0600 | 12 |
+| 5 | sim-gina-tight | tight_value | 9880.4500 | 0.0000 | -119.5500 | 29.5500 | 12 |
+| 6 | sim-cleo-longshot | longshot_hold | 9790.3100 | 0.0000 | -209.6900 | 34.6900 | 12 |
+| 7 | sim-hiro-slice | diversified_slice | 9723.8800 | 0.0000 | -276.1200 | 36.1200 | 10 |
+| 8 | sim-ines-volume | volume_momentum | 9470.6100 | -464.2300 | -65.1600 | 140.5800 | 64 |
+| 9 | sim-elena-revert | mean_revert | 9285.6300 | -710.4100 | -3.9600 | 130.6100 | 43 |
+| 10 | sim-farid-fade | contrarian | 8189.2100 | -1678.9000 | -131.8900 | 348.6100 | 174 |
+| 11 | sim-dmitri-momentum | momentum | 7934.6900 | -1986.9000 | -78.4100 | 331.8300 | 174 |
 
 ## Settled Nobel markets, historical backtest
 
@@ -60,22 +60,22 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The research program (2,000 simulated participants)
 
-2000 simulated participants in 20 batches. 895074 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 895709 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b017-093 | placebo-kelly-fraction-b017-093 | placebo_kelly_fraction | 10074.0000 | 0.0000 | 74.0000 | 14.9900 | 11 |
-| 2 | sim-b011-099 | placebo-event-field-no-b011-099 | placebo_event_field_no | 10031.9800 | 0.0000 | 31.9800 | 10.8200 | 10 |
-| 3 | sim-b017-090 | placebo-kelly-fraction-b017-090 | placebo_kelly_fraction | 10030.9900 | 0.0000 | 30.9900 | 15.2400 | 11 |
-| 4 | sim-b001-072 | null-model-b001-072 | null_model | 10029.8800 | 0.0000 | 29.8800 | 5.4300 | 4 |
-| 5 | sim-b012-099 | placebo-longshot-no-writer-b012-099 | placebo_longshot_no_writer | 10024.1500 | 0.0000 | 24.1500 | 15.7000 | 11 |
-| 6 | sim-b011-002 | event-normalized-b011-002 | event_normalized | 10019.0000 | 0.0000 | 19.0000 | 6.5400 | 2 |
-| 7 | sim-b011-004 | event-normalized-b011-004 | event_normalized | 10017.9600 | 0.0000 | 17.9600 | 2.5800 | 1 |
-| 7 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10017.9600 | 0.0000 | 17.9600 | 2.5800 | 1 |
-| 7 | sim-b011-092 | placebo-event-leader-b011-092 | placebo_event_leader | 10017.9600 | 0.0000 | 17.9600 | 2.5800 | 1 |
-| 7 | sim-b011-093 | placebo-event-leader-b011-093 | placebo_event_leader | 10017.9600 | 0.0000 | 17.9600 | 2.5800 | 1 |
+| 1 | sim-b017-093 | placebo-kelly-fraction-b017-093 | placebo_kelly_fraction | 10065.1400 | 0.0000 | 65.1400 | 14.9900 | 11 |
+| 2 | sim-b011-099 | placebo-event-field-no-b011-099 | placebo_event_field_no | 10030.0200 | 0.0000 | 30.0200 | 10.8200 | 10 |
+| 3 | sim-b017-090 | placebo-kelly-fraction-b017-090 | placebo_kelly_fraction | 10027.1300 | 0.0000 | 27.1300 | 15.2400 | 11 |
+| 4 | sim-b012-099 | placebo-longshot-no-writer-b012-099 | placebo_longshot_no_writer | 10025.1700 | 0.0000 | 25.1700 | 15.7000 | 11 |
+| 5 | sim-b001-072 | null-model-b001-072 | null_model | 10024.8800 | 0.0000 | 24.8800 | 5.4300 | 4 |
+| 6 | sim-b011-004 | event-normalized-b011-004 | event_normalized | 10019.5400 | 0.0000 | 19.5400 | 2.5800 | 1 |
+| 6 | sim-b011-091 | placebo-event-leader-b011-091 | placebo_event_leader | 10019.5400 | 0.0000 | 19.5400 | 2.5800 | 1 |
+| 6 | sim-b011-092 | placebo-event-leader-b011-092 | placebo_event_leader | 10019.5400 | 0.0000 | 19.5400 | 2.5800 | 1 |
+| 6 | sim-b011-093 | placebo-event-leader-b011-093 | placebo_event_leader | 10019.5400 | 0.0000 | 19.5400 | 2.5800 | 1 |
+| 6 | sim-b011-094 | placebo-event-leader-b011-094 | placebo_event_leader | 10019.5400 | 0.0000 | 19.5400 | 2.5800 | 1 |
 
 ### Program, settled Nobel markets, historical backtest
 
