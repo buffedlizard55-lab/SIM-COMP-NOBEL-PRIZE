@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-10-11T18:03:00Z",
-  "fetched_at_unix": 1791741780,
+  "fetched_at": "2026-10-12T21:43:09Z",
+  "fetched_at_unix": 1791841389,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
-  "calls": 355,
+  "calls": 343,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
   "exchange_status": {
     "exchange_active": true,
@@ -72,7 +72,7 @@
   "markets_stored": 282,
   "markets_with_candles": 282,
   "events_stored": 650,
-  "orderbooks_stored": 12,
+  "orderbooks_stored": 0,
   "failure_count": 3,
   "scope": {
     "nobel": "Every non-multivariate market returned by GET /markets and GET /historical/markets for series whose ticker or title contains NOBEL, plus the known Nobel series list. Historical requests do not send mve_filter; that parameter is mutually exclusive with series_ticker and event_ticker and returns HTTP 400.",
