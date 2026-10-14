@@ -842,6 +842,29 @@
   {
     "category": "Climate and Weather",
     "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT15",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-14T09:34:52.904961Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-16T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 15, 2026",
+    "title": "Highest temperature in New York City on Oct 15, 2026?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26OCT14",
     "exchange_index": 0,
     "last_updated_ts": "2026-10-13T09:34:42.407632Z",
@@ -13003,26 +13026,6 @@
     "strike_period": "",
     "sub_title": "On Feb 23, 2025",
     "title": "Highest temperature in NYC on Feb 23, 2025?",
-    "_role": "panel"
-  },
-  {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25FEB22",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "National Weather Service",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-02-23T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Feb 22, 2025",
-    "title": "Highest temperature in NYC on Feb 22, 2025?",
     "_role": "panel"
   },
   {
