@@ -4,7 +4,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-28JAN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:35:33.691337Z",
+    "last_updated_ts": "2026-10-16T03:27:45.996562Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -28,7 +28,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:17:36.459831Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -52,7 +52,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:19:02.478981Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -76,7 +76,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27SEP",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:19:02.478981Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -100,7 +100,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JUL",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:20:32.17549Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -124,7 +124,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:20:32.17549Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -148,7 +148,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27APR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:20:32.17549Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -172,7 +172,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27MAR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:22:00.355777Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -196,7 +196,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-27JAN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:23:42.702423Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -220,7 +220,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T14:58:38.154161Z",
+    "last_updated_ts": "2026-10-16T14:30:21.262815Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -244,7 +244,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T13:58:06.437751Z",
+    "last_updated_ts": "2026-10-16T14:34:59.037966Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -316,7 +316,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:39:07.911866Z",
+    "last_updated_ts": "2026-10-16T03:04:49.951686Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -340,7 +340,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26APR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:27:53.081598Z",
+    "last_updated_ts": "2026-10-16T03:44:53.542637Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -364,7 +364,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26MAR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T15:59:56.125161Z",
+    "last_updated_ts": "2026-10-16T05:49:00.890084Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -384,7 +384,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26JAN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.144486Z",
+    "last_updated_ts": "2026-10-16T06:20:17.193036Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -404,7 +404,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.101794Z",
+    "last_updated_ts": "2026-10-16T06:20:17.161718Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -424,7 +424,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25OCT",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.134357Z",
+    "last_updated_ts": "2026-10-16T06:20:17.185834Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -444,7 +444,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25SEP",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.138732Z",
+    "last_updated_ts": "2026-10-16T06:20:17.1893Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -464,7 +464,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25JUL",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.111914Z",
+    "last_updated_ts": "2026-10-16T06:20:17.168539Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -484,7 +484,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.116663Z",
+    "last_updated_ts": "2026-10-16T06:20:17.171608Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -504,7 +504,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25MAY",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.129529Z",
+    "last_updated_ts": "2026-10-16T06:20:17.18204Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -524,7 +524,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25MAR",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.121093Z",
+    "last_updated_ts": "2026-10-16T06:20:17.17491Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -544,7 +544,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-25JAN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.106553Z",
+    "last_updated_ts": "2026-10-16T06:20:17.165059Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -564,7 +564,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-24DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T18:59:58.096961Z",
+    "last_updated_ts": "2026-10-16T06:20:17.158321Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -584,7 +584,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24NOV",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -604,7 +604,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24SEP",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T04:59:54.855238Z",
+    "last_updated_ts": "2026-10-16T03:59:29.726692Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -624,7 +624,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24JUL",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T04:59:54.847209Z",
+    "last_updated_ts": "2026-10-16T03:59:29.718985Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -644,7 +644,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -664,7 +664,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24MAY",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -684,7 +684,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24MAR20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -704,7 +704,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-24JAN31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -724,7 +724,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -744,7 +744,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23NOV",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T04:59:54.839687Z",
+    "last_updated_ts": "2026-10-16T03:59:29.711651Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -764,7 +764,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23SEP",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T04:59:54.843721Z",
+    "last_updated_ts": "2026-10-16T03:59:29.715362Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -784,7 +784,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23JUL",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -804,7 +804,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23JUN",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:23.11278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -824,7 +824,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "FEDDECISION-23MAY",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:59:29.708534Z",
     "mutually_exclusive": true,
     "series_ticker": "KXFEDDECISION",
     "settlement_sources": [
@@ -837,6 +837,29 @@
     "strike_period": "",
     "sub_title": "In May 2023",
     "title": "Fed meeting in May 2023?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT17",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-16T09:38:26.340754Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-18T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 17, 2026",
+    "title": "Highest temperature in New York City on Oct 17, 2026?",
     "_role": "panel"
   },
   {
@@ -1350,7 +1373,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-23T09:45:15.671761Z",
+    "last_updated_ts": "2026-10-15T18:00:29.470186Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1373,7 +1396,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-22T09:39:45.939775Z",
+    "last_updated_ts": "2026-10-15T18:40:22.400329Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1396,7 +1419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-21T09:44:35.257598Z",
+    "last_updated_ts": "2026-10-15T19:07:47.718684Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1419,7 +1442,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-20T09:43:50.751097Z",
+    "last_updated_ts": "2026-10-15T20:20:35.098168Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1442,7 +1465,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-19T09:44:25.153245Z",
+    "last_updated_ts": "2026-10-15T20:18:11.726955Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1465,7 +1488,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-18T09:45:07.577231Z",
+    "last_updated_ts": "2026-10-15T20:52:27.68613Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1488,7 +1511,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-17T13:24:22.124216Z",
+    "last_updated_ts": "2026-10-15T21:15:28.90376Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1511,7 +1534,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-16T09:42:31.230551Z",
+    "last_updated_ts": "2026-10-15T22:14:12.047493Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1534,7 +1557,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-15T09:37:43.829116Z",
+    "last_updated_ts": "2026-10-15T22:29:21.902337Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1557,7 +1580,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-14T09:38:24.511647Z",
+    "last_updated_ts": "2026-10-15T23:34:37.233441Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1580,7 +1603,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-13T09:42:36.45919Z",
+    "last_updated_ts": "2026-10-16T00:11:44.90847Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1603,7 +1626,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-12T09:43:02.498738Z",
+    "last_updated_ts": "2026-10-16T00:11:44.90847Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1626,7 +1649,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-11T09:41:12.086491Z",
+    "last_updated_ts": "2026-10-16T00:23:34.754057Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1649,7 +1672,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-10T09:43:16.654703Z",
+    "last_updated_ts": "2026-10-16T00:36:48.097631Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1672,7 +1695,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-09T09:38:33.557081Z",
+    "last_updated_ts": "2026-10-16T00:47:17.517859Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1695,7 +1718,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-08T09:37:55.378725Z",
+    "last_updated_ts": "2026-10-16T00:56:12.727786Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1718,7 +1741,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-07T09:41:29.212034Z",
+    "last_updated_ts": "2026-10-16T01:06:35.124895Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1741,7 +1764,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-06T09:40:58.9807Z",
+    "last_updated_ts": "2026-10-16T01:16:37.923229Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1764,7 +1787,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-05T09:36:34.569126Z",
+    "last_updated_ts": "2026-10-16T01:28:45.140411Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1787,7 +1810,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-04T09:41:28.316096Z",
+    "last_updated_ts": "2026-10-16T01:50:43.276482Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1810,7 +1833,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-03T09:35:27.388383Z",
+    "last_updated_ts": "2026-10-16T02:01:27.138271Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1833,7 +1856,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-02T09:34:32.624928Z",
+    "last_updated_ts": "2026-10-16T02:16:38.193936Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1856,7 +1879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-09-01T09:37:54.932875Z",
+    "last_updated_ts": "2026-10-16T02:27:45.75996Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1879,7 +1902,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26SEP01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-31T10:40:32.72816Z",
+    "last_updated_ts": "2026-10-16T02:37:49.663399Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1902,7 +1925,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26AUG31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-30T09:38:16.81826Z",
+    "last_updated_ts": "2026-10-16T02:47:50.392328Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1925,7 +1948,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26AUG30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T09:39:11.804396Z",
+    "last_updated_ts": "2026-10-16T02:54:54.698766Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -1948,7 +1971,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26AUG29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:07:19.692044Z",
+    "last_updated_ts": "2026-10-16T02:49:03.626458Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -2976,7 +2999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:07:19.692044Z",
+    "last_updated_ts": "2026-10-16T02:51:52.288477Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -2996,7 +3019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:11:15.055602Z",
+    "last_updated_ts": "2026-10-16T02:51:52.288477Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3016,7 +3039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:11:15.055602Z",
+    "last_updated_ts": "2026-10-16T02:53:17.863828Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3036,7 +3059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:11:15.055602Z",
+    "last_updated_ts": "2026-10-16T02:54:44.951824Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3056,7 +3079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:14:52.490334Z",
+    "last_updated_ts": "2026-10-16T02:54:44.951824Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3076,7 +3099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:14:52.490334Z",
+    "last_updated_ts": "2026-10-16T02:56:07.603202Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3096,7 +3119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:14:52.490334Z",
+    "last_updated_ts": "2026-10-16T02:56:07.603202Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3116,7 +3139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:18:19.23918Z",
+    "last_updated_ts": "2026-10-16T02:56:07.603202Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3136,7 +3159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:18:19.23918Z",
+    "last_updated_ts": "2026-10-16T02:57:33.405708Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3156,7 +3179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:18:19.23918Z",
+    "last_updated_ts": "2026-10-16T02:57:33.405708Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3176,7 +3199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUL01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:21:50.607168Z",
+    "last_updated_ts": "2026-10-16T02:59:01.488395Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3196,7 +3219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:21:50.607168Z",
+    "last_updated_ts": "2026-10-16T02:59:01.488395Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3216,7 +3239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:21:50.607168Z",
+    "last_updated_ts": "2026-10-16T02:59:01.488395Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3236,7 +3259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:21:50.607168Z",
+    "last_updated_ts": "2026-10-16T03:00:28.035756Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3256,7 +3279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:25:25.989401Z",
+    "last_updated_ts": "2026-10-16T03:00:28.035756Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3276,7 +3299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:25:25.989401Z",
+    "last_updated_ts": "2026-10-16T03:00:28.035756Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3296,7 +3319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:25:25.989401Z",
+    "last_updated_ts": "2026-10-16T03:01:54.959187Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3316,7 +3339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:29:01.834165Z",
+    "last_updated_ts": "2026-10-16T03:01:54.959187Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3336,7 +3359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:29:01.834165Z",
+    "last_updated_ts": "2026-10-16T03:01:54.959187Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3356,7 +3379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:29:01.834165Z",
+    "last_updated_ts": "2026-10-16T03:03:19.605282Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3376,7 +3399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:32:36.246241Z",
+    "last_updated_ts": "2026-10-16T03:03:19.605282Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3396,7 +3419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:32:36.246241Z",
+    "last_updated_ts": "2026-10-16T03:04:49.951686Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3416,7 +3439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:32:36.246241Z",
+    "last_updated_ts": "2026-10-16T03:04:49.951686Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3436,7 +3459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:39:07.911866Z",
+    "last_updated_ts": "2026-10-16T03:04:49.951686Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3456,7 +3479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:39:07.911866Z",
+    "last_updated_ts": "2026-10-16T03:06:21.089779Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3476,7 +3499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:39:07.911866Z",
+    "last_updated_ts": "2026-10-16T03:06:21.089779Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3496,7 +3519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:42:52.616567Z",
+    "last_updated_ts": "2026-10-16T03:06:21.089779Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3516,7 +3539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:42:52.616567Z",
+    "last_updated_ts": "2026-10-16T03:07:51.320983Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3536,7 +3559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:42:52.616567Z",
+    "last_updated_ts": "2026-10-16T03:07:51.320983Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3556,7 +3579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:46:33.79365Z",
+    "last_updated_ts": "2026-10-16T03:07:51.320983Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3576,7 +3599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:46:33.79365Z",
+    "last_updated_ts": "2026-10-16T03:07:51.320983Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3596,7 +3619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:46:33.79365Z",
+    "last_updated_ts": "2026-10-16T03:09:26.214036Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3616,7 +3639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:50:19.45129Z",
+    "last_updated_ts": "2026-10-16T03:09:26.214036Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3636,7 +3659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:50:19.45129Z",
+    "last_updated_ts": "2026-10-16T03:09:26.214036Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3656,7 +3679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:50:19.45129Z",
+    "last_updated_ts": "2026-10-16T03:10:55.079855Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3676,7 +3699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:54:00.256711Z",
+    "last_updated_ts": "2026-10-16T03:10:55.079855Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3696,7 +3719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:54:00.256711Z",
+    "last_updated_ts": "2026-10-16T03:10:55.079855Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3716,7 +3739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:54:00.256711Z",
+    "last_updated_ts": "2026-10-16T03:12:22.784299Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3736,7 +3759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:54:00.256711Z",
+    "last_updated_ts": "2026-10-16T03:12:22.784299Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3756,7 +3779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:57:43.642859Z",
+    "last_updated_ts": "2026-10-16T03:12:22.784299Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3776,7 +3799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JUN01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:57:43.642859Z",
+    "last_updated_ts": "2026-10-16T03:14:10.466769Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3796,7 +3819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:57:43.642859Z",
+    "last_updated_ts": "2026-10-16T03:14:10.466769Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3816,7 +3839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:01:38.407771Z",
+    "last_updated_ts": "2026-10-16T03:14:10.466769Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3836,7 +3859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:01:38.407771Z",
+    "last_updated_ts": "2026-10-16T03:14:10.466769Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3856,7 +3879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:01:38.407771Z",
+    "last_updated_ts": "2026-10-16T03:15:40.622306Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3876,7 +3899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:01:38.407771Z",
+    "last_updated_ts": "2026-10-16T03:15:40.622306Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3896,7 +3919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:05:22.341453Z",
+    "last_updated_ts": "2026-10-16T03:15:40.622306Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3916,7 +3939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:05:22.341453Z",
+    "last_updated_ts": "2026-10-16T03:17:11.353757Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3936,7 +3959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:05:22.341453Z",
+    "last_updated_ts": "2026-10-16T03:17:11.353757Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3956,7 +3979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:09:09.18998Z",
+    "last_updated_ts": "2026-10-16T03:17:11.353757Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3976,7 +3999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:09:09.18998Z",
+    "last_updated_ts": "2026-10-16T03:18:42.415366Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -3996,7 +4019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:09:09.18998Z",
+    "last_updated_ts": "2026-10-16T03:18:42.415366Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4016,7 +4039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:12:55.50677Z",
+    "last_updated_ts": "2026-10-16T03:18:42.415366Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4036,7 +4059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:12:55.50677Z",
+    "last_updated_ts": "2026-10-16T03:20:13.965803Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4056,7 +4079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:16:42.413614Z",
+    "last_updated_ts": "2026-10-16T03:20:13.965803Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4076,7 +4099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:16:42.413614Z",
+    "last_updated_ts": "2026-10-16T03:21:46.236559Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4096,7 +4119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:16:42.413614Z",
+    "last_updated_ts": "2026-10-16T03:21:46.236559Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4116,7 +4139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:20:23.249624Z",
+    "last_updated_ts": "2026-10-16T03:21:46.236559Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4136,7 +4159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:27:45.10083Z",
+    "last_updated_ts": "2026-10-16T03:24:48.885736Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4156,7 +4179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:27:45.10083Z",
+    "last_updated_ts": "2026-10-16T03:24:48.885736Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4176,7 +4199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:27:45.10083Z",
+    "last_updated_ts": "2026-10-16T03:26:15.724826Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4196,7 +4219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:31:26.32462Z",
+    "last_updated_ts": "2026-10-16T03:26:15.724826Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4216,7 +4239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:27:45.996562Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4236,7 +4259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4256,7 +4279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4276,7 +4299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4296,7 +4319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4316,7 +4339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4336,7 +4359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:40:14.206556Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4356,7 +4379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:43:49.095216Z",
+    "last_updated_ts": "2026-10-16T03:29:16.363793Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4376,7 +4399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:43:49.095216Z",
+    "last_updated_ts": "2026-10-16T03:30:55.009201Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4396,7 +4419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAY01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:43:49.095216Z",
+    "last_updated_ts": "2026-10-16T03:30:55.009201Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4416,7 +4439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:43:49.095216Z",
+    "last_updated_ts": "2026-10-16T03:30:55.009201Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4436,7 +4459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:43:49.095216Z",
+    "last_updated_ts": "2026-10-16T03:30:55.009201Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4456,7 +4479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:47:40.04542Z",
+    "last_updated_ts": "2026-10-16T03:32:23.006529Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4476,7 +4499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:47:40.04542Z",
+    "last_updated_ts": "2026-10-16T03:32:23.006529Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4496,7 +4519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:51:33.201636Z",
+    "last_updated_ts": "2026-10-16T03:32:23.006529Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4516,7 +4539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:51:33.201636Z",
+    "last_updated_ts": "2026-10-16T03:35:39.384846Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4536,7 +4559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:51:33.201636Z",
+    "last_updated_ts": "2026-10-16T03:35:39.384846Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4556,7 +4579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:55:23.754804Z",
+    "last_updated_ts": "2026-10-16T03:35:39.384846Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4576,7 +4599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:55:23.754804Z",
+    "last_updated_ts": "2026-10-16T03:37:11.314887Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4596,7 +4619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:59:15.674915Z",
+    "last_updated_ts": "2026-10-16T03:37:11.314887Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4616,7 +4639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T21:59:15.674915Z",
+    "last_updated_ts": "2026-10-16T03:37:11.314887Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4636,7 +4659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:03:24.639632Z",
+    "last_updated_ts": "2026-10-16T03:38:45.01989Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4656,7 +4679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:03:24.639632Z",
+    "last_updated_ts": "2026-10-16T03:38:45.01989Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4676,7 +4699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:03:24.639632Z",
+    "last_updated_ts": "2026-10-16T03:38:45.01989Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4696,7 +4719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:07:23.499242Z",
+    "last_updated_ts": "2026-10-16T03:38:45.01989Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4716,7 +4739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:07:23.499242Z",
+    "last_updated_ts": "2026-10-16T03:40:18.207141Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4736,7 +4759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:11:28.161237Z",
+    "last_updated_ts": "2026-10-16T03:40:18.207141Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4756,7 +4779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:11:28.161237Z",
+    "last_updated_ts": "2026-10-16T03:40:18.207141Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4776,7 +4799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:11:28.161237Z",
+    "last_updated_ts": "2026-10-16T03:41:49.164908Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4796,7 +4819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:15:30.901176Z",
+    "last_updated_ts": "2026-10-16T03:41:49.164908Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4816,7 +4839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:15:30.901176Z",
+    "last_updated_ts": "2026-10-16T03:41:49.164908Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4836,7 +4859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:15:30.901176Z",
+    "last_updated_ts": "2026-10-16T03:41:49.164908Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4856,7 +4879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:19:44.486239Z",
+    "last_updated_ts": "2026-10-16T03:43:20.315238Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4876,7 +4899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:19:44.486239Z",
+    "last_updated_ts": "2026-10-16T03:43:20.315238Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4896,7 +4919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:19:44.486239Z",
+    "last_updated_ts": "2026-10-16T03:43:20.315238Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4916,7 +4939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:23:49.4066Z",
+    "last_updated_ts": "2026-10-16T03:43:20.315238Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4936,7 +4959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:23:49.4066Z",
+    "last_updated_ts": "2026-10-16T03:44:53.542637Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4956,7 +4979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:23:49.4066Z",
+    "last_updated_ts": "2026-10-16T03:44:53.542637Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4976,7 +4999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:27:53.081598Z",
+    "last_updated_ts": "2026-10-16T03:44:53.542637Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -4996,7 +5019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26APR01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:27:53.081598Z",
+    "last_updated_ts": "2026-10-16T03:46:32.626037Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5016,7 +5039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:27:53.081598Z",
+    "last_updated_ts": "2026-10-16T03:46:32.626037Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5036,7 +5059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:31:55.688026Z",
+    "last_updated_ts": "2026-10-16T03:46:32.626037Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5056,7 +5079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:31:55.688026Z",
+    "last_updated_ts": "2026-10-16T03:46:32.626037Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5076,7 +5099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:36:03.101366Z",
+    "last_updated_ts": "2026-10-16T03:48:10.166761Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5096,7 +5119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:36:03.101366Z",
+    "last_updated_ts": "2026-10-16T03:48:10.166761Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5116,7 +5139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:36:03.101366Z",
+    "last_updated_ts": "2026-10-16T03:48:10.166761Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5136,7 +5159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:36:03.101366Z",
+    "last_updated_ts": "2026-10-16T03:48:10.166761Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5156,7 +5179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:41:01.512128Z",
+    "last_updated_ts": "2026-10-16T03:48:10.166761Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5176,7 +5199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:41:01.512128Z",
+    "last_updated_ts": "2026-10-16T03:49:48.085325Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5196,7 +5219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:41:01.512128Z",
+    "last_updated_ts": "2026-10-16T03:49:48.085325Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5216,7 +5239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:41:01.512128Z",
+    "last_updated_ts": "2026-10-16T03:49:48.085325Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5236,7 +5259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:46:12.8303Z",
+    "last_updated_ts": "2026-10-16T03:49:48.085325Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5256,7 +5279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:46:12.8303Z",
+    "last_updated_ts": "2026-10-16T03:51:21.272814Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5276,7 +5299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:46:12.8303Z",
+    "last_updated_ts": "2026-10-16T03:51:21.272814Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5296,7 +5319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:50:45.121355Z",
+    "last_updated_ts": "2026-10-16T03:51:21.272814Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5316,7 +5339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:50:45.121355Z",
+    "last_updated_ts": "2026-10-16T03:51:21.272814Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5336,7 +5359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:50:45.121355Z",
+    "last_updated_ts": "2026-10-16T03:51:21.272814Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5356,7 +5379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:55:03.412487Z",
+    "last_updated_ts": "2026-10-16T03:52:58.639175Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5376,7 +5399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:55:03.412487Z",
+    "last_updated_ts": "2026-10-16T03:52:58.639175Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5396,7 +5419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:55:03.412487Z",
+    "last_updated_ts": "2026-10-16T03:52:58.639175Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5416,7 +5439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:59:45.0487Z",
+    "last_updated_ts": "2026-10-16T03:52:58.639175Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5436,7 +5459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:59:45.0487Z",
+    "last_updated_ts": "2026-10-16T03:54:38.432336Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5456,7 +5479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T22:59:45.0487Z",
+    "last_updated_ts": "2026-10-16T03:54:38.432336Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5476,7 +5499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:03:57.40806Z",
+    "last_updated_ts": "2026-10-16T03:54:38.432336Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5496,7 +5519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:03:57.40806Z",
+    "last_updated_ts": "2026-10-16T03:54:38.432336Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5516,7 +5539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:08:22.435667Z",
+    "last_updated_ts": "2026-10-16T03:56:13.684552Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5536,7 +5559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:08:22.435667Z",
+    "last_updated_ts": "2026-10-16T03:56:13.684552Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5556,7 +5579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:12:43.378964Z",
+    "last_updated_ts": "2026-10-16T03:56:13.684552Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5576,7 +5599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:12:43.378964Z",
+    "last_updated_ts": "2026-10-16T03:56:13.684552Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5596,7 +5619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:12:43.378964Z",
+    "last_updated_ts": "2026-10-16T03:57:49.924229Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5616,7 +5639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26MAR01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:17:06.583722Z",
+    "last_updated_ts": "2026-10-16T03:57:49.924229Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5636,7 +5659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:17:06.583722Z",
+    "last_updated_ts": "2026-10-16T03:57:49.924229Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5656,7 +5679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T23:21:21.009899Z",
+    "last_updated_ts": "2026-10-16T03:57:49.924229Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5676,7 +5699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5696,7 +5719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5716,7 +5739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5736,7 +5759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5756,7 +5779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5776,7 +5799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5796,7 +5819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5816,7 +5839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5836,7 +5859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5856,7 +5879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5876,7 +5899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5896,7 +5919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.016648Z",
+    "last_updated_ts": "2026-10-16T06:26:38.923741Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5916,7 +5939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5936,7 +5959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5956,7 +5979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5976,7 +5999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -5996,7 +6019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6016,7 +6039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6036,7 +6059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6056,7 +6079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6076,7 +6099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6096,7 +6119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6116,7 +6139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6136,7 +6159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6156,7 +6179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6176,7 +6199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26FEB01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6196,7 +6219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.152078Z",
+    "last_updated_ts": "2026-10-16T06:26:39.017894Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6216,7 +6239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.148012Z",
+    "last_updated_ts": "2026-10-16T06:26:39.014532Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6236,7 +6259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.142724Z",
+    "last_updated_ts": "2026-10-16T06:26:39.010885Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6256,7 +6279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.136483Z",
+    "last_updated_ts": "2026-10-16T06:26:39.006602Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6276,7 +6299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.132037Z",
+    "last_updated_ts": "2026-10-16T06:26:39.001909Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6296,7 +6319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.125982Z",
+    "last_updated_ts": "2026-10-16T06:26:38.998468Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6316,7 +6339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.120668Z",
+    "last_updated_ts": "2026-10-16T06:26:38.994432Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6336,7 +6359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.114797Z",
+    "last_updated_ts": "2026-10-16T06:26:38.990477Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6356,7 +6379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.107174Z",
+    "last_updated_ts": "2026-10-16T06:26:38.986502Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6376,7 +6399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6396,7 +6419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6416,7 +6439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.103125Z",
+    "last_updated_ts": "2026-10-16T06:26:38.98249Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6436,7 +6459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.096339Z",
+    "last_updated_ts": "2026-10-16T06:26:38.978739Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6456,7 +6479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.089687Z",
+    "last_updated_ts": "2026-10-16T06:26:38.973965Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6476,7 +6499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.08359Z",
+    "last_updated_ts": "2026-10-16T06:26:38.970141Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6496,7 +6519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.075426Z",
+    "last_updated_ts": "2026-10-16T06:26:38.966829Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6516,7 +6539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.070286Z",
+    "last_updated_ts": "2026-10-16T06:26:38.963024Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6536,7 +6559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6556,7 +6579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6576,7 +6599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.065754Z",
+    "last_updated_ts": "2026-10-16T06:26:38.959335Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6596,7 +6619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.059161Z",
+    "last_updated_ts": "2026-10-16T06:26:38.956234Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6616,7 +6639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6636,7 +6659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.050871Z",
+    "last_updated_ts": "2026-10-16T06:26:38.952512Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6656,7 +6679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.046115Z",
+    "last_updated_ts": "2026-10-16T06:26:38.949174Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6676,7 +6699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.041388Z",
+    "last_updated_ts": "2026-10-16T06:26:38.945143Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6696,7 +6719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.03719Z",
+    "last_updated_ts": "2026-10-16T06:26:38.941126Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6716,7 +6739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.033248Z",
+    "last_updated_ts": "2026-10-16T06:26:38.937584Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6736,7 +6759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:56:42.827192Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6756,7 +6779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.029419Z",
+    "last_updated_ts": "2026-10-16T06:26:38.934015Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6776,7 +6799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.025Z",
+    "last_updated_ts": "2026-10-16T06:26:38.93043Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6796,7 +6819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26JAN01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.020992Z",
+    "last_updated_ts": "2026-10-16T06:26:38.927212Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6816,7 +6839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.668279Z",
+    "last_updated_ts": "2026-10-16T06:26:38.58711Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6836,7 +6859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.663582Z",
+    "last_updated_ts": "2026-10-16T06:26:38.582949Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6856,7 +6879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.659675Z",
+    "last_updated_ts": "2026-10-16T06:26:38.579929Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6876,7 +6899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.655988Z",
+    "last_updated_ts": "2026-10-16T06:26:38.576671Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6896,7 +6919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.652088Z",
+    "last_updated_ts": "2026-10-16T06:26:38.573469Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6916,7 +6939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.647427Z",
+    "last_updated_ts": "2026-10-16T06:26:38.569952Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6936,7 +6959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.643331Z",
+    "last_updated_ts": "2026-10-16T06:26:38.566733Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6956,7 +6979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6976,7 +6999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -6996,7 +7019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.639079Z",
+    "last_updated_ts": "2026-10-16T06:26:38.563288Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7016,7 +7039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.634313Z",
+    "last_updated_ts": "2026-10-16T06:26:38.559817Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7036,7 +7059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.629931Z",
+    "last_updated_ts": "2026-10-16T06:26:38.556434Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7056,7 +7079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7076,7 +7099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.625956Z",
+    "last_updated_ts": "2026-10-16T06:26:38.552992Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7096,7 +7119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.621881Z",
+    "last_updated_ts": "2026-10-16T06:26:38.549506Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7116,7 +7139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7136,7 +7159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7156,7 +7179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.617594Z",
+    "last_updated_ts": "2026-10-16T06:26:38.546068Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7176,7 +7199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.613668Z",
+    "last_updated_ts": "2026-10-16T06:26:38.542741Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7196,7 +7219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.609627Z",
+    "last_updated_ts": "2026-10-16T06:26:38.538806Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7216,7 +7239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7236,7 +7259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.605498Z",
+    "last_updated_ts": "2026-10-16T06:26:38.535043Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7256,7 +7279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.531731Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7276,7 +7299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.600823Z",
+    "last_updated_ts": "2026-10-16T06:26:38.528009Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7296,7 +7319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7316,7 +7339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.595907Z",
+    "last_updated_ts": "2026-10-16T06:26:38.523984Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7336,7 +7359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.590873Z",
+    "last_updated_ts": "2026-10-16T06:26:38.520781Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7356,7 +7379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.586174Z",
+    "last_updated_ts": "2026-10-16T06:26:38.517543Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7376,7 +7399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.581734Z",
+    "last_updated_ts": "2026-10-16T06:26:38.514046Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7396,7 +7419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7416,7 +7439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25DEC01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.57719Z",
+    "last_updated_ts": "2026-10-16T06:26:38.510797Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7436,7 +7459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7456,7 +7479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.856659Z",
+    "last_updated_ts": "2026-10-16T06:26:38.781212Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7476,7 +7499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7496,7 +7519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.852075Z",
+    "last_updated_ts": "2026-10-16T06:26:38.77786Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7516,7 +7539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7536,7 +7559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.847841Z",
+    "last_updated_ts": "2026-10-16T06:26:38.774514Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7556,7 +7579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.844054Z",
+    "last_updated_ts": "2026-10-16T06:26:38.771058Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7576,7 +7599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.840021Z",
+    "last_updated_ts": "2026-10-16T06:26:38.767519Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7596,7 +7619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7616,7 +7639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.83592Z",
+    "last_updated_ts": "2026-10-16T06:26:38.764256Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7636,7 +7659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7656,7 +7679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.831878Z",
+    "last_updated_ts": "2026-10-16T06:26:38.761051Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7676,7 +7699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.827731Z",
+    "last_updated_ts": "2026-10-16T06:26:38.757817Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7696,7 +7719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.822836Z",
+    "last_updated_ts": "2026-10-16T06:26:38.754598Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7716,7 +7739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.818371Z",
+    "last_updated_ts": "2026-10-16T06:26:38.75109Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7736,7 +7759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.812447Z",
+    "last_updated_ts": "2026-10-16T06:26:38.748092Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7756,7 +7779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.808616Z",
+    "last_updated_ts": "2026-10-16T06:26:38.744688Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7776,7 +7799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.804441Z",
+    "last_updated_ts": "2026-10-16T06:26:38.741079Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7796,7 +7819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.800305Z",
+    "last_updated_ts": "2026-10-16T06:26:38.737977Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7816,7 +7839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.79626Z",
+    "last_updated_ts": "2026-10-16T06:26:38.734937Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7836,7 +7859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.791809Z",
+    "last_updated_ts": "2026-10-16T06:26:38.731819Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7856,7 +7879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7876,7 +7899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7896,7 +7919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.787458Z",
+    "last_updated_ts": "2026-10-16T06:26:38.728402Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7916,7 +7939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.781977Z",
+    "last_updated_ts": "2026-10-16T06:26:38.724631Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7936,7 +7959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7956,7 +7979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7976,7 +7999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.777489Z",
+    "last_updated_ts": "2026-10-16T06:26:38.721368Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -7996,7 +8019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8016,7 +8039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25NOV01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.773293Z",
+    "last_updated_ts": "2026-10-16T06:26:38.717686Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8036,7 +8059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.934609Z",
+    "last_updated_ts": "2026-10-16T06:26:38.854282Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8056,7 +8079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.930154Z",
+    "last_updated_ts": "2026-10-16T06:26:38.850273Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8076,7 +8099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8096,7 +8119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8116,7 +8139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.925574Z",
+    "last_updated_ts": "2026-10-16T06:26:38.846278Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8136,7 +8159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8156,7 +8179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.920699Z",
+    "last_updated_ts": "2026-10-16T06:26:38.842898Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8176,7 +8199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.915707Z",
+    "last_updated_ts": "2026-10-16T06:26:38.839898Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8196,7 +8219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.911648Z",
+    "last_updated_ts": "2026-10-16T06:26:38.836662Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8216,7 +8239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8236,7 +8259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8256,7 +8279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8276,7 +8299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.90708Z",
+    "last_updated_ts": "2026-10-16T06:26:38.833086Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8296,7 +8319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.901356Z",
+    "last_updated_ts": "2026-10-16T06:26:38.829412Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8316,7 +8339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T06:26:38.82614Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8336,7 +8359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8356,7 +8379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.897114Z",
+    "last_updated_ts": "2026-10-16T06:26:38.822895Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8376,7 +8399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T06:26:38.819333Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8396,7 +8419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.893338Z",
+    "last_updated_ts": "2026-10-16T06:26:38.815946Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8416,7 +8439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T06:26:38.810782Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8436,7 +8459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.887344Z",
+    "last_updated_ts": "2026-10-16T06:26:38.806955Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8456,7 +8479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8476,7 +8499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8496,7 +8519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8516,7 +8539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.88334Z",
+    "last_updated_ts": "2026-10-16T06:26:38.802979Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8536,7 +8559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.878387Z",
+    "last_updated_ts": "2026-10-16T06:26:38.799603Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8556,7 +8579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.873809Z",
+    "last_updated_ts": "2026-10-16T06:26:38.795696Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8576,7 +8599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.869244Z",
+    "last_updated_ts": "2026-10-16T06:26:38.792137Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8596,7 +8619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.865088Z",
+    "last_updated_ts": "2026-10-16T06:26:38.788119Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8616,7 +8639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.860697Z",
+    "last_updated_ts": "2026-10-16T06:26:38.784657Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8636,7 +8659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25OCT01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8656,7 +8679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8676,7 +8699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8696,7 +8719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.012074Z",
+    "last_updated_ts": "2026-10-16T06:26:38.920203Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8716,7 +8739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8736,7 +8759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T06:26:38.916758Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8756,7 +8779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.007308Z",
+    "last_updated_ts": "2026-10-16T06:26:38.913687Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8776,7 +8799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:12.002334Z",
+    "last_updated_ts": "2026-10-16T06:26:38.909966Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8796,7 +8819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8816,7 +8839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8836,7 +8859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.997838Z",
+    "last_updated_ts": "2026-10-16T06:26:38.906063Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8856,7 +8879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.993729Z",
+    "last_updated_ts": "2026-10-16T06:26:38.902318Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8876,7 +8899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.98977Z",
+    "last_updated_ts": "2026-10-16T06:26:38.898512Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8896,7 +8919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.984856Z",
+    "last_updated_ts": "2026-10-16T06:26:38.895196Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8916,7 +8939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.98088Z",
+    "last_updated_ts": "2026-10-16T06:26:38.891312Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8936,7 +8959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.97691Z",
+    "last_updated_ts": "2026-10-16T06:26:38.887311Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8956,7 +8979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.971675Z",
+    "last_updated_ts": "2026-10-16T06:26:38.883477Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8976,7 +8999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -8996,7 +9019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.967557Z",
+    "last_updated_ts": "2026-10-16T06:26:38.879417Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9016,7 +9039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.962723Z",
+    "last_updated_ts": "2026-10-16T06:26:38.876094Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9036,7 +9059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.958477Z",
+    "last_updated_ts": "2026-10-16T06:26:38.872512Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9056,7 +9079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9076,7 +9099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9096,7 +9119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9116,7 +9139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.953098Z",
+    "last_updated_ts": "2026-10-16T06:26:38.869024Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9136,7 +9159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.948571Z",
+    "last_updated_ts": "2026-10-16T06:26:38.865237Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9156,7 +9179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9176,7 +9199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9196,7 +9219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.943205Z",
+    "last_updated_ts": "2026-10-16T06:26:38.861918Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9216,7 +9239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:55:19.984316Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9236,7 +9259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25SEP01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.938992Z",
+    "last_updated_ts": "2026-10-16T06:26:38.858143Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9256,7 +9279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9276,7 +9299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9296,7 +9319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.571914Z",
+    "last_updated_ts": "2026-10-16T06:26:38.507136Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9316,7 +9339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.567386Z",
+    "last_updated_ts": "2026-10-16T06:26:38.503815Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9336,7 +9359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.562768Z",
+    "last_updated_ts": "2026-10-16T06:26:38.500432Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9356,7 +9379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.557996Z",
+    "last_updated_ts": "2026-10-16T06:26:38.496725Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9376,7 +9399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.553407Z",
+    "last_updated_ts": "2026-10-16T06:26:38.493153Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9396,7 +9419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.548962Z",
+    "last_updated_ts": "2026-10-16T06:26:38.489826Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9416,7 +9439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.544508Z",
+    "last_updated_ts": "2026-10-16T06:26:38.486347Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9436,7 +9459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.540037Z",
+    "last_updated_ts": "2026-10-16T06:26:38.482577Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9456,7 +9479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.535006Z",
+    "last_updated_ts": "2026-10-16T06:26:38.47923Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9476,7 +9499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.530825Z",
+    "last_updated_ts": "2026-10-16T06:26:38.475568Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9496,7 +9519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.525393Z",
+    "last_updated_ts": "2026-10-16T06:26:38.471984Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9516,7 +9539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.520668Z",
+    "last_updated_ts": "2026-10-16T06:26:38.4686Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9536,7 +9559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.515988Z",
+    "last_updated_ts": "2026-10-16T06:26:38.464929Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9556,7 +9579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.510205Z",
+    "last_updated_ts": "2026-10-16T06:26:38.461414Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9576,7 +9599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.505011Z",
+    "last_updated_ts": "2026-10-16T06:26:38.457364Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9596,7 +9619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.50029Z",
+    "last_updated_ts": "2026-10-16T06:26:38.453979Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9616,7 +9639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.495911Z",
+    "last_updated_ts": "2026-10-16T06:26:38.45062Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9636,7 +9659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.491349Z",
+    "last_updated_ts": "2026-10-16T06:26:38.447022Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9656,7 +9679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.486146Z",
+    "last_updated_ts": "2026-10-16T06:26:38.443102Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9676,7 +9699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.482023Z",
+    "last_updated_ts": "2026-10-16T06:26:38.439481Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9696,7 +9719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.477789Z",
+    "last_updated_ts": "2026-10-16T06:26:38.435769Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9716,7 +9739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.471014Z",
+    "last_updated_ts": "2026-10-16T06:26:38.432214Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9736,7 +9759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.428592Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9756,7 +9779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.466484Z",
+    "last_updated_ts": "2026-10-16T06:26:38.424778Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9776,7 +9799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.461387Z",
+    "last_updated_ts": "2026-10-16T06:26:38.42092Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9796,7 +9819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.416556Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9816,7 +9839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.412931Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9836,7 +9859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9856,7 +9879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25AUG01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9876,7 +9899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9896,7 +9919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.698993Z",
+    "last_updated_ts": "2026-10-16T06:26:38.643643Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9916,7 +9939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9936,7 +9959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9956,7 +9979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9976,7 +9999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -9996,7 +10019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10016,7 +10039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10036,7 +10059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10056,7 +10079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10076,7 +10099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10096,7 +10119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10116,7 +10139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10136,7 +10159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10156,7 +10179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10176,7 +10199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10196,7 +10219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10216,7 +10239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10236,7 +10259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10256,7 +10279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10276,7 +10299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10296,7 +10319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10316,7 +10339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.695516Z",
+    "last_updated_ts": "2026-10-16T06:26:38.640016Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10336,7 +10359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.691255Z",
+    "last_updated_ts": "2026-10-16T06:26:38.636482Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10356,7 +10379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10376,7 +10399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10396,7 +10419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.686677Z",
+    "last_updated_ts": "2026-10-16T06:26:38.633289Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10416,7 +10439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10436,7 +10459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10456,7 +10479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10476,7 +10499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUL01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10496,7 +10519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10516,7 +10539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.657294Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10536,7 +10559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10556,7 +10579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10576,7 +10599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10596,7 +10619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.707009Z",
+    "last_updated_ts": "2026-10-16T06:26:38.653811Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10616,7 +10639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10636,7 +10659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10656,7 +10679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10676,7 +10699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10696,7 +10719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10716,7 +10739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10736,7 +10759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10756,7 +10779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10776,7 +10799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10796,7 +10819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.702797Z",
+    "last_updated_ts": "2026-10-16T06:26:38.650687Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10816,7 +10839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10836,7 +10859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10856,7 +10879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10876,7 +10899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10896,7 +10919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.647318Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10916,7 +10939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10936,7 +10959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10956,7 +10979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10976,7 +10999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -10996,7 +11019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11016,7 +11039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11036,7 +11059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11056,7 +11079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11076,7 +11099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25JUN01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11096,7 +11119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11116,7 +11139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.713674Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11136,7 +11159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11156,7 +11179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11176,7 +11199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11196,7 +11219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.769175Z",
+    "last_updated_ts": "2026-10-16T06:26:38.710081Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11216,7 +11239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11236,7 +11259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11256,7 +11279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.764784Z",
+    "last_updated_ts": "2026-10-16T06:26:38.706513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11276,7 +11299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11296,7 +11319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11316,7 +11339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11336,7 +11359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11356,7 +11379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11376,7 +11399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11396,7 +11419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11416,7 +11439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11436,7 +11459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.703211Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11456,7 +11479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11476,7 +11499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11496,7 +11519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11516,7 +11539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11536,7 +11559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11556,7 +11579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11576,7 +11599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11596,7 +11619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11616,7 +11639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11636,7 +11659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11656,7 +11679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11676,7 +11699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.760075Z",
+    "last_updated_ts": "2026-10-16T06:26:38.699892Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11696,7 +11719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAY01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11716,7 +11739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11736,7 +11759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11756,7 +11779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11776,7 +11799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11796,7 +11819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.409483Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11816,7 +11839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.405706Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11836,7 +11859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.401867Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11856,7 +11879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11876,7 +11899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11896,7 +11919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11916,7 +11939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11936,7 +11959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11956,7 +11979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11976,7 +11999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.456675Z",
+    "last_updated_ts": "2026-10-16T06:26:38.397961Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -11996,7 +12019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.451767Z",
+    "last_updated_ts": "2026-10-16T06:26:38.394661Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12016,7 +12039,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12036,7 +12059,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12056,7 +12079,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:23:18.024861Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12076,7 +12099,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12096,7 +12119,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.447448Z",
+    "last_updated_ts": "2026-10-16T06:26:38.391054Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12116,7 +12139,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.442668Z",
+    "last_updated_ts": "2026-10-16T06:26:38.387435Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12136,7 +12159,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.437624Z",
+    "last_updated_ts": "2026-10-16T06:26:38.384183Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12156,7 +12179,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.429909Z",
+    "last_updated_ts": "2026-10-16T06:26:38.381197Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12176,7 +12199,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.424725Z",
+    "last_updated_ts": "2026-10-16T06:26:38.378193Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12196,7 +12219,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.418524Z",
+    "last_updated_ts": "2026-10-16T06:26:38.375227Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12216,7 +12239,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.414346Z",
+    "last_updated_ts": "2026-10-16T06:26:38.372081Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12236,7 +12259,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.410136Z",
+    "last_updated_ts": "2026-10-16T06:26:38.368959Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12256,7 +12279,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.405132Z",
+    "last_updated_ts": "2026-10-16T06:26:38.365538Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12276,7 +12299,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.399894Z",
+    "last_updated_ts": "2026-10-16T06:26:38.362407Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12296,7 +12319,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25APR01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.395409Z",
+    "last_updated_ts": "2026-10-16T06:26:38.358849Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12316,7 +12339,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR31",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.75468Z",
+    "last_updated_ts": "2026-10-16T06:26:38.696562Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12336,7 +12359,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR30",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.750463Z",
+    "last_updated_ts": "2026-10-16T06:26:38.692822Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12356,7 +12379,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR29",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.745881Z",
+    "last_updated_ts": "2026-10-16T06:26:38.689274Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12376,7 +12399,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.741624Z",
+    "last_updated_ts": "2026-10-16T06:26:38.686078Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12396,7 +12419,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.737555Z",
+    "last_updated_ts": "2026-10-16T06:26:38.683066Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12416,7 +12439,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.733543Z",
+    "last_updated_ts": "2026-10-16T06:26:38.679458Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12436,7 +12459,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.729154Z",
+    "last_updated_ts": "2026-10-16T06:26:38.676052Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12456,7 +12479,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR24",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.72471Z",
+    "last_updated_ts": "2026-10-16T06:26:38.672908Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12476,7 +12499,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.720561Z",
+    "last_updated_ts": "2026-10-16T06:26:38.669805Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12496,7 +12519,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR22",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.716166Z",
+    "last_updated_ts": "2026-10-16T06:26:38.666791Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12516,7 +12539,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR21",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T19:31:11.711921Z",
+    "last_updated_ts": "2026-10-16T06:26:38.663792Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12536,7 +12559,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR20",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12556,7 +12579,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR19",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12576,7 +12599,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR18",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12596,7 +12619,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR17",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12616,7 +12639,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR16",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:26:38.660448Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12636,7 +12659,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12656,7 +12679,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR14",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12676,7 +12699,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR13",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12696,7 +12719,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR12",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12716,7 +12739,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR11",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12736,7 +12759,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR10",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12756,7 +12779,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR09",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12776,7 +12799,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR08",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12796,7 +12819,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR07",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12816,7 +12839,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR06",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12836,7 +12859,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR05",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12856,7 +12879,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR04",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12876,7 +12899,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR03",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12896,7 +12919,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR02",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12916,7 +12939,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25MAR01",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12936,7 +12959,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25FEB28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12956,7 +12979,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25FEB27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12976,7 +12999,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25FEB26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T06:23:18.024861Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -12996,7 +13019,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-25FEB25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
+    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
     "mutually_exclusive": true,
     "series_ticker": "KXHIGHNY",
     "settlement_sources": [
@@ -13012,31 +13035,11 @@
     "_role": "panel"
   },
   {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25FEB24",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T16:47:24.681612Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "National Weather Service",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-02-25T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Feb 24, 2025",
-    "title": "Highest temperature in NYC on Feb 24, 2025?",
-    "_role": "panel"
-  },
-  {
     "category": "Science and Technology",
     "collateral_return_type": "",
     "event_ticker": "KXNOBELCHEM-26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T17:36:34.401291Z",
+    "last_updated_ts": "2026-10-15T18:08:26.767613Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELCHEM",
     "settlement_sources": [
@@ -13074,7 +13077,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELECON-25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T23:52:53.853575Z",
+    "last_updated_ts": "2026-10-16T07:13:43.293637Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELECON",
     "settlement_sources": [
@@ -13112,7 +13115,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELLIT-25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T23:52:53.857652Z",
+    "last_updated_ts": "2026-10-16T07:13:43.297151Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELLIT",
     "settlement_sources": [
@@ -13131,7 +13134,7 @@
     "collateral_return_type": "",
     "event_ticker": "NOBELLIT-23",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-30T05:14:06.409095Z",
+    "last_updated_ts": "2026-10-16T08:07:13.766481Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELLIT",
     "settlement_sources": [
@@ -13150,7 +13153,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELMED-26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-15T17:36:34.401291Z",
+    "last_updated_ts": "2026-10-15T18:08:26.772735Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELMED",
     "settlement_sources": [
@@ -13188,7 +13191,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELPEACE-25",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-29T23:52:53.862144Z",
+    "last_updated_ts": "2026-10-16T07:13:43.300715Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELPEACE",
     "settlement_sources": [
@@ -13207,7 +13210,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXNOBELPHYSICS-26",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-28T20:54:00.256711Z",
+    "last_updated_ts": "2026-10-16T03:10:55.079855Z",
     "mutually_exclusive": false,
     "series_ticker": "KXNOBELPHYSICS",
     "settlement_sources": [
@@ -13226,7 +13229,7 @@
     "collateral_return_type": "",
     "event_ticker": "KXTRUMPNOBEL-25OCT15",
     "exchange_index": 0,
-    "last_updated_ts": "2026-08-30T02:50:22.171626Z",
+    "last_updated_ts": "2026-10-16T07:40:55.168047Z",
     "mutually_exclusive": false,
     "product_metadata": {
       "important_info": {

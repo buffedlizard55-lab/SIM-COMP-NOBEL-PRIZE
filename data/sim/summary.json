@@ -2,7 +2,7 @@
   "engine_version": "1.0.0",
   "generated_from": "data/kalshi/markets.jsonl",
   "input_sha256": "c5a394818cc2850aaf7f8f1db41abd663317a3d608081913fd151f7e68954e0f",
-  "fetched_at": "2026-10-15T17:45:48Z",
+  "fetched_at": "2026-10-16T17:22:57Z",
   "replay": {
     "status": "matched",
     "ledger_sha256": "7039a4b9efc139c58820af7cb331141a6b316b3502854c59738c69f908a1fb09",
@@ -3667,7 +3667,7 @@
     }
   ],
   "data_quality": {
-    "fetched_at": "2026-10-15T17:45:48Z",
+    "fetched_at": "2026-10-16T17:22:57Z",
     "exchange_status": {
       "exchange_active": true,
       "exchange_index_statuses": [
@@ -3704,10 +3704,10 @@
       "trading_active": true
     },
     "historical_cutoff": {
-      "market_positions_last_updated_ts": "2026-08-16T00:00:00Z",
-      "market_settled_ts": "2026-08-16T00:00:00Z",
-      "orders_updated_ts": "2026-10-01T00:00:00Z",
-      "trades_created_ts": "2026-08-16T00:00:00Z"
+      "market_positions_last_updated_ts": "2026-08-17T00:00:00Z",
+      "market_settled_ts": "2026-08-17T00:00:00Z",
+      "orders_updated_ts": "2026-10-02T00:00:00Z",
+      "trades_created_ts": "2026-08-17T00:00:00Z"
     },
     "markets_stored": 282,
     "markets_with_candle_responses": 282,
@@ -3817,7 +3817,7 @@
       "batch-020"
     ],
     "trade_rows_total": 873907,
-    "generated_at": "2026-10-15T17:47:47Z",
+    "generated_at": "2026-10-16T17:25:45Z",
     "replay": {
       "status": "matched",
       "batch": "batch-001, batch-011, batch-013, batch-018",
@@ -3847,7 +3847,7 @@
         "data_tier": "live_kalshi",
         "markets_used": 0,
         "candle_events": 0,
-        "runtime_seconds": 0.026,
+        "runtime_seconds": 0.024,
         "trade_rows": 0,
         "combined_ledger_sha256": "2d08e361f53b3a167bfa4a2e4fb5386fbcc71d44566293cdc57fd466c60d0ae2",
         "open_positions": 0
@@ -3858,7 +3858,7 @@
         "data_tier": "historical_kalshi",
         "markets_used": 231,
         "candle_events": 16911,
-        "runtime_seconds": 296.623,
+        "runtime_seconds": 273.443,
         "trade_rows": 510610,
         "combined_ledger_sha256": "58015ce5f00d91c695ec050a3c6f9dcb8d42641cffff8f47abc6e25bd845b97c",
         "open_positions": 0
@@ -3869,7 +3869,7 @@
         "data_tier": "historical_kalshi",
         "markets_used": 50,
         "candle_events": 4702,
-        "runtime_seconds": 78.093,
+        "runtime_seconds": 72.017,
         "trade_rows": 363297,
         "combined_ledger_sha256": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c",
         "open_positions": 0
