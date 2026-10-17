@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-10-16T17:22:57Z",
-  "fetched_at_unix": 1792171377,
+  "fetched_at": "2026-10-17T16:22:51Z",
+  "fetched_at_unix": 1792254171,
   "base_url": "https://external-api.kalshi.com/trade-api/v2",
   "calls": 343,
   "exchange_status_url": "https://external-api.kalshi.com/trade-api/v2/exchange/status",
@@ -41,10 +41,10 @@
   },
   "cutoff_url": "https://external-api.kalshi.com/trade-api/v2/historical/cutoff",
   "historical_cutoff": {
-    "market_positions_last_updated_ts": "2026-08-17T00:00:00Z",
-    "market_settled_ts": "2026-08-17T00:00:00Z",
-    "orders_updated_ts": "2026-10-02T00:00:00Z",
-    "trades_created_ts": "2026-08-17T00:00:00Z"
+    "market_positions_last_updated_ts": "2026-08-18T00:00:00Z",
+    "market_settled_ts": "2026-08-18T00:00:00Z",
+    "orders_updated_ts": "2026-10-03T00:00:00Z",
+    "trades_created_ts": "2026-08-18T00:00:00Z"
   },
   "nobel_series": [
     "KXNOBELCHEM",
