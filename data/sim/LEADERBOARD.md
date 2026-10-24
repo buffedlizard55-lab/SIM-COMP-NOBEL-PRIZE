@@ -2,7 +2,7 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-10-23T17:51:50Z
+Kalshi snapshot: 2026-10-24T16:34:22Z
 
 ## Nobel markets, forward simulation
 
