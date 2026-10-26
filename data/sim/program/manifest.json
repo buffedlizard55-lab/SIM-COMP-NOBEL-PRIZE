@@ -1,8 +1,8 @@
 {
   "program_version": "3.0.0",
   "engine_version": "1.0.0",
-  "generated_at_unix": 1792947947,
-  "generated_at": "2026-10-25T17:05:47Z",
+  "generated_at_unix": 1793042261,
+  "generated_at": "2026-10-26T19:17:41Z",
   "generated_from": "data/kalshi/markets.jsonl",
   "participants": 2000,
   "batches": [
@@ -36,7 +36,7 @@
       "data_tier": "live_kalshi",
       "markets_used": 0,
       "candle_events": 0,
-      "runtime_seconds": 0.022,
+      "runtime_seconds": 0.02,
       "trade_rows": 0,
       "combined_ledger_sha256": "2d08e361f53b3a167bfa4a2e4fb5386fbcc71d44566293cdc57fd466c60d0ae2",
       "open_positions": 0
@@ -47,7 +47,7 @@
       "data_tier": "historical_kalshi",
       "markets_used": 231,
       "candle_events": 16911,
-      "runtime_seconds": 253.321,
+      "runtime_seconds": 217.179,
       "trade_rows": 510610,
       "combined_ledger_sha256": "58015ce5f00d91c695ec050a3c6f9dcb8d42641cffff8f47abc6e25bd845b97c",
       "open_positions": 0
@@ -58,7 +58,7 @@
       "data_tier": "historical_kalshi",
       "markets_used": 50,
       "candle_events": 4702,
-      "runtime_seconds": 61.305,
+      "runtime_seconds": 56.037,
       "trade_rows": 363297,
       "combined_ledger_sha256": "158aa462d7e0a282cfc8f8b6833fad9df127b74a917305f2a93a842487dd707c",
       "open_positions": 0
@@ -236,7 +236,7 @@
     {
       "path": "data/sim/program/families.json",
       "bytes": 223621,
-      "sha256": "72584b193b9e2cd34404ebd0b726d2b2c3565523145289099f023d1ba631ca76"
+      "sha256": "d4e6b8bbd149ca36bbfd442952acffe812e76e10022dc029168b457bf8900359"
     },
     {
       "path": "data/sim/program/leaderboard.csv",
