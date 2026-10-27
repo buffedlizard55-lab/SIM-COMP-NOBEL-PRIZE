@@ -1,1 +1,930 @@
-[]
+[
+  {
+    "ticker": "KXNOBELPEACE-27-DTRU",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-DTRU/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0160",
+            "5000.00"
+          ],
+          [
+            "0.0170",
+            "14.00"
+          ],
+          [
+            "0.0180",
+            "1100.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ],
+          [
+            "0.9410",
+            "1629.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "4500.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-FALB",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-FALB/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "50900.00"
+          ],
+          [
+            "0.0100",
+            "6390.00"
+          ],
+          [
+            "0.0200",
+            "5310.00"
+          ],
+          [
+            "0.0300",
+            "6641.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ],
+          [
+            "0.1300",
+            "2702.00"
+          ],
+          [
+            "0.1900",
+            "910.00"
+          ],
+          [
+            "0.2000",
+            "100.00"
+          ],
+          [
+            "0.3700",
+            "32.00"
+          ],
+          [
+            "0.6000",
+            "1231.00"
+          ],
+          [
+            "0.6100",
+            "848.00"
+          ],
+          [
+            "0.8700",
+            "1413.00"
+          ],
+          [
+            "0.8900",
+            "14.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "100.00"
+          ],
+          [
+            "0.0140",
+            "2737.98"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-ICJ",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-ICJ/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0200",
+            "1870.00"
+          ],
+          [
+            "0.0210",
+            "135.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "100.00"
+          ],
+          [
+            "0.0140",
+            "2514.00"
+          ],
+          [
+            "0.0150",
+            "1687.99"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-INCC",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-INCC/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "21750.00"
+          ],
+          [
+            "0.0100",
+            "3680.00"
+          ],
+          [
+            "0.0200",
+            "3950.00"
+          ],
+          [
+            "0.0300",
+            "3631.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ],
+          [
+            "0.1900",
+            "1317.00"
+          ],
+          [
+            "0.2400",
+            "1000.00"
+          ],
+          [
+            "0.2500",
+            "100.00"
+          ],
+          [
+            "0.4900",
+            "766.00"
+          ],
+          [
+            "0.5900",
+            "1544.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "100.00"
+          ],
+          [
+            "0.0140",
+            "2514.00"
+          ],
+          [
+            "0.0150",
+            "1687.99"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-MSF",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-MSF/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0110",
+            "3458.00"
+          ],
+          [
+            "0.0310",
+            "2091.00"
+          ],
+          [
+            "0.0320",
+            "135.00"
+          ],
+          [
+            "0.0330",
+            "51.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "2500.00"
+          ],
+          [
+            "0.0120",
+            "100.00"
+          ],
+          [
+            "0.0130",
+            "1725.99"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-SERR",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-SERR/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ],
+          [
+            "0.1700",
+            "1000.00"
+          ],
+          [
+            "0.1900",
+            "1926.00"
+          ],
+          [
+            "0.2100",
+            "37.00"
+          ],
+          [
+            "0.2200",
+            "431.00"
+          ],
+          [
+            "0.4900",
+            "1289.00"
+          ],
+          [
+            "0.5000",
+            "91.00"
+          ],
+          [
+            "0.5900",
+            "94.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0130",
+            "2500.00"
+          ],
+          [
+            "0.0140",
+            "374.00"
+          ],
+          [
+            "0.0150",
+            "1298.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-VZEL",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-VZEL/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "22820.00"
+          ],
+          [
+            "0.0100",
+            "3930.00"
+          ],
+          [
+            "0.0200",
+            "3590.00"
+          ],
+          [
+            "0.0300",
+            "3421.00"
+          ],
+          [
+            "0.0320",
+            "2127.00"
+          ],
+          [
+            "0.0330",
+            "100.00"
+          ],
+          [
+            "0.1200",
+            "1.00"
+          ],
+          [
+            "0.1900",
+            "2235.00"
+          ],
+          [
+            "0.2000",
+            "67.00"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "2500.00"
+          ],
+          [
+            "0.0120",
+            "100.00"
+          ],
+          [
+            "0.0130",
+            "1621.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-AGUT",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-AGUT/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0110",
+            "100.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.3300",
+            "2110.00"
+          ],
+          [
+            "0.8100",
+            "1050.00"
+          ],
+          [
+            "0.8200",
+            "163.00"
+          ],
+          [
+            "0.8300",
+            "14.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-CHD",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-CHD/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.0350",
+            "5000.00"
+          ],
+          [
+            "0.0360",
+            "14.00"
+          ],
+          [
+            "0.0370",
+            "9.00"
+          ],
+          [
+            "0.8700",
+            "1452.00"
+          ],
+          [
+            "0.8800",
+            "89.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-CPJR",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-CPJR/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.0350",
+            "5000.00"
+          ],
+          [
+            "0.0360",
+            "14.00"
+          ],
+          [
+            "0.0370",
+            "9.00"
+          ],
+          [
+            "0.8900",
+            "1452.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-DATT",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-DATT/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0160",
+            "5000.00"
+          ],
+          [
+            "0.0170",
+            "14.00"
+          ],
+          [
+            "0.0180",
+            "1100.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.9100",
+            "1452.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3723.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-EMUS",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-EMUS/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0160",
+            "5000.00"
+          ],
+          [
+            "0.0170",
+            "14.00"
+          ],
+          [
+            "0.0180",
+            "1100.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.9410",
+            "1669.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "4758.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-GTHU",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-GTHU/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.1800",
+            "3827.00"
+          ],
+          [
+            "0.1900",
+            "100.00"
+          ],
+          [
+            "0.8400",
+            "1045.00"
+          ],
+          [
+            "0.8500",
+            "145.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-IKHA",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-IKHA/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "2200.00"
+          ],
+          [
+            "0.0110",
+            "1750.00"
+          ],
+          [
+            "0.0300",
+            "1.00"
+          ],
+          [
+            "0.1000",
+            "100.00"
+          ],
+          [
+            "0.1900",
+            "14.00"
+          ],
+          [
+            "0.2000",
+            "237.00"
+          ],
+          [
+            "0.2100",
+            "135.00"
+          ],
+          [
+            "0.2200",
+            "53.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  },
+  {
+    "ticker": "KXNOBELPEACE-27-JASS",
+    "fetched_at": "2026-10-27T18:40:19Z",
+    "status": 200,
+    "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXNOBELPEACE-27-JASS/orderbook",
+    "body": {
+      "orderbook_fp": {
+        "no_dollars": [
+          [
+            "0.0010",
+            "5290.00"
+          ],
+          [
+            "0.0100",
+            "3200.00"
+          ],
+          [
+            "0.0960",
+            "1850.00"
+          ],
+          [
+            "0.0970",
+            "135.00"
+          ],
+          [
+            "0.0980",
+            "42.00"
+          ],
+          [
+            "0.1200",
+            "14.00"
+          ],
+          [
+            "0.9880",
+            "0.01"
+          ]
+        ],
+        "yes_dollars": [
+          [
+            "0.0100",
+            "2000.00"
+          ],
+          [
+            "0.0110",
+            "3742.00"
+          ]
+        ]
+      }
+    },
+    "used_for_simulated_decisions": false,
+    "note": "Fetch-time order book. Later than the candle closes used for decisions."
+  }
+]

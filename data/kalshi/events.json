@@ -220,7 +220,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXFEDDECISION-26DEC",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-16T14:30:21.262815Z",
+    "last_updated_ts": "2026-10-27T18:37:20.007868Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "US FED",
@@ -837,6 +837,29 @@
     "strike_period": "",
     "sub_title": "In May 2023",
     "title": "Fed meeting in May 2023?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT28",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-27T09:36:33.578755Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-29T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 28, 2026",
+    "title": "Highest temperature in New York City on Oct 28, 2026?",
     "_role": "panel"
   },
   {
@@ -13045,26 +13068,6 @@
     "_role": "panel"
   },
   {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25MAR07",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "NWS Climatological Report",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-03-08T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Mar 7, 2025",
-    "title": "Highest temperature in NYC on Mar 7, 2025?",
-    "_role": "panel"
-  },
-  {
     "category": "Science and Technology",
     "collateral_return_type": "",
     "event_ticker": "KXNOBELCHEM-26",
@@ -13195,6 +13198,25 @@
     "strike_period": "",
     "sub_title": "In 2026",
     "title": "Nobel Prize in Physiology or Medicine: 2026",
+    "_role": "nobel"
+  },
+  {
+    "category": "Politics",
+    "collateral_return_type": "MECNET",
+    "event_ticker": "KXNOBELPEACE-27",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-27T15:39:58.272617Z",
+    "mutually_exclusive": true,
+    "series_ticker": "KXNOBELPEACE",
+    "settlement_sources": [
+      {
+        "name": "Nobel Prize organization",
+        "url": "https://www.nobelprize.org/"
+      }
+    ],
+    "strike_period": "",
+    "sub_title": "In 2027",
+    "title": "2027 Nobel Peace Prize winner",
     "_role": "nobel"
   },
   {

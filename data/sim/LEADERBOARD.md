@@ -2,27 +2,25 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-10-26T19:14:55Z
+Kalshi snapshot: 2026-10-27T18:40:19Z
 
 ## Nobel markets, forward simulation
 
-Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 0.
-
-No stored market in this universe had a candlestick the engine could use without looking past settlement. No prices were invented to fill that gap.
+Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 29.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-cleo-longshot | longshot_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-dmitri-momentum | momentum | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-elena-revert | mean_revert | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-farid-fade | contrarian | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-gina-tight | tight_value | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-hiro-slice | diversified_slice | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-ines-volume | volume_momentum | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-kira-null | seeded_null | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 6 | sim-dmitri-momentum | momentum | 9995.2140 | 0.0000 | -4.7860 | 2.1600 | 26 |
+| 7 | sim-farid-fade | contrarian | 9975.7100 | 0.0000 | -24.2900 | 11.2900 | 26 |
+| 7 | sim-gina-tight | tight_value | 9975.7100 | 0.0000 | -24.2900 | 11.2900 | 26 |
+| 9 | sim-kira-null | seeded_null | 9957.6300 | 0.0000 | -42.3700 | 2.8700 | 1 |
+| 10 | sim-hiro-slice | diversified_slice | 9821.6500 | 0.0000 | -178.3500 | 11.3500 | 3 |
+| 11 | sim-cleo-longshot | longshot_hold | 9790.2700 | 0.0000 | -209.7300 | 14.7300 | 6 |
 
 ## Settled Nobel markets, historical backtest
 
@@ -62,22 +60,22 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The research program (2,000 simulated participants)
 
-2000 simulated participants in 20 batches. 873907 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 879107 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b001-001 | null-model-b001-001 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-002 | null-model-b001-002 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-b001-003 | null-model-b001-003 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-004 | null-model-b001-004 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-b001-005 | null-model-b001-005 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 1 | sim-b001-006 | null-model-b001-006 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-007 | null-model-b001-007 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-008 | null-model-b001-008 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-009 | null-model-b001-009 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 1 | sim-b001-010 | null-model-b001-010 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-011 | null-model-b001-011 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-012 | null-model-b001-012 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-015 | null-model-b001-015 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-018 | null-model-b001-018 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-023 | null-model-b001-023 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-024 | null-model-b001-024 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
+| 1 | sim-b001-027 | null-model-b001-027 | null_model | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 
 ### Program, settled Nobel markets, historical backtest
 
