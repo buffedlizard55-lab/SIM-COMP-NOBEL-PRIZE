@@ -842,9 +842,32 @@
   {
     "category": "Climate and Weather",
     "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26OCT29",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-28T09:37:26.687906Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-10-30T05:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Oct 29, 2026",
+    "title": "Highest temperature in New York City on Oct 29, 2026?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26OCT28",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-27T09:36:33.578755Z",
+    "last_updated_ts": "2026-10-27T19:53:03.066097Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -867,7 +890,7 @@
     "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26OCT27",
     "exchange_index": 0,
-    "last_updated_ts": "2026-10-26T09:35:54.994571Z",
+    "last_updated_ts": "2026-10-27T19:53:03.066097Z",
     "mutually_exclusive": true,
     "product_metadata": {
       "competition": "High Temperature"
@@ -13045,26 +13068,6 @@
     "strike_period": "",
     "sub_title": "On Mar 9, 2025",
     "title": "Highest temperature in NYC on Mar 9, 2025?",
-    "_role": "panel"
-  },
-  {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25MAR08",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "NWS Climatological Report",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-03-09T04:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Mar 8, 2025",
-    "title": "Highest temperature in NYC on Mar 8, 2025?",
     "_role": "panel"
   },
   {
