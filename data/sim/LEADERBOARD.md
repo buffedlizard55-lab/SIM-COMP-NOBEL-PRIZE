@@ -2,7 +2,7 @@
 
 Every participant, trade, position, and P&L figure in this competition is simulated. None of it is a Kalshi order, a Kalshi user, or a real fill. Market prices, results, and volumes are Kalshi data only where a source URL is shown.
 
-Kalshi snapshot: 2026-10-28T18:49:06Z
+Kalshi snapshot: 2026-10-29T18:56:22Z
 
 ## Nobel markets, forward simulation
 
@@ -10,17 +10,17 @@ Id: `nobel-forward-primary`. Kind: forward_simulation. Markets used: 29.
 
 | Rank | Participant | Strategy | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-gina-tight | tight_value | 10027.6000 | 0.0000 | 27.6000 | 17.4000 | 29 |
-| 2 | sim-farid-fade | contrarian | 10015.4570 | 46.5260 | -31.0690 | 26.1000 | 56 |
+| 1 | sim-gina-tight | tight_value | 10031.1000 | 0.0000 | 31.1000 | 17.4000 | 29 |
+| 2 | sim-farid-fade | contrarian | 10030.5870 | 46.5260 | -15.9390 | 26.1000 | 56 |
 | 3 | sim-ada-hold | hold_cash | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 3 | sim-basil-favorite | favorite_hold | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
 | 3 | sim-jonas-exit | favorite_exit | 10000.0000 | 0.0000 | 0.0000 | 0.0000 | 0 |
-| 6 | sim-ines-volume | volume_momentum | 9998.5740 | 0.0000 | -1.4260 | 0.6200 | 2 |
-| 7 | sim-kira-null | seeded_null | 9866.9470 | 0.0000 | -133.0530 | 13.5400 | 13 |
-| 8 | sim-elena-revert | mean_revert | 9856.1200 | -143.8800 | 0.0000 | 23.3800 | 32 |
-| 9 | sim-hiro-slice | diversified_slice | 9758.8000 | 0.0000 | -241.2000 | 20.7000 | 5 |
-| 10 | sim-dmitri-momentum | momentum | 9662.1390 | -243.8070 | -94.0540 | 37.0000 | 56 |
-| 11 | sim-cleo-longshot | longshot_hold | 9521.1200 | 0.0000 | -478.8800 | 43.3800 | 18 |
+| 6 | sim-ines-volume | volume_momentum | 9998.4720 | 0.0000 | -1.5280 | 0.6200 | 2 |
+| 7 | sim-elena-revert | mean_revert | 9856.1200 | -143.8800 | 0.0000 | 23.3800 | 32 |
+| 8 | sim-kira-null | seeded_null | 9851.4300 | 0.0000 | -148.5700 | 16.0500 | 19 |
+| 9 | sim-hiro-slice | diversified_slice | 9746.3000 | 0.0000 | -253.7000 | 20.7000 | 5 |
+| 10 | sim-dmitri-momentum | momentum | 9645.5930 | -243.8070 | -110.6000 | 37.0000 | 56 |
+| 11 | sim-cleo-longshot | longshot_hold | 9516.6200 | 0.0000 | -483.3800 | 43.3800 | 18 |
 
 ## Settled Nobel markets, historical backtest
 
@@ -60,22 +60,22 @@ Id: `panel-settled-primary`. Kind: historical_backtest. Markets used: 50.
 
 ## The research program (2,000 simulated participants)
 
-2000 simulated participants in 20 batches. 890518 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
+2000 simulated participants in 20 batches. 891697 ledger rows. Replay of batch-001, batch-011, batch-013, batch-018: matched. Same decision clock, size rules, and fee reading as the primary competitions above. Full board: `data/sim/program/leaderboard.json` (top 10 per universe below).
 
 ### Program, Nobel markets, forward simulation
 
 | Rank | Participant | Strategy | Family | Ending equity | Realized | Unrealized | Fees | Trades |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | sim-b005-061 | contrarian-b005-061 | contrarian | 10059.0810 | 51.1100 | 7.9710 | 14.2000 | 24 |
-| 2 | sim-b005-081 | contrarian-b005-081 | contrarian | 10053.0700 | 43.5500 | 9.5200 | 12.5500 | 21 |
-| 3 | sim-b016-032 | big-move-fade-b016-032 | big_move_fade | 10051.8500 | 0.0000 | 51.8500 | 6.1500 | 14 |
-| 3 | sim-b016-034 | big-move-fade-b016-034 | big_move_fade | 10051.8500 | 0.0000 | 51.8500 | 6.1500 | 14 |
-| 3 | sim-b016-036 | big-move-fade-b016-036 | big_move_fade | 10051.8500 | 0.0000 | 51.8500 | 6.1500 | 14 |
-| 3 | sim-b016-038 | big-move-fade-b016-038 | big_move_fade | 10051.8500 | 0.0000 | 51.8500 | 6.1500 | 14 |
-| 7 | sim-b005-066 | contrarian-b005-066 | contrarian | 10051.5710 | 50.0700 | 1.5010 | 15.2400 | 28 |
-| 7 | sim-b005-071 | contrarian-b005-071 | contrarian | 10051.5710 | 50.0700 | 1.5010 | 15.2400 | 28 |
-| 7 | sim-b005-076 | contrarian-b005-076 | contrarian | 10051.5710 | 50.0700 | 1.5010 | 15.2400 | 28 |
-| 10 | sim-b016-091 | placebo-big-move-fade-b016-091 | placebo_big_move_fade | 10049.3970 | 0.0000 | 49.3970 | 4.7900 | 14 |
+| 1 | sim-b005-061 | contrarian-b005-061 | contrarian | 10071.9170 | 51.1100 | 20.8070 | 14.2000 | 24 |
+| 2 | sim-b005-081 | contrarian-b005-081 | contrarian | 10065.9060 | 43.5500 | 22.3560 | 12.5500 | 21 |
+| 3 | sim-b005-066 | contrarian-b005-066 | contrarian | 10064.2020 | 50.0700 | 14.1320 | 15.2400 | 28 |
+| 3 | sim-b005-071 | contrarian-b005-071 | contrarian | 10064.2020 | 50.0700 | 14.1320 | 15.2400 | 28 |
+| 3 | sim-b005-076 | contrarian-b005-076 | contrarian | 10064.2020 | 50.0700 | 14.1320 | 15.2400 | 28 |
+| 6 | sim-b005-086 | contrarian-b005-086 | contrarian | 10061.4460 | 43.5500 | 17.8960 | 12.8500 | 22 |
+| 6 | sim-b005-091 | contrarian-b005-091 | contrarian | 10061.4460 | 43.5500 | 17.8960 | 12.8500 | 22 |
+| 6 | sim-b005-096 | contrarian-b005-096 | contrarian | 10061.4460 | 43.5500 | 17.8960 | 12.8500 | 22 |
+| 9 | sim-b005-041 | contrarian-b005-041 | contrarian | 10061.2770 | 51.1100 | 10.1670 | 16.8400 | 28 |
+| 10 | sim-b005-046 | contrarian-b005-046 | contrarian | 10049.2580 | 45.1510 | 4.1070 | 20.2700 | 39 |
 
 ### Program, settled Nobel markets, historical backtest
 
