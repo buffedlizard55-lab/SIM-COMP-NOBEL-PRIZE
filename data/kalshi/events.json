@@ -842,6 +842,29 @@
   {
     "category": "Climate and Weather",
     "collateral_return_type": "MECNET",
+    "event_ticker": "KXHIGHNY-26NOV01",
+    "exchange_index": 0,
+    "last_updated_ts": "2026-10-31T09:36:08.343574Z",
+    "mutually_exclusive": true,
+    "product_metadata": {
+      "competition": "High Temperature"
+    },
+    "series_ticker": "KXHIGHNY",
+    "settlement_sources": [
+      {
+        "name": "The Weather Company",
+        "url": "https://weather.com/kalshi"
+      }
+    ],
+    "strike_date": "2026-11-02T06:00:00Z",
+    "strike_period": "",
+    "sub_title": "On Nov 1, 2026",
+    "title": "Highest temperature in New York City on Nov 1, 2026?",
+    "_role": "panel"
+  },
+  {
+    "category": "Climate and Weather",
+    "collateral_return_type": "MECNET",
     "event_ticker": "KXHIGHNY-26OCT31",
     "exchange_index": 0,
     "last_updated_ts": "2026-10-30T09:36:51.352616Z",
@@ -13054,26 +13077,6 @@
     "strike_period": "",
     "sub_title": "On Mar 12, 2025",
     "title": "Highest temperature in NYC on Mar 12, 2025?",
-    "_role": "panel"
-  },
-  {
-    "category": "Climate and Weather",
-    "collateral_return_type": "MECNET",
-    "event_ticker": "KXHIGHNY-25MAR11",
-    "exchange_index": 0,
-    "last_updated_ts": "2026-10-16T05:55:07.910513Z",
-    "mutually_exclusive": true,
-    "series_ticker": "KXHIGHNY",
-    "settlement_sources": [
-      {
-        "name": "NWS Climatological Report",
-        "url": "https://forecast.weather.gov/product.php?site=OKX&product=CLI&issuedby=NYC"
-      }
-    ],
-    "strike_date": "2025-03-12T03:59:00Z",
-    "strike_period": "",
-    "sub_title": "On Mar 11, 2025",
-    "title": "Highest temperature in NYC on Mar 11, 2025?",
     "_role": "panel"
   },
   {
